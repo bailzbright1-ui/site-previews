@@ -11,6 +11,7 @@ and these preview-only markers, which the live build strips:
   any line containing PREVIEW-ONLY         (e.g. the noindex meta tag)
 """
 import argparse, datetime, json, re, shutil, sys, zipfile
+sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parent))
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -40,6 +41,9 @@ def render(html, site, agency, live=False, endpoint=""):
     if live:
         html = re.sub(r"<!--PREVIEW-->.*?<!--/PREVIEW-->", "", html, flags=re.S)
         html = "\n".join(l for l in html.splitlines() if "PREVIEW-ONLY" not in l)
+    from motion import HEAD as MH, BODY as MB
+    if "data-no-motion" not in html:
+        html = html.replace("</head>", MH + "\n</head>", 1).replace("</body>", MB + "\n</body>", 1)
     left = re.findall(r"\{\{[A-Z_]+\}\}", html)
     if left:
         sys.exit(f"{site['slug']}: unresolved tokens {sorted(set(left))}")
@@ -66,7 +70,7 @@ def build_previews(data):
         out.mkdir(parents=True)
         out.joinpath("index.html").write_text(render(src.read_text(encoding="utf-8"), s, data["agency"]), encoding="utf-8")
         for extra in (SRC / s["slug"]).iterdir():  # copy any images/assets
-            if extra.name not in ("index.html", "design.md"):
+            if extra.name not in ("index.html", "design.md", "src-img"):
                 (shutil.copytree if extra.is_dir() else shutil.copy2)(extra, out / extra.name)
         print(f"built docs/{s['slug']}/")
 
@@ -85,7 +89,7 @@ def build_live(data, slug, email, domain, phone):
     html = render((SRC / slug / "index.html").read_text(encoding="utf-8"), site, data["agency"], live=True, endpoint=endpoint)
     out.joinpath("index.html").write_text(html, encoding="utf-8")
     for extra in (SRC / slug).iterdir():
-        if extra.name not in ("index.html", "design.md"):
+        if extra.name not in ("index.html", "design.md", "src-img"):
             (shutil.copytree if extra.is_dir() else shutil.copy2)(extra, out / extra.name)
     if domain:
         out.joinpath("CNAME").write_text(domain + "\n")

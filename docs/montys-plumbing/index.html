@@ -52,6 +52,8 @@ header .btn{min-height:44px;padding:0 20px;font-size:15px}
 
 /* hero */
 .hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--bg) 0%,var(--sand) 100%);border-bottom:1px solid var(--line)}
+.hpic{position:absolute;top:0;bottom:0;right:0;width:46%;opacity:.22;mix-blend-mode:multiply;-webkit-mask-image:linear-gradient(90deg,transparent,#000 45%);mask-image:linear-gradient(90deg,transparent,#000 45%)}.hpic img{width:100%;height:100%;object-fit:cover}
+@media(max-width:920px){.hpic{display:none}}
 .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(32px,5vw,72px);align-items:end;padding-top:clamp(56px,9vw,120px);padding-bottom:clamp(120px,16vw,220px)}
 .watermark{position:absolute;right:-3vw;bottom:-0.2em;z-index:0;font-weight:600;font-style:italic;font-size:clamp(8rem,24vw,24rem);line-height:1;letter-spacing:-.03em;color:var(--ink);opacity:.05;white-space:nowrap;pointer-events:none;user-select:none}
 .status{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px 8px 12px;font-size:14px;font-weight:600}
@@ -116,6 +118,8 @@ section{padding:var(--pad) 0}
 .idx li.urgent h3::after{content:"24/7";margin-left:12px;vertical-align:middle;font-size:11px;letter-spacing:.08em;font-weight:600;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:3px 8px}
 @media (max-width:760px){.idx a{grid-template-columns:40px 1fr 44px}.idx p{grid-column:2/3;grid-row:2}.idx .go{grid-row:1/3;grid-column:3}}
 
+.pband{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:6px;padding:0 6px 6px}.pband div{position:relative;height:clamp(240px,30vw,420px);overflow:hidden;border-radius:18px}.pband img{position:absolute;left:0;top:-6%;width:100%;height:112%;object-fit:cover}
+@media(max-width:760px){.pband{grid-template-columns:1fr}.pband div:nth-child(n+2){display:none}}
 /* marquee */
 .marquee{background:var(--ink);color:var(--bg);overflow:hidden;padding:26px 0}
 .track{display:flex;gap:48px;width:max-content;animation:slide 48s linear infinite}
@@ -149,6 +153,19 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+html.js [data-r]{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+html.js [data-r=left]{transform:translateX(-36px)}
+html.js [data-r=scale]{transform:scale(.94)}
+html.js [data-r=clip]{opacity:1;transform:none}
+html.js [data-r=clip]>*{clip-path:inset(100% 0 0 0);transition:clip-path 1.1s cubic-bezier(.7,0,.2,1)}
+html.js [data-r].in{opacity:1;transform:none}
+html.js [data-r=clip].in>*{clip-path:inset(0 0 0 0)}
+[data-px]{will-change:transform}
+.zoom{overflow:hidden}.zoom img{transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}.zoom:hover img{transform:scale(1.05)}
+@media (prefers-reduced-motion:reduce){html.js [data-r],html.js [data-r]>*{opacity:1!important;transform:none!important;clip-path:none!important;transition:none!important}[data-px]{transform:none!important}}
+</style>
 </head>
 <body>
 <!--PREVIEW--><div style="position:relative;z-index:100;background:#111;color:#eee;font:500 13px/1.45 system-ui,sans-serif;text-align:center;padding:9px 16px">Website concept for Monty's Plumbing, made by a local Sunshine Coast web designer. Preview only &middot; not the official site yet.</div><!--/PREVIEW-->
@@ -167,6 +184,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <main id="top">
   <section class="hero" style="padding:0" aria-labelledby="h1">
     <div class="watermark" aria-hidden="true">Peregian</div>
+    <div class="hpic" aria-hidden="true"><img src="img/water.webp" alt=""></div>
     <div class="wrap">
       <div>
         <span class="status"><span class="dot"></span>24/7 emergency callouts</span>
@@ -197,16 +215,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   </section>
 
   <div class="kpis"><div class="wrap"><div class="grid">
-    <div class="kpi"><b>21<small> yrs</small></b><span>Trading locally</span></div>
-    <div class="kpi"><b>24/7</b><span>Emergency callouts</span></div>
-    <div class="kpi"><b>~1<small> hr</small></b><span>Typical response</span></div>
-    <div class="kpi"><b>QBCC</b><span>Licence 1065201</span></div>
+    <div class="kpi" data-r><b>21<small> yrs</small></b><span>Trading locally</span></div>
+    <div class="kpi" data-r><b>24/7</b><span>Emergency callouts</span></div>
+    <div class="kpi" data-r><b>~1<small> hr</small></b><span>Typical response</span></div>
+    <div class="kpi" data-r><b>QBCC</b><span>Licence 1065201</span></div>
   </div></div></div>
 
   <section id="why" aria-labelledby="w-h">
     <div class="wrap split">
-      <div><span class="label">Why Monty's</span><h2 id="w-h">Twenty-one years of turning up when we say we will.</h2></div>
-      <div class="copy">
+      <div data-r><span class="label">Why Monty's</span><h2 id="w-h">Twenty-one years of turning up when we say we will.</h2></div>
+      <div class="copy" data-r data-d="150">
         <p>We're not a call centre or a franchise. Monty's is a local plumbing business based in Peregian Beach, and our reputation has been built one job at a time for over two decades.</p>
         <ul class="ticks">
           <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>Fast response.</b> Usually with you within an hour of your call.</div></li>
@@ -219,25 +237,26 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
   <section id="services" style="padding-top:0" aria-labelledby="s-h">
     <div class="wrap">
-      <div class="idx-head"><div><span class="label">Services</span><h2 id="s-h">From a dripping tap to a full bathroom reno.</h2></div><p>Residential plumbing and maintenance across Peregian Beach and surrounds.</p></div>
+      <div class="idx-head"><div data-r><span class="label">Services</span><h2 id="s-h">From a dripping tap to a full bathroom reno.</h2></div><p>Residential plumbing and maintenance across Peregian Beach and surrounds.</p></div>
       <ul class="idx">
-        <li class="urgent"><a href="#quote"><span class="n">01</span><h3>Emergency plumbing</h3><p>Burst pipes, major leaks and flooding, any time of day or night.</p><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
-        <li><a href="#quote"><span class="n">02</span><h3>Leak detection &amp; repair</h3><p>Find hidden leaks fast, before they cause damage or big water bills.</p><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
-        <li><a href="#quote"><span class="n">03</span><h3>Hot water systems</h3><p>Tank replacements and repairs to get you back to a hot shower.</p><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
-        <li><a href="#quote"><span class="n">04</span><h3>Bathroom renovations</h3><p>All the plumbing for new and renovated bathrooms, through to fit-off.</p><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
-        <li><a href="#quote"><span class="n">05</span><h3>Kitchen plumbing</h3><p>Sinks, dishwashers and full kitchen renovation plumbing.</p><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
-        <li><a href="#quote"><span class="n">06</span><h3>Tapware &amp; toilets</h3><p>Supply, install and repair of taps and toilets.</p><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+        <li class="urgent" data-r><a href="#quote"><span class="n">01</span><h3>Emergency plumbing</h3><p>Burst pipes, major leaks and flooding, any time of day or night.</p><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+        <li data-r><a href="#quote"><span class="n">02</span><h3>Leak detection &amp; repair</h3><p>Find hidden leaks fast, before they cause damage or big water bills.</p><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+        <li data-r><a href="#quote"><span class="n">03</span><h3>Hot water systems</h3><p>Tank replacements and repairs to get you back to a hot shower.</p><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+        <li data-r><a href="#quote"><span class="n">04</span><h3>Bathroom renovations</h3><p>All the plumbing for new and renovated bathrooms, through to fit-off.</p><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+        <li data-r><a href="#quote"><span class="n">05</span><h3>Kitchen plumbing</h3><p>Sinks, dishwashers and full kitchen renovation plumbing.</p><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
+        <li data-r><a href="#quote"><span class="n">06</span><h3>Tapware &amp; toilets</h3><p>Supply, install and repair of taps and toilets.</p><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></a></li>
       </ul>
     </div>
   </section>
 
+  <div class="pband" aria-hidden="true"><div data-r="clip"><img src="img/hero.webp" alt="" loading="lazy" data-px="0.06"></div><div data-r="clip" data-d="150"><img src="img/pipe.webp" alt="" loading="lazy" data-px="0.06"></div><div data-r="clip" data-d="300"><img src="img/bath.webp" alt="" loading="lazy" data-px="0.06"></div></div>
   <div class="marquee" aria-hidden="true"><div class="track">
     <span>24/7 emergency callouts</span><span>Leak detection</span><span>Hot water</span><span>Bathroom renos</span><span>Locally owned for 21 years</span>
     <span>24/7 emergency callouts</span><span>Leak detection</span><span>Hot water</span><span>Bathroom renos</span><span>Locally owned for 21 years</span>
   </div></div>
 
   <section id="area" aria-labelledby="a-h">
-    <div class="wrap area">
+    <div class="wrap area" data-r>
       <div class="card">
         <div><span class="label">Service area</span><h2 id="a-h">Based in Peregian Beach.</h2><p>We look after homes in Peregian Beach and the surrounding Sunshine Coast. Not sure if we cover your street? Just give us a call.</p></div>
         <div><a class="btn primary" href="#quote">Check your suburb</a></div>
@@ -265,6 +284,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <script>
 document.querySelectorAll('form[data-lead]').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();if(!f.checkValidity()){f.reportValidity();return}var ep='',b=f.querySelector('[type=submit]');if(!ep){f.classList.add('sent');return}b.disabled=true;b.textContent='Sending…';fetch(ep,{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)}).then(function(r){if(!r.ok)throw 0;f.classList.add('sent')}).catch(function(){b.disabled=false;b.textContent='Try again';alert('Sorry, that did not send. Please call us instead.')})})});
+</script>
+<script>
+(function(){var rm=matchMedia('(prefers-reduced-motion: reduce)').matches,els=[].slice.call(document.querySelectorAll('[data-r]'));
+function show(e){e.classList.add('in')}
+if(rm||!('IntersectionObserver' in window)){els.forEach(show)}else{var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){var e=x.target;setTimeout(function(){show(e)},+(e.dataset.d||0));io.unobserve(e)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});els.forEach(function(e){io.observe(e)})}
+function sweep(){els.forEach(function(e){if(!e.classList.contains('in')&&e.getBoundingClientRect().top<innerHeight*.94)show(e)})}addEventListener('scroll',function(){requestAnimationFrame(sweep)},{passive:true});addEventListener('hashchange',sweep);setTimeout(sweep,300);setTimeout(function(){els.forEach(show)},6000);
+var px=[].slice.call(document.querySelectorAll('[data-px]'));
+if(!rm&&px.length){var t=false;function upd(){px.forEach(function(e){var r=e.getBoundingClientRect(),c=r.top+r.height/2-innerHeight/2;e.style.transform='translate3d(0,'+(c*-(+e.dataset.px)).toFixed(1)+'px,0)'});t=false}addEventListener('scroll',function(){if(!t){t=true;requestAnimationFrame(upd)}},{passive:true});upd()}
+var cs=[].slice.call(document.querySelectorAll('[data-count]'));
+if(cs.length&&!rm&&'IntersectionObserver' in window){var co=new IntersectionObserver(function(es){es.forEach(function(x){if(!x.isIntersecting)return;co.unobserve(x.target);var e=x.target,to=+e.dataset.count,fr=+(e.dataset.from||0),t0=performance.now();(function s(n){var p=Math.min(1,(n-t0)/1500);e.textContent=Math.round(fr+(to-fr)*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(s)})(t0)})},{threshold:.5});cs.forEach(function(e){co.observe(e)})}
+})();
 </script>
 </body>
 </html>

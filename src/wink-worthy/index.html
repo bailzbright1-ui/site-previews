@@ -59,6 +59,7 @@ header nav{display:flex;gap:22px}
 .tile p{color:var(--muted);max-width:44ch}
 .tile ul{list-style:none;border-top:1px solid var(--line)}
 .tile li{padding:9px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}
+.phototile{color:#fff}.phototile .bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}.phototile::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(18,18,18,.82) 0%,rgba(18,18,18,.2) 65%);z-index:0}.phototile>*:not(.bgimg){position:relative;z-index:1}.phototile p,.phototile li,.phototile .lbl{color:#F1EFF8!important}.phototile ul,.phototile li{border-color:rgba(255,255,255,.3)!important}
 .silk{background:#B9B3DE var(--silk);background-size:cover}
 .silk p,.silk li{color:#2A2742}.silk ul,.silk li{border-color:rgba(18,18,18,.18)}
 .inkt{background:var(--ink);color:var(--bg)}.inkt p{color:#B4B1AC}
@@ -105,7 +106,7 @@ footer .meta{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <main id="top">
   <section class="hero" aria-labelledby="h1"><div class="wrap">
     <h1 id="h1"><span>Lashes</span><span class="i1">&amp; brows</span><span class="i2">worth a</span><span class="i3">wink.</span></h1>
-    <div class="hero-foot">
+    <div class="hero-foot" data-r data-d="300">
       <p>Lash extensions, lifts and tints, plus brow shaping, tinting and lamination in a Maroochydore studio.</p>
       <div class="ctas">
         <a class="btn primary magnet" href="{{BOOK_URL}}" target="_blank" rel="noopener">Book online ↗</a>
@@ -115,7 +116,7 @@ footer .meta{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
   </div></section>
 
   <section id="treatments" aria-label="Treatments"><div class="wrap bento">
-    <article class="tile silk t-lash">
+    <article class="tile t-lash phototile" data-r><img class="bgimg" src="img/lash.webp" width="1200" height="1800" alt="Lash extensions being applied" loading="lazy">
       <span class="lbl">( 01 · Lashes )</span>
       <div>
         <h2>Lash<br>extensions</h2>
@@ -123,15 +124,15 @@ footer .meta{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
         <ul class="lbl"><li><span>Full sets</span><span>↗</span></li><li><span>Infills</span><span>↗</span></li><li><span>Lash tinting</span><span>↗</span></li></ul>
       </div>
     </article>
-    <article class="tile t-lift">
+    <article class="tile t-lift" data-r data-d="100">
       <span class="lbl">( 02 · Lift )</span>
       <div><h3>Lash lift &amp; tint</h3><p style="margin-top:10px">Your own lashes, curled and darkened for weeks. No extensions, no mascara.</p></div>
     </article>
-    <article class="tile t-brow">
+    <article class="tile t-brow" data-r data-d="200">
       <span class="lbl">( 03 · Brows )</span>
       <div><h3>Brow shaping, tint &amp; lamination</h3><p style="margin-top:10px">Shaped to suit your face, tinted for definition and laminated for that brushed-up look.</p></div>
     </article>
-    <article class="tile inkt t-book">
+    <article class="tile inkt t-book" data-r>
       <span class="lbl">( Book )</span>
       <div>
         <p style="margin-bottom:18px">See live availability and lock in a time in under a minute.</p>
@@ -141,11 +142,11 @@ footer .meta{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
         </div>
       </div>
     </article>
-    <article class="tile t-where">
+    <article class="tile t-where phototile" data-r data-d="100"><img class="bgimg" src="img/lash2.webp" width="1200" height="800" alt="Brow and lash treatment" loading="lazy">
       <span class="lbl">( Where )</span>
       <div><span class="big-num">Maroo&shy;chydore</span><p style="margin-top:10px">Studio address confirmed when you book.</p></div>
     </article>
-    <article class="tile silk t-time">
+    <article class="tile silk t-time" data-r data-d="200">
       <span class="lbl">( Tip )</span>
       <p>Arrive with clean, makeup-free lashes for the longest-lasting result.</p>
     </article>

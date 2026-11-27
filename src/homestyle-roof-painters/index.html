@@ -34,7 +34,7 @@ h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-.02em;line-h
 .btn.o{border:1.5px solid rgba(19,32,26,.3)}
 .btn.o:hover{border-color:var(--ink)}
 
-header{position:absolute;left:0;right:0;z-index:30}
+header{position:absolute;left:0;right:0;z-index:30;color:#fff}
 header .wrap{display:flex;justify-content:space-between;align-items:center;height:76px}
 .logo{font-family:var(--display);font-weight:800;font-size:20px;text-decoration:none;letter-spacing:-.02em}
 header nav{display:flex;gap:26px;font-size:15px}
@@ -47,15 +47,17 @@ header nav a{text-decoration:none}header nav a:hover{text-decoration:underline}
 @media(max-width:760px){.card{position:relative;min-height:0;padding:72px 0}}
 
 /* atmosphere hero (signature) */
-.sky{background:linear-gradient(180deg,#7EC3F0 0%,#B9DEF5 45%,#E9F4FA 75%,#F5F3EE 100%);align-items:flex-start;padding-top:clamp(110px,14vh,160px);padding-bottom:min(26vh,250px)}
+.sky{background:#7EC3F0;align-items:center;padding-top:clamp(110px,14vh,160px);padding-bottom:clamp(60px,10vh,100px);color:#fff}
+.hbg{position:absolute;inset:0}.hbg img{width:100%;height:112%;object-fit:cover;object-position:center 40%}
+.hbg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(9,24,16,.78) 0%,rgba(9,24,16,.5) 42%,rgba(9,24,16,.05) 75%)}
 .sun{position:absolute;right:12%;top:14%;width:clamp(90px,12vw,170px);aspect-ratio:1;border-radius:50%;background:#FFF6D6;box-shadow:0 0 120px 50px rgba(255,246,214,.75)}
 .cloud{position:absolute;height:40px;border-radius:40px;background:rgba(255,255,255,.75);filter:blur(2px)}
 .roof{position:absolute;left:0;right:0;bottom:0;height:min(24vh,230px)}
 .roof svg{width:100%;height:100%;display:block}
 .sky h1{font-size:clamp(2.6rem,6.6vw,6rem);max-width:13ch;position:relative}
-.sky p{max-width:44ch;font-size:19px;color:#284036;margin:24px 0 32px;position:relative}
+.sky p{max-width:44ch;font-size:19px;color:rgba(255,255,255,.9);margin:24px 0 32px;position:relative}
 .sky .ctas{display:flex;gap:10px;flex-wrap:wrap;position:relative}
-@media(max-width:760px){.sky{padding-top:120px;padding-bottom:min(32vh,240px)}}
+@media(max-width:760px){.sky{padding-top:120px;padding-bottom:72px}}
 
 /* colour field + counters */
 .field{background:var(--field) var(--grain);color:var(--field-ink)}
@@ -71,6 +73,7 @@ header nav a{text-decoration:none}header nav a:hover{text-decoration:underline}
 .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:clamp(32px,5vw,56px)}
 .tile{display:flex;flex-direction:column;gap:14px}
 .tex{aspect-ratio:3/4;border-radius:20px;position:relative;overflow:hidden}
+.tex img{width:100%;height:100%;object-fit:cover}
 .t1{background:var(--tiles),linear-gradient(160deg,#C8693F,#9A4527);background-size:80px 48px,cover}
 .t2{background:var(--corr),linear-gradient(160deg,#3D5A4C,#22362D)}
 .t3{background:var(--grain),linear-gradient(160deg,#B7BDB9,#8D9590)}
@@ -115,26 +118,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <main id="top">
   <section class="card sky" aria-labelledby="h1">
-    <div class="sun" aria-hidden="true"></div>
-    <div class="cloud" style="width:180px;left:8%;top:24%" aria-hidden="true"></div>
-    <div class="cloud" style="width:120px;left:58%;top:12%;opacity:.7" aria-hidden="true"></div>
-    <div class="roof" aria-hidden="true">
-      <svg viewBox="0 0 1440 360" preserveAspectRatio="none">
-        <defs>
-          <linearGradient id="rf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2A9F5C"/><stop offset="1" stop-color="#16653A"/></linearGradient>
-          <pattern id="rib" width="22" height="360" patternUnits="userSpaceOnUse"><rect width="22" height="360" fill="url(#rf)"/><rect x="0" width="5" height="360" fill="rgba(255,255,255,.16)"/><rect x="5" width="3" height="360" fill="rgba(0,0,0,.12)"/></pattern>
-        </defs>
-        <path d="M0 360 L0 250 L420 70 L840 250 L840 360 Z" fill="url(#rib)"/>
-        <path d="M0 250 L420 70 L840 250" fill="none" stroke="#0F4A29" stroke-width="10"/>
-        <path d="M700 360 L700 300 L1080 130 L1440 290 L1440 360 Z" fill="url(#rib)" opacity=".92"/>
-        <path d="M700 300 L1080 130 L1440 290" fill="none" stroke="#0F4A29" stroke-width="10"/>
-        <path d="M360 110 L470 62" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".7"/>
-        <path d="M1040 160 L1110 128" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".6"/>
-      </svg>
-    </div>
+    <div class="hbg"><img src="img/hero.webp" width="2000" height="1334" alt="Freshly finished green tiled roof under a clear blue sky" fetchpriority="high" data-px="0.07"></div>
     <div class="wrap" style="width:100%">
-      <p class="tag" style="color:#1E5A3A">Family-owned · Sunshine Coast · Since 1983</p>
-      <h1 id="h1" style="margin-top:18px">Your roof, like the day it went up.</h1>
+      <p class="tag" style="color:#CFEBD9;position:relative">Family-owned · Sunshine Coast · Since 1983</p>
+      <h1 id="h1" style="margin-top:18px;position:relative" data-r>Your roof, like the day it went up.</h1>
       <p>Roof restoration, painting, cleaning and maintenance from a family business that has been looking after Sunshine Coast roofs for over four decades.</p>
       <div class="ctas"><a class="btn g" href="#quote">Get a free roof quote</a><a class="btn w" href="#work">See services</a></div>
     </div>
@@ -142,34 +129,35 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
   <section class="card field" id="story" aria-labelledby="st-h"><div class="wrap" style="width:100%">
     <p class="tag" style="color:var(--mint)">Geoff O'Hara &amp; family</p>
-    <h2 id="st-h" style="margin-top:16px">Four decades. One family. A lot of roofs.</h2>
+    <h2 id="st-h" style="margin-top:16px" data-r>Four decades. One family. A lot of roofs.</h2>
     <div class="grid">
-      <div class="count"><b data-to="41">41</b><span>Years trading</span></div>
-      <div class="count"><b data-to="1983" data-from="1950">1983</b><span>Family business since</span></div>
-      <div class="count"><b style="font-size:clamp(2.6rem,5.4vw,4.6rem);padding-top:.55em">QBCC</b><span>Licence 1179124</span></div>
+      <div class="count"><b><span data-count="40">40</span>+</b><span>Years on Sunshine Coast roofs</span></div>
+      <div class="count"><b data-count="1983" data-from="1950">1983</b><span>Family business since</span></div>
+      <div class="count"><b style="font-size:clamp(2rem,4vw,3.4rem);padding-top:.9em">QBCC</b><span>Licence 1179124</span></div>
     </div>
   </div></section>
 
   <section class="card work" id="work" aria-labelledby="w-h"><div class="wrap" style="width:100%">
     <p class="tag" style="color:var(--muted)">What we do</p>
-    <h2 id="w-h" style="margin-top:16px">Every roof, every finish.</h2>
+    <h2 id="w-h" style="margin-top:16px" data-r>Every roof, every finish.</h2>
     <div class="tiles">
-      <div class="tile"><div class="tex t1" role="img" aria-label="Terracotta roof tile texture"></div><p class="label"><b>Roof restoration</b><span>Tile &amp; metal · Repairs, re-bedding, re-coating</span></p></div>
-      <div class="tile"><div class="tex t2" role="img" aria-label="Painted metal roof texture"></div><p class="label"><b>Roof painting</b><span>Fresh colour · Long-lasting protection</span></p></div>
-      <div class="tile"><div class="tex t3" role="img" aria-label="Clean concrete roof texture"></div><p class="label"><b>Roof cleaning</b><span>Moss, mould &amp; grime removed</span></p></div>
-      <div class="tile"><div class="tex t4" role="img" aria-label="Slate grey roof tile texture"></div><p class="label"><b>Roof maintenance</b><span>Small fixes before they're big ones</span></p></div>
+      <div class="tile"><div class="tex zoom" data-r="clip"><img src="img/terracotta.webp" width="1200" height="800" alt="Terracotta roof tiles" loading="lazy"></div><p class="label"><b>Roof restoration</b><span>Tile &amp; metal · Repairs, re-bedding, re-coating</span></p></div>
+      <div class="tile"><div class="tex zoom" data-r="clip" data-d="100"><img src="img/metal.webp" width="1200" height="800" alt="Freshly coated metal roof tiles" loading="lazy"></div><p class="label"><b>Roof painting</b><span>Fresh colour · Long-lasting protection</span></p></div>
+      <div class="tile"><div class="tex zoom" data-r="clip" data-d="200"><img src="img/old.webp" width="1200" height="800" alt="Weathered roof tiles before cleaning" loading="lazy"></div><p class="label"><b>Roof cleaning</b><span>Moss, mould &amp; grime removed</span></p></div>
+      <div class="tile"><div class="tex zoom" data-r="clip" data-d="300"><img src="img/tiles.webp" width="1200" height="800" alt="Close-up of red roof tiles" loading="lazy"></div><p class="label"><b>Roof maintenance</b><span>Small fixes before they're big ones</span></p></div>
     </div>
   </div></section>
 
   <section class="card quote" id="quote" aria-labelledby="q-h"><div class="wrap grid">
     <div>
       <p class="tag" style="color:var(--muted)">Free quote</p>
-      <h2 id="q-h" style="margin-top:16px">Let's take a look at your roof.</h2>
+      <h2 id="q-h" style="margin-top:16px" data-r>Let's take a look at your roof.</h2>
       <ol>
         <li>Send your details and a quick description.</li>
         <li>We arrange a time to inspect and talk options.</li>
         <li>You get a clear, written quote, with no pressure.</li>
       </ol>
+      <div style="margin-top:28px;height:260px;border-radius:20px;overflow:hidden" data-r="clip"><img src="img/install.webp" width="1200" height="1800" alt="Roof tiles being laid" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
     </div>
     <form class="form" data-lead novalidate aria-labelledby="q-h">
       <input type="hidden" name="_subject" value="New roof quote request from your website">
@@ -193,10 +181,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <script>
 document.querySelectorAll('form[data-lead]').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();if(!f.checkValidity()){f.reportValidity();return}var ep='{{FORM_ENDPOINT}}',b=f.querySelector('[type=submit]');if(!ep){f.classList.add('sent');return}b.disabled=true;b.textContent='Sending…';fetch(ep,{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)}).then(function(r){if(!r.ok)throw 0;f.classList.add('sent')}).catch(function(){b.disabled=false;b.textContent='Try again';alert('Sorry, that did not send. Please call us instead.')})})});
-(function(){if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;io.unobserve(e.target);var el=e.target,to=+el.dataset.to,from=+(el.dataset.from||0),t0=performance.now(),d=1400;
-(function step(t){var p=Math.min(1,(t-t0)/d),v=Math.round(from+(to-from)*(1-Math.pow(1-p,3)));el.textContent=v;if(p<1)requestAnimationFrame(step)})(t0)})},{threshold:.6});
-document.querySelectorAll('[data-to]').forEach(function(el){io.observe(el)})})();
 </script>
 </body>
 </html>

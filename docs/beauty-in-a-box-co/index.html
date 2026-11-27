@@ -117,6 +117,8 @@ section.block{padding:var(--pad) clamp(8px,3vw,48px)}
 .carla{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,96px);align-items:start}
 .carla h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.02;margin-top:14px}
 .carla .copy p{color:var(--muted);margin-top:20px;max-width:52ch}
+.cph{margin-top:32px;aspect-ratio:4/3;border-radius:var(--r);overflow:hidden;position:relative}.cph img{position:absolute;left:0;top:-6%;width:100%;height:112%;object-fit:cover;display:block}
+.tph{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.tph div{aspect-ratio:16/10;border-radius:var(--r);overflow:hidden}.tph img{width:100%;height:100%;object-fit:cover;display:block}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:8px}
 .stat{padding:28px 0 0}
 .stat b{display:block;font-family:var(--mono);font-weight:400;font-size:clamp(40px,5vw,64px);letter-spacing:-.04em;line-height:1}
@@ -159,6 +161,19 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;paddin
   footer{padding-bottom:96px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+html.js [data-r]{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+html.js [data-r=left]{transform:translateX(-36px)}
+html.js [data-r=scale]{transform:scale(.94)}
+html.js [data-r=clip]{opacity:1;transform:none}
+html.js [data-r=clip]>*{clip-path:inset(100% 0 0 0);transition:clip-path 1.1s cubic-bezier(.7,0,.2,1)}
+html.js [data-r].in{opacity:1;transform:none}
+html.js [data-r=clip].in>*{clip-path:inset(0 0 0 0)}
+[data-px]{will-change:transform}
+.zoom{overflow:hidden}.zoom img{transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}.zoom:hover img{transform:scale(1.05)}
+@media (prefers-reduced-motion:reduce){html.js [data-r],html.js [data-r]>*{opacity:1!important;transform:none!important;clip-path:none!important;transition:none!important}[data-px]{transform:none!important}}
 </style>
 </head>
 <body>
@@ -214,7 +229,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;paddin
         <div><span class="label"><i>●</i> 01 / Treatments</span><h2 id="t-h">Four things, done <b>really</b> well.</h2></div>
         <p>Everyone's welcome: women, men and first-timers. Pick a treatment, lie back and let Carla take care of the rest.</p>
       </div>
-      <div class="hub" role="list">
+      <div class="hub" role="list" data-r="scale">
         <svg class="wires" viewBox="0 0 100 100" aria-hidden="true">
           <circle cx="50" cy="50" r="21" fill="none" stroke="#E2602D" stroke-width=".25"/>
           <g stroke="#D3CBC1" stroke-width=".25">
@@ -240,10 +255,11 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;paddin
           <h3>Facials</h3><p>Cleanse, treat and leave glowing.</p>
         </div>
       </div>
+      <div class="tph"><div class="zoom" data-r="clip"><img src="img/brows.webp" width="1200" height="800" alt="Brow and lash treatment" loading="lazy"></div><div class="zoom" data-r="clip" data-d="150"><img src="img/skin.webp" width="1200" height="800" alt="Facial skin treatment" loading="lazy"></div></div>
     </section>
 
     <section class="block" id="menu" style="padding-top:0" aria-labelledby="m-h">
-      <div class="menu">
+      <div class="menu" data-r>
         <div class="intro">
           <span class="label"><i>●</i> 02 / Prices</span>
           <h2 id="m-h">Local <b>favourites</b></h2>
@@ -263,9 +279,10 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;paddin
       <div class="carla">
         <div>
           <span class="label"><i>●</i> 03 / Meet Carla</span>
-          <h2 id="c-h">Fifteen years in beauty. Still <b>loves</b> it.</h2>
+          <h2 id="c-h" data-r>Fifteen years in beauty. Still <b>loves</b> it.</h2>
+          <div class="cph" data-r="clip"><img src="img/facial.webp" width="1200" height="800" alt="Relaxing facial treatment" loading="lazy" data-px="0.04"></div>
         </div>
-        <div class="copy">
+        <div class="copy" data-r data-d="150">
           <p>Beauty In A Box Co is Carla's own salon in Moffat Beach. It's fun, friendly and unhurried, and the work is done with care. Whether it's your first wax or your regular brow tidy, you'll walk out feeling great.</p>
           <div class="stats" style="margin-top:36px">
             <div class="stat"><b>15+</b><span class="label">Years experience</span></div>
@@ -281,7 +298,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;paddin
         <div><span class="label"><i>●</i> 04 / Booking</span><h2 id="b-h">Booked in under a <b>minute</b>.</h2></div>
         <p>No phone tag. Booking runs through Fresha, so you'll get a confirmation and reminder automatically.</p>
       </div>
-      <div class="steps">
+      <div class="steps" data-r>
         <div class="step on"><span class="label">Step 01</span><div><h3>Pick your treatment</h3><p>Browse the full menu and choose what you're after.</p></div></div>
         <div class="step"><span class="label">Step 02</span><div><h3>Choose a time</h3><p>See Carla's live availability and grab a spot that suits.</p></div></div>
         <div class="step"><span class="label">Step 03</span><div><h3>Relax</h3><p>Turn up, lie back and leave looking and feeling great.</p></div></div>
@@ -289,7 +306,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;paddin
     </section>
 
     <section class="block" id="visit" style="padding-top:0" aria-labelledby="v-h">
-      <div class="visit">
+      <div class="visit" data-r>
         <div class="card">
           <span class="label"><i>●</i> 05 / Visit</span>
           <h2 id="v-h">Come say <b>hi</b></h2>
@@ -304,7 +321,7 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;paddin
         <div class="map"><iframe title="Map showing 15 Fairlie Crescent, Moffat Beach" loading="lazy" src="https://www.google.com/maps?q=15+Fairlie+Crescent,+Moffat+Beach+QLD+4551&output=embed"></iframe></div>
       </div>
 
-      <div class="close">
+      <div class="close" data-r="scale">
         <span class="label" style="color:#4A3E36">Moffat Beach · Caloundra</span>
         <h2 style="margin-top:16px">Your next appointment is <b>one tap</b> away.</h2>
         <p>Choose a treatment, pick a time and you're done.</p>
@@ -320,5 +337,16 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;paddin
 </div>
 
 <div class="dock"><a class="pill primary" href="https://www.fresha.com/a/beauty-in-a-box-co-caloundra-moffat-beach-15-fairlie-crescent-ldip2s5a" target="_blank" rel="noopener">Book an appointment <span class="arr">↗</span></a></div>
+<script>
+(function(){var rm=matchMedia('(prefers-reduced-motion: reduce)').matches,els=[].slice.call(document.querySelectorAll('[data-r]'));
+function show(e){e.classList.add('in')}
+if(rm||!('IntersectionObserver' in window)){els.forEach(show)}else{var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){var e=x.target;setTimeout(function(){show(e)},+(e.dataset.d||0));io.unobserve(e)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});els.forEach(function(e){io.observe(e)})}
+function sweep(){els.forEach(function(e){if(!e.classList.contains('in')&&e.getBoundingClientRect().top<innerHeight*.94)show(e)})}addEventListener('scroll',function(){requestAnimationFrame(sweep)},{passive:true});addEventListener('hashchange',sweep);setTimeout(sweep,300);setTimeout(function(){els.forEach(show)},6000);
+var px=[].slice.call(document.querySelectorAll('[data-px]'));
+if(!rm&&px.length){var t=false;function upd(){px.forEach(function(e){var r=e.getBoundingClientRect(),c=r.top+r.height/2-innerHeight/2;e.style.transform='translate3d(0,'+(c*-(+e.dataset.px)).toFixed(1)+'px,0)'});t=false}addEventListener('scroll',function(){if(!t){t=true;requestAnimationFrame(upd)}},{passive:true});upd()}
+var cs=[].slice.call(document.querySelectorAll('[data-count]'));
+if(cs.length&&!rm&&'IntersectionObserver' in window){var co=new IntersectionObserver(function(es){es.forEach(function(x){if(!x.isIntersecting)return;co.unobserve(x.target);var e=x.target,to=+e.dataset.count,fr=+(e.dataset.from||0),t0=performance.now();(function s(n){var p=Math.min(1,(n-t0)/1500);e.textContent=Math.round(fr+(to-fr)*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(s)})(t0)})},{threshold:.5});cs.forEach(function(e){co.observe(e)})}
+})();
+</script>
 </body>
 </html>

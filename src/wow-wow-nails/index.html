@@ -48,11 +48,10 @@ header .btn{min-height:44px;padding:0 18px;font-size:15px;border-radius:12px}
 .hero h1{font-size:clamp(3.4rem,10vw,9.5rem);max-width:10ch}
 .hero h1 span{color:var(--accent)}
 .hero p{color:var(--muted);font-size:19px;max-width:40ch;margin:26px 0 34px}
-.floaty{position:absolute;right:8%;top:30%;width:clamp(110px,14vw,200px);aspect-ratio:1/1.05;border-radius:22% 22% 26% 26%;background:linear-gradient(160deg,#FF8DBA 0%,#FF3D8B 45%,#B0125A 100%);box-shadow:inset -16px -20px 36px rgba(0,0,0,.28),inset 12px 14px 26px rgba(255,255,255,.35);transition:transform .5s ease-out}
-.floaty::before{content:"";position:absolute;left:31%;width:38%;height:72%;bottom:96%;border-radius:10px 10px 4px 4px;background:linear-gradient(90deg,#1b1820,#3a3540 45%,#141217)}
-.floaty::after{content:"";position:absolute;left:14%;top:14%;width:16%;height:56%;border-radius:40px;background:rgba(255,255,255,.4);filter:blur(4px)}
-.floaty.f2{right:25%;top:auto;bottom:12%;width:clamp(64px,8vw,110px);background:linear-gradient(160deg,#C9F2EC,#69CFC1 55%,#2C8F84)}
-@media(max-width:900px){.floaty{opacity:.45;right:-8%}.floaty.f2{display:none}}
+.hphoto{position:absolute;right:5%;top:9%;width:clamp(220px,24vw,360px);aspect-ratio:3/4;border-radius:26px;overflow:hidden;transform:rotate(4deg);box-shadow:0 40px 80px -30px rgba(255,61,139,.45);transition:transform .5s ease-out}
+.hphoto img{width:100%;height:100%;object-fit:cover}
+.hphoto.small{right:24%;top:auto;bottom:9%;width:clamp(120px,12vw,190px);transform:rotate(-7deg);border:4px solid var(--card)}
+@media(max-width:900px){.hphoto{position:relative;right:auto;top:auto;width:62%;margin:0 0 28px auto;transform:rotate(3deg)}.hphoto.small{display:none}}
 
 /* hover-reveal index list (signature) */
 .idx-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
@@ -63,13 +62,14 @@ header .btn{min-height:44px;padding:0 18px;font-size:15px;border-radius:12px}
 .idx h3{font-size:clamp(2rem,5vw,4.2rem);color:var(--dim);transition:color .25s}
 .idx li:hover h3,.idx li:focus-within h3{color:var(--ink)}
 .idx .tag{font-size:14px;color:var(--muted);text-align:right}
-.idx .sw{display:none;width:34px;height:44px;border-radius:50% 50% 44% 44%/62% 62% 38% 38%;flex:none}
-.peek{position:fixed;left:0;top:0;z-index:50;width:180px;pointer-events:none;opacity:0;transform:translate(-50%,-50%) scale(.9);transition:opacity .2s,transform .2s;border-radius:20px;background:var(--ink);color:var(--bg);padding:14px}
+.idx .sw{display:none;width:52px;height:52px;border-radius:12px;flex:none;background-size:cover;background-position:center}
+.peek{position:fixed;left:0;top:0;z-index:50;width:200px;pointer-events:none;opacity:0;transform:translate(-50%,-50%) scale(.9);transition:opacity .2s,transform .2s;border-radius:20px;background:var(--ink);color:var(--bg);padding:14px}
 .peek.on{opacity:1;transform:translate(-50%,-115%) scale(1)}
-.peek .nail{height:120px;border-radius:46% 46% 40% 40%/58% 58% 42% 42%;margin:4px auto 10px;width:84px;box-shadow:inset -10px -14px 24px rgba(0,0,0,.22),inset 8px 10px 18px rgba(255,255,255,.4)}
+.peek .nail{height:200px;border-radius:12px;margin:0 0 10px;background-size:cover;background-position:center}
 .peek b{display:block;text-align:center;font:700 14px var(--sans)}
 @media(hover:none){.idx .sw{display:block}.idx h3{color:var(--ink)}.peek{display:none}}
 
+.prow{display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:12px;margin-top:28px}.prow div{height:clamp(160px,20vw,260px);border-radius:20px;overflow:hidden}.prow img{width:100%;height:100%;object-fit:cover}
 /* stat circles (donor idea) */
 .circles{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,2vw,20px);margin-top:44px}
 .circle{aspect-ratio:1;border-radius:50%;border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12px;background:rgba(255,255,255,.02)}
@@ -102,10 +102,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <main id="top" class="stack">
   <section class="card hero" aria-labelledby="h1">
-    <div class="floaty" id="f1" aria-hidden="true"></div><div class="floaty f2" id="f2" aria-hidden="true"></div>
+    <div class="hphoto" id="f1" data-r="scale" data-d="200"><img src="img/hero.webp" width="2000" height="3000" alt="Pink nail art with a gold ring" fetchpriority="high"></div><div class="hphoto small" id="f2" data-r="scale" data-d="400"><img src="img/glitter.webp" width="1200" height="1800" alt="Glitter pink nails" loading="lazy"></div>
     <div class="wrap" style="position:relative;width:100%">
       <p class="kicker">Nail salon · Coolum Beach</p>
-      <h1 id="h1" style="margin-top:20px">Nails That Make People Say <span>Wow.</span></h1>
+      <h1 id="h1" style="margin-top:20px" data-r>Nails That Make People Say <span>Wow.</span></h1>
       <p>Gel, dip, acrylics, nail art and pedicures on David Low Way. Walk out with nails you can't stop looking at.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap">
         <a class="btn primary" href="{{PHONE_HREF}}">{{CALL_LABEL}}</a>
@@ -116,15 +116,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
   <section class="card" id="menu" aria-labelledby="m-h">
     <div class="wrap" style="width:100%">
-      <div class="idx-head"><div><p class="kicker">The menu</p><h2 id="m-h" style="margin-top:14px">Pick Your Wow</h2></div><p>Hover a treatment to preview it. Prices and times are confirmed when you call to book.</p></div>
+      <div class="idx-head"><div><p class="kicker">The menu</p><h2 id="m-h" style="margin-top:14px" data-r>Pick Your Wow</h2></div><p>Hover a treatment to preview it. Prices and times are confirmed when you call to book.</p></div>
       <ul class="idx">
-        <li tabindex="0" data-c="linear-gradient(160deg,#FF8DBA,#FF3D8B 50%,#B0125A)"><h3>Gel Nails</h3><span class="tag">Glossy, chip-resistant colour</span><span class="sw"></span></li>
-        <li tabindex="0" data-c="linear-gradient(160deg,#FBE8EF,#F2C9D7 55%,#D49AB0)"><h3>Gel Extensions</h3><span class="tag">Length with a natural feel</span><span class="sw"></span></li>
-        <li tabindex="0" data-c="linear-gradient(160deg,#C9F2EC,#69CFC1 55%,#2C8F84)"><h3>Dip Powder</h3><span class="tag">Strong, long-lasting finish</span><span class="sw"></span></li>
-        <li tabindex="0" data-c="linear-gradient(160deg,#FFFFFF,#EDE7E2 55%,#CFC6BF)"><h3>Acrylics</h3><span class="tag">Sculpted shape &amp; strength</span><span class="sw"></span></li>
-        <li tabindex="0" data-c="conic-gradient(from 30deg,#FF3D8B,#FFC93C,#69CFC1,#7B61FF,#FF3D8B)"><h3>Nail Art</h3><span class="tag">From subtle to statement</span><span class="sw"></span></li>
-        <li tabindex="0" data-c="linear-gradient(160deg,#FFD6C2,#FF9E80 55%,#E0623F)"><h3>Pedicures</h3><span class="tag">Soak, shape &amp; polish</span><span class="sw"></span></li>
-        <li tabindex="0" data-c="linear-gradient(160deg,#E9E4DE,#BDB4AA 55%,#8B8177)"><h3>Men's Manicure</h3><span class="tag">Neat, clean, no polish needed</span><span class="sw"></span></li>
+        <li tabindex="0" data-img="img/soft.webp"><h3>Gel Nails</h3><span class="tag">Glossy, chip-resistant colour</span><span class="sw"></span></li>
+        <li tabindex="0" data-img="img/glitter.webp"><h3>Gel Extensions</h3><span class="tag">Length with a natural feel</span><span class="sw"></span></li>
+        <li tabindex="0" data-img="img/leaf.webp"><h3>Dip Powder</h3><span class="tag">Strong, long-lasting finish</span><span class="sw"></span></li>
+        <li tabindex="0" data-img="img/gold.webp"><h3>Acrylics</h3><span class="tag">Sculpted shape &amp; strength</span><span class="sw"></span></li>
+        <li tabindex="0" data-img="img/art.webp"><h3>Nail Art</h3><span class="tag">From subtle to statement</span><span class="sw"></span></li>
+        <li tabindex="0" data-img="img/pedi.webp"><h3>Pedicures</h3><span class="tag">Soak, shape &amp; polish</span><span class="sw"></span></li>
+        <li tabindex="0" data-img="img/bottles.webp"><h3>Men's Manicure</h3><span class="tag">Neat, clean, no polish needed</span><span class="sw"></span></li>
       </ul>
     </div>
   </section>
@@ -133,12 +133,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <div class="wrap" style="width:100%">
       <p class="kicker">Why Wow Wow</p>
       <h2 id="s-h" style="font-size:clamp(2.6rem,6vw,5rem);margin-top:14px;max-width:14ch">Small Salon. Big Results.</h2>
-      <div class="circles">
+      <div class="circles" data-r>
         <div class="circle hot"><b>5.0</b><span>Star rating on Fresha</span></div>
         <div class="circle"><b>7</b><span>Treatments on the menu</span></div>
         <div class="circle"><b>Him</b><span>Men's manicures too</span></div>
         <div class="circle"><b>2a</b><span>Shop 2a, David Low Way</span></div>
       </div>
+      <div class="prow"><div data-r="clip"><img src="img/rows.webp" alt="Rows of nail polish colours" loading="lazy" width="1200" height="2133"></div><div data-r="clip" data-d="120"><img src="img/pop.webp" alt="Bright multicolour nail art" loading="lazy" width="1200" height="800"></div><div data-r="clip" data-d="240"><img src="img/leaf.webp" alt="Green nails with leaf art" loading="lazy" width="1200" height="1800"></div></div>
     </div>
   </section>
 
@@ -146,7 +147,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <div class="wrap visit">
       <div>
         <p class="kicker">Come in</p>
-        <h2 id="v-h" style="margin-top:14px">Find Us in Coolum</h2>
+        <h2 id="v-h" style="margin-top:14px" data-r>Find Us in Coolum</h2>
         <p class="addr">Shop 2a, 1794 David Low Way<br>Coolum Beach QLD 4573</p>
         <a class="btn primary" href="{{PHONE_HREF}}">{{CALL_LABEL}}</a>
       </div>
@@ -157,20 +158,21 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <footer><div class="wrap"><span>© {{YEAR}} Wow Wow Nails · Shop 2a, 1794 David Low Way, Coolum Beach QLD 4573</span><a href="{{PHONE_HREF}}">{{PHONE_DISPLAY}}</a></div></footer>
 <div class="dock"><a class="btn primary" href="{{PHONE_HREF}}">{{CALL_LABEL}}</a></div>
+<div style="display:none"><img src="img/soft.webp" alt="" loading="lazy"><img src="img/glitter.webp" alt="" loading="lazy"><img src="img/leaf.webp" alt="" loading="lazy"><img src="img/gold.webp" alt="" loading="lazy"><img src="img/art.webp" alt="" loading="lazy"><img src="img/pedi.webp" alt="" loading="lazy"><img src="img/bottles.webp" alt="" loading="lazy"></div>
 <div class="peek" id="peek" aria-hidden="true"><div class="nail"></div><b></b></div>
 
 <script>
 (function(){
   var items=document.querySelectorAll('.idx li'),peek=document.getElementById('peek'),nail=peek.querySelector('.nail'),lbl=peek.querySelector('b');
   items.forEach(function(li){
-    li.querySelector('.sw').style.background=li.dataset.c;
-    li.addEventListener('pointerenter',function(){nail.style.background=li.dataset.c;lbl.textContent=li.querySelector('h3').textContent;peek.classList.add('on')});
+    li.querySelector('.sw').style.backgroundImage='url('+li.dataset.img+')';
+    li.addEventListener('pointerenter',function(){nail.style.backgroundImage='url('+li.dataset.img+')';lbl.textContent=li.querySelector('h3').textContent;peek.classList.add('on')});
     li.addEventListener('pointerleave',function(){peek.classList.remove('on')});
   });
   window.addEventListener('pointermove',function(e){peek.style.left=e.clientX+'px';peek.style.top=e.clientY+'px'},{passive:true});
   if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
   var f1=document.getElementById('f1'),f2=document.getElementById('f2');
-  window.addEventListener('pointermove',function(e){var x=(e.clientX/innerWidth-.5),y=(e.clientY/innerHeight-.5);f1.style.transform='translate('+x*-20+'px,'+y*-20+'px) rotate(-8deg)';f2.style.transform='translate('+x*14+'px,'+y*14+'px) rotate(12deg)'},{passive:true});
+  window.addEventListener('pointermove',function(e){var x=(e.clientX/innerWidth-.5),y=(e.clientY/innerHeight-.5);if(innerWidth>900){f1.style.transform='translate('+x*-20+'px,'+y*-20+'px) rotate(4deg)';f2.style.transform='translate('+x*14+'px,'+y*14+'px) rotate(-7deg)'}},{passive:true});
 })();
 </script>
 </body>

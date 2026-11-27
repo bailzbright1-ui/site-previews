@@ -1,6 +1,6 @@
 # QA report
 
-_2026-11-27 14:50 UTC · 10 sites_
+_2026-11-27 15:18 UTC · 10 sites_
 
 ## beauty-in-a-box-co ✅
 - ✅ title + meta description
@@ -17,6 +17,7 @@ _2026-11-27 14:50 UTC · 10 sites_
 - ✅ button text contrast ≥ 4.5:1
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
+- ✅ mobile text has side margins
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
@@ -36,6 +37,7 @@ _2026-11-27 14:50 UTC · 10 sites_
 - ✅ lead form validates + shows success
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
+- ✅ mobile text has side margins
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
@@ -55,6 +57,7 @@ _2026-11-27 14:50 UTC · 10 sites_
 - ✅ lead form validates + shows success
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
+- ✅ mobile text has side margins
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
@@ -73,10 +76,12 @@ _2026-11-27 14:50 UTC · 10 sites_
 - ✅ button text contrast ≥ 4.5:1
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
+- ✅ mobile text has side margins
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
-## luminous-nails ✅
+## luminous-nails ❌
+- ❌ mobile text has side margins: 01 | Cuticles cleaned up and  | Shape | Length and shape built t
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
 - ✅ preview is noindex
@@ -111,6 +116,7 @@ _2026-11-27 14:50 UTC · 10 sites_
 - ✅ lead form validates + shows success
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
+- ✅ mobile text has side margins
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
@@ -130,6 +136,7 @@ _2026-11-27 14:50 UTC · 10 sites_
 - ✅ lead form validates + shows success
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
+- ✅ mobile text has side margins
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
@@ -148,6 +155,7 @@ _2026-11-27 14:50 UTC · 10 sites_
 - ✅ button text contrast ≥ 4.5:1
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
+- ✅ mobile text has side margins
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
@@ -166,6 +174,7 @@ _2026-11-27 14:50 UTC · 10 sites_
 - ✅ button text contrast ≥ 4.5:1
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
+- ✅ mobile text has side margins
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
@@ -184,6 +193,7 @@ _2026-11-27 14:50 UTC · 10 sites_
 - ✅ button text contrast ≥ 4.5:1
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
+- ✅ mobile text has side margins
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 

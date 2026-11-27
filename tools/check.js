@@ -25,6 +25,7 @@ const rgb = s => (s.match(/[\d.]+/g) || []).slice(0, 4).map(Number);
       page.on('console', m => { if (m.type() === 'error' && !/Failed to load resource|ERR_|net::/.test(m.text())) errs.push(m.text()) });
       await page.goto(url, { waitUntil: 'load', timeout: 30000 }).catch(() => {});
       await page.waitForTimeout(1200);
+      await page.addStyleTag({ content: '[data-r]{opacity:1!important;transform:none!important}' });
       const d = await page.evaluate(() => {
         const q = s => [...document.querySelectorAll(s)];
         const ids = new Set(q('[id]').map(e => e.id));
@@ -74,12 +75,14 @@ const rgb = s => (s.match(/[\d.]+/g) || []).slice(0, 4).map(Number);
         }
       } else {
         ok(d.sw <= d.vw + 1, `no horizontal scroll at 390px (${d.sw}px)`);
+        const edge = await page.evaluate(() => { const out = []; const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT); let n; while (n = w.nextNode()) { if (!n.textContent.trim()) continue; const el = n.parentElement; if (el.closest('[aria-hidden=true],.dock,.sticky')) continue; const cs = getComputedStyle(el); if (cs.display === 'none' || cs.visibility === 'hidden') continue; const r = document.createRange(); r.selectNodeContents(n); const b = r.getBoundingClientRect(); if (b.width && (b.left < 11 || b.right > innerWidth - 11)) out.push(n.textContent.trim().slice(0, 24)) } return out.slice(0, 4) });
+        ok(edge.length === 0, 'mobile text has side margins' + (edge.length ? ': ' + edge.join(' | ') : ''));
         const small = d.btns.filter(b => b.h < 44).map(b => `${b.t} ${Math.round(b.h)}px`);
         (small.length ? r.warn : r.pass).push(small.length ? 'tap targets under 44px: ' + small.join('; ') : 'tap targets ≥ 44px');
       }
       ok(errs.length === 0, `no JS errors (${name})` + (errs.length ? ': ' + errs.join(' | ') : ''));
       await page.reload({ waitUntil: 'load' }).catch(() => {}); await page.waitForTimeout(900);
-      await page.evaluate(async () => { for (let y = 0; y < document.body.scrollHeight; y += 600) { scrollTo(0, y); await new Promise(r => setTimeout(r, 120)) } scrollTo(0, 0); await new Promise(r => setTimeout(r, 400)) });
+      await page.addStyleTag({ content: 'html{scroll-behavior:auto!important}' }); await page.evaluate(async () => { for (let y = 0; y < document.body.scrollHeight; y += 600) { scrollTo(0, y); await new Promise(r => setTimeout(r, 120)) } scrollTo(0, 0); await new Promise(r => setTimeout(r, 400)) });
       await page.screenshot({ path: path.join(QA, `${slug}-${name}.png`), fullPage: true });
       await page.close();
     }

@@ -1,6 +1,6 @@
 # QA report
 
-_2026-11-27 15:18 UTC · 10 sites_
+_2026-11-27 15:20 UTC · 10 sites_
 
 ## beauty-in-a-box-co ✅
 - ✅ title + meta description
@@ -80,8 +80,7 @@ _2026-11-27 15:18 UTC · 10 sites_
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
-## luminous-nails ❌
-- ❌ mobile text has side margins: 01 | Cuticles cleaned up and  | Shape | Length and shape built t
+## luminous-nails ✅
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
 - ✅ preview is noindex
@@ -97,6 +96,7 @@ _2026-11-27 15:18 UTC · 10 sites_
 - ✅ lead form validates + shows success
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
+- ✅ mobile text has side margins
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><!-- PREVIEW-ONLY -->
+<title>Two Sisters Nails & Spa · Pacific Paradise</title>
+<meta name="description" content="Two Sisters Nails & Spa, Shop 4/708 David Low Way, Pacific Paradise. Gel, acrylic and hybrid nails, extensions, manicures and pedicures. Call (07) 5326 1262.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF7F1; --sand:#F1E7D8; --sand-2:#E8DAC5; --ink:#1E1B17; --muted:#70675C; --line:#E3D6C3;
+  --accent:#0E7C7B; --accent-hover:#0A6463; --accent-ink:#fff;
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:"Hanken Grotesk",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background-color:var(--bg);background:linear-gradient(180deg,var(--bg) 0%,var(--sand) 100%) fixed;color:var(--ink);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1280px;margin:0 auto;padding:0 clamp(16px,3vw,36px)}
+.micro{font-size:11.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.u{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .35s}
+.u:hover{background-size:100% 1px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 26px;border-radius:999px;font:600 13px var(--sans);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s,transform .2s}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.primary:hover{background:var(--accent-hover)}
+.btn.ink{background:var(--ink);color:var(--bg)}
+.btn.ghost{border:1px solid var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--bg)}
+
+header .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:72px}
+header nav{display:flex;gap:26px}
+.wm{font-family:var(--serif);font-size:24px;font-weight:600;text-decoration:none;letter-spacing:.01em}
+header .right{justify-self:end}
+@media(max-width:760px){header nav{display:none}header .wrap{grid-template-columns:1fr auto}.wm{justify-self:start}}
+
+/* orbit hero (signature) */
+.hero{position:relative;overflow-x:clip;min-height:min(86vh,820px);display:grid;grid-template-columns:minmax(0,1fr);place-items:center;text-align:center;padding:40px 0 60px}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(4.2rem,15vw,14rem);line-height:.86;letter-spacing:-.03em;position:relative;z-index:1}
+.hero h1 i{font-style:italic;color:var(--accent)}
+.hero .sub{max-width:42ch;margin:26px auto 30px;color:var(--muted);font-size:17px;position:relative;z-index:1}
+.hero .ctas{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+.orb{position:absolute;z-index:2;background:rgba(255,255,255,.82);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:14px;padding:12px 16px;text-align:left;font-size:14px;line-height:1.35;transition:transform .5s ease-out;white-space:nowrap}
+.orb .micro{display:block;color:var(--muted);font-size:10px;margin-bottom:4px}
+.orb b{font-weight:600}
+.orb.teal{background:var(--accent);color:#fff;border-color:var(--accent)}.orb.teal .micro{color:#BDE6E4}
+.o1{left:4%;top:14%}.o2{right:6%;top:10%}.o3{left:10%;bottom:20%}.o4{right:3%;bottom:30%}.o5{left:30%;top:4%}.o6{right:26%;bottom:6%}.o7{left:1%;top:48%}
+.chiprow{display:none}
+@media(max-width:900px){.orb{display:none}.chiprow{display:flex;gap:8px;overflow-x:auto;padding:4px 0 8px;margin:28px 0 0;scrollbar-width:none;position:relative;z-index:1}.chiprow span{flex:none;border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;font-size:14px}}
+
+/* sticker (donor idea) */
+.sticker{position:absolute;right:clamp(12px,8vw,140px);top:clamp(180px,38vh,360px);width:118px;height:118px;z-index:3;animation:spin 22s linear infinite}
+.sticker svg{width:100%;height:100%}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:900px){.sticker{width:88px;height:88px;top:auto;bottom:-20px;right:12px}}
+
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;padding:clamp(48px,7vw,96px) 0}
+.b{border-radius:20px;background:#fff;border:1px solid var(--line);padding:clamp(22px,2.6vw,34px);display:flex;flex-direction:column;justify-content:space-between;gap:28px;overflow:hidden;position:relative}
+.b h2{font-family:var(--serif);font-weight:500;font-size:clamp(2.2rem,4vw,3.6rem);line-height:1;letter-spacing:-.01em}
+.b h3{font-family:var(--serif);font-weight:500;font-size:30px;line-height:1.05}
+.b p{color:var(--muted)}
+.b.sand{background:var(--sand-2);border-color:var(--sand-2)}
+.b.teal{background:var(--accent);color:#fff;border-color:var(--accent)}.b.teal p{color:#CDEDEB}
+.b .reveal{position:absolute;inset:auto 0 0 0;height:0;background:var(--accent);transition:height .45s cubic-bezier(.2,.7,.2,1);z-index:0}
+.b.hov:hover .reveal{height:6px}
+.b > *{position:relative;z-index:1}
+.c-intro{grid-column:1/6}.c-nails{grid-column:6/10}.c-pedi{grid-column:10/13}
+.c-call{grid-column:1/5}.c-ext{grid-column:5/9}.c-where{grid-column:9/13}
+.c-map{grid-column:1/-1;padding:0;min-height:360px}
+.c-map iframe{width:100%;height:100%;min-height:360px;border:0;filter:sepia(.25) saturate(.8)}
+.list{list-style:none;border-top:1px solid var(--line)}
+.list li{padding:10px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}
+@media(max-width:900px){.bento>.b{grid-column:1/-1}}
+
+footer{padding:30px 0 44px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.dock{display:none}
+@media(max-width:760px){.dock{display:grid;grid-template-columns:1.4fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:40}.dock .btn{min-height:52px;box-shadow:0 10px 24px -10px rgba(0,0,0,.4)}.dock .ghost{background:var(--bg)}footer{padding-bottom:92px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<!--PREVIEW--><div style="position:relative;z-index:100;background:#111;color:#eee;font:500 13px/1.45 system-ui,sans-serif;text-align:center;padding:9px 16px">Website concept for Two Sisters Nails & Spa, made by a local Sunshine Coast web designer. Preview only &middot; not the official site yet.</div><!--/PREVIEW-->
+
+<header><div class="wrap">
+  <nav class="micro" aria-label="Main"><a class="u" href="#services">Services</a><a class="u" href="#visit">Visit</a></nav>
+  <a class="wm" href="#top">Two Sisters</a>
+  <a class="right micro u" href="tel:0753261262">(07) 5326 1262</a>
+</div></header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1"><div class="wrap" style="width:100%">
+    <p class="micro" style="color:var(--muted)">Nails &amp; spa · Pacific Paradise</p>
+    <h1 id="h1" style="margin-top:18px">Two <i>Sisters</i></h1>
+    <p class="sub">Gel, acrylic and hybrid nails, extensions, manicures and relaxing pedicures, just off David Low Way.</p>
+    <div class="ctas">
+      <a class="btn primary" href="tel:0753261262">Call (07) 5326 1262</a>
+      <a class="btn ghost" href="#services">View services</a>
+    </div>
+    <div class="chiprow" aria-hidden="true"><span>Gel nails</span><span>Acrylic</span><span>Hybrid nails</span><span>Extensions</span><span>Pedicures</span><span>Manicures</span></div>
+  </div>
+    <div class="orb o1" data-d="18"><span class="micro">Glossy colour</span><b>Gel nails</b></div>
+    <div class="orb o2" data-d="-14"><span class="micro">Strong &amp; shaped</span><b>Acrylic nails</b></div>
+    <div class="orb teal o3" data-d="12"><span class="micro">Call to book</span><b>(07) 5326 1262</b></div>
+    <div class="orb o4" data-d="-20"><span class="micro">Unwind</span><b>Spa pedicures</b></div>
+    <div class="orb o5" data-d="10"><span class="micro">Best of both</span><b>Hybrid nails</b></div>
+    <div class="orb o6" data-d="-10"><span class="micro">Find us</span><b>Shop 4 · 708 David Low Way</b></div>
+    <div class="orb o7" data-d="16"><span class="micro">Length</span><b>Nail extensions</b></div>
+    <div class="sticker" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="c" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"/></defs><circle cx="60" cy="60" r="58" fill="#1E1B17"/><text font-family="Hanken Grotesk, sans-serif" font-size="10.5" font-weight="600" letter-spacing="3.2" fill="#FBF7F1"><textPath href="#c">PACIFIC PARADISE · NAILS &amp; SPA · </textPath></text><text x="60" y="68" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="26" fill="#3FBDBB">2S</text></svg></div>
+  </section>
+
+  <section class="wrap bento" id="services" aria-label="Services">
+    <div class="b sand c-intro">
+      <span class="micro" style="color:var(--muted)">Services</span>
+      <h2>Beautiful nails, without the fuss.</h2>
+    </div>
+    <div class="b hov c-nails"><span class="reveal"></span>
+      <span class="micro" style="color:var(--muted)">01 · Nails</span>
+      <div><h3>Gel, acrylic &amp; hybrid</h3><ul class="list" style="margin-top:16px"><li>Gel nails<span>→</span></li><li>Acrylic nails<span>→</span></li><li>Hybrid nails<span>→</span></li><li>Nail polish<span>→</span></li></ul></div>
+    </div>
+    <div class="b hov c-pedi"><span class="reveal"></span>
+      <span class="micro" style="color:var(--muted)">02 · Feet</span>
+      <div><h3>Pedicures</h3><p style="margin-top:10px">Soak, shape, buff and polish. Ask us about our fish pedicure.</p></div>
+    </div>
+    <div class="b teal c-call">
+      <span class="micro">Bookings</span>
+      <div><h3 style="font-size:36px">Call us to book</h3><p style="margin:8px 0 20px">We'll find you a time that suits.</p><a class="btn ink" href="tel:0753261262">(07) 5326 1262</a></div>
+    </div>
+    <div class="b hov c-ext"><span class="reveal"></span>
+      <span class="micro" style="color:var(--muted)">03 · Hands</span>
+      <div><h3>Extensions &amp; manicures</h3><p style="margin-top:10px">Extra length, perfect shape, or a classic tidy manicure.</p></div>
+    </div>
+    <div class="b c-where" id="visit">
+      <span class="micro" style="color:var(--muted)">Visit</span>
+      <div><h3>Shop 4, 708 David Low Way</h3><p style="margin-top:6px">Pacific Paradise QLD 4564</p></div>
+    </div>
+    <div class="b c-map"><iframe title="Map showing 708 David Low Way, Pacific Paradise" loading="lazy" src="https://www.google.com/maps?q=708+David+Low+Way,+Pacific+Paradise+QLD+4564&output=embed"></iframe></div>
+  </section>
+</main>
+
+<footer><div class="wrap micro"><span>© 2026 Two Sisters Nails &amp; Spa · Pacific Paradise</span><a class="u" href="tel:0753261262">(07) 5326 1262</a></div></footer>
+<div class="dock"><a class="btn primary" href="tel:0753261262">Call to book</a><a class="btn ghost" href="#services">Services</a></div>
+
+<script>
+(function(){if(matchMedia('(prefers-reduced-motion: reduce)').matches||matchMedia('(hover: none)').matches)return;
+var o=document.querySelectorAll('.orb');window.addEventListener('pointermove',function(e){var x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;o.forEach(function(el){var d=+el.dataset.d;el.style.transform='translate('+x*d+'px,'+y*d+'px)'})},{passive:true})})();
+</script>
+</body>
+</html>

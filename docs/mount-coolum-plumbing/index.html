@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><!-- PREVIEW-ONLY -->
+<title>Mount Coolum Plumbing · Local Residential Plumber · Twin Waters to Marcus Beach</title>
+<meta name="description" content="Mount Coolum Plumbing: a small local family business looking after homes from Twin Waters to Marcus Beach. Maintenance, blocked drains, leaks, hot water and renovations. 7 days, 7am–5pm. Call 0493 027 027.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4EDE0; --paper:#FBF7F0; --forest:#223027; --forest-2:#2D3E33; --ink:#1B211C; --muted:#5F665E; --line:#E0D6C4;
+  --brass:#86601F; --brass-hover:#6F4F18; --brass-light:#D9B26A; --accent-ink:#fff;
+  --sans:"Space Grotesk",system-ui,sans-serif; --mono:"Space Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+h1,h2,h3{font-weight:700;letter-spacing:-.035em;line-height:1;text-wrap:balance}
+.wrap{max-width:1220px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:8px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:14px;font:700 16px var(--sans);text-decoration:none;border:0;cursor:pointer;transition:background .2s,transform .15s,color .2s}
+.btn.brass{background:var(--brass);color:var(--accent-ink)}
+.btn.brass:hover{background:var(--brass-hover)}
+.btn.brass:active{transform:translateY(1px)}
+.btn.soft{background:var(--paper);border:1.5px solid var(--line)}
+.btn.soft:hover{border-color:var(--ink)}
+.btn svg{width:18px;height:18px}
+
+header{position:sticky;top:0;z-index:30;background:rgba(244,237,224,.92);backdrop-filter:blur(10px)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:72px;border-bottom:1px solid var(--line)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;letter-spacing:-.03em;font-size:18px}
+.logo i{width:34px;height:34px;border-radius:50%;background:var(--forest);display:grid;place-items:center;font-style:normal;color:var(--brass-light);font-size:15px}
+header nav{display:flex;gap:28px;font-size:15px;color:var(--muted)}
+header nav a{text-decoration:none}header nav a:hover{color:var(--ink)}
+header .btn{min-height:44px;padding:0 18px;font-size:15px}
+@media(max-width:860px){header nav{display:none}}
+@media(max-width:480px){header .btn{display:none}}
+
+.hero{padding:clamp(48px,8vw,110px) 0 clamp(48px,7vw,90px)}
+.hero .badge{display:inline-flex;gap:10px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:8px 16px 8px 10px;font-size:14px;font-weight:500}
+.hero .badge i{width:22px;height:22px;border-radius:50%;background:var(--forest);color:var(--brass-light);display:grid;place-items:center;font-style:normal;font-size:12px}
+.hero h1{font-size:clamp(3rem,8vw,7.4rem);margin:26px 0 26px;max-width:15ch}
+.line{display:block;overflow:hidden;padding-bottom:.05em}
+.line>span{display:block;animation:up .85s cubic-bezier(.2,.7,.2,1) both}
+.line:nth-child(2)>span{animation-delay:.1s}.line:nth-child(3)>span{animation-delay:.2s}
+@keyframes up{from{transform:translateY(105%)}}
+.hero h1 .br{color:var(--brass)}
+.hero .row{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;flex-wrap:wrap}
+.hero .row p{max-width:46ch;color:var(--muted);font-size:18px}
+.ctas{display:flex;gap:10px;flex-wrap:wrap}
+
+/* alternating numbered blocks */
+.blk{display:grid;grid-template-columns:.35fr 1fr;gap:clamp(24px,4vw,64px);padding:clamp(64px,9vw,120px) 0;border-top:1px solid var(--line)}
+.blk.flip{grid-template-columns:1fr .35fr}.blk.flip .n{order:2;text-align:right}
+.n{font-size:clamp(5rem,12vw,10rem);font-weight:300;line-height:.8;color:var(--brass);letter-spacing:-.06em}
+.blk h2{font-size:clamp(2.2rem,5vw,4rem)}
+.blk p.lead{color:var(--muted);max-width:50ch;margin-top:16px}
+@media(max-width:760px){.blk,.blk.flip{grid-template-columns:1fr}.blk.flip .n{order:0;text-align:left}}
+
+.svc{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:34px}
+.svc div{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:24px}
+.svc h3{font-size:22px;letter-spacing:-.02em}
+.svc p{color:var(--muted);font-size:15px;margin-top:6px}
+@media(max-width:620px){.svc{grid-template-columns:1fr}}
+
+/* giant light stat numerals (signature) */
+.stats{background:var(--forest);color:var(--bg);border-radius:32px;margin:0 clamp(8px,1.5vw,20px);padding:clamp(56px,8vw,110px) 0}
+.stats .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,4vw,48px)}
+.stat b{display:block;font-weight:300;font-size:clamp(4.5rem,11vw,9.5rem);line-height:.85;letter-spacing:-.06em;color:var(--brass-light)}
+.stat .mono{display:block;margin-top:18px;color:#B8C2B9}
+.stats h2{font-size:clamp(2rem,4vw,3.2rem);max-width:20ch;margin-bottom:clamp(40px,6vw,72px)}
+@media(max-width:760px){.stats .grid{grid-template-columns:1fr}}
+
+/* numbered steps (donor idea) */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:34px}
+.step{border-radius:18px;background:var(--paper);border:1px solid var(--line);padding:22px;min-height:210px;display:flex;flex-direction:column;justify-content:space-between}
+.step.on{background:var(--brass);color:#fff;border-color:var(--brass)}.step.on p{color:#F4E6CC}
+.step h3{font-size:20px;letter-spacing:-.02em}
+.step p{font-size:14px;color:var(--muted);margin-top:6px}
+@media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}.step{min-height:0;gap:20px}}
+
+/* area + form */
+.areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.areas span{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:34px}
+.form{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:clamp(22px,3vw,34px)}
+.form label{display:block;font-size:13px;font-weight:500;margin:14px 0 6px}
+.form input,.form select,.form textarea{width:100%;min-height:48px;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;font:400 16px var(--sans);color:var(--ink)}
+.form textarea{min-height:90px}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--brass)}
+.form .btn{width:100%;margin-top:20px}
+.form .done{display:none;padding:30px 0}.form.sent .done{display:block}.form.sent .f{display:none}
+.map{border-radius:24px;overflow:hidden;min-height:420px;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;filter:sepia(.2) saturate(.8)}
+@media(max-width:860px){.contact{grid-template-columns:1fr}}
+
+footer{border-top:1px solid var(--line);margin-top:clamp(56px,8vw,100px);padding:30px 0 40px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.dock{display:none}
+@media(max-width:760px){.dock{display:grid;grid-template-columns:1.3fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:40}.dock .btn{box-shadow:0 10px 24px -10px rgba(0,0,0,.45)}footer{padding-bottom:96px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<!--PREVIEW--><div style="position:relative;z-index:100;background:#111;color:#eee;font:500 13px/1.45 system-ui,sans-serif;text-align:center;padding:9px 16px">Website concept for Mount Coolum Plumbing, made by a local Sunshine Coast web designer. Preview only &middot; not the official site yet.</div><!--/PREVIEW-->
+
+<header><div class="wrap">
+  <a class="logo" href="#top"><i>MC</i>Mount Coolum Plumbing</a>
+  <nav aria-label="Main"><a href="#services">Services</a><a href="#how">How it works</a><a href="#area">Service area</a></nav>
+  <a class="btn brass" href="tel:0493027027">Call 0493 027 027</a>
+</div></header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="h1"><div class="wrap">
+    <span class="badge"><i>✓</i>Small local family business · Open 7 days</span>
+    <h1 id="h1"><span class="line"><span>Your local plumber,</span></span><span class="line"><span>from Twin Waters to</span></span><span class="line"><span class="br">Marcus Beach.</span></span></h1>
+    <div class="row">
+      <p>Residential plumbing maintenance and renovation specialists. We fix it properly, leave it tidy and turn up when we say we will.</p>
+      <div class="ctas">
+        <a class="btn brass" href="tel:0493027027"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Call 0493 027 027</a>
+        <a class="btn soft" href="#quote">Request a quote</a>
+      </div>
+    </div>
+  </div></section>
+
+  <div class="wrap">
+    <section class="blk" id="services" aria-labelledby="s-h">
+      <span class="n" aria-hidden="true">01</span>
+      <div>
+        <p class="mono" style="color:var(--muted)">What we do</p>
+        <h2 id="s-h" style="margin-top:12px">Everyday plumbing, done right.</h2>
+        <p class="lead">We focus on homes: keeping them running, and making renovations easy.</p>
+        <div class="svc">
+          <div><h3>Blocked drains</h3><p>Sinks, showers, toilets and outdoor drains cleared fast.</p></div>
+          <div><h3>Leaks &amp; repairs</h3><p>Dripping taps, burst pipes and hidden leaks sorted.</p></div>
+          <div><h3>Hot water</h3><p>Repairs and replacements to get the hot water back on.</p></div>
+          <div><h3>Renovations</h3><p>Bathroom, kitchen and laundry plumbing, start to finish.</p></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="stats" aria-labelledby="st-h"><div class="wrap">
+    <h2 id="st-h">On the tools every day of the week.</h2>
+    <div class="grid">
+      <div class="stat"><b>7</b><span class="mono">Days a week</span></div>
+      <div class="stat"><b>7–5</b><span class="mono">Open 7am to 5pm</span></div>
+      <div class="stat"><b>1</b><span class="mono">Call to book it in</span></div>
+    </div>
+  </div></section>
+
+  <div class="wrap">
+    <section class="blk flip" id="how" aria-labelledby="h-h">
+      <div>
+        <p class="mono" style="color:var(--muted)">How it works</p>
+        <h2 id="h-h" style="margin-top:12px">Simple from first call to clean-up.</h2>
+        <div class="steps">
+          <div class="step on"><span class="mono">01 · Call</span><div><h3>Tell us what's up</h3><p>Call or send a quote request with a quick description.</p></div></div>
+          <div class="step"><span class="mono">02 · Book</span><div><h3>Pick a time</h3><p>We'll book you in at a time that suits.</p></div></div>
+          <div class="step"><span class="mono">03 · Fix</span><div><h3>Job done properly</h3><p>A clear explanation and quality work.</p></div></div>
+          <div class="step"><span class="mono">04 · Tidy</span><div><h3>Left clean</h3><p>We clean up before we leave.</p></div></div>
+        </div>
+      </div>
+      <span class="n" aria-hidden="true">02</span>
+    </section>
+
+    <section class="blk" id="area" aria-labelledby="a-h">
+      <span class="n" aria-hidden="true">03</span>
+      <div>
+        <p class="mono" style="color:var(--muted)">Service area</p>
+        <h2 id="a-h" style="margin-top:12px">Local to the northern coast.</h2>
+        <p class="lead">A small area, done well, between Twin Waters and Marcus Beach, including Peregian Springs.</p>
+        <div class="areas"><span>Twin Waters</span><span>Mudjimba</span><span>Marcoola</span><span>Yaroomba</span><span>Coolum Beach</span><span>Mount Coolum</span><span>Point Arkwright</span><span>Peregian Springs</span><span>Peregian Beach</span><span>Marcus Beach</span></div>
+        <div class="contact">
+          <form class="form" id="quote" data-lead novalidate aria-label="Request a quote">
+            <input type="hidden" name="_subject" value="New quote request from your website">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+            <div class="f">
+              <h3 style="font-size:24px">Request a quote</h3>
+              <label for="qn">Name</label><input id="qn" name="name" required autocomplete="name" placeholder="Your name">
+              <label for="qp">Phone</label><input id="qp" name="phone" type="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9 +\(\)]{8,}" placeholder="04xx xxx xxx">
+              <label for="qs">Suburb</label><input id="qs" name="suburb" placeholder="e.g. Coolum Beach">
+              <label for="qm">What do you need?</label><textarea id="qm" name="details" placeholder="e.g. Blocked kitchen sink"></textarea>
+              <button class="btn brass" type="submit">Send request</button>
+            </div>
+            <div class="done" role="status"><h3 style="font-size:26px">Thanks! We'll be in touch shortly.</h3><!--PREVIEW--><p style="font-size:13px;opacity:.7;margin-top:10px">Preview: once live, this goes straight to Mount Coolum Plumbing's inbox.</p><!--/PREVIEW--></div>
+          </form>
+          <div class="map"><iframe title="Map of Mount Coolum" loading="lazy" src="https://www.google.com/maps?q=Mount+Coolum+QLD+4573&output=embed"></iframe></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Mount Coolum Plumbing · Residential plumbing, Twin Waters to Marcus Beach</span><a href="tel:0493027027">0493 027 027</a></div></footer>
+<div class="dock"><a class="btn brass" href="tel:0493027027">Call now</a><a class="btn soft" href="#quote">Quote</a></div>
+
+<script>
+document.querySelectorAll('form[data-lead]').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();if(!f.checkValidity()){f.reportValidity();return}var ep='',b=f.querySelector('[type=submit]');if(!ep){f.classList.add('sent');return}b.disabled=true;b.textContent='Sending…';fetch(ep,{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)}).then(function(r){if(!r.ok)throw 0;f.classList.add('sent')}).catch(function(){b.disabled=false;b.textContent='Try again';alert('Sorry, that did not send. Please call us instead.')})})});
+</script>
+</body>
+</html>

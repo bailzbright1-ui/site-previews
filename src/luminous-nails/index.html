@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><!-- PREVIEW-ONLY -->
+<title>Luminous Nails · Nail Extensions, Nail Art & Spa Pedicures · Palmview</title>
+<meta name="description" content="Luminous Nails Sunshine Coast in Palmview: nail extensions, nail art, manicures and spa pedicures. Open from 7:30am Monday to Thursday. Call 0439 929 210 or book online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFF7EC; --ink:#17122B; --muted:#5D5770; --line:#E9DECF;
+  --field:#5B2EFF; --field-deep:#4316E0; --on-field:#fff; --soft:#EDE7FF;
+  --serif:"Instrument Serif",Georgia,serif; --sans:"Inter",system-ui,sans-serif; --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+h1,h2{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:.95;text-wrap:balance}
+h1 em,h2 em{font-style:italic}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
+.p{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+:focus-visible{outline:2px solid var(--field);outline-offset:3px;border-radius:6px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:600 15px var(--sans);text-decoration:none;border:0;cursor:pointer;transition:background .2s,color .2s,transform .15s}
+.btn:active{transform:translateY(1px)}
+.btn.white{background:#fff;color:var(--field)}
+.btn.white:hover{background:var(--soft)}
+.btn.outline{border:1.5px solid rgba(255,255,255,.55);color:#fff}
+.btn.outline:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn.violet{background:var(--field);color:#fff}
+.btn.violet:hover{background:var(--field-deep)}
+
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:68px}
+.logo{font-family:var(--serif);font-style:italic;font-size:28px;text-decoration:none}
+header nav{display:flex;gap:24px}
+header nav a{text-decoration:none;color:var(--muted)}header nav a:hover{color:var(--ink)}
+@media(max-width:780px){header nav{display:none}}
+
+/* colour field hero + edge ticker (signature) */
+.field{position:relative;background:var(--field);color:var(--on-field);border-radius:28px;overflow:hidden;margin:0 clamp(10px,1.6vw,20px)}
+.hero{padding:clamp(56px,9vw,120px) clamp(24px,6vw,96px) clamp(56px,8vw,100px) clamp(24px,6vw,96px);padding-right:clamp(64px,9vw,140px)}
+.hero h1{font-size:clamp(3.6rem,11vw,10.5rem)}
+.line{display:block;overflow:hidden;padding-bottom:.04em}
+.line>span{display:block;animation:up .9s cubic-bezier(.2,.7,.2,1) both}
+.line:nth-child(2)>span{animation-delay:.12s}
+@keyframes up{from{transform:translateY(105%)}}
+.hero p.sub{max-width:44ch;margin:26px 0 34px;color:rgba(255,255,255,.82);font-size:18px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero .tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:40px}
+.hero .tags span{border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:7px 14px}
+.edge{position:absolute;top:0;bottom:0;right:0;width:clamp(44px,5vw,64px);border-left:1px solid rgba(255,255,255,.25);overflow:hidden;display:flex;justify-content:center}
+.edge .run{writing-mode:vertical-rl;white-space:nowrap;animation:tick 30s linear infinite;color:rgba(255,255,255,.85)}
+@keyframes tick{from{transform:translateY(0)}to{transform:translateY(-50%)}}
+
+/* alternating blocks with oversized numbers */
+.block{display:grid;grid-template-columns:minmax(120px,.5fr) 1.5fr;gap:clamp(20px,4vw,64px);padding:clamp(72px,11vw,140px) 0;border-bottom:1px solid var(--line);align-items:start}
+.block.flip{grid-template-columns:1.5fr minmax(120px,.5fr)}
+.block.flip .num{order:2;text-align:right}
+.num{font-family:var(--serif);font-size:clamp(6rem,15vw,13rem);line-height:.8;color:var(--field)}
+.block h2{font-size:clamp(2.6rem,6vw,5.2rem)}
+.block p.lead{color:var(--muted);max-width:46ch;margin-top:20px}
+.list{list-style:none;margin-top:30px;border-top:1px solid var(--ink);max-width:620px}
+.list li{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:18px}
+.list li .p{color:var(--muted);align-self:center}
+@media(max-width:760px){.block,.block.flip{grid-template-columns:1fr}.block.flip .num{order:0;text-align:left}}
+
+.hours{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:30px;max-width:640px}
+.hours div{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}
+.hours b{display:block;font-family:var(--serif);font-size:40px;font-weight:400;line-height:1;margin-top:10px}
+.hours div.on{background:var(--field);color:#fff;border-color:var(--field)}
+
+/* request form with underlined fields (donor idea) */
+.req{padding:clamp(56px,8vw,100px) clamp(24px,6vw,96px);margin-top:clamp(56px,8vw,100px)}
+.req h2{font-size:clamp(2.6rem,6vw,5rem)}
+.req form{display:grid;grid-template-columns:repeat(4,1fr) auto;gap:22px;align-items:end;margin-top:40px}
+.req label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-bottom:8px}
+.req input,.req select{width:100%;min-height:46px;background:transparent;border:0;border-bottom:1.5px solid rgba(255,255,255,.5);color:#fff;font:400 17px var(--sans);padding:6px 0;border-radius:0}
+.req select option{color:var(--ink)}
+.req input::placeholder{color:rgba(255,255,255,.55)}
+.req input:focus,.req select:focus{outline:none;border-bottom-color:#fff}
+.req .done{display:none}
+.req form.sent .f{display:none}.req form.sent .done{display:block;grid-column:1/-1}
+@media(max-width:900px){.req form{grid-template-columns:1fr 1fr}.req form .btn{grid-column:1/-1}}
+@media(max-width:520px){.req form{grid-template-columns:1fr}}
+
+footer{padding:36px 0 44px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.dock{display:none}
+@media(max-width:760px){.dock{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:40}.dock .btn{justify-content:center;min-height:52px;box-shadow:0 10px 24px -10px rgba(23,18,43,.6)}.dock .btn.white{border:1.5px solid var(--field)}footer{padding-bottom:96px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<!--PREVIEW--><div style="position:relative;z-index:100;background:#111;color:#eee;font:500 13px/1.45 system-ui,sans-serif;text-align:center;padding:9px 16px">Website concept for {{NAME}}, made by {{AGENCY}}. Preview only &middot; not the official site yet.</div><!--/PREVIEW-->
+
+<header><div class="wrap">
+  <a class="logo" href="#top">Luminous</a>
+  <nav class="p" aria-label="Main"><a href="#nails">( Nails )</a><a href="#pedis">( Pedicures )</a><a href="#hours">( Hours )</a><a href="#request">( Request a time )</a></nav>
+  <a class="p" href="{{PHONE_HREF}}" style="text-decoration:none">( {{PHONE_DISPLAY}} )</a>
+</div></header>
+
+<main id="top">
+  <section class="field hero" aria-labelledby="h1">
+    <p class="p">( Nail salon · Palmview, Sunshine Coast )</p>
+    <h1 id="h1" style="margin-top:22px"><span class="line"><span>Nails that</span></span><span class="line"><span><em>glow.</em></span></span></h1>
+    <p class="sub">Extensions, nail art, manicures and spa pedicures, done with care, and open from 7:30 in the morning.</p>
+    <div class="ctas">
+      <a class="btn white" href="{{BOOK_URL}}" target="_blank" rel="noopener">Book online ↗</a>
+      <a class="btn outline" href="{{PHONE_HREF}}">{{CALL_LABEL}}</a>
+    </div>
+    <div class="tags p"><span>( Extensions )</span><span>( Nail art )</span><span>( Manicures )</span><span>( Spa pedicures )</span></div>
+    <div class="edge" aria-hidden="true"><div class="run p">( Nail extensions ) · ( Nail art ) · ( Spa pedicures ) · ( Manicures ) · ( Palmview ) · ( Nail extensions ) · ( Nail art ) · ( Spa pedicures ) · ( Manicures ) · ( Palmview ) ·&nbsp;</div></div>
+  </section>
+
+  <div class="wrap">
+    <section class="block" id="nails" aria-labelledby="n-h">
+      <span class="num" aria-hidden="true">01</span>
+      <div>
+        <p class="p">( Nails )</p>
+        <h2 id="n-h" style="margin-top:14px">Extensions &amp; <em>art</em></h2>
+        <p class="lead">Length, shape and detail built to last, from clean and classic to something people will ask about.</p>
+        <ul class="list"><li>Nail extensions <span class="p">Length &amp; shape</span></li><li>Nail art <span class="p">Custom designs</span></li><li>Manicures <span class="p">Neat &amp; polished</span></li></ul>
+      </div>
+    </section>
+
+    <section class="block flip" id="pedis" aria-labelledby="p-h">
+      <span class="num" aria-hidden="true">02</span>
+      <div>
+        <p class="p">( Pedicures )</p>
+        <h2 id="p-h" style="margin-top:14px">Feet up, <em>finally.</em></h2>
+        <p class="lead">A proper spa pedicure: soak, scrub, shape and polish. It's the easiest hour of your week.</p>
+        <a class="btn violet" style="margin-top:28px" href="{{BOOK_URL}}" target="_blank" rel="noopener">Book a spa pedicure ↗</a>
+      </div>
+    </section>
+
+    <section class="block" id="hours" aria-labelledby="h-h">
+      <span class="num" aria-hidden="true">03</span>
+      <div>
+        <p class="p">( Hours )</p>
+        <h2 id="h-h" style="margin-top:14px">Early <em>birds</em> welcome.</h2>
+        <p class="lead">Squeeze in your nails before work. We open at 7:30am Monday to Thursday.</p>
+        <div class="hours">
+          <div class="on"><span class="p">Mon – Thu</span><b>7:30 – 6</b></div>
+          <div><span class="p">Fri – Sun</span><b style="font-size:26px;margin-top:16px">Call to check</b></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="field req" id="request" aria-labelledby="r-h">
+    <p class="p">( Request a time )</p>
+    <h2 id="r-h" style="margin-top:16px">Tell us when, <em>we'll</em> make it work.</h2>
+    <form data-lead id="quote" novalidate>
+      <input type="hidden" name="_subject" value="New appointment request from your website">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="f"><label for="rn">Name</label><input id="rn" name="name" required autocomplete="name" placeholder="Your name"></div>
+      <div class="f"><label for="rp">Phone</label><input id="rp" name="phone" type="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9 +\(\)]{8,}" placeholder="04xx xxx xxx"></div>
+      <div class="f"><label for="rs">Treatment</label><select id="rs" name="treatment"><option>Nail extensions</option><option>Nail art</option><option>Manicure</option><option>Spa pedicure</option></select></div>
+      <div class="f"><label for="rd">Preferred day</label><input id="rd" name="preferred_day" placeholder="e.g. Tue morning"></div>
+      <button class="btn white f" type="submit">Send request</button>
+      <div class="done" role="status"><p style="font-family:var(--serif);font-size:40px;line-height:1">Thanks, we'll text you back to confirm.</p><!--PREVIEW--><p style="font-size:13px;opacity:.7;margin-top:10px">Preview: once live, this goes straight to {{NAME}}'s inbox.</p><!--/PREVIEW--></div>
+    </form>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>© {{YEAR}} Luminous Nails Sunshine Coast · Palmview QLD 4553</span><a href="{{PHONE_HREF}}">{{PHONE_DISPLAY}}</a></div></footer>
+<div class="dock"><a class="btn violet" href="{{BOOK_URL}}" target="_blank" rel="noopener">Book ↗</a><a class="btn white" href="{{PHONE_HREF}}">Call</a></div>
+
+<script>
+document.querySelectorAll('form[data-lead]').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();if(!f.checkValidity()){f.reportValidity();return}var ep='{{FORM_ENDPOINT}}',b=f.querySelector('[type=submit]');if(!ep){f.classList.add('sent');return}b.disabled=true;b.textContent='Sending…';fetch(ep,{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)}).then(function(r){if(!r.ok)throw 0;f.classList.add('sent')}).catch(function(){b.disabled=false;b.textContent='Try again';alert('Sorry, that did not send. Please call us instead.')})})});
+</script>
+</body>
+</html>

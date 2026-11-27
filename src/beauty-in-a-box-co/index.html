@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><!-- PREVIEW-ONLY -->
+<title>Beauty In A Box Co · Waxing, Brows, Tans & Facials · Moffat Beach</title>
+<meta name="description" content="A relaxed unisex beauty salon in Moffat Beach, Caloundra. Waxing, brows and lashes, spray tans and facials. Book online in seconds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBFAF8; --surface:#EFEBE5; --ink:#1A1714; --muted:#6B635B; --line:#E2DCD4;
+  --accent:#E2602D; --accent-hover:#C94F1F; --accent-ink:#fff;
+  --sans:"Onest",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --pad:clamp(4rem,10vw,8rem); --r:28px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3{font-weight:300;letter-spacing:-.03em;text-wrap:balance}
+b,strong{font-weight:600}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.label i{font-style:normal;color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+.pill{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;transition:background .2s,color .2s,border-color .2s}
+.pill.primary{background:var(--accent);color:var(--accent-ink)}
+.pill.primary:hover{background:var(--accent-hover)}
+.pill.ghost{border:1px solid var(--ink);color:var(--ink)}
+.pill.ghost:hover{background:var(--ink);color:var(--bg)}
+.pill .arr{width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.22);display:grid;place-items:center;font-size:12px}
+
+/* ---------- shell: side rail + content ---------- */
+.shell{display:grid;grid-template-columns:280px 1fr;max-width:1440px;margin:0 auto}
+.rail{position:sticky;top:0;height:100vh;padding:36px 32px;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid var(--line)}
+.brand{font-size:19px;font-weight:600;letter-spacing:-.02em;text-decoration:none;line-height:1.15}
+.brand span{display:block;font-weight:300;color:var(--muted)}
+.rail nav{display:flex;flex-direction:column;gap:2px;margin-top:56px}
+.rail nav a{display:flex;justify-content:space-between;text-decoration:none;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--muted);transition:color .2s}
+.rail nav a:hover{color:var(--ink)}
+.rail nav a span{font-family:var(--mono);font-size:12px}
+.rail-foot{display:flex;flex-direction:column;gap:18px}
+.rail-foot p{font-size:14px;color:var(--muted);line-height:1.5}
+.rail-foot .pill{justify-content:center}
+main{min-width:0;padding:20px 20px 0}
+
+/* mobile top bar */
+.topbar{display:none}
+@media (max-width:980px){
+  .shell{grid-template-columns:1fr}
+  .rail{display:none}
+  .topbar{display:flex;position:sticky;top:0;z-index:20;justify-content:space-between;align-items:center;padding:14px 20px;background:rgba(251,250,248,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .topbar .pill{min-height:44px;padding:0 18px;font-size:14px}
+  main{padding:12px 12px 0}
+}
+
+/* ---------- hero ---------- */
+.hero{position:relative;border-radius:var(--r);overflow:hidden;min-height:min(88vh,820px);display:flex;flex-direction:column;justify-content:space-between;padding:clamp(28px,4vw,56px);
+  background:
+    radial-gradient(60% 50% at 78% 22%, rgba(255,246,236,.95), rgba(255,246,236,0) 70%),
+    linear-gradient(176deg,#F6D9CB 0%,#F3C3A6 38%,#DCC9C0 66%,#B9CBCF 100%)}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:42%;background:linear-gradient(180deg,rgba(185,203,207,0),rgba(160,184,190,.55));pointer-events:none}
+.hero-top{display:flex;justify-content:space-between;gap:16px;position:relative;z-index:1}
+.hero-top .label{color:#5A4A40}
+.hero h1{position:relative;z-index:1;font-size:clamp(2.6rem,6.4vw,6rem);line-height:.98;letter-spacing:-.035em;max-width:13ch;margin-top:auto}
+.line{display:block;overflow:hidden;padding-bottom:.06em}
+.line > span{display:block;animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.line:nth-child(2) > span{animation-delay:.12s}
+.line:nth-child(3) > span{animation-delay:.24s}
+@keyframes rise{from{transform:translateY(105%)}to{transform:none}}
+.hero-bottom{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-top:32px}
+.hero-bottom p{max-width:42ch;color:#3D332C;font-size:17px}
+.hero-ctas{display:flex;gap:10px;flex-wrap:wrap}
+.hero .pill.ghost{border-color:rgba(26,23,20,.4)}
+.rating{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.7);border-radius:999px;padding:8px 14px 8px 10px;font-size:13px;color:#3D332C}
+.rating b{font-family:var(--mono);font-weight:500}
+
+/* ---------- generic section ---------- */
+section.block{padding:var(--pad) clamp(8px,3vw,48px)}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:end;margin-bottom:clamp(40px,6vw,72px)}
+.sec-head h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.02;margin-top:14px}
+.sec-head p{color:var(--muted);max-width:48ch;justify-self:end}
+@media (max-width:760px){.sec-head{grid-template-columns:1fr}.sec-head p{justify-self:start}}
+
+/* ---------- signature: treatment hub ---------- */
+.hub{position:relative;max-width:760px;margin:0 auto;aspect-ratio:1/1}
+.hub svg.wires{position:absolute;inset:0;width:100%;height:100%}
+.node{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;width:28%}
+.tile{width:clamp(64px,11vw,104px);aspect-ratio:1;border-radius:24%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+.tile svg{width:42%;height:42%;stroke:var(--ink);stroke-width:1.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.node h3{font-size:clamp(15px,1.6vw,19px);font-weight:600;letter-spacing:-.01em;background:var(--bg);padding:2px 8px;position:relative}
+.node p{font-size:14px;color:var(--muted);line-height:1.45;max-width:24ch}
+.core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:clamp(96px,17vw,150px);aspect-ratio:1;border-radius:26%;background:var(--accent);color:#fff;display:grid;place-items:center;text-align:center}
+.core b{font-size:clamp(22px,3.4vw,34px);letter-spacing:-.03em;line-height:1}
+.core small{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.1em;opacity:.85;margin-top:6px}
+.n1{left:50%;top:9%}.n2{left:88%;top:50%}.n3{left:50%;top:91%}.n4{left:12%;top:50%}
+@media (max-width:560px){.node p{display:none}.node{width:34%}.core small{display:none}.hero{min-height:78vh}.hero-top .label:last-child{display:none}}
+
+/* ---------- menu ---------- */
+.menu{background:var(--surface);border-radius:var(--r);padding:clamp(28px,5vw,64px);display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,5vw,80px)}
+.menu h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.02;margin-top:14px}
+.menu .intro p{color:var(--muted);margin-top:18px;max-width:34ch}
+.row{display:grid;grid-template-columns:1fr auto;gap:16px;padding:22px 0;border-bottom:1px solid #D9D2C8}
+.row:first-child{border-top:1px solid #D9D2C8}
+.row h3{font-size:20px;font-weight:400;letter-spacing:-.015em}
+.row p{font-size:14px;color:var(--muted)}
+.row .price{font-family:var(--mono);font-size:20px}
+.more{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:28px}
+.more span{font-size:15px;color:var(--muted)}
+@media (max-width:860px){.menu{grid-template-columns:1fr}}
+
+/* ---------- carla ---------- */
+.carla{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,96px);align-items:start}
+.carla h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.02;margin-top:14px}
+.carla .copy p{color:var(--muted);margin-top:20px;max-width:52ch}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:8px}
+.stat{padding:28px 0 0}
+.stat b{display:block;font-family:var(--mono);font-weight:400;font-size:clamp(40px,5vw,64px);letter-spacing:-.04em;line-height:1}
+.stat span{display:block;margin-top:10px}
+@media (max-width:860px){.carla{grid-template-columns:1fr}}
+
+/* ---------- steps (donor idea) ---------- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.step{border-radius:22px;background:var(--surface);padding:28px;min-height:240px;display:flex;flex-direction:column;justify-content:space-between}
+.step h3{font-size:22px;font-weight:400;letter-spacing:-.02em;margin-top:40px}
+.step p{font-size:15px;color:var(--muted);margin-top:8px}
+.step.on{background:var(--ink);color:var(--bg)}
+.step.on .label{color:#BDB3A8}.step.on p{color:#CFC6BC}
+.step.on a{color:var(--bg)}
+@media (max-width:760px){.steps{grid-template-columns:1fr}.step{min-height:0}.step h3{margin-top:20px}}
+
+/* ---------- visit ---------- */
+.visit{display:grid;grid-template-columns:.9fr 1.1fr;gap:12px}
+.card{border:1px solid var(--line);border-radius:var(--r);padding:clamp(28px,4vw,48px);background:#fff}
+.card h2{font-size:clamp(2rem,3.6vw,3rem);line-height:1.02;margin:14px 0 22px}
+.addr{font-size:19px;line-height:1.4}
+.hours{margin:26px 0 30px;border-top:1px solid var(--line)}
+.hours div{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+.hours span:last-child{font-family:var(--mono);font-size:14px}
+.map{border-radius:var(--r);overflow:hidden;min-height:420px;background:var(--surface)}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;filter:grayscale(.35) contrast(.95)}
+@media (max-width:860px){.visit{grid-template-columns:1fr}}
+
+/* ---------- close ---------- */
+.close{border-radius:var(--r);margin-top:var(--pad);padding:clamp(56px,9vw,120px) clamp(24px,5vw,64px);text-align:center;
+  background:linear-gradient(180deg,#B9CBCF 0%,#DCC9C0 45%,#F3C3A6 100%)}
+.close h2{font-size:clamp(2.4rem,5.4vw,5rem);line-height:1;max-width:14ch;margin:0 auto}
+.close p{color:#3D332C;margin:18px auto 30px;max-width:40ch}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:32px clamp(8px,3vw,48px) 40px;font-size:14px;color:var(--muted)}
+
+.dock{display:none}
+@media (max-width:980px){
+  .dock{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:30;justify-content:center}
+  .dock .pill{width:100%;justify-content:center;min-height:54px;font-size:16px}
+  footer{padding-bottom:96px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<!--PREVIEW--><div style="position:relative;z-index:100;background:#111;color:#eee;font:500 13px/1.45 system-ui,sans-serif;text-align:center;padding:9px 16px">Website concept for {{NAME}}, made by {{AGENCY}}. Preview only &middot; not the official site yet.</div><!--/PREVIEW-->
+
+<header class="topbar">
+  <a class="brand" href="#top">Beauty In A Box Co</a>
+  <a class="pill primary" href="{{BOOK_URL}}" target="_blank" rel="noopener">Book</a>
+</header>
+
+<div class="shell" id="top">
+  <aside class="rail" aria-label="Site">
+    <div>
+      <a class="brand" href="#top">Beauty In A Box Co<span>Moffat Beach</span></a>
+      <nav aria-label="Sections">
+        <a href="#treatments">Treatments <span>01</span></a>
+        <a href="#menu">Prices <span>02</span></a>
+        <a href="#carla">About Carla <span>03</span></a>
+        <a href="#booking">Booking <span>04</span></a>
+        <a href="#visit">Visit <span>05</span></a>
+      </nav>
+    </div>
+    <div class="rail-foot">
+      <p>15 Fairlie Crescent<br>Moffat Beach QLD 4551</p>
+      <a class="pill primary" href="{{BOOK_URL}}" target="_blank" rel="noopener">Book an appointment</a>
+    </div>
+  </aside>
+
+  <main>
+    <section class="hero" aria-labelledby="h1">
+      <div class="hero-top">
+        <span class="label">Unisex beauty salon</span>
+        <span class="label">Moffat Beach · Caloundra</span>
+      </div>
+      <h1 id="h1">
+        <span class="line"><span>Beauty, done</span></span>
+        <span class="line"><span>the <b>easy</b> way.</span></span>
+      </h1>
+      <div class="hero-bottom">
+        <div>
+          <p>Waxing, brows, lashes, spray tans and facials in a fun, relaxed little salon a short stroll from the beach.</p>
+          <div class="hero-ctas" style="margin-top:22px">
+            <a class="pill primary" href="{{BOOK_URL}}" target="_blank" rel="noopener">Book online <span class="arr">↗</span></a>
+            <a class="pill ghost" href="#menu">See prices</a>
+          </div>
+        </div>
+        <span class="rating"><b>5.0</b> ★★★★★ from hundreds of Fresha reviews</span>
+      </div>
+    </section>
+
+    <section class="block" id="treatments" aria-labelledby="t-h">
+      <div class="sec-head">
+        <div><span class="label"><i>●</i> 01 / Treatments</span><h2 id="t-h">Four things, done <b>really</b> well.</h2></div>
+        <p>Everyone's welcome: women, men and first-timers. Pick a treatment, lie back and let Carla take care of the rest.</p>
+      </div>
+      <div class="hub" role="list">
+        <svg class="wires" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="21" fill="none" stroke="#E2602D" stroke-width=".25"/>
+          <g stroke="#D3CBC1" stroke-width=".25">
+            <line x1="50" y1="18" x2="50" y2="29"/><line x1="71" y1="50" x2="80" y2="50"/>
+            <line x1="50" y1="71" x2="50" y2="80"/><line x1="20" y1="50" x2="29" y2="50"/>
+          </g>
+        </svg>
+        <div class="core" aria-hidden="true"><div><b>BIAB</b><small>CO · EST. BY CARLA</small></div></div>
+        <div class="node n1" role="listitem">
+          <div class="tile"><svg viewBox="0 0 24 24"><path d="M5 19C5 11 10 5 19 5c0 9-6 14-14 14z"/><path d="M5 19l8-8"/></svg></div>
+          <h3>Waxing</h3><p>Face and body, for women and men.</p>
+        </div>
+        <div class="node n2" role="listitem">
+          <div class="tile"><svg viewBox="0 0 24 24"><path d="M3 12c3-4 6-5 9-5s6 1 9 5"/><path d="M6 15l-1 2M10 16l-.5 2.2M14 16l.5 2.2M18 15l1 2"/></svg></div>
+          <h3>Brows &amp; Lashes</h3><p>Sculpting, tints and lash treatments.</p>
+        </div>
+        <div class="node n3" role="listitem">
+          <div class="tile"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></div>
+          <h3>Spray Tans</h3><p>A natural glow without the sun.</p>
+        </div>
+        <div class="node n4" role="listitem">
+          <div class="tile"><svg viewBox="0 0 24 24"><path d="M12 3c3.5 4.5 6 7.6 6 10.6A6 6 0 0 1 6 13.6C6 10.6 8.5 7.5 12 3z"/></svg></div>
+          <h3>Facials</h3><p>Cleanse, treat and leave glowing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="menu" style="padding-top:0" aria-labelledby="m-h">
+      <div class="menu">
+        <div class="intro">
+          <span class="label"><i>●</i> 02 / Prices</span>
+          <h2 id="m-h">Local <b>favourites</b></h2>
+          <p>A few of the treatments clients book most. The full menu has more than 60 treatments.</p>
+        </div>
+        <div>
+          <div class="row"><div><h3>Eye Package</h3><p>Brow sculpt, brow dye &amp; lash tint</p></div><span class="price">$75</span></div>
+          <div class="row"><div><h3>Guy Trio</h3><p>Brows, ears &amp; nose</p></div><span class="price">$50</span></div>
+          <div class="row"><div><h3>Lash Tint + Lash Botox</h3><p>Darker, healthier-looking lashes</p></div><span class="price">$35</span></div>
+          <div class="more"><span>Live prices &amp; availability on Fresha</span>
+            <a class="pill ghost" href="{{BOOK_URL}}" target="_blank" rel="noopener">Full menu ↗</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="carla" style="padding-top:0" aria-labelledby="c-h">
+      <div class="carla">
+        <div>
+          <span class="label"><i>●</i> 03 / Meet Carla</span>
+          <h2 id="c-h">Fifteen years in beauty. Still <b>loves</b> it.</h2>
+        </div>
+        <div class="copy">
+          <p>Beauty In A Box Co is Carla's own salon in Moffat Beach. It's fun, friendly and unhurried, and the work is done with care. Whether it's your first wax or your regular brow tidy, you'll walk out feeling great.</p>
+          <div class="stats" style="margin-top:36px">
+            <div class="stat"><b>15+</b><span class="label">Years experience</span></div>
+            <div class="stat"><b>5.0</b><span class="label">Average rating</span></div>
+            <div class="stat"><b>60+</b><span class="label">Treatments</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="booking" style="padding-top:0" aria-labelledby="b-h">
+      <div class="sec-head">
+        <div><span class="label"><i>●</i> 04 / Booking</span><h2 id="b-h">Booked in under a <b>minute</b>.</h2></div>
+        <p>No phone tag. Booking runs through Fresha, so you'll get a confirmation and reminder automatically.</p>
+      </div>
+      <div class="steps">
+        <div class="step on"><span class="label">Step 01</span><div><h3>Pick your treatment</h3><p>Browse the full menu and choose what you're after.</p></div></div>
+        <div class="step"><span class="label">Step 02</span><div><h3>Choose a time</h3><p>See Carla's live availability and grab a spot that suits.</p></div></div>
+        <div class="step"><span class="label">Step 03</span><div><h3>Relax</h3><p>Turn up, lie back and leave looking and feeling great.</p></div></div>
+      </div>
+    </section>
+
+    <section class="block" id="visit" style="padding-top:0" aria-labelledby="v-h">
+      <div class="visit">
+        <div class="card">
+          <span class="label"><i>●</i> 05 / Visit</span>
+          <h2 id="v-h">Come say <b>hi</b></h2>
+          <p class="addr">15 Fairlie Crescent<br>Moffat Beach QLD 4551</p>
+          <div class="hours">
+            <div><span>Monday</span><span>9:30 – 2:30</span></div>
+            <div><span>Tuesday</span><span>9:30 – 2:30</span></div>
+            <div><span>Other days</span><span>See booking</span></div>
+          </div>
+          <a class="pill primary" href="{{BOOK_URL}}" target="_blank" rel="noopener">Check availability <span class="arr">↗</span></a>
+        </div>
+        <div class="map"><iframe title="Map showing 15 Fairlie Crescent, Moffat Beach" loading="lazy" src="https://www.google.com/maps?q=15+Fairlie+Crescent,+Moffat+Beach+QLD+4551&output=embed"></iframe></div>
+      </div>
+
+      <div class="close">
+        <span class="label" style="color:#4A3E36">Moffat Beach · Caloundra</span>
+        <h2 style="margin-top:16px">Your next appointment is <b>one tap</b> away.</h2>
+        <p>Choose a treatment, pick a time and you're done.</p>
+        <a class="pill primary" href="{{BOOK_URL}}" target="_blank" rel="noopener">Book online <span class="arr">↗</span></a>
+      </div>
+    </section>
+
+    <footer>
+      <span>© {{YEAR}} Beauty In A Box Co · 15 Fairlie Crescent, Moffat Beach QLD 4551</span>
+      <span>Waxing · Brows &amp; Lashes · Spray Tans · Facials</span>
+    </footer>
+  </main>
+</div>
+
+<div class="dock"><a class="pill primary" href="{{BOOK_URL}}" target="_blank" rel="noopener">Book an appointment <span class="arr">↗</span></a></div>
+</body>
+</html>

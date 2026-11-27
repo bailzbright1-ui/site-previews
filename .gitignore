@@ -1,0 +1,4 @@
+live/
+qa/*.png
+node_modules/
+__pycache__/

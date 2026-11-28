@@ -18,6 +18,8 @@ If you like it, it can be live on your own domain this week, for $29 a month. No
 
 We'd connect it to your existing domain, mtcplumbing.com.au.
 
+Once it's live, we can also add it to your Google Business Profile so it shows when people search for you on Google and Maps.
+
 If it's not for you, no worries. The preview comes down in 14 days.
 
 Bailey Bright

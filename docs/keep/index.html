@@ -127,7 +127,7 @@ main{padding:var(--space-7) 0 var(--space-9)}
 
 <script>
 (function(){
-  var SITES={"beauty-in-a-box-co": {"name": "Beauty In A Box Co"}, "kozmetika": {"name": "Kozmetika"}, "wink-worthy": {"name": "Wink Worthy Lashes & Brows"}, "luminous-nails": {"name": "Luminous Nails Sunshine Coast"}, "wow-wow-nails": {"name": "Wow Wow Nails"}, "two-sisters-nails": {"name": "Two Sisters Nails & Spa"}, "montys-plumbing": {"name": "Monty's Plumbing"}, "mount-coolum-plumbing": {"name": "Mount Coolum Plumbing"}, "hutcheson-roofing": {"name": "Hutcheson Plumbing & Roofing Maintenance"}, "homestyle-roof-painters": {"name": "Homestyle Roof Painters"}}, CFG={"email": "hello@onesightstudio.au", "stripe_keep": "https://buy.stripe.com/aFa00j9Qv2Ql2kV6Sr8ww00", "stripe_grow": "", "mobile": "0431 864 979", "first": "Bailey"};
+  var SITES={"beauty-in-a-box-co": {"name": "Beauty In A Box Co"}, "kozmetika": {"name": "Kozmetika"}, "wink-worthy": {"name": "Wink Worthy Lashes & Brows"}, "luminous-nails": {"name": "Luminous Nails Sunshine Coast"}, "wow-wow-nails": {"name": "Wow Wow Nails"}, "montys-plumbing": {"name": "Monty's Plumbing"}, "mount-coolum-plumbing": {"name": "Mount Coolum Plumbing"}, "hutcheson-roofing": {"name": "Hutcheson Plumbing & Roofing Maintenance"}}, CFG={"email": "hello@onesightstudio.au", "stripe_keep": "https://buy.stripe.com/aFa00j9Qv2Ql2kV6Sr8ww00", "stripe_grow": "", "mobile": "0431 864 979", "first": "Bailey"};
   var q=new URLSearchParams(location.search), slug=q.get('site')||'', plan=(q.get('plan')||'').toLowerCase();
   var s=Object.prototype.hasOwnProperty.call(SITES,slug)?SITES[slug]:null;
   var f=document.getElementById('keep'), b=document.getElementById('goBtn'), err=document.getElementById('err'), sending=false;

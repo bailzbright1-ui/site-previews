@@ -1,0 +1,1812 @@
+{
+  "references": [
+    {
+      "id": "01",
+      "slug": "vinewinner",
+      "family": "Editorial Heritage",
+      "keywords": [
+        "wine",
+        "food",
+        "drink",
+        "winery",
+        "hospitality",
+        "heritage",
+        "ecommerce",
+        "store",
+        "premium",
+        "ai",
+        "chat"
+      ]
+    },
+    {
+      "id": "02",
+      "slug": "hoperise",
+      "family": "Warm Human",
+      "keywords": [
+        "charity",
+        "nonprofit",
+        "donation",
+        "health",
+        "care",
+        "community",
+        "education",
+        "support",
+        "trust",
+        "service"
+      ]
+    },
+    {
+      "id": "03",
+      "slug": "vertex",
+      "family": "Bold Colour Field",
+      "keywords": [
+        "property",
+        "developer",
+        "construction",
+        "architecture",
+        "investment",
+        "building",
+        "real estate",
+        "calculator"
+      ]
+    },
+    {
+      "id": "04",
+      "slug": "romanelli",
+      "family": "Swiss Scale Contrast",
+      "keywords": [
+        "portfolio",
+        "designer",
+        "maker",
+        "studio",
+        "product",
+        "personal",
+        "freelancer",
+        "creative"
+      ]
+    },
+    {
+      "id": "05",
+      "slug": "waveai",
+      "family": "Loud Pop",
+      "keywords": [
+        "ai",
+        "tech",
+        "startup",
+        "youth",
+        "event",
+        "launch",
+        "app",
+        "consumer",
+        "playful"
+      ]
+    },
+    {
+      "id": "06",
+      "slug": "axon",
+      "family": "Engineered Blueprint",
+      "keywords": [
+        "saas",
+        "b2b",
+        "data",
+        "fintech",
+        "dev",
+        "developer",
+        "engineering",
+        "software",
+        "platform",
+        "analytics"
+      ]
+    },
+    {
+      "id": "07",
+      "slug": "krios",
+      "family": "Dark Tech + Soft Light",
+      "keywords": [
+        "energy",
+        "infrastructure",
+        "climate",
+        "solar",
+        "enterprise",
+        "b2b",
+        "utilities",
+        "map",
+        "platform"
+      ]
+    },
+    {
+      "id": "08",
+      "slug": "lumen",
+      "family": "Dark Tech Premium",
+      "keywords": [
+        "agency",
+        "marketing",
+        "creative",
+        "seo",
+        "studio",
+        "launch",
+        "premium"
+      ]
+    },
+    {
+      "id": "09",
+      "slug": "atelier-meridian",
+      "family": "Quiet Gallery",
+      "keywords": [
+        "gallery",
+        "museum",
+        "artist",
+        "art",
+        "architect",
+        "publisher",
+        "events",
+        "culture"
+      ]
+    },
+    {
+      "id": "10",
+      "slug": "pretty-patty",
+      "family": "Loud Pop",
+      "keywords": [
+        "restaurant",
+        "cafe",
+        "food",
+        "burger",
+        "bar",
+        "truck",
+        "local",
+        "retail",
+        "fun",
+        "menu"
+      ]
+    },
+    {
+      "id": "11",
+      "slug": "maison-lumiere",
+      "family": "Quiet Luxury",
+      "keywords": [
+        "homewares",
+        "furniture",
+        "ceramics",
+        "boutique",
+        "luxury",
+        "interior",
+        "product",
+        "ecommerce",
+        "store"
+      ]
+    },
+    {
+      "id": "12",
+      "slug": "coolfix",
+      "family": "Soft Atmospheric Service",
+      "keywords": [
+        "trade",
+        "trades",
+        "service",
+        "repair",
+        "hvac",
+        "plumbing",
+        "lawn",
+        "mowing",
+        "cleaning",
+        "pest",
+        "local",
+        "booking",
+        "quote",
+        "home"
+      ]
+    },
+    {
+      "id": "13",
+      "slug": "trade",
+      "family": "Dark Tech Premium",
+      "keywords": [
+        "fintech",
+        "trading",
+        "crypto",
+        "investing",
+        "app",
+        "download",
+        "finance",
+        "mobile"
+      ]
+    },
+    {
+      "id": "14",
+      "slug": "elevate",
+      "family": "Quiet Luxury",
+      "keywords": [
+        "fashion",
+        "apparel",
+        "clothing",
+        "store",
+        "ecommerce",
+        "catalogue",
+        "editorial",
+        "luxury"
+      ]
+    },
+    {
+      "id": "15",
+      "slug": "northshore",
+      "family": "Editorial Heritage",
+      "keywords": [
+        "real estate",
+        "realty",
+        "property",
+        "listings",
+        "agent",
+        "interior",
+        "clinic",
+        "consultancy",
+        "professional",
+        "search"
+      ]
+    },
+    {
+      "id": "16",
+      "slug": "luxe-escape",
+      "family": "Quiet Luxury",
+      "keywords": [
+        "hotel",
+        "stay",
+        "venue",
+        "spa",
+        "booking",
+        "hospitality",
+        "resort",
+        "restaurant",
+        "accommodation"
+      ]
+    },
+    {
+      "id": "17",
+      "slug": "roco-bank",
+      "family": "Bento Showcase",
+      "keywords": [
+        "bank",
+        "banking",
+        "card",
+        "fintech",
+        "subscription",
+        "product",
+        "features",
+        "membership"
+      ]
+    },
+    {
+      "id": "18",
+      "slug": "cleanora",
+      "family": "Friendly Local Service",
+      "keywords": [
+        "cleaning",
+        "maid",
+        "laundry",
+        "carpet cleaning",
+        "home services"
+      ]
+    },
+    {
+      "id": "19",
+      "slug": "roofage",
+      "family": "Soft Atmospheric Service",
+      "keywords": [
+        "roofing",
+        "gutters",
+        "builders",
+        "solar",
+        "exterior trades"
+      ]
+    },
+    {
+      "id": "20",
+      "slug": "ridgeline",
+      "family": "Bold Colour Field",
+      "keywords": [
+        "roofing",
+        "construction",
+        "trades",
+        "removalists",
+        "any no-nonsense service"
+      ]
+    },
+    {
+      "id": "21",
+      "slug": "greenscape",
+      "family": "Fresh Natural",
+      "keywords": [
+        "landscaping",
+        "lawn care",
+        "gardening",
+        "mowing",
+        "tree services",
+        "outdoor living"
+      ]
+    },
+    {
+      "id": "22",
+      "slug": "build-with-care",
+      "family": "Brutal Mono + Electric",
+      "keywords": [
+        "construction",
+        "builders",
+        "civil",
+        "demolition",
+        "steel fabrication",
+        "industrial trades"
+      ]
+    },
+    {
+      "id": "23",
+      "slug": "voltix",
+      "family": "Bold Colour Field",
+      "keywords": [
+        "electricians",
+        "solar",
+        "hvac",
+        "plumbers",
+        "any trade with a safety-colour brand"
+      ]
+    },
+    {
+      "id": "24",
+      "slug": "coatline",
+      "family": "Warm Editorial Service",
+      "keywords": [
+        "painters",
+        "renovators",
+        "interior trades",
+        "flooring",
+        "plastering",
+        "cabinet makers"
+      ]
+    },
+    {
+      "id": "26",
+      "slug": "poolix",
+      "family": "Soft Atmospheric Service",
+      "keywords": [
+        "pool cleaning",
+        "spa services",
+        "water treatment",
+        "window cleaning",
+        "pressure washing"
+      ]
+    },
+    {
+      "id": "25",
+      "slug": "fixflow",
+      "family": "Conversion Trade Classic",
+      "keywords": [
+        "plumbers",
+        "emergency trades",
+        "locksmiths",
+        "appliance repair",
+        "gas fitters",
+        "any call-now business"
+      ]
+    },
+    {
+      "id": "27",
+      "slug": "iconic-detailing",
+      "family": "Dark Neon Performance",
+      "keywords": [
+        "car detailing",
+        "mobile mechanics",
+        "tyre shops",
+        "performance auto",
+        "motorsport",
+        "gyms"
+      ]
+    },
+    {
+      "id": "28",
+      "slug": "neowash-detailing",
+      "family": "Clean Tech Editorial",
+      "keywords": [
+        "car detailing",
+        "car wash",
+        "auto services",
+        "premium cleaning",
+        "product servicing"
+      ]
+    },
+    {
+      "id": "29",
+      "slug": "noir-dealership",
+      "family": "Dark Tech Premium",
+      "keywords": [
+        "car dealerships",
+        "car hire",
+        "luxury auto",
+        "audio/av installers",
+        "premium products"
+      ]
+    },
+    {
+      "id": "30",
+      "slug": "ride-bikes",
+      "family": "Product Spotlight",
+      "keywords": [
+        "bike shops",
+        "e-bikes",
+        "outdoor gear",
+        "power tools",
+        "mowers",
+        "any single-hero-product retailer"
+      ]
+    },
+    {
+      "id": "31",
+      "slug": "dentcore",
+      "family": "Clinical Bold Blue",
+      "keywords": [
+        "dentists",
+        "medical clinics",
+        "physio",
+        "specialists",
+        "pharmacies",
+        "any healthcare practice"
+      ]
+    },
+    {
+      "id": "32",
+      "slug": "healers-physio",
+      "family": "Calm Wellness",
+      "keywords": [
+        "physiotherapy",
+        "chiropractors",
+        "osteopaths",
+        "rehab",
+        "massage",
+        "allied health"
+      ]
+    },
+    {
+      "id": "33",
+      "slug": "tenderline-vet",
+      "family": "Moody Editorial",
+      "keywords": [
+        "vets",
+        "pet clinics",
+        "pet food",
+        "premium pet services",
+        "also any caring service that wants to feel premium"
+      ]
+    },
+    {
+      "id": "34",
+      "slug": "safeye-optometry",
+      "family": "Warm Editorial Service",
+      "keywords": [
+        "optometrists",
+        "skin clinics",
+        "cosmetic clinics",
+        "hearing clinics",
+        "health product shops"
+      ]
+    },
+    {
+      "id": "35",
+      "slug": "atelier-aesthetica",
+      "family": "Quiet Luxury",
+      "keywords": [
+        "cosmetic clinics",
+        "plastic surgeons",
+        "skin clinics",
+        "day spas",
+        "private practices",
+        "boutique hotels"
+      ]
+    },
+    {
+      "id": "36",
+      "slug": "hairs-salon",
+      "family": "Fashion Monochrome",
+      "keywords": [
+        "hair salons",
+        "barbers",
+        "stylists",
+        "makeup artists",
+        "fashion photographers",
+        "models"
+      ]
+    },
+    {
+      "id": "37",
+      "slug": "razor-rogue-barber",
+      "family": "Moody Editorial",
+      "keywords": [
+        "barbershops",
+        "tattoo studios",
+        "cocktail bars",
+        "whisky/cigar lounges",
+        "menswear"
+      ]
+    },
+    {
+      "id": "38",
+      "slug": "strive-hair",
+      "family": "Colour-Block Collage",
+      "keywords": [
+        "hair salons",
+        "interior studios",
+        "galleries",
+        "boutique retail",
+        "architects"
+      ]
+    },
+    {
+      "id": "39",
+      "slug": "stories-on-skin",
+      "family": "Brutal Mono + Electric",
+      "keywords": [
+        "tattoo studios",
+        "piercing",
+        "streetwear",
+        "gyms",
+        "music venues",
+        "skate shops"
+      ]
+    },
+    {
+      "id": "40",
+      "slug": "skiincare",
+      "family": "Soft Glow Product",
+      "keywords": [
+        "skincare",
+        "cosmetics",
+        "candles",
+        "beverages",
+        "supplements",
+        "any single-product brand"
+      ]
+    },
+    {
+      "id": "41",
+      "slug": "ffl-gym",
+      "family": "Dark Neon Performance",
+      "keywords": [
+        "gyms",
+        "crossfit boxes",
+        "sports clubs",
+        "personal trainers",
+        "supplement brands"
+      ]
+    },
+    {
+      "id": "42",
+      "slug": "healo-yoga",
+      "family": "Soft Wellness",
+      "keywords": [
+        "yoga",
+        "pilates",
+        "meditation",
+        "wellness retreats",
+        "women's health",
+        "doulas",
+        "massage"
+      ]
+    },
+    {
+      "id": "43",
+      "slug": "kova-pilates",
+      "family": "Swiss Scale Contrast",
+      "keywords": [
+        "pilates",
+        "boutique gyms",
+        "studios",
+        "fashion brands",
+        "personal brands",
+        "salons"
+      ]
+    },
+    {
+      "id": "44",
+      "slug": "tidepull-pilates",
+      "family": "Retro Sunset Editorial",
+      "keywords": [
+        "pilates",
+        "swim schools",
+        "surf schools",
+        "wellness",
+        "coastal businesses",
+        "cafes"
+      ]
+    },
+    {
+      "id": "45",
+      "slug": "solero-trainer",
+      "family": "Loud Pop",
+      "keywords": [
+        "personal trainers",
+        "kids' sports",
+        "dance schools",
+        "coaches",
+        "youth programs",
+        "bright local brands"
+      ]
+    },
+    {
+      "id": "46",
+      "slug": "caffora-cafe",
+      "family": "Loud Pop",
+      "keywords": [
+        "cafes",
+        "coffee carts",
+        "juice bars",
+        "bakeries",
+        "food trucks",
+        "streetwear"
+      ]
+    },
+    {
+      "id": "47",
+      "slug": "the-bakery",
+      "family": "Friendly Local Service",
+      "keywords": [
+        "bakeries",
+        "delis",
+        "butchers",
+        "farm shops",
+        "home-made food businesses"
+      ]
+    },
+    {
+      "id": "48",
+      "slug": "tondo-pizza",
+      "family": "Loud Pop",
+      "keywords": [
+        "pizzerias",
+        "burger bars",
+        "takeaway",
+        "food trucks",
+        "bottle shops",
+        "casual dining"
+      ]
+    },
+    {
+      "id": "49",
+      "slug": "cake-bar",
+      "family": "Art Deco Pastel",
+      "keywords": [
+        "dessert bars",
+        "patisseries",
+        "florists",
+        "bridal",
+        "cocktail bars",
+        "boutique beauty"
+      ]
+    },
+    {
+      "id": "50",
+      "slug": "thyme-time-catering",
+      "family": "Editorial Heritage",
+      "keywords": [
+        "caterers",
+        "event chefs",
+        "restaurants",
+        "function venues",
+        "wineries",
+        "farm-to-table"
+      ]
+    },
+    {
+      "id": "51",
+      "slug": "oras-garden",
+      "family": "Illustrated Craft",
+      "keywords": [
+        "jams",
+        "sauces",
+        "honey",
+        "farm produce",
+        "gift shops",
+        "artisan food",
+        "garden centres"
+      ]
+    },
+    {
+      "id": "52",
+      "slug": "aureli-jewelry",
+      "family": "Editorial Heritage",
+      "keywords": [
+        "jewellers",
+        "watch shops",
+        "bridal",
+        "perfume",
+        "premium gifts",
+        "boutique fashion"
+      ]
+    },
+    {
+      "id": "53",
+      "slug": "lento-furniture",
+      "family": "Product Spotlight",
+      "keywords": [
+        "furniture",
+        "appliances",
+        "mattresses",
+        "e-bikes",
+        "mowers",
+        "single hero product shops"
+      ]
+    },
+    {
+      "id": "54",
+      "slug": "kasaform",
+      "family": "Moody Editorial",
+      "keywords": [
+        "furniture",
+        "interior stores",
+        "homewares",
+        "architects",
+        "design studios",
+        "boutique hotels"
+      ]
+    },
+    {
+      "id": "55",
+      "slug": "blackstone-law",
+      "family": "Quiet Gallery",
+      "keywords": [
+        "law firms",
+        "conveyancers",
+        "accountants",
+        "consultancies",
+        "financial advisers",
+        "b2b services"
+      ]
+    },
+    {
+      "id": "56",
+      "slug": "cohen-accounting",
+      "family": "Editorial Heritage",
+      "keywords": [
+        "accountants",
+        "tax agents",
+        "bookkeepers",
+        "financial planners",
+        "law firms",
+        "consultancies"
+      ]
+    },
+    {
+      "id": "57",
+      "slug": "fuzzy-insurance",
+      "family": "Playful 3D",
+      "keywords": [
+        "insurance",
+        "banks",
+        "utilities",
+        "kids' services",
+        "health insurance",
+        "friendly fintech"
+      ]
+    },
+    {
+      "id": "58",
+      "slug": "enkel-loans",
+      "family": "Bento Showcase",
+      "keywords": [
+        "mortgage brokers",
+        "finance",
+        "insurance quotes",
+        "solar savings",
+        "any quote-calculator business"
+      ]
+    },
+    {
+      "id": "59",
+      "slug": "build-dream-consulting",
+      "family": "Dark Warm Corporate",
+      "keywords": [
+        "consultants",
+        "coaches",
+        "agencies",
+        "financial advisers",
+        "business brokers"
+      ]
+    },
+    {
+      "id": "60",
+      "slug": "hrflow-recruitment",
+      "family": "Swiss Scale Contrast",
+      "keywords": [
+        "recruitment",
+        "staffing",
+        "hr",
+        "coaching",
+        "b2b services",
+        "employment agencies"
+      ]
+    },
+    {
+      "id": "61",
+      "slug": "al-jabr-tutoring",
+      "family": "Playful 3D",
+      "keywords": [
+        "tutoring",
+        "kids' classes",
+        "swim schools",
+        "childcare",
+        "family services",
+        "toy shops"
+      ]
+    },
+    {
+      "id": "62",
+      "slug": "forshift-driving",
+      "family": "Illustrated Craft",
+      "keywords": [
+        "driving schools",
+        "swim schools",
+        "tutors",
+        "local courses",
+        "licence/training providers"
+      ]
+    },
+    {
+      "id": "63",
+      "slug": "safsouf-photographer",
+      "family": "Moody Editorial",
+      "keywords": [
+        "wedding photographers",
+        "videographers",
+        "celebrants",
+        "bridal stylists",
+        "florists",
+        "luxury events"
+      ]
+    },
+    {
+      "id": "64",
+      "slug": "american-west-venue",
+      "family": "Quiet Luxury",
+      "keywords": [
+        "wedding venues",
+        "ranches",
+        "wineries",
+        "boutique accommodation",
+        "elopement planners"
+      ]
+    },
+    {
+      "id": "65",
+      "slug": "new-horizon-chapel",
+      "family": "Editorial Heritage",
+      "keywords": [
+        "churches",
+        "community halls",
+        "schools",
+        "museums",
+        "heritage sites",
+        "funeral homes"
+      ]
+    },
+    {
+      "id": "66",
+      "slug": "pups-pet-care",
+      "family": "Playful 3D",
+      "keywords": [
+        "pet care",
+        "groomers",
+        "vets",
+        "doggy daycare",
+        "pet shops",
+        "kids' services"
+      ]
+    },
+    {
+      "id": "67",
+      "slug": "romp-pets",
+      "family": "Loud Pop",
+      "keywords": [
+        "pet food subscriptions",
+        "dog walkers",
+        "doggy daycare",
+        "kids' brands",
+        "subscription boxes"
+      ]
+    },
+    {
+      "id": "68",
+      "slug": "wanderlust-travel",
+      "family": "Retro Poster",
+      "keywords": [
+        "travel agencies",
+        "tour operators",
+        "festivals",
+        "music venues",
+        "breweries",
+        "surf/skate brands"
+      ]
+    },
+    {
+      "id": "69",
+      "slug": "icelander-tours",
+      "family": "Cinematic Minimal",
+      "keywords": [
+        "tour operators",
+        "adventure guides",
+        "outdoor gear",
+        "architecture",
+        "photographers",
+        "documentary-style brands"
+      ]
+    },
+    {
+      "id": "70",
+      "slug": "bobostay-glamping",
+      "family": "Editorial Heritage",
+      "keywords": [
+        "glamping",
+        "cottages",
+        "airbnb hosts",
+        "farm stays",
+        "retreats",
+        "b&bs"
+      ]
+    },
+    {
+      "id": "71",
+      "slug": "yacht-charter",
+      "family": "Product Spotlight",
+      "keywords": [
+        "boat charters",
+        "marine services",
+        "boat detailing",
+        "jet ski hire",
+        "luxury rentals",
+        "car hire"
+      ]
+    },
+    {
+      "id": "72",
+      "slug": "poliform-interiors",
+      "family": "Warm Editorial Service",
+      "keywords": [
+        "interior designers",
+        "furniture showrooms",
+        "builders",
+        "renovators",
+        "property stylists"
+      ]
+    },
+    {
+      "id": "73",
+      "slug": "evergreen-architex",
+      "family": "Moody Editorial",
+      "keywords": [
+        "architects",
+        "custom home builders",
+        "landscapers",
+        "timber/cabin builders",
+        "eco tourism"
+      ]
+    },
+    {
+      "id": "74",
+      "slug": "beyond-architecture",
+      "family": "Playful 3D",
+      "keywords": [
+        "builders",
+        "architects",
+        "property developers",
+        "home loans",
+        "kids-friendly or approachable construction brands"
+      ]
+    },
+    {
+      "id": "75",
+      "slug": "coworking-space",
+      "family": "Swiss Scale Contrast",
+      "keywords": [
+        "coworking spaces",
+        "studios for hire",
+        "gyms",
+        "function rooms",
+        "offices",
+        "business centres"
+      ]
+    },
+    {
+      "id": "76",
+      "slug": "reshaped-kitchen",
+      "family": "Moody Editorial",
+      "keywords": [
+        "kitchen and bathroom renovators",
+        "joiners",
+        "cabinet makers",
+        "stone benchtops",
+        "builders",
+        "flooring"
+      ]
+    }
+  ],
+  "palette_strategies": [
+    {
+      "name": "Mono + one loud accent",
+      "how": "Greys/black/white for the whole UI; ONE saturated hue appears only on primary CTAs, active states and tiny markers. Accent coverage under 5% of the page.",
+      "seen_in": [
+        "06",
+        "02",
+        "08"
+      ]
+    },
+    {
+      "name": "Brand colour field",
+      "how": "One saturated brand colour floods whole sections or one bento tile per section; everything else is near-white and ink.",
+      "seen_in": [
+        "03",
+        "10"
+      ]
+    },
+    {
+      "name": "Photo-led neutrals",
+      "how": "UI is white / stone / black only. All colour comes from photography or product imagery, so image art direction must be consistent (same light, same temperature).",
+      "seen_in": [
+        "11",
+        "09",
+        "14",
+        "16"
+      ]
+    },
+    {
+      "name": "Dark + glow",
+      "how": "Near-black base with a soft radial glow of the accent behind focal points; accent on key words and CTAs; optional iridescent/3D art.",
+      "seen_in": [
+        "08",
+        "13"
+      ]
+    },
+    {
+      "name": "Two-temperature",
+      "how": "Dark, cinematic hero; content sections switch to a very light tint of the same hue (e.g. #0B0716 hero -> #F5F2FF sections). One warm contrasting pop for the active state.",
+      "seen_in": [
+        "07",
+        "17"
+      ]
+    },
+    {
+      "name": "Pastel card system",
+      "how": "One strong brand colour plus 3 pastel card fills (butter, ice, blush or sage, sand, lilac) used to separate features.",
+      "seen_in": [
+        "03"
+      ]
+    },
+    {
+      "name": "Atmospheric gradient",
+      "how": "A soft, photographic or CSS gradient that IS the brand metaphor (sky, mist, dusk, ocean, morning grass). UI on top stays white and simple.",
+      "seen_in": [
+        "12"
+      ]
+    },
+    {
+      "name": "Earth duo + metallic",
+      "how": "A deep earthy dark (olive, oxblood, forest, espresso) paired with a warm paper cream, plus one metallic-feeling accent (gold, brass, copper) used sparingly.",
+      "seen_in": [
+        "01"
+      ]
+    },
+    {
+      "name": "Warm sand + action",
+      "how": "Cream-to-sand vertical gradient backgrounds, near-black text, and one bright action colour reserved for the conversion button.",
+      "seen_in": [
+        "02"
+      ]
+    },
+    {
+      "name": "Texture-driven",
+      "how": "Colour and mood come from close-up material textures (stone, fabric, foliage, metal, water) used as card backgrounds; type stays white/black.",
+      "seen_in": [
+        "17"
+      ]
+    },
+    {
+      "name": "Single deep brand hue everywhere",
+      "how": "One deep colour (forest, navy, oxblood, espresso) is the background of almost every section; type in off-white; photos carry the rest.",
+      "seen_in": [
+        "73",
+        "52"
+      ]
+    },
+    {
+      "name": "Section-by-section colour blocks",
+      "how": "Every section gets its own flat brand colour (e.g. cream, red, green, mustard, espresso) like a menu board; tie them together with one type system and a ticker band.",
+      "seen_in": [
+        "48"
+      ]
+    },
+    {
+      "name": "B&W photography + one electric colour",
+      "how": "Convert all photos to black & white or duotone; one electric colour (ultramarine, teal, lime) for shapes and CTAs.",
+      "seen_in": [
+        "22",
+        "39"
+      ]
+    },
+    {
+      "name": "Pastel tints of one hue",
+      "how": "Three or four tints of a single hue (lilac, peach, sage) layered as backgrounds, with a deep shade of the same hue for type.",
+      "seen_in": [
+        "49",
+        "42"
+      ]
+    },
+    {
+      "name": "Hi-vis pairing",
+      "how": "Safety orange or yellow flooding part of the hero, acid yellow/lime CTAs, near-black ink: reads as trade, energy and urgency.",
+      "seen_in": [
+        "23",
+        "27"
+      ]
+    },
+    {
+      "name": "Jewel tone + ivory",
+      "how": "One rich jewel tone (burgundy, emerald, sapphire) as solid text panels against ivory; gold or brass from photography.",
+      "seen_in": [
+        "52"
+      ]
+    }
+  ],
+  "type_pairings": [
+    {
+      "name": "Editorial serif with italic emphasis",
+      "display": "Instrument Serif",
+      "body": "Inter",
+      "note": "Italicise exactly one word or phrase per heading.",
+      "google": "family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600"
+    },
+    {
+      "name": "Sharp heritage serif",
+      "display": "Gloock",
+      "body": "Instrument Sans",
+      "note": "Stack short sentences with full stops.",
+      "google": "family=Gloock&family=Instrument+Sans:wght@400;500;600"
+    },
+    {
+      "name": "Soft optical serif",
+      "display": "Fraunces (opsz 144, SOFT 50)",
+      "body": "Manrope",
+      "note": "Friendly-premium; great for food, wellness, family businesses.",
+      "google": "family=Fraunces:opsz,wght,SOFT@9..144,300..800,0..100&family=Manrope:wght@400;500;700"
+    },
+    {
+      "name": "Poster condensed + mono",
+      "display": "Anton",
+      "body": "JetBrains Mono",
+      "note": "Set display edge to edge; wrap mono labels in ( ).",
+      "google": "family=Anton&family=JetBrains+Mono:wght@400;600"
+    },
+    {
+      "name": "Engineered wide",
+      "display": "Archivo (wdth 125, 600)",
+      "body": "IBM Plex Mono + Inter",
+      "note": "Use font-stretch: 125% via the variable axis; labels with // suffix.",
+      "google": "family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500"
+    },
+    {
+      "name": "Chunky friendly grotesk",
+      "display": "Bricolage Grotesque (800)",
+      "body": "DM Sans",
+      "note": "Tight leading (0.95), Title Case.",
+      "google": "family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=DM+Sans:wght@400;500;700"
+    },
+    {
+      "name": "Swiss tight scale-contrast",
+      "display": "Inter Tight (700, -0.06em)",
+      "body": "Inter Tight (400)",
+      "note": "One giant lowercase word per page; everything else 12-14px.",
+      "google": "family=Inter+Tight:wght@400;500;700"
+    },
+    {
+      "name": "Condensed caps architect",
+      "display": "Barlow Condensed (400-500)",
+      "body": "Inter",
+      "note": "ALL CAPS, light weight, stacked lines.",
+      "google": "family=Barlow+Condensed:wght@300;400;500;600&family=Inter:wght@400;500"
+    },
+    {
+      "name": "Light numerals service",
+      "display": "Plus Jakarta Sans (600)",
+      "body": "Plus Jakarta Sans (400) + 200 for big stats",
+      "note": "Stats huge and light in the brand colour.",
+      "google": "family=Plus+Jakarta+Sans:wght@200;400;600;800"
+    },
+    {
+      "name": "Quirky display",
+      "display": "Syne (700-800)",
+      "body": "Work Sans",
+      "note": "Distinctive letterforms; keep headlines short.",
+      "google": "family=Syne:wght@500;700;800&family=Work+Sans:wght@400;500"
+    },
+    {
+      "name": "Classic wordmark + micro caps",
+      "display": "Cormorant Garamond (logo + rare headings)",
+      "body": "Hanken Grotesk (400, uppercase micro labels)",
+      "note": "Bracketed labels [Like This]; tiny flat controls.",
+      "google": "family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Hanken+Grotesk:wght@400;500"
+    },
+    {
+      "name": "Mixed-weight neo-grotesk",
+      "display": "Onest (300 + 600 in the same line)",
+      "body": "Onest + Geist Mono for numbers",
+      "note": "Bold only the key word: 'Easy **pay**'.",
+      "google": "family=Onest:wght@300;400;600&family=Geist+Mono:wght@400;500"
+    },
+    {
+      "name": "Warm slab-ish serif",
+      "display": "Young Serif",
+      "body": "Figtree",
+      "note": "Homely and confident; good for local trades and food.",
+      "google": "family=Young+Serif&family=Figtree:wght@400;500;700"
+    },
+    {
+      "name": "Industrial stencil-free condensed",
+      "display": "Big Shoulders Display (800)",
+      "body": "Onest",
+      "note": "Sports, trades, outdoors, events.",
+      "google": "family=Big+Shoulders+Display:wght@500;700;800;900&family=Onest:wght@400;500"
+    },
+    {
+      "name": "Technical grotesk",
+      "display": "Space Grotesk (500-700)",
+      "body": "Space Mono for labels",
+      "note": "Pairs well with blueprint or data visuals.",
+      "google": "family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700"
+    },
+    {
+      "name": "Fashion Didone caps",
+      "display": "Bodoni Moda or Playfair Display SC (ALL CAPS, staggered)",
+      "body": "Inter",
+      "note": "Break long words across lines for drama.",
+      "google": "family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@400;500"
+    },
+    {
+      "name": "Art-deco thin display",
+      "display": "Italiana or Poiret One",
+      "body": "Josefin Sans",
+      "note": "Hairline-thin caps headings; pair with lots of space.",
+      "google": "family=Italiana&family=Josefin+Sans:wght@300;400;600"
+    },
+    {
+      "name": "Quirky chunky display",
+      "display": "Shrikhand or Rubik Mono One",
+      "body": "Archivo",
+      "note": "One giant word only; never for body or long headings.",
+      "google": "family=Shrikhand&family=Archivo:wght@400;500;700"
+    },
+    {
+      "name": "Romantic serif + script",
+      "display": "Cormorant Garamond (300-500)",
+      "body": "Montserrat 400 caps (tracking .2em) + Pinyon Script accents",
+      "note": "Script only for one short line or signature.",
+      "google": "family=Cormorant+Garamond:ital,wght@0,300;0,500;1,400&family=Montserrat:wght@400;500&family=Pinyon+Script"
+    },
+    {
+      "name": "Typewriter craft",
+      "display": "Courier Prime (labels, copy) + Yeseva One for names",
+      "body": "Courier Prime",
+      "note": "Handmade, artisan, illustrated brands.",
+      "google": "family=Courier+Prime:wght@400;700&family=Yeseva+One"
+    },
+    {
+      "name": "Ultra-tall poster condensed",
+      "display": "Antonio or Big Shoulders Display (800)",
+      "body": "Archivo Narrow",
+      "note": "Let photos or cut-outs rise through the letters.",
+      "google": "family=Antonio:wght@400;700&family=Archivo+Narrow:wght@400;600"
+    },
+    {
+      "name": "Rounded friendly geometric",
+      "display": "Outfit (700-800)",
+      "body": "Outfit (400)",
+      "note": "Warm, approachable trades and fitness.",
+      "google": "family=Outfit:wght@300;400;600;800"
+    },
+    {
+      "name": "Didone + clean sans mix",
+      "display": "DM Serif Display",
+      "body": "DM Sans",
+      "note": "Coloured full stops after short headline sentences.",
+      "google": "family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;700"
+    }
+  ],
+  "signature_moves": [
+    {
+      "name": "Inline photo pill inside the headline",
+      "from": "02",
+      "how": "A rounded pill image sits between two words of the H1, same height as the cap height x 1.1."
+    },
+    {
+      "name": "Notched / jigsaw image mask",
+      "from": "03",
+      "how": "Hero image clipped with stepped notches on its edges via clip-path polygon or SVG mask."
+    },
+    {
+      "name": "Giant page word anchored bottom-left",
+      "from": "04",
+      "how": "Page name at 15-20vw, lowercase, tight tracking, pinned to the bottom-left of the first viewport."
+    },
+    {
+      "name": "Edge-to-edge word with object breaking through",
+      "from": "05",
+      "how": "One condensed word fills 100% width; a product image or device overlaps it with higher z-index."
+    },
+    {
+      "name": "Parenthesised mono micro-language",
+      "from": "05",
+      "how": "Nav and labels as ( LABEL ) in uppercase monospace; rotated ticker text on panel edges."
+    },
+    {
+      "name": "Blueprint layer",
+      "from": "06",
+      "how": "Hairline grid cells, 45-degree hatch stripes and isometric line drawings as SVG decoration around content."
+    },
+    {
+      "name": "Numbered vertical tab rail",
+      "from": "06",
+      "how": "01-04 tabs stacked on the left; active tab is a solid ink block; content swaps on the right."
+    },
+    {
+      "name": "Organic blob image masks on a path",
+      "from": "07",
+      "how": "Photos masked into metaball/peanut shapes connected by a thin line that walks the reader through steps."
+    },
+    {
+      "name": "Hub-and-spoke business diagram",
+      "from": "07",
+      "how": "Central logo tile in a ring, 3-5 app-icon-style tiles on spokes, each labelled: explains who you connect."
+    },
+    {
+      "name": "Colossal footer wordmark",
+      "from": "08",
+      "how": "Brand name at ~25vw in a metallic or tonal gradient, cropped by the bottom of the page."
+    },
+    {
+      "name": "Staggered multi-line headline",
+      "from": "16",
+      "how": "Line 1 starts at column 1, following lines indent to column 4-7 of a 12-col grid."
+    },
+    {
+      "name": "Hover-reveal index list",
+      "from": "09",
+      "how": "Large names between hairlines, inactive in grey; hovered row turns ink and shows a floating thumbnail near the cursor (tap to expand on mobile)."
+    },
+    {
+      "name": "Diagonal outlined slogan bands",
+      "from": "10",
+      "how": "Repeating outlined uppercase slogan text in a rotated band (-6 to -10deg) used as a section divider; slow marquee optional."
+    },
+    {
+      "name": "Sticker badges on cut-outs",
+      "from": "10",
+      "how": "Circular rotated badges with curved text pinned to product or service images."
+    },
+    {
+      "name": "Bracketed micro-labels + flat tiny controls",
+      "from": "11",
+      "how": "[Section labels] in brackets; buttons as small flat rectangles, no radius, no shadow."
+    },
+    {
+      "name": "Atmosphere-as-metaphor hero",
+      "from": "12",
+      "how": "Hero imagery depicts the FEELING of the outcome (fresh sky, calm water, neat stripes) rather than the work itself."
+    },
+    {
+      "name": "Clay-render diagram of the service",
+      "from": "12",
+      "how": "A white monochrome 3D/isometric illustration (or SVG) of where the service happens, with one brand-colour pulse."
+    },
+    {
+      "name": "Headline orbited by floating UI cards",
+      "from": "13",
+      "how": "5-8 mini product cards float around a giant word at different scales; subtle parallax on scroll/pointer."
+    },
+    {
+      "name": "Uneven masonry grid",
+      "from": "14",
+      "how": "Items of mixed heights in a 3-4 column grid so rows deliberately misalign; images on pale wells."
+    },
+    {
+      "name": "Search / quote dock fused to hero",
+      "from": "15",
+      "how": "Frosted bar on the bottom edge of the hero photo with icon-in-circle fields and one dark CTA."
+    },
+    {
+      "name": "Stats inside giant touching circles",
+      "from": "15",
+      "how": "4 pale circles edge to edge, each holding one big numeral and a tiny caption."
+    },
+    {
+      "name": "Fanned stack of tilted objects",
+      "from": "17",
+      "how": "3-5 cards/photos/products cascading diagonally with slight rotation and overlap, spilling off one edge."
+    },
+    {
+      "name": "Texture bento with one fact per tile",
+      "from": "17",
+      "how": "Bento grid of material-texture photos; each tile holds exactly one stat or feature in white type."
+    },
+    {
+      "name": "Ghost watermark word",
+      "from": "01",
+      "how": "A huge italic word at 5-8% opacity behind a section, partially cropped."
+    },
+    {
+      "name": "Dot-scale ratings",
+      "from": "01",
+      "how": "Attributes rated with 5 small dots (filled/outlined) instead of bars or stars."
+    },
+    {
+      "name": "Light giant stat numerals",
+      "from": "12",
+      "how": "Trust stats at 64-96px in weight 200 in the brand colour, with tiny caps captions."
+    },
+    {
+      "name": "Giant serif brand word laid across the lower third of the hero photo",
+      "from": "18",
+      "how": "giant serif brand word laid across the lower third of the hero photo, partly behind the person"
+    },
+    {
+      "name": "Ghost wordmark band behind the header",
+      "from": "19",
+      "how": "ghost wordmark band behind the header + cloud sky backdrop"
+    },
+    {
+      "name": "Service list where the highlighted service is a tilted orange sticker",
+      "from": "20",
+      "how": "service list where the highlighted service is a tilted orange sticker"
+    },
+    {
+      "name": "Services written as one big slash-separated sentence where the...",
+      "from": "21",
+      "how": "services written as one big slash-separated sentence where the active service turns ink"
+    },
+    {
+      "name": "Blue duotone photography",
+      "from": "22",
+      "how": "blue duotone photography + giant outlined section words behind content"
+    },
+    {
+      "name": "Diagonal colour slab cutting into the hero photo",
+      "from": "23",
+      "how": "diagonal colour slab cutting into the hero photo"
+    },
+    {
+      "name": "Hero bottom edge as a ragged paint-stroke mask",
+      "from": "24",
+      "how": "hero bottom edge as a ragged paint-stroke mask"
+    },
+    {
+      "name": "Pale ghost wordmark sitting inside the hero above the headline",
+      "from": "26",
+      "how": "pale ghost wordmark sitting inside the hero above the headline"
+    },
+    {
+      "name": "Inline 60-second booking bar directly under the hero",
+      "from": "25",
+      "how": "inline 60-second booking bar directly under the hero"
+    },
+    {
+      "name": "Diagonal neon slash band cutting across the bottom of the hero",
+      "from": "27",
+      "how": "diagonal neon slash band cutting across the bottom of the hero"
+    },
+    {
+      "name": "Two-tone headlines (second half in grey)",
+      "from": "28",
+      "how": "two-tone headlines (second half in grey) + mono micro copy"
+    },
+    {
+      "name": "Rim-lit silhouette hero with no colour at all",
+      "from": "29",
+      "how": "rim-lit silhouette hero with no colour at all"
+    },
+    {
+      "name": "Giant ghost model name behind a product cut-out",
+      "from": "30",
+      "how": "giant ghost model name behind a product cut-out, with a diagonal two-colour band below"
+    },
+    {
+      "name": "Treatments list as a huge stacked type index on blue with one...",
+      "from": "31",
+      "how": "treatments list as a huge stacked type index on blue with one active item"
+    },
+    {
+      "name": "Wavy ribbon with services set on a curved text path",
+      "from": "32",
+      "how": "wavy ribbon with services set on a curved text path"
+    },
+    {
+      "name": "Line-art annotations drawn over a cinematic hero photo",
+      "from": "33",
+      "how": "line-art annotations drawn over a cinematic hero photo"
+    },
+    {
+      "name": "Inline photo pills inside a long statement paragraph",
+      "from": "34",
+      "how": "inline photo pills inside a long statement paragraph"
+    },
+    {
+      "name": "Small portrait photos tucked into the negative space around a...",
+      "from": "35",
+      "how": "small portrait photos tucked into the negative space around a centred headline"
+    },
+    {
+      "name": "Split-screen gender choice hero",
+      "from": "36",
+      "how": "split-screen gender choice hero + condensed caps words partly covered by photos"
+    },
+    {
+      "name": "Words broken across lines in huge serif caps ('GA-LL-ERY')",
+      "from": "37",
+      "how": "words broken across lines in huge serif caps ('GA-LL-ERY')"
+    },
+    {
+      "name": "A single colour block that zig-zags down the page",
+      "from": "38",
+      "how": "a single colour block that zig-zags down the page, with photos and text panels clipped onto it"
+    },
+    {
+      "name": "Photo subjects breaking through giant condensed letters",
+      "from": "39",
+      "how": "photo subjects breaking through giant condensed letters"
+    },
+    {
+      "name": "Backlit glowing product photo with a floating mini product card",
+      "from": "40",
+      "how": "backlit glowing product photo with a floating mini product card"
+    },
+    {
+      "name": "Cut-out athlete lit by a coloured radial glow inside a rounded...",
+      "from": "41",
+      "how": "cut-out athlete lit by a coloured radial glow inside a rounded hero card"
+    },
+    {
+      "name": "Row of arch-shaped photo frames under a centred serif headline",
+      "from": "42",
+      "how": "row of arch-shaped photo frames under a centred serif headline"
+    },
+    {
+      "name": "Giant brand wordmark with © across a cinematic portrait",
+      "from": "43",
+      "how": "giant brand wordmark with © across a cinematic portrait"
+    },
+    {
+      "name": "Modernist sun-over-sea arch illustration made from simple shapes",
+      "from": "44",
+      "how": "modernist sun-over-sea arch illustration made from simple shapes"
+    },
+    {
+      "name": "Cut-out person framed by bold geometric half-circles",
+      "from": "45",
+      "how": "cut-out person framed by bold geometric half-circles"
+    },
+    {
+      "name": "Branded product mockup breaking through a giant edge-to-edge word",
+      "from": "46",
+      "how": "branded product mockup breaking through a giant edge-to-edge word"
+    },
+    {
+      "name": "Giant brand word set vertically along the left edge",
+      "from": "47",
+      "how": "giant brand word set vertically along the left edge"
+    },
+    {
+      "name": "Every section is a different flat brand colour",
+      "from": "48",
+      "how": "every section is a different flat brand colour, separated by a ticker band"
+    },
+    {
+      "name": "Ultra-thin art-deco headline",
+      "from": "49",
+      "how": "ultra-thin art-deco headline + rotated vertical nav"
+    },
+    {
+      "name": "Rounded thick-bordered 'screen' frame around a food-film hero on a...",
+      "from": "50",
+      "how": "rounded thick-bordered 'screen' frame around a food-film hero on a warm coloured page"
+    },
+    {
+      "name": "Product surrounded by hand-drawn ingredient illustrations",
+      "from": "51",
+      "how": "product surrounded by hand-drawn ingredient illustrations, frame colour themed per product"
+    },
+    {
+      "name": "Solid oxblood text panels paired edge-to-edge with portrait...",
+      "from": "52",
+      "how": "solid oxblood text panels paired edge-to-edge with portrait photography"
+    },
+    {
+      "name": "Annotated product with leader-line callouts",
+      "from": "53",
+      "how": "annotated product with leader-line callouts + a stats bar that ends in the buy button"
+    },
+    {
+      "name": "First word of every headline in a coloured italic serif",
+      "from": "54",
+      "how": "first word of every headline in a coloured italic serif"
+    },
+    {
+      "name": "Restrained grey palette",
+      "from": "55",
+      "how": "restrained grey palette + B&W symbolic sculpture photography"
+    },
+    {
+      "name": "Orange italic serif ampersand phrase",
+      "from": "56",
+      "how": "orange italic serif ampersand phrase + photo with labelled leader-line tags"
+    },
+    {
+      "name": "A soft 3D mascot texture used as the background for UI cards",
+      "from": "57",
+      "how": "a soft 3D mascot texture used as the background for UI cards"
+    },
+    {
+      "name": "Bar chart made of full-height coloured columns as a section's design",
+      "from": "58",
+      "how": "bar chart made of full-height coloured columns as a section's design"
+    },
+    {
+      "name": "Copper gradient glow bleeding from the page edges into a dark layout",
+      "from": "59",
+      "how": "copper gradient glow bleeding from the page edges into a dark layout"
+    },
+    {
+      "name": "Metrics stepping down a diagonal staircase",
+      "from": "60",
+      "how": "metrics stepping down a diagonal staircase"
+    },
+    {
+      "name": "Selectable chips that pre-fill the booking request",
+      "from": "61",
+      "how": "selectable chips that pre-fill the booking request"
+    },
+    {
+      "name": "Row of four rounded illustration cards as the hero",
+      "from": "62",
+      "how": "row of four rounded illustration cards as the hero"
+    },
+    {
+      "name": "Form-confirmation page as a physical letter in an envelope",
+      "from": "63",
+      "how": "form-confirmation page as a physical letter in an envelope"
+    },
+    {
+      "name": "Extreme whitespace",
+      "from": "64",
+      "how": "extreme whitespace + hairline-thin serif"
+    },
+    {
+      "name": "Italic second line",
+      "from": "65",
+      "how": "italic second line + serif stats tucked into the hero corner"
+    },
+    {
+      "name": "Cut-out subject over overlapping blob",
+      "from": "66",
+      "how": "cut-out subject over overlapping blob + circle shapes with floating avatar bubbles"
+    },
+    {
+      "name": "A hand-drawn looping line (leash) that travels across sections",
+      "from": "67",
+      "how": "a hand-drawn looping line (leash) that travels across sections"
+    },
+    {
+      "name": "Landmark cut-outs rising through ultra-tall condensed words",
+      "from": "68",
+      "how": "landmark cut-outs rising through ultra-tall condensed words"
+    },
+    {
+      "name": "Hairline crosshair grid laid over a full-bleed landscape",
+      "from": "69",
+      "how": "hairline crosshair grid laid over a full-bleed landscape"
+    },
+    {
+      "name": "Italic emphasis woven through long",
+      "from": "70",
+      "how": "italic emphasis woven through long, descriptive serif headlines"
+    },
+    {
+      "name": "The hero object placed in front of a giant word",
+      "from": "71",
+      "how": "the hero object placed in front of a giant word, with the sea photo filling the bottom half"
+    },
+    {
+      "name": "One word centred over a warm interior photo",
+      "from": "72",
+      "how": "one word centred over a warm interior photo + rotating circular badge"
+    },
+    {
+      "name": "Two-tone wide caps headings on a single deep brand green",
+      "from": "73",
+      "how": "two-tone wide caps headings on a single deep brand green"
+    },
+    {
+      "name": "Tiny 3D icons inserted between words in headlines",
+      "from": "74",
+      "how": "tiny 3D icons inserted between words in headlines"
+    },
+    {
+      "name": "Orange full-height menu panel",
+      "from": "75",
+      "how": "orange full-height menu panel + small square orange arrow buttons"
+    },
+    {
+      "name": "Text cards on BLURRED versions of the project photos",
+      "from": "76",
+      "how": "text cards on BLURRED versions of the project photos"
+    }
+  ],
+  "layout_rhythms": [
+    "Full-bleed image hero -> split editorial block -> index list -> image strip -> quiet footer",
+    "Bento-first: hero headline over a bento grid; every following section is a bento variation",
+    "Poster scroll: each section is one huge statement + one supporting element, lots of air between",
+    "Alternating left/right blocks with oversized section numbers (01, 02, 03) in the margin",
+    "Sticky side rail (section nav or CTA) with a long single content column on the right",
+    "Horizontal scroll-pinned section for process/steps sandwiched between vertical sections",
+    "Card-stack storytelling: sections slide up and stack like cards as you scroll",
+    "Magazine grid: 12-col with deliberate asymmetry, captions in the margins, pull quotes",
+    "Conversion trade stack: hero + quick-quote bar, trust strip, services, process steps, reviews, gallery, emergency CTA band, footer",
+    "Product stage: one hero product/vehicle per slide on a tinted stage with callouts, followed by a spec/stat bar ending in the CTA",
+    "Framed site: the whole page sits inside a thick rounded coloured frame/border on a contrasting backdrop",
+    "Index-led: the main navigation of services/projects is a huge typographic list with hover/tap image reveals",
+    "Ticker-banded: flat colour sections separated by scrolling ticker bands of selling points"
+  ],
+  "motion_styles": [
+    "Restrained: opacity + 12px rise on enter, 500ms cubic-bezier(.2,.7,.2,1), staggered 60ms",
+    "Text-led: headlines reveal line by line with a clip mask; nothing else moves",
+    "Marquee rhythm: slow logo/slogan marquees, pause on hover",
+    "Depth: floating elements with subtle pointer/scroll parallax (max 20px)",
+    "Hover-rich: image reveals, underline draws, magnetic primary button",
+    "Counters + progress: stats count up once, carousels show progress bars"
+  ],
+  "accent_hue_bands": [
+    {
+      "name": "signal orange",
+      "range": "15-30"
+    },
+    {
+      "name": "tomato red",
+      "range": "2-12"
+    },
+    {
+      "name": "mustard / gold",
+      "range": "38-48"
+    },
+    {
+      "name": "acid lime",
+      "range": "70-90"
+    },
+    {
+      "name": "fresh green",
+      "range": "120-145"
+    },
+    {
+      "name": "teal",
+      "range": "170-190"
+    },
+    {
+      "name": "sky / cobalt blue",
+      "range": "200-225"
+    },
+    {
+      "name": "electric violet",
+      "range": "255-270"
+    },
+    {
+      "name": "lavender",
+      "range": "245-255 (low saturation)"
+    },
+    {
+      "name": "magenta / pink",
+      "range": "320-340"
+    },
+    {
+      "name": "no accent: neutrals only",
+      "range": "n/a"
+    }
+  ]
+}

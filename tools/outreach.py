@@ -41,6 +41,8 @@ If you like it, it can be live on your own domain this week, {offer}. No setup f
 
 {dom}
 
+Once it's live, we can also add it to your Google Business Profile so it shows when people search for you on Google and Maps.
+
 If it's not for you, no worries. The preview comes down in 14 days.
 
 {sig}
@@ -67,4 +69,12 @@ Reply "unsubscribe" to stop these emails.
 Hi, {first} from One Sight Studio here. I built a website for {n}, have a look: {link}. {sms_offer}, no setup fee. Reply STOP to opt out.
 """
     (ROOT / "src" / slug / "outreach.md").write_text(t)
+    # machine-readable copy for tools/send.py
+    body1 = t.split("**Subject:** I built a website for")[1].split("\n", 1)[1].split("\n---")[0].strip()
+    body2 = t.split(f"**Subject:** Re: I built a website for {n}")[1].split("\n---")[0].strip()
+    (ROOT / "src" / slug / "outreach.json").write_text(json.dumps({
+        "to": s.get("outreach_email", ""), "source": s.get("outreach_source", ""), "phone": s.get("phone", ""),
+        "first": {"subject": f"I built a website for {n}", "body": body1},
+        "followup": {"subject": f"Re: I built a website for {n}", "body": body2},
+        "preview": link}, indent=2, ensure_ascii=False))
     print("wrote", slug)

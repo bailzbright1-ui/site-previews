@@ -188,7 +188,7 @@ html.js [data-r=clip].in>*{clip-path:inset(0 0 0 0)}
     <div class="top">
       <div class="name">Hutcheson<br>Plumbing &amp; Roofing<br><span class="br" style="font-weight:400">Coolum Beach</span></div>
       <nav aria-label="Main"><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
-      <a class="btn k r" href="#quote">Request a call back</a>
+      <a class="btn k r" href="tel:0412453464">Call 0412 453 464</a>
     </div>
     <div class="mid">
       <div class="hphoto" data-r="clip" data-d="300"><img src="img/install.webp" width="1200" height="1800" alt="Terracotta roof tiles being laid" fetchpriority="high" data-px="0.06"></div>
@@ -255,7 +255,7 @@ html.js [data-r=clip].in>*{clip-path:inset(0 0 0 0)}
 </main>
 
 <footer><div class="wrap"><span>© 2026 Hutcheson Plumbing &amp; Roofing Maintenance · Coolum Beach QLD</span><span>[Plumbing licence 30417 · Contractor licence 1236948]</span></div></footer>
-<div class="dock"><a class="btn y" href="#quote">Request a call back</a></div>
+<div class="dock"><a class="btn y" href="tel:0412453464">Call 0412 453 464</a></div>
 
 <script>
 document.querySelectorAll('form[data-lead]').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();if(!f.checkValidity()){f.reportValidity();return}var ep='',b=f.querySelector('[type=submit]');if(!ep){f.classList.add('sent');return}b.disabled=true;b.textContent='Sending…';fetch(ep,{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)}).then(function(r){if(!r.ok)throw 0;f.classList.add('sent')}).catch(function(){b.disabled=false;b.textContent='Try again';alert('Sorry, that did not send. Please call us instead.')})})});

@@ -25,10 +25,11 @@
       "owner_email": "",
       "domain": "",
       "found_on": "Fresha",
-      "existing_domain": "",
+      "existing_domain": "beautyinaboxcocaloundra.com",
       "outreach_email": "carla@beautyinaboxco.com.au",
       "outreach_source": "https://www.beautyinaboxcocaloundra.com/contact (contact page, checked 28 Nov 2026)",
-      "priority_note": "Has a decent Squarespace site already (beautyinaboxcocaloundra.com). Low priority."
+      "priority_note": "Has a decent Squarespace site already (beautyinaboxcocaloundra.com). Low priority.",
+      "lead_status": "hold: already has a decent website"
     },
     {
       "slug": "kozmetika",
@@ -40,19 +41,21 @@
       "found_on": "Fresha",
       "existing_domain": "",
       "outreach_email": "kozmetika_@outlook.com",
-      "outreach_source": "https://www.facebook.com/K0zmetika (About > Contact info, checked 28 Nov 2026)"
+      "outreach_source": "https://www.facebook.com/K0zmetika (About > Contact info, checked 28 Nov 2026)",
+      "lead_status": "ready"
     },
     {
       "slug": "wink-worthy",
       "name": "Wink Worthy Lashes & Brows",
       "phone": "0400 781 552",
-      "book_url": "https://www.fresha.com/lvp/wink-worthy-lashes-brows-eton-lane-maroochydore-QvNo9X",
+      "book_url": "https://winkworthylashesandbrows.as.me/",
       "owner_email": "",
       "domain": "",
       "found_on": "Fresha",
       "existing_domain": "",
       "outreach_email": "info@winkworthylashes.com",
-      "outreach_source": "https://www.facebook.com/winkworthylashesandbrows (About > Contact info, checked 28 Nov 2026)"
+      "outreach_source": "https://www.facebook.com/winkworthylashesandbrows (About > Contact info, checked 28 Nov 2026)",
+      "lead_status": "ready"
     },
     {
       "slug": "luminous-nails",
@@ -62,9 +65,10 @@
       "owner_email": "",
       "domain": "",
       "found_on": "Fresha",
-      "existing_domain": "",
+      "existing_domain": "luminous-nails.com.au",
       "outreach_email": "info@luminous-nails.com.au",
-      "outreach_source": "https://www.luminous-nails.com.au/ (website, checked 28 Nov 2026)"
+      "outreach_source": "https://www.luminous-nails.com.au/ (website, checked 28 Nov 2026)",
+      "lead_status": "hold: already has a website (2 locations)"
     },
     {
       "slug": "wow-wow-nails",
@@ -76,7 +80,8 @@
       "found_on": "Fresha",
       "existing_domain": "",
       "outreach_email": "wowwownailscoolum@gmail.com",
-      "outreach_source": "https://www.facebook.com/wowwownailscoolum (About > Contact info, checked 28 Nov 2026)"
+      "outreach_source": "https://www.facebook.com/wowwownailscoolum (About > Contact info, checked 28 Nov 2026)",
+      "lead_status": "ready"
     },
     {
       "slug": "two-sisters-nails",
@@ -88,19 +93,21 @@
       "found_on": "Fresha",
       "existing_domain": "",
       "outreach_email": "",
-      "outreach_source": ""
+      "outreach_source": "",
+      "lead_status": "archived: shop now trades as Lumi Nails & Beauty with its own website"
     },
     {
       "slug": "montys-plumbing",
       "name": "Monty's Plumbing",
-      "phone": "",
+      "phone": "0428 196 916",
       "book_url": "",
       "owner_email": "",
       "domain": "",
       "found_on": "Localsearch",
       "existing_domain": "",
-      "outreach_email": "",
-      "outreach_source": ""
+      "outreach_email": "craigmontysplumbing@gmail.com",
+      "outreach_source": "Localsearch listing contact details: https://www.localsearch.com.au/profile/monty-s-plumbing/peregian-beach-qld/D9rX",
+      "lead_status": "ready"
     },
     {
       "slug": "mount-coolum-plumbing",
@@ -112,31 +119,34 @@
       "found_on": "Yellow Pages",
       "existing_domain": "mtcplumbing.com.au",
       "outreach_email": "pete@mtcplumbing.com.au",
-      "outreach_source": "https://mtcplumbing.com.au/ (footer, business contact details)"
+      "outreach_source": "https://mtcplumbing.com.au/ (footer, business contact details)",
+      "lead_status": "ready"
     },
     {
       "slug": "hutcheson-roofing",
       "name": "Hutcheson Plumbing & Roofing Maintenance",
-      "phone": "",
+      "phone": "0412 453 464",
       "book_url": "",
       "owner_email": "",
       "domain": "",
       "found_on": "Localsearch",
-      "existing_domain": "",
-      "outreach_email": "",
-      "outreach_source": ""
+      "existing_domain": "hutchesonmaintenance.com.au",
+      "outreach_email": "tbhutcheson@westnet.com.au",
+      "outreach_source": "Localsearch listing contact details: https://localsearch.com.au/profile/hutcheson-plumbing-roofing-maintenance/point-arkwright-qld/udXc",
+      "lead_status": "hold: already has a website"
     },
     {
       "slug": "homestyle-roof-painters",
       "name": "Homestyle Roof Painters",
-      "phone": "",
+      "phone": "07 5495 2200",
       "book_url": "",
       "owner_email": "",
       "domain": "",
       "found_on": "Localsearch",
-      "existing_domain": "",
+      "existing_domain": "hrproofing.com.au",
       "outreach_email": "admin@hrproofing.com.au",
-      "outreach_source": "https://hrproofing.com.au/contact/ (contact page, checked 28 Nov 2026)"
+      "outreach_source": "https://hrproofing.com.au/contact/ (contact page, checked 28 Nov 2026)",
+      "lead_status": "archived: already has a full website"
     }
   ]
 }

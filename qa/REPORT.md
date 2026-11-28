@@ -1,6 +1,6 @@
 # QA report
 
-_2026-11-28 06:12 UTC · 10 sites_
+_2026-11-28 07:10 UTC · 8 sites_
 
 ## beauty-in-a-box-co ✅
 - ✅ title + meta description
@@ -21,26 +21,6 @@ _2026-11-28 06:12 UTC · 10 sites_
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
-## homestyle-roof-painters ✅
-- ✅ title + meta description
-- ✅ exactly one h1 (found 1)
-- ✅ preview is noindex
-- ✅ preview banner visible
-- ✅ no leftover placeholders
-- ✅ in-page links resolve
-- ✅ external links use rel=noopener
-- ✅ no empty links
-- ✅ phone links valid (tel:0431864979)
-- ✅ images/iframes labelled
-- ✅ lang=en-AU
-- ✅ button text contrast ≥ 4.5:1
-- ✅ lead form validates + shows success
-- ✅ no JS errors (desktop)
-- ✅ no horizontal scroll at 390px (390px)
-- ✅ mobile text has side margins
-- ✅ tap targets ≥ 44px
-- ✅ no JS errors (mobile)
-
 ## hutcheson-roofing ✅
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
@@ -50,7 +30,7 @@ _2026-11-28 06:12 UTC · 10 sites_
 - ✅ in-page links resolve
 - ✅ external links use rel=noopener
 - ✅ no empty links
-- ✅ phone links valid (tel:0431864979)
+- ✅ phone links valid (tel:0431864979, tel:0412453464)
 - ✅ images/iframes labelled
 - ✅ lang=en-AU
 - ✅ button text contrast ≥ 4.5:1
@@ -109,7 +89,7 @@ _2026-11-28 06:12 UTC · 10 sites_
 - ✅ in-page links resolve
 - ✅ external links use rel=noopener
 - ✅ no empty links
-- ✅ phone links valid (tel:0431864979)
+- ✅ phone links valid (tel:0431864979, tel:0428196916)
 - ✅ images/iframes labelled
 - ✅ lang=en-AU
 - ✅ button text contrast ≥ 4.5:1
@@ -134,25 +114,6 @@ _2026-11-28 06:12 UTC · 10 sites_
 - ✅ lang=en-AU
 - ✅ button text contrast ≥ 4.5:1
 - ✅ lead form validates + shows success
-- ✅ no JS errors (desktop)
-- ✅ no horizontal scroll at 390px (390px)
-- ✅ mobile text has side margins
-- ✅ tap targets ≥ 44px
-- ✅ no JS errors (mobile)
-
-## two-sisters-nails ✅
-- ✅ title + meta description
-- ✅ exactly one h1 (found 1)
-- ✅ preview is noindex
-- ✅ preview banner visible
-- ✅ no leftover placeholders
-- ✅ in-page links resolve
-- ✅ external links use rel=noopener
-- ✅ no empty links
-- ✅ phone links valid (tel:0431864979, tel:0753261262)
-- ✅ images/iframes labelled
-- ✅ lang=en-AU
-- ✅ button text contrast ≥ 4.5:1
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
 - ✅ mobile text has side margins

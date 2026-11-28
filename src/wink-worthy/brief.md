@@ -11,6 +11,10 @@ Every fact on the site must appear here with a source. If it isn't here, it isn'
 | Services | Eyelash extensions, eyelash tinting, lash lift, brow tinting, shaping, lamination | Fresha |
 | Hours | Not found | - |
 
+| Still trading | Facebook active; booking now via Acuity https://winkworthylashesandbrows.as.me/ ("Lashes & brows with Jordan, Sunshine Cove, Maroochydore") | Chrome check 28 Nov, facebook.com/winkworthylashesandbrows |
+| Address | Google lists 44 Serenity Cct, Maroochydore (site shows suburb only) | Google Business Profile |
+| Email | info@winkworthylashes.com | Facebook About |
+
 ## Photos
 
 Stock photos from Pexels (free licence): objects and hands only, no faces, and never presented as this business's own work. Swap in the owner's own photos once they're on board.

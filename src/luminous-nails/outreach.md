@@ -1,8 +1,8 @@
 # Outreach: Luminous Nails Sunshine Coast
 
 **Preview:** https://onesightstudio.au/luminous-nails/
-**Send to:** (not found yet: only use an email or mobile they publish for customers)
-**Found at:** (record where you found it)
+**Send to:** info@luminous-nails.com.au
+**Found at:** https://www.luminous-nails.com.au/ (website, checked 28 Nov 2026)
 
 ---
 
@@ -16,7 +16,9 @@ https://onesightstudio.au/luminous-nails/
 
 If you like it, it can be live on your own domain this week, for $29 a month. No setup fee, no lock-in, and changes are included. Want something changed first? There's a "Request changes" button at the top of the preview.
 
-If you don't have a domain yet, we can register one in your name. The registration fee is $21.95 a year, paid by you and separate from the monthly fee.
+We'd connect it to your existing domain, luminous-nails.com.au.
+
+Once it's live, we can also add it to your Google Business Profile so it shows when people search for you on Google and Maps.
 
 If it's not for you, no worries. The preview comes down in 14 days.
 

@@ -12,6 +12,8 @@ Every fact on the site must appear here with a source. If it isn't here, it isn'
 | Hours / prices | Not found | - |
 | ⚠ Possible rename | A Fresha listing at the same address is named "ÚT Nails and Spa". **Confirm the current trading name before any outreach.** | Fresha search results |
 
+| ⚠ Now trades as | Lumi Nails & Beauty, staff@luminailsandbeauty.com.au, own site luminailsandbeauty.com.au, so archived | facebook.com/Luminailsandbeauty |
+
 ## Photos
 
 Stock photos from Pexels (free licence): objects and hands only, no faces, and never presented as this business's own work. Swap in the owner's own photos once they're on board.

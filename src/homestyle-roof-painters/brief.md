@@ -14,6 +14,10 @@ Every fact on the site must appear here with a source. If it isn't here, it isn'
 | Phone | Not found (site uses a quote request) | - |
 | Trading (2nd source) | Oneflare: "servicing the Sunshine Coast for over 30 years" | https://assets.oneflare.com.au/b/homestyle-roof-painters |
 
+| QBCC (correct) | 15438263 (supersedes 1179124 from directories) | https://hrproofing.com.au/contact/ |
+| Phone | 07 5495 2200 | same |
+| Website | hrproofing.com.au, a full site, so archived | same |
+
 ## Photos
 
 Stock photos from Pexels (free licence): objects and hands only, no faces, and never presented as this business's own work. Swap in the owner's own photos once they're on board.

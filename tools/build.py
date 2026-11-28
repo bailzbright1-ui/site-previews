@@ -34,6 +34,10 @@ def render(html, site, agency, live=False, endpoint=""):
     toks = {
         "PREVIEW_BAR": (ROOT / "tools/snippet_previewbar.html").read_text(encoding="utf-8"),
         "CLAIM_LINK": f"../keep/?site={site['slug']}",
+        "STUDIO_EMAIL": agency.get("email", ""), "STUDIO_MOBILE": agency.get("mobile", ""),
+        "STUDIO_MOBILE_HREF": re.sub(r"[^0-9+]", "", agency.get("mobile", "")),
+        "YOUR_FIRST": (agency.get("your_name") or "us").split()[0],
+        "BAR_OFFER": "1st month free" if agency.get("trial_days") else agency.get("price_keep", "$29") + "/mo",
         "STUDIO_SITE": agency.get("studio_site") or "../",
         "NAME": site["name"], "AGENCY": agency["name"], "BOOK_URL": site.get("book_url") or "#contact",
         "FORM_ENDPOINT": endpoint, "YEAR": str(datetime.date.today().year),
@@ -92,9 +96,21 @@ def build_studio(data):
     toks = {
         "PRICE_KEEP": a.get("price_keep", "$29"), "PRICE_GROW": a.get("price_grow", "$59"),
         "YEAR": str(datetime.date.today().year), "CONTACT_DL": dl,
+        "YOUR_FIRST": (a.get("your_name") or "us").split()[0], "MOBILE": a.get("mobile", ""),
+        "MOBILE_HREF": re.sub(r"[^0-9+]", "", a.get("mobile", "")),
         "ABN_LINE": f" · ABN {a['abn']}" if a.get("abn") else "",
         "STUDIO_ROBOTS": "" if a.get("email") and a.get("abn") else '<meta name="robots" content="noindex, nofollow">',
         "SITES_JSON": json.dumps(sites),
+        **(lambda t, pk: {
+            "OFFER_LINE": f"your first month is free, then it's {pk} a month." if t else f"it goes live for {pk} a month.",
+            "COMPARE_LINE": f"First month free, then {pk} a month." if t else f"then {pk} a month.",
+            "TRIAL_NOTE": " Your first month is free on Keep and Grow. We remind you before your first payment." if t else "",
+            "TRIAL_FAQ": f'<details><summary>How does the free month work?</summary><p>Your site goes live and you pay nothing for the first {t} days. We email you before your first payment. If you cancel before then, you are not charged.</p></details>' if t else "",
+            "KEEP_FINE": f"Your first month is free. You enter your card on a secure Stripe page, and you are not charged until day {t + 1}. We remind you before then, and you can cancel before then at no cost." if t else "You'll pay by card on a secure Stripe page.",
+            "TODAY_ROW": '<div><span>Due today</span><span>$0</span></div>' if t else "",
+            "MONTHLY_LABEL": f"Monthly, after {t} days free" if t else "Monthly",
+            "GO_LABEL": "Start my free month" if t else "Continue to secure payment",
+        })(a.get("trial_days"), a.get("price_keep", "$29")),
         "KEEP_CFG": json.dumps({"email": a.get("email", ""), "stripe_keep": a.get("stripe_keep_link", ""), "stripe_grow": a.get("stripe_grow_link", "")}),
     }
     studio = ROOT / "studio"

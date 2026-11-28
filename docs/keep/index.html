@@ -99,8 +99,8 @@ main{padding:var(--space-7) 0 var(--space-9)}
       <p class="err" id="err" role="alert"></p>
 
       <div class="go">
-        <button class="os-btn os-btn--primary" type="submit" id="goBtn">Continue to secure payment</button>
-        <p class="fine">You'll pay by card on a secure Stripe page. Month to month, cancel any time. We'll have your site live within the week once your domain is connected.</p>
+        <button class="os-btn os-btn--primary" type="submit" id="goBtn">Start my free month</button>
+        <p class="fine">Your first month is free. You enter your card on a secure Stripe page, and you are not charged until day 31. We remind you before then, and you can cancel before then at no cost. Month to month, cancel any time. We'll have your site live within the week once your domain is connected.</p>
       </div>
     </form>
 
@@ -119,8 +119,8 @@ main{padding:var(--space-7) 0 var(--space-9)}
     </div>
     <div class="summary">
       <div><span>Plan</span><span id="sPlan">Grow</span></div>
-      <div><span>Setup fee</span><span>$0</span></div>
-      <div class="tot"><span>Monthly</span><span id="sTot">$59/month</span></div>
+      <div><span>Setup fee</span><span>$0</span></div><div><span>Due today</span><span>$0</span></div>
+      <div class="tot"><span>Monthly, after 30 days free</span><span id="sTot">$59/month</span></div>
     </div>
   </aside>
 </div></main>
@@ -156,7 +156,7 @@ main{padding:var(--space-7) 0 var(--space-9)}
     fetch('https://formsubmit.co/ajax/'+CFG.email,{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)}).then(function(r){if(!r.ok)throw 0}).then(function(){
       if(link){var u=new URL(link);u.searchParams.set('prefilled_email',document.getElementById('em').value);u.searchParams.set('client_reference_id',slug||'site');location.href=u.toString();return}
       document.getElementById('app').classList.add('sent');window.scrollTo(0,0);
-    }).catch(function(){b.disabled=false;b.textContent='Continue to secure payment';err.textContent='Sorry, that didn’t send. Please try again or contact us directly.';err.style.display='block'});
+    }).catch(function(){b.disabled=false;b.textContent='Start my free month';err.textContent='Sorry, that didn’t send. Please try again or contact us directly.';err.style.display='block'});
   });
 })();
 </script>

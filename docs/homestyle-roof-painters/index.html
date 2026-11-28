@@ -123,21 +123,72 @@ html.js [data-r=clip].in>*{clip-path:inset(0 0 0 0)}
 <!--PREVIEW--><div class="osb" role="region" aria-label="Website preview">
   <style>
     .osb{position:sticky;top:0;z-index:2147483000;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0;padding:10px 16px;background:#1d2023;color:#b8c0c7;font:500 14px/20px "Schibsted Grotesk",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;text-align:left;box-sizing:border-box}
-    .osb *{box-sizing:border-box}
+    .osb *,.osd *{box-sizing:border-box}
     .osb img{display:block;flex:none;width:auto;height:22px;margin:0;border:0}
     .osb .osb-tag{flex:none;padding:2px 10px;border-radius:999px;background:#ffc94d;color:#1d2023;font:500 12px/16px "JetBrains Mono",ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase}
     .osb p{flex:1 1 220px;margin:0;padding:0;color:#b8c0c7;font:inherit}
     .osb strong{color:#fff;font-weight:600}
-    .osb a{flex:none;display:inline-flex;align-items:center;height:36px;padding:0 16px;border-radius:999px;background:#26c1c3;color:#1d2023;font:600 14px/1 "Schibsted Grotesk",ui-sans-serif,system-ui,sans-serif;text-decoration:none;white-space:nowrap}
-    .osb a:hover{box-shadow:inset 0 0 0 999px rgba(0,0,0,.08)}
-    .osb a:focus-visible{outline:2px solid #26c1c3;outline-offset:2px}
+    .osb .osb-btns{display:flex;gap:8px;flex-wrap:wrap}
+    .osb a,.osb button{flex:none;display:inline-flex;align-items:center;height:36px;padding:0 16px;border-radius:999px;border:0;background:#26c1c3;color:#1d2023;font:600 14px/1 "Schibsted Grotesk",ui-sans-serif,system-ui,sans-serif;text-decoration:none;white-space:nowrap;cursor:pointer}
+    .osb button{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px #5a6169}
+    .osb a:hover{box-shadow:inset 0 0 0 999px rgba(0,0,0,.08)}.osb button:hover{box-shadow:inset 0 0 0 1.5px #b8c0c7}
+    .osb a:focus-visible,.osb button:focus-visible{outline:2px solid #26c1c3;outline-offset:2px}
+    .osd{margin:auto!important;position:fixed;inset:0;max-height:calc(100vh - 24px);overflow:auto;width:min(520px,calc(100vw - 24px));border:0;border-radius:20px;padding:0;color:#1d2023;background:#fff;font:400 16px/26px "Schibsted Grotesk",ui-sans-serif,system-ui,sans-serif;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+    .osb .s{display:none}
+    @media(max-width:600px){.osb{padding:8px 12px;gap:6px 10px}.osb p{flex:1 1 60%;font-size:13px;line-height:18px}.osb .osb-btns{width:100%;flex-wrap:nowrap}.osb .osb-btns>*{flex:1 1 0;justify-content:center;padding:0 10px;font-size:13px}.osb .l{display:none}.osb .s{display:inline}}
+    .osd::backdrop{background:rgba(29,32,35,.6)}
+    .osd form{padding:28px;margin:0}
+    .osd h2{margin:0;font:800 26px/30px "Schibsted Grotesk",ui-sans-serif,system-ui,sans-serif;letter-spacing:-.02em;color:#1d2023}
+    .osd p{margin:8px 0 0;color:#5a6169;font-size:15px;line-height:22px}
+    .osd label{display:block;margin:16px 0 6px;font-weight:600;font-size:14px;color:#1d2023}
+    .osd input,.osd textarea{display:block;width:100%;border:1.5px solid #e2e7ea;border-radius:12px;padding:10px 14px;font:400 16px "Schibsted Grotesk",ui-sans-serif,system-ui,sans-serif;color:#1d2023;background:#fff;margin:0}
+    .osd textarea{min-height:120px;resize:vertical}
+    .osd input:focus,.osd textarea:focus{outline:2px solid #0b7a7c;outline-offset:1px;border-color:transparent}
+    .osd .row{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap;align-items:center}
+    .osd .go{height:44px;padding:0 22px;border-radius:999px;border:0;background:#26c1c3;color:#1d2023;font:600 16px "Schibsted Grotesk",ui-sans-serif,system-ui,sans-serif;cursor:pointer}
+    .osd .x{height:44px;padding:0 18px;border-radius:999px;border:1.5px solid #5a6169;background:#fff;color:#1d2023;font:600 15px "Schibsted Grotesk",ui-sans-serif,system-ui,sans-serif;cursor:pointer}
+    .osd a{color:#0b7a7c}
+    .osd .ok{display:none}.osd.sent .ok{display:block}.osd.sent .fm{display:none}
   </style>
   <img src="data:image/png;base64,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" alt="One Sight Studio">
   <span class="osb-tag">Preview</span>
   <p>Built for <strong>Homestyle Roof Painters</strong> by One Sight Studio. Not live yet.</p>
-  <a href="../keep/?site=homestyle-roof-painters">Keep this site — $29/mo</a>
+  <div class="osb-btns">
+    <button type="button" onclick="document.getElementById('osd').showModal()"><span class="l">Request changes</span><span class="s">Changes</span></button>
+    <a href="../keep/?site=homestyle-roof-painters"><span class="l">Keep this site — 1st month free</span><span class="s">Keep it · 1st month free</span></a>
+  </div>
 </div>
-<!--/PREVIEW-->
+<dialog class="osd" id="osd" aria-labelledby="osd-h">
+  <form method="dialog" id="osd-f">
+    <div class="fm">
+      <h2 id="osd-h">What would you like changed?</h2>
+      <p>Wording, photos, colours, services, anything. Tell us and we'll update your preview, then send you the new link.</p>
+      <input type="hidden" name="_subject" value="Change request: Homestyle Roof Painters">
+      <input type="hidden" name="business" value="Homestyle Roof Painters">
+      <input type="hidden" name="page" id="osd-page">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <label for="osd-c">Your changes</label><textarea id="osd-c" name="changes" required placeholder="e.g. Add our Saturday hours, use our logo, change the blue to green"></textarea>
+      <label for="osd-n">Your name</label><input id="osd-n" name="name" autocomplete="name">
+      <label for="osd-e">Email or mobile, so we can send the update</label><input id="osd-e" name="contact" required autocomplete="email">
+      <div class="row"><button class="go" type="submit" id="osd-go">Send changes</button><button class="x" type="button" onclick="document.getElementById('osd').close()">Cancel</button></div>
+      <p style="margin-top:16px">Rather talk? Call or text Bailey on <a href="tel:0431864979">0431 864 979</a>.</p>
+    </div>
+    <div class="ok" role="status">
+      <h2>Thanks, got it.</h2>
+      <p>We'll update your preview and send you the new link.</p>
+      <div class="row"><button class="go" type="button" onclick="document.getElementById('osd').close()">Back to my site</button></div>
+    </div>
+  </form>
+  <script>
+  (function(){var d=document.getElementById('osd'),f=document.getElementById('osd-f'),em='';
+  document.getElementById('osd-page').value=location.href;
+  f.addEventListener('submit',function(e){e.preventDefault();if(!f.checkValidity()){f.reportValidity();return}
+    if(!em){var t=encodeURIComponent('Changes for Homestyle Roof Painters: '+document.getElementById('osd-c').value);if(/Mobi|Android|iPhone/i.test(navigator.userAgent)){location.href='sms:0431864979?&body='+t}else{alert('Please text or call Bailey on 0431 864 979 with your changes. Thanks!')}return}
+    var b=document.getElementById('osd-go');b.disabled=true;b.textContent='Sending\u2026';
+    fetch('https://formsubmit.co/ajax/'+em,{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)}).then(function(r){if(!r.ok)throw 0;d.classList.add('sent')}).catch(function(){b.disabled=false;b.textContent='Send changes';alert('Sorry, that didn\u2019t send. Please call or text 0431 864 979.')})});
+  })();
+  </script>
+</dialog><!--/PREVIEW-->
 
 <div style="position:relative">
 <header><div class="wrap">

@@ -1,16 +1,17 @@
 {
   "agency": {
     "name": "One Sight Studio",
-    "your_name": "",
+    "your_name": "Bailey Bright",
     "email": "",
-    "mobile": "",
-    "abn": "",
-    "suburb": "",
+    "mobile": "0431 864 979",
+    "abn": "88 359 529 731",
+    "suburb": "Brisbane",
     "studio_site": "",
     "stripe_keep_link": "",
     "stripe_grow_link": "",
     "price_keep": "$29",
-    "price_grow": "$59"
+    "price_grow": "$59",
+    "trial_days": 30
   },
   "sites": [
     {

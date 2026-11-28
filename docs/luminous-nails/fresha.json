@@ -1,0 +1,27 @@
+{
+  "source": "https://www.fresha.com/lvp/luminous-nails-sunshine-coast-palmview-forest-drive-palmview-ZDMq4M",
+  "fetched": "2026-11-28",
+  "name": "Luminous Nails Sunshine Coast",
+  "telephone": "+61 439 929 210",
+  "summary": "Book with Luminous Nails Sunshine Coast at 1 Kingfisher Cres, Palmview QLD 4553, Australia",
+  "price_range": null,
+  "categories": [],
+  "socials": [
+    "https://www.google.com/maps/place/?q=place_id:ChIJp5npy_R3k2sRMyXgqJ9tdAg",
+    "https://www.instagram.com/luminous.nails/",
+    "https://www.facebook.com/Luminous-Nails-1047621128675893/",
+    "http://luminous-nails.com.au/"
+  ],
+  "address": "1 Kingfisher Cres, Palmview QLD 4553, Australia",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -26.7473201,
+    "longitude": 153.0359522
+  },
+  "website": "http://luminous-nails.com.au/",
+  "instagram": null,
+  "facebook": null,
+  "services": [],
+  "photos": [],
+  "photos_skipped_other_businesses": 11
+}

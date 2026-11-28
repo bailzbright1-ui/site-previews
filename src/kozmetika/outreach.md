@@ -34,3 +34,9 @@ Hi there, just checking the link came through: https://bailzbright1-ui.github.io
 
 Bailey · One Sight Studio
 Reply "unsubscribe" to stop these emails.
+
+---
+
+**SMS** (this mobile is published for customers: 0432 124 207)
+
+Hi, Bailey from One Sight Studio here. I built a website for Kozmetika, have a look: https://bailzbright1-ui.github.io/site-previews/kozmetika/. First month free, then $29/mo if you keep it, no setup fee. Reply STOP to opt out.

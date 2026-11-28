@@ -1,0 +1,390 @@
+{
+  "source": "https://www.fresha.com/a/beauty-in-a-box-co-caloundra-moffat-beach-15-fairlie-crescent-ldip2s5a",
+  "fetched": "2026-11-28",
+  "name": "Beauty In A Box Co Caloundra - 15 Fairlie Crescent - Moffat Beach",
+  "telephone": "+61 406 034 321",
+  "summary": "Beauty In A Box Co Caloundra is a beauty salon at 15 Fairlie Crescent, Moffat Beach, Queensland, 4551. The team of 1+ practitioners offers Featured, Infrared Sauna, Specials, Skin, Special Treats. Rated 5/5 from 1332 reviews. Open Mon-Thu 09:30-14:30; Thu 16:00-19:30; Fri 09:30-14:30; Sat 09:00-14:30; Instant confirmation, Pay by app.",
+  "price_range": "AUD 10-280",
+  "categories": [
+    "Featured",
+    "Infrared Sauna",
+    "Specials",
+    "Skin",
+    "Special Treats",
+    "Brows",
+    "Lashes",
+    "Tanning",
+    "Waxing For Her",
+    "Waxing For Him"
+  ],
+  "socials": [
+    "https://www.instagram.com/beautyinaboxcocaloundra",
+    "https://www.facebook.com/beautyinaboxcocaloundra",
+    "https://www.beautyinaboxcocaloundra.com/"
+  ],
+  "address": "15 Fairlie Crescent, Moffat Beach, Queensland, 4551",
+  "rating": {
+    "value": 5,
+    "count": 1332
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -26.794754028320312,
+    "longitude": 153.13563537597656
+  },
+  "website": "https://www.beautyinaboxcocaloundra.com/",
+  "instagram": "https://www.instagram.com/beautyinaboxcocaloundra",
+  "facebook": "https://www.facebook.com/beautyinaboxcocaloundra",
+  "opening_hours": [
+    "Mo 09:30-14:30",
+    "Tu 09:30-14:30",
+    "Th 09:30-14:30",
+    "Th 16:00-19:30",
+    "Fr 09:30-14:30",
+    "Sa 09:00-14:30"
+  ],
+  "services": [
+    {
+      "name": "Brow Design (Inc Tint)",
+      "caption": "30min",
+      "price_aud": 50,
+      "type": "Service"
+    },
+    {
+      "name": "Tanning (Full Body)",
+      "caption": "15min",
+      "price_aud": 35,
+      "type": "Service"
+    },
+    {
+      "name": "Eyebrow Sculpt (No Tint)",
+      "caption": "15min",
+      "price_aud": 25,
+      "type": "Service"
+    },
+    {
+      "name": "Brazilian",
+      "caption": "30min",
+      "price_aud": 40,
+      "type": "Service"
+    },
+    {
+      "name": "Lip Wax",
+      "caption": "15min",
+      "price_aud": 10,
+      "type": "Service"
+    },
+    {
+      "name": "Underarm Wax",
+      "caption": "15min",
+      "price_aud": 10,
+      "type": "Service"
+    },
+    {
+      "name": "Infrared Sauna (single use) ",
+      "caption": "15min",
+      "price_aud": 35,
+      "type": "Service"
+    },
+    {
+      "name": "Couples Sauna (Infrared)",
+      "caption": "15min",
+      "price_aud": 50,
+      "type": "Service"
+    },
+    {
+      "name": "5 x Pack Sauna Sessions",
+      "caption": "15min",
+      "price_aud": 150,
+      "type": "Service"
+    },
+    {
+      "name": "10 x Pack Sauna Sessions ",
+      "caption": "15min",
+      "price_aud": 280,
+      "type": "Service"
+    },
+    {
+      "name": "Best Friend Tan Deal ",
+      "caption": "30min",
+      "price_aud": 50,
+      "type": "Service"
+    },
+    {
+      "name": "Eye-trio (Brow sculpt, brow tint + lash tint) + Mini facial with Jelly Mask",
+      "caption": "1h 15min",
+      "price_aud": 90,
+      "type": "Service"
+    },
+    {
+      "name": "LED Stand Alone Treatment",
+      "caption": "45min",
+      "price_aud": 50,
+      "type": "Service"
+    },
+    {
+      "name": "Skin Needling (Face Inc neck + chest)",
+      "caption": "1h 15min",
+      "price_aud": 200,
+      "type": "Service"
+    },
+    {
+      "name": "Enzyme treatment + LED post needling (3-5 days post needling)",
+      "caption": "45min",
+      "price_aud": 75,
+      "type": "Service"
+    },
+    {
+      "name": "Brow Lamination + Lash Lift",
+      "caption": "1h 30min",
+      "price_aud": 150,
+      "type": "Service"
+    },
+    {
+      "name": "Eyebrow Design + Lip/Chin",
+      "caption": "30min",
+      "price_aud": 55,
+      "type": "Service"
+    },
+    {
+      "name": "Lash Lift, Lash Tint + Brow Design",
+      "caption": "1h 30min",
+      "price_aud": 120,
+      "type": "Service"
+    },
+    {
+      "name": "Eyebrow Design + Anti-Ageing Eye-Mask",
+      "caption": "30min",
+      "price_aud": 55,
+      "type": "Service"
+    },
+    {
+      "name": "The Royal Brow Treatment (Brow Design + Jelly Mask To Face And Neck)",
+      "caption": "1hour",
+      "price_aud": 80,
+      "type": "Service"
+    },
+    {
+      "name": "Eye-Trio - (Brow sculpt, Brow Dye + Lash Tint) ",
+      "caption": "45min",
+      "price_aud": 75,
+      "type": "Service"
+    },
+    {
+      "name": "Eye-Trio: Brow Sculpt, Brow Tint + Lash Tint",
+      "caption": "45min",
+      "price_aud": 70,
+      "type": "Service"
+    },
+    {
+      "name": "Eyebrow Tint",
+      "caption": "15min",
+      "price_aud": 25,
+      "type": "Service"
+    },
+    {
+      "name": "Eyebrow Sculpt + Dye (Hybrid Brows)",
+      "caption": "45min",
+      "price_aud": 60,
+      "type": "Service"
+    },
+    {
+      "name": "Brow Lamination (Inc Wax + Tint)",
+      "caption": "1hour",
+      "price_aud": 90,
+      "type": "Service"
+    },
+    {
+      "name": "Lash Tint + Lash Botox ",
+      "caption": "30min",
+      "price_aud": 35,
+      "type": "Service"
+    },
+    {
+      "name": "Eyelash Tint",
+      "caption": "30min",
+      "price_aud": 30,
+      "type": "Service"
+    },
+    {
+      "name": "Lash Lift + Tint + Lash botox",
+      "caption": "1hour",
+      "price_aud": 90,
+      "type": "Service"
+    },
+    {
+      "name": "Lash Lift + Tint ",
+      "caption": "1hour",
+      "price_aud": 80,
+      "type": "Service"
+    },
+    {
+      "name": "Tanning Extra Dark 2 x Coats ",
+      "caption": "15min",
+      "price_aud": 45,
+      "type": "Service"
+    },
+    {
+      "name": "Bikini G",
+      "caption": "15min",
+      "price_aud": 35,
+      "type": "Service"
+    },
+    {
+      "name": "Bikini Wax",
+      "caption": "15min",
+      "price_aud": 30,
+      "type": "Service"
+    },
+    {
+      "name": "Full Leg Wax",
+      "caption": "30min",
+      "price_aud": 40,
+      "type": "Service"
+    },
+    {
+      "name": "3/4 Leg Wax",
+      "caption": "30min",
+      "price_aud": 35,
+      "type": "Service"
+    },
+    {
+      "name": "1/2 Leg Wax",
+      "caption": "30min",
+      "price_aud": 30,
+      "type": "Service"
+    },
+    {
+      "name": "Full Leg + Bikini",
+      "caption": "30min",
+      "price_aud": 55,
+      "type": "Service"
+    },
+    {
+      "name": "Full Leg + Brazilian",
+      "caption": "45min",
+      "price_aud": 70,
+      "type": "Service"
+    },
+    {
+      "name": "1/2 Leg + Bikini",
+      "caption": "30min",
+      "price_aud": 45,
+      "type": "Service"
+    },
+    {
+      "name": "1/2 Leg + Brazilian",
+      "caption": "45min",
+      "price_aud": 60,
+      "type": "Service"
+    },
+    {
+      "name": "Arm Wax",
+      "caption": "30min",
+      "price_aud": 35,
+      "type": "Service"
+    },
+    {
+      "name": "Guy Trio - Brows, Ears + Nose",
+      "caption": "30min",
+      "price_aud": 50,
+      "type": "Service"
+    },
+    {
+      "name": "Male Brazilian",
+      "caption": "45min",
+      "price_aud": 80,
+      "type": "Service"
+    },
+    {
+      "name": "Male Full Leg Wax",
+      "caption": "30min",
+      "price_aud": 50,
+      "type": "Service"
+    },
+    {
+      "name": "Male Arm Wax",
+      "caption": "45min",
+      "price_aud": 50,
+      "type": "Service"
+    },
+    {
+      "name": "Bum Wax",
+      "caption": "30min",
+      "price_aud": 30,
+      "type": "Service"
+    },
+    {
+      "name": "Chest Wax",
+      "caption": "30min",
+      "price_aud": 45,
+      "type": "Service"
+    },
+    {
+      "name": "Back Wax",
+      "caption": "30min",
+      "price_aud": 45,
+      "type": "Service"
+    },
+    {
+      "name": "Chest + Back Wax",
+      "caption": "1hour",
+      "price_aud": 80,
+      "type": "Service"
+    },
+    {
+      "name": "Nose ",
+      "caption": "15min",
+      "price_aud": 15,
+      "type": "Service"
+    },
+    {
+      "name": "Ears",
+      "caption": "15min",
+      "price_aud": 15,
+      "type": "Service"
+    },
+    {
+      "name": "Neck Wax",
+      "caption": "15min",
+      "price_aud": 15,
+      "type": "Service"
+    },
+    {
+      "name": "Full Body Waxing (From Head To Toe)",
+      "caption": "2hours",
+      "price_aud": 250,
+      "type": "Service"
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://images.fresha.com/locations/location-profile-images/828016/1949170/2a244576-63d6-49b3-9c0a-3e2ca14d3c96-BeautyInABoxCoCaloundra-AU-Queensland-MoffatBeach-Fresha.jpg",
+      "description": "",
+      "file": "img/fresha-1.webp",
+      "size": [
+        1197,
+        671
+      ]
+    },
+    {
+      "url": "https://images.fresha.com/locations/location-profile-images/828016/1949172/a451e2f5-3974-44e6-8383-ef334df114c2-BeautyInABoxCoCaloundra-AU-Queensland-MoffatBeach-Fresha.jpg",
+      "description": "",
+      "file": "img/fresha-2.webp",
+      "size": [
+        1090,
+        612
+      ]
+    },
+    {
+      "url": "https://images.fresha.com/locations/location-profile-images/828016/1949171/91204cfd-0c8d-4e71-a4d7-0912c433c59d-BeautyInABoxCoCaloundra-AU-Queensland-MoffatBeach-Fresha.jpg",
+      "description": "",
+      "file": "img/fresha-3.webp",
+      "size": [
+        1245,
+        700
+      ]
+    }
+  ],
+  "photos_skipped_other_businesses": 9
+}

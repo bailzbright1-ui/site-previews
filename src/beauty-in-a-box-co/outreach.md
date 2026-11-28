@@ -34,3 +34,9 @@ Hi there, just checking the link came through: https://bailzbright1-ui.github.io
 
 Bailey · One Sight Studio
 Reply "unsubscribe" to stop these emails.
+
+---
+
+**SMS** (this mobile is published for customers: 0406 034 321)
+
+Hi, Bailey from One Sight Studio here. I built a website for Beauty In A Box Co, have a look: https://bailzbright1-ui.github.io/site-previews/beauty-in-a-box-co/. First month free, then $29/mo if you keep it, no setup fee. Reply STOP to opt out.

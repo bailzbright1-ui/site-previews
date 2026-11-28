@@ -19,19 +19,20 @@
     {
       "slug": "beauty-in-a-box-co",
       "name": "Beauty In A Box Co",
-      "phone": "",
+      "phone": "0406 034 321",
       "book_url": "https://www.fresha.com/a/beauty-in-a-box-co-caloundra-moffat-beach-15-fairlie-crescent-ldip2s5a",
       "owner_email": "",
       "domain": "",
       "found_on": "Fresha",
       "existing_domain": "",
       "outreach_email": "",
-      "outreach_source": ""
+      "outreach_source": "",
+      "priority_note": "Has a decent Squarespace site already (beautyinaboxcocaloundra.com). Low priority."
     },
     {
       "slug": "kozmetika",
       "name": "Kozmetika",
-      "phone": "",
+      "phone": "0432 124 207",
       "book_url": "https://www.fresha.com/a/kozmetika-caloundra-31-osprey-street-lh7zvssu",
       "owner_email": "",
       "domain": "",
@@ -109,8 +110,8 @@
       "domain": "",
       "found_on": "Yellow Pages",
       "existing_domain": "mtcplumbing.com.au",
-      "outreach_email": "",
-      "outreach_source": ""
+      "outreach_email": "pete@mtcplumbing.com.au",
+      "outreach_source": "https://mtcplumbing.com.au/ (footer, business contact details)"
     },
     {
       "slug": "hutcheson-roofing",

@@ -1,8 +1,8 @@
 # Outreach: Mount Coolum Plumbing
 
 **Preview:** https://bailzbright1-ui.github.io/site-previews/mount-coolum-plumbing/
-**Send to:** (not found yet: only use an email or mobile they publish for customers)
-**Found at:** (record where you found it)
+**Send to:** pete@mtcplumbing.com.au
+**Found at:** https://mtcplumbing.com.au/ (footer, business contact details)
 
 ---
 

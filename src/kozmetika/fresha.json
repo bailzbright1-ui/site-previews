@@ -1,0 +1,357 @@
+{
+  "source": "https://www.fresha.com/a/kozmetika-caloundra-31-osprey-street-lh7zvssu",
+  "fetched": "2026-11-28",
+  "name": "Kozmetika - 31 Osprey Street - Caloundra",
+  "telephone": "+61 432 124 207",
+  "summary": "Kozmetika is a beauty salon at 31 Osprey Street, Caloundra, Queensland, 4551. The team of 1+ practitioners offers Packages, Skinstitut Skin Treatments, Eyelash Extensions, Waxing, Tinting. Rated 5/5 from 346 reviews. Open Mon 09:00-17:00; Tue 09:00-20:00; Wed-Thu 10:00-20:00; Fri 09:00-15:00; Instant confirmation, Pay by app.",
+  "price_range": "AUD 10-280",
+  "categories": [
+    "Packages",
+    "Skinstitut Skin Treatments",
+    "Eyelash Extensions",
+    "Waxing",
+    "Tinting",
+    "Spray Tanning",
+    "Hands & Feet",
+    "Massage"
+  ],
+  "socials": [
+    "https://www.instagram.com/kozmetika__",
+    "http://www.facebook.com/k0zmetika"
+  ],
+  "address": "31 Osprey Street, Caloundra, Queensland, 4551",
+  "rating": {
+    "value": 5,
+    "count": 346
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -26.794883728027344,
+    "longitude": 153.1281280517578
+  },
+  "about": "At Kozmetika, we offer a wide range of high quality, affordable and professional skin and beauty services tailored to suit you. We stock Skinstitut Skincare and Skinstitut Expert Skincare.\nPayment types available: bank transfer or cash preferred. Eftpos and Afterpay available.\nParking available on street.",
+  "website": null,
+  "instagram": "https://www.instagram.com/kozmetika__",
+  "facebook": "http://www.facebook.com/k0zmetika",
+  "opening_hours": [
+    "Mo 09:00-17:00",
+    "Tu 09:00-20:00",
+    "We 10:00-20:00",
+    "Th 10:00-20:00",
+    "Fr 09:00-15:00"
+  ],
+  "services": [
+    {
+      "name": "All I Want Package",
+      "caption": "2h 45min  •  3 services",
+      "price_aud": 280,
+      "type": "Package"
+    },
+    {
+      "name": "Eye-Believe Package",
+      "caption": "50min  •  3 services",
+      "price_aud": 65,
+      "type": "Package"
+    },
+    {
+      "name": "Skin Consultation",
+      "caption": "30min",
+      "price_aud": 0,
+      "type": "Service"
+    },
+    {
+      "name": "Kozmetika Signature Treatment",
+      "caption": "45min",
+      "price_aud": 120,
+      "type": "Service"
+    },
+    {
+      "name": "Goodbye Breakouts Treatment",
+      "caption": "45min",
+      "price_aud": 85,
+      "type": "Service"
+    },
+    {
+      "name": "Deluxe Microdermabrasion ",
+      "caption": "45min",
+      "price_aud": 95,
+      "type": "Service"
+    },
+    {
+      "name": "Express Microdermabrasion",
+      "caption": "20min",
+      "price_aud": 60,
+      "type": "Service"
+    },
+    {
+      "name": "Bacial",
+      "caption": "30min",
+      "price_aud": 65,
+      "type": "Service"
+    },
+    {
+      "name": "Express Medi Skin Treatment",
+      "caption": "30min",
+      "price_aud": 65,
+      "type": "Service"
+    },
+    {
+      "name": "Vitamin C Radiance Booster",
+      "caption": "45min",
+      "price_aud": 85,
+      "type": "Service"
+    },
+    {
+      "name": "Revitalising Treatment",
+      "caption": "45min",
+      "price_aud": 85,
+      "type": "Service"
+    },
+    {
+      "name": "AHA Enzyme Peel",
+      "caption": "45min",
+      "price_aud": 95,
+      "type": "Service"
+    },
+    {
+      "name": "Peel Accelerator Treatment",
+      "caption": "45min",
+      "price_aud": 105,
+      "type": "Service"
+    },
+    {
+      "name": "Ageless Peel",
+      "caption": "45min",
+      "price_aud": 110,
+      "type": "Service"
+    },
+    {
+      "name": "Infill From Another Salon",
+      "caption": "1h 30min",
+      "price_aud": 90,
+      "type": "Service"
+    },
+    {
+      "name": "Eyelash Extensions Full Set (Classic)",
+      "caption": "1h 30min",
+      "price_aud": 115,
+      "type": "Service"
+    },
+    {
+      "name": "Eyelash Extensions Infill 2 Weeks (Classic)",
+      "caption": "1h 30min",
+      "price_aud": 75,
+      "type": "Service"
+    },
+    {
+      "name": "Eyelash Extensions Infill 3 Weeks (Classic)",
+      "caption": "1h 30min",
+      "price_aud": 85,
+      "type": "Service"
+    },
+    {
+      "name": "Eyelash Extensions Full Set (Hybrid)",
+      "caption": "1h 30min",
+      "price_aud": 120,
+      "type": "Service"
+    },
+    {
+      "name": "Eyelash Extension Infill 2 Weeks (Hybrid)",
+      "caption": "1h 30min",
+      "price_aud": 75,
+      "type": "Service"
+    },
+    {
+      "name": "Eyelash Extensions Infill 3 Weeks (Hybrid)",
+      "caption": "1h 30min",
+      "price_aud": 85,
+      "type": "Service"
+    },
+    {
+      "name": "Eyelash Extensions Full Set (Volume)",
+      "caption": "1h 30min",
+      "price_aud": 125,
+      "type": "Service"
+    },
+    {
+      "name": "Eyelash Extension Infill 2 Weeks (Volume)",
+      "caption": "1h 30min",
+      "price_aud": 80,
+      "type": "Service"
+    },
+    {
+      "name": "Eyelash Extensions Infill 3 Weeks (Volume)",
+      "caption": "1h 30min",
+      "price_aud": 90,
+      "type": "Service"
+    },
+    {
+      "name": "Eyelash Extensions Removal",
+      "caption": "15min",
+      "price_aud": 30,
+      "type": "Service"
+    },
+    {
+      "name": "Eyebrow Wax",
+      "caption": "15min",
+      "price_aud": 20,
+      "type": "Service"
+    },
+    {
+      "name": "Lip Wax",
+      "caption": "15min",
+      "price_aud": 10,
+      "type": "Service"
+    },
+    {
+      "name": "Chin Wax",
+      "caption": "15min",
+      "price_aud": 10,
+      "type": "Service"
+    },
+    {
+      "name": "Nostrils Wax",
+      "caption": "15min",
+      "price_aud": 10,
+      "type": "Service"
+    },
+    {
+      "name": "Sides Of Face Wax",
+      "caption": "15min",
+      "price_aud": 15,
+      "type": "Service"
+    },
+    {
+      "name": "Full Face Wax Inc. Brows",
+      "caption": "30min",
+      "price_aud": 50,
+      "type": "Service"
+    },
+    {
+      "name": "Beard Tidy Wax",
+      "caption": "15min",
+      "price_aud": 15,
+      "type": "Service"
+    },
+    {
+      "name": "Ear Wax",
+      "caption": "15min",
+      "price_aud": 10,
+      "type": "Service"
+    },
+    {
+      "name": "Underarm Wax",
+      "caption": "15min",
+      "price_aud": 20,
+      "type": "Service"
+    },
+    {
+      "name": "Stomach Line Wax",
+      "caption": "15min",
+      "price_aud": 10,
+      "type": "Service"
+    },
+    {
+      "name": "Chest/ Shoulder Wax",
+      "caption": "30min",
+      "price_aud": 50,
+      "type": "Service"
+    },
+    {
+      "name": "Back/ Shoulder Wax",
+      "caption": "30min",
+      "price_aud": 50,
+      "type": "Service"
+    },
+    {
+      "name": "Eyebrow Tint",
+      "caption": "15min",
+      "price_aud": 20,
+      "type": "Service"
+    },
+    {
+      "name": "Eyelash Tint",
+      "caption": "15min",
+      "price_aud": 20,
+      "type": "Service"
+    },
+    {
+      "name": "Eyebrow Tint & Eyelash Tint",
+      "caption": "15min",
+      "price_aud": 35,
+      "type": "Service"
+    },
+    {
+      "name": "Eyebrow Stain Tint Inc. Wax",
+      "caption": "30min",
+      "price_aud": 45,
+      "type": "Service"
+    },
+    {
+      "name": "Spray Tan",
+      "caption": "15min",
+      "price_aud": 35,
+      "type": "Service"
+    },
+    {
+      "name": "Shellac & Soak off Gel Removal",
+      "caption": "15min",
+      "price_aud": 10,
+      "type": "Service"
+    },
+    {
+      "name": "Deluxe Manicure",
+      "caption": "1hour",
+      "price_aud": 70,
+      "type": "Service"
+    },
+    {
+      "name": "Deluxe Pedicure",
+      "caption": "1hour",
+      "price_aud": 75,
+      "type": "Service"
+    },
+    {
+      "name": "CND Vinylux File & Application",
+      "caption": "30min",
+      "price_aud": 40,
+      "type": "Service"
+    },
+    {
+      "name": "Hot Stone Therapy Massage",
+      "caption": "1hour",
+      "price_aud": 110,
+      "type": "Service"
+    }
+  ],
+  "photos": [
+    {
+      "url": "https://images.fresha.com/locations/location-profile-images/178728/6991918/43f3d8d9-2ae6-42c5-9f97-291596c81a15-Kozmetika-AU-Queensland-Caloundra-Fresha.jpg",
+      "description": "",
+      "file": "img/fresha-1.webp",
+      "size": [
+        1238,
+        696
+      ]
+    },
+    {
+      "url": "https://images.fresha.com/locations/location-profile-images/178728/6991919/f9e794a0-fd77-49dc-91b0-dd53dcf11f5e-Kozmetika-AU-Queensland-Caloundra-Fresha.jpg",
+      "description": "",
+      "file": "img/fresha-2.webp",
+      "size": [
+        922,
+        519
+      ]
+    },
+    {
+      "url": "https://images.fresha.com/locations/location-profile-images/178728/6991920/2c169bfb-5a67-4a16-88e3-6048e70dab34-Kozmetika-AU-Queensland-Caloundra-Fresha.jpg",
+      "description": "",
+      "file": "img/fresha-3.webp",
+      "size": [
+        1196,
+        673
+      ]
+    }
+  ],
+  "photos_skipped_other_businesses": 9
+}

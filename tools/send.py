@@ -11,13 +11,14 @@ Log: outreach-log.json. Rules enforced here (Spam Act + studio-kit/brand/OUTREAC
 - one first email and at most one follow-up per business, never after a reply/unsubscribe/decline
 - every message identifies the sender, ABN and an unsubscribe line (checked before sending)
 """
-import json, sys, datetime, urllib.request
+import json, sys, datetime, urllib.request, re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 LOG = ROOT / "outreach-log.json"
 FROM = "Bailey Bright | One Sight Studio <hello@onesightstudio.au>"
 REPLY_TO = "hello@onesightstudio.au"
+SMS_FROM = ""  # your ClickSend dedicated number, e.g. "+614xxxxxxxx" (set after signing up)
 FOLLOWUP_AFTER_DAYS = 6
 PREVIEW_DAYS = 14
 today = datetime.date.today()
@@ -39,6 +40,28 @@ def resend(to, subject, text):
         return json.loads(r.read())["id"]
 
 
+def clicksend(to, text):
+    """SMS via ClickSend (Australian). Auth comes from the environment's network secret (Basic auth)."""
+    num = re.sub(r"[^0-9]", "", to)
+    num = "+61" + num[1:] if num.startswith("0") else "+" + num
+    body = {"messages": [{"source": "one-sight", "to": num, "body": text, "from": SMS_FROM}]}
+    req = urllib.request.Request("https://rest.clicksend.com/v3/sms/send", method="POST", data=json.dumps(body).encode(),
+                                 headers={"Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        d = json.loads(r.read())
+    m = d["data"]["messages"][0]
+    if m.get("status") != "SUCCESS":
+        raise RuntimeError(m)
+    return m["message_id"]
+
+
+def sms_text(slug, o):
+    a = json.loads((ROOT / "sites.json").read_text())["agency"]
+    n = next(x["name"] for x in json.loads((ROOT / "sites.json").read_text())["sites"] if x["slug"] == slug)
+    return (f"Hi, Bailey from One Sight Studio (ABN {a['abn']}). I built a website for {n}, have a look: {o['preview']} "
+            f"Live for {a.get('price_keep','$29')}/mo if you like it, no setup fee. Reply STOP to opt out.")
+
+
 def checks(msg, o):
     body = msg["body"]
     for need in ("One Sight Studio", "unsubscribe"):
@@ -57,6 +80,17 @@ def first(slugs, dry):
         st = (ROOT / "src" / slug / "STATUS").read_text().strip()
         if st != "preview":
             print(f"{slug}: STATUS is {st}, skipping"); continue
+        if not o["to"]:
+            mob = re.sub(r"\s", "", o.get("phone") or "")
+            if not mob.startswith("04"):
+                print(f"{slug}: no published email or mobile, skipping"); continue
+            text = sms_text(slug, o)
+            if dry:
+                print(f"--- DRY RUN SMS {slug} -> {mob}\n{text}\n"); continue
+            mid = clicksend(mob, text)
+            log[slug] = {"to": mob, "channel": "sms", "source": "Google Business Profile phone", "first_sent": today.isoformat(), "first_id": mid,
+                         "followup_due": "9999-12-31", "preview_until": (today + datetime.timedelta(days=PREVIEW_DAYS)).isoformat(), "status": "sent"}
+            save(log); print(f"{slug}: SMS sent to {mob}"); continue
         checks(o["first"], o)
         if dry:
             print(f"--- DRY RUN {slug} -> {o['to']}\nSubject: {o['first']['subject']}\n\n{o['first']['body']}\n"); continue

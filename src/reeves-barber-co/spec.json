@@ -48,5 +48,8 @@
   "count": 83,
   "url": "https://maps.google.com/?cid=10629005999247143900&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
  },
- "cta_label": "Call to book"
+ "cta_label": "Call to book",
+ "band": true,
+ "band_img": "img/g-3.webp",
+ "band_title": "Book your next *cut*."
 }

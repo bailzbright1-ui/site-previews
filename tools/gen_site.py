@@ -182,15 +182,9 @@ footer{{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);
     trust.append((S["area"].replace(" QLD", ""), "local to you"))
     trust.append(("Online" if book else "Call", "to book" if book else "or text to book"))
     trust_html = "".join(f'<div data-r data-d="{i*80}"><b>{e(a)}</b><span>{e(b)}</span></div>' for i, (a, b) in enumerate(trust))
-    steps = ([("Pick a time", "Choose your service and a time that suits on the online booking page."), ("Get confirmed", "Your booking is locked in straight away."), ("Come in", f"Head to {S.get('address') or S['area']}.")] if book else
-             [("Get in touch", "Call, text or send an enquiry with what you need."), ("Lock in a time", "We'll sort a time that suits you."), ("All sorted", "We take it from there.")])
+    steps = S.get("steps") or []
     steps_html = "".join(f'<li data-r data-d="{i*100}"><span class="n">0{i+1}</span><b>{e(a)}</b><p>{e(b)}</p></li>' for i, (a, b) in enumerate(steps))
-    faq = []
-    if S.get("hours"): faq.append(("When are you open?", "; ".join(S["hours"]) + "."))
-    faq.append(("Where are you?", (S.get("address") or S["area"]) + ("." if S.get("address") else ". Call for directions.")))
-    faq.append(("How do I book?", "Book online any time with the Book button, or call us." if book else "Call or text, or send an enquiry with the form below and we'll get back to you."))
-    for q, a in S.get("faq", []): faq.append((q, a))
-    if r: faq.append(("What do customers say?", f'We\'re rated {r["value"]} from {r["count"]} reviews on Google. Read them on our Google listing.'))
+    faq = [tuple(x) for x in S.get("faq", [])]
     faq_html = "".join(f'<details data-r><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in faq)
     about = "".join(f"<p data-r>{e(x)}</p>" for x in S.get("about", []))
     band_img = S.get("band_img") or S["hero"]
@@ -217,10 +211,10 @@ footer{{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);
 {f'<section class="s" id="about"><div class="wrap about"><div><p class="k">About</p><h2 style="font-size:clamp(2.2rem,4.6vw,4rem);margin-top:12px" data-r>{rich(S.get("about_title","Who we *are*"))}</h2></div><div>{about}</div></div></section>' if about else ''}
 {sec_services}
 {sec_gal}
-<section class="s" id="how"><div class="wrap"><div class="sh"><h2 data-r>{rich("How it *works*")}</h2><p data-r>Simple from start to finish.</p></div><ol class="steps">{steps_html}</ol></div></section>
-<section class="band" aria-label="Book"><img src="{band_img}" alt="" loading="lazy"><div class="wrap"><h2 data-r>{rich(S.get("band_title","Ready when *you* are."))}</h2><div class="ctas" style="margin-top:24px" data-r data-d="150">{primary}{secondary}</div></div></section>
+{f'''<section class="s" id="how"><div class="wrap"><div class="sh"><h2 data-r>{rich("How it *works*")}</h2><p data-r>Simple from start to finish.</p></div><ol class="steps">{steps_html}</ol></div></section>''' if steps else ""}
+{f'''<section class="band" aria-label="Book"><img src="{band_img}" alt="" loading="lazy"><div class="wrap"><h2 data-r>{rich(S.get("band_title","Ready when *you* are."))}</h2><div class="ctas" style="margin-top:24px" data-r data-d="150">{primary}{secondary}</div></div></section>''' if S.get("band") else ""}
 {sec_info}
-<section class="s" id="faq"><div class="wrap info"><div><p class="k">Questions</p><h2 style="font-size:clamp(2.2rem,4.6vw,4rem);margin-top:12px" data-r>{rich("Good to *know*")}</h2></div><div class="faq">{faq_html}</div></div></section>
+{f'''<section class="s" id="faq"><div class="wrap info"><div><p class="k">Questions</p><h2 style="font-size:clamp(2.2rem,4.6vw,4rem);margin-top:12px" data-r>{rich("Good to *know*")}</h2></div><div class="faq">{faq_html}</div></div></section>''' if faq else ""}
 <section class="s" id="contact"><div class="wrap contact">
   <div><p class="k">Get in touch</p><h2 style="margin-top:12px" data-r>{rich(S.get('contact_title','Let\'s *talk*.'))}</h2><p style="color:var(--muted);margin-top:16px;max-width:40ch">{addr_line}</p><div class="ctas" style="margin-top:24px">{primary}</div></div>
   <form class="form" id="quote" data-lead novalidate aria-label="Enquiry">
@@ -230,7 +224,7 @@ footer{{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);
   </form>
 </div></section>
 </main>
-<footer><div class="wrap" style="display:block"><div class="fcols"><div><b>{e(S['name'])}</b><span>{addr_line}</span><a href="{{{{PHONE_HREF}}}}" style="margin-top:8px">{{{{PHONE_DISPLAY}}}}</a>{f'<a href="{{{{BOOK_URL}}}}" target="_blank" rel="noopener">Book online ↗</a>' if book else ''}{f'<a href="{e(r["url"])}" target="_blank" rel="noopener">Google reviews ↗</a>' if r else ''}</div><div><b>Hours</b><div class="fhrs">{''.join(f'<div><span>{e(h.split(":",1)[0][:3])}</span><span>{e(h.split(":",1)[1].strip())}</span></div>' for h in (S.get("hours") or [])) or '<span>Call for times</span>'}</div></div><div><b>Explore</b>{'<a href="#services">Services</a>' if services else ''}{'<a href="#work">Our work</a>' if gal else ''}<a href="#how">How it works</a><a href="#faq">Questions</a><a href="#contact">Contact</a></div></div><div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:18px"><span>© {{{{YEAR}}}} {e(S['name'])} · {e(S['area'])}</span></div></div></footer>
+<footer><div class="wrap" style="display:block"><div class="fcols"><div><b>{e(S['name'])}</b><span>{addr_line}</span><a href="{{{{PHONE_HREF}}}}" style="margin-top:8px">{{{{PHONE_DISPLAY}}}}</a>{f'<a href="{{{{BOOK_URL}}}}" target="_blank" rel="noopener">Book online ↗</a>' if book else ''}{f'<a href="{e(r["url"])}" target="_blank" rel="noopener">Google reviews ↗</a>' if r else ''}</div><div><b>Hours</b><div class="fhrs">{''.join(f'<div><span>{e(h.split(":",1)[0][:3])}</span><span>{e(h.split(":",1)[1].strip())}</span></div>' for h in (S.get("hours") or [])) or '<span>Call for times</span>'}</div></div><div><b>Explore</b>{'<a href="#services">Services</a>' if services else ''}{'<a href="#work">Our work</a>' if gal else ''}{"<a href=#how>How it works</a>" if steps else ""}{"<a href=#faq>Questions</a>" if faq else ""}<a href="#contact">Contact</a></div></div><div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:18px"><span>© {{{{YEAR}}}} {e(S['name'])} · {e(S['area'])}</span></div></div></footer>
 <div class="dock">{('<a class="btn pri" href="{{BOOK_URL}}" target="_blank" rel="noopener">Book online</a><a class="btn sec" href="{{PHONE_HREF}}">Call</a>' if book else '<a class="btn pri" href="{{PHONE_HREF}}">Call now</a><a class="btn sec" href="#contact">Enquire</a>')}</div>
 <script>
 document.querySelectorAll('form[data-lead]').forEach(function(f){{f.addEventListener('submit',function(e){{e.preventDefault();if(!f.checkValidity()){{f.reportValidity();return}}var ep='{{{{FORM_ENDPOINT}}}}',b=f.querySelector('[type=submit]');if(!ep){{f.classList.add('sent');return}}b.disabled=true;b.textContent='Sending\\u2026';fetch(ep,{{method:'POST',headers:{{Accept:'application/json'}},body:new FormData(f)}}).then(function(r){{if(!r.ok)throw 0;f.classList.add('sent')}}).catch(function(){{b.disabled=false;b.textContent='Try again';alert('Sorry, that did not send. Please call us instead.')}})}})}});

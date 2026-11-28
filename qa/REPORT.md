@@ -1,9 +1,9 @@
 # QA report
 
-_2026-11-28 11:36 UTC · 23 sites_
+_2026-11-28 11:58 UTC · 23 sites_
 
 ## bad-hair-day-barber ⚠️
-- ⚠️ button contrast below 4.5: 0492 867 509 3.7:1; Call 0492 867 509 3.7:1; Call 0492 867 509 3.7:1; Call 0492 867 509 3.7:1; Send 3.7:1
+- ⚠️ button contrast below 4.5: 0492 867 509 3.7:1; Call 0492 867 509 3.7:1; Call 0492 867 509 3.7:1; Send 3.7:1
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
 - ✅ preview is noindex
@@ -81,8 +81,7 @@ _2026-11-28 11:36 UTC · 23 sites_
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
-## bee-beauty-australia ⚠️
-- ⚠️ button contrast below 4.5: Call 0429 233 092 1.1:1
+## bee-beauty-australia ✅
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
 - ✅ preview is noindex
@@ -94,6 +93,7 @@ _2026-11-28 11:36 UTC · 23 sites_
 - ✅ phone links valid (tel:0431864979, tel:0429233092)
 - ✅ images/iframes labelled
 - ✅ lang=en-AU
+- ✅ button text contrast ≥ 4.5:1
 - ✅ lead form validates + shows success
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
@@ -121,8 +121,7 @@ _2026-11-28 11:36 UTC · 23 sites_
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
-## flamingo-nails-caloundra ⚠️
-- ⚠️ button contrast below 4.5: Send an enquiry 1.1:1
+## flamingo-nails-caloundra ✅
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
 - ✅ preview is noindex
@@ -134,6 +133,7 @@ _2026-11-28 11:36 UTC · 23 sites_
 - ✅ phone links valid (tel:0431864979, tel:0404542831)
 - ✅ images/iframes labelled
 - ✅ lang=en-AU
+- ✅ button text contrast ≥ 4.5:1
 - ✅ lead form validates + shows success
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
@@ -161,8 +161,7 @@ _2026-11-28 11:36 UTC · 23 sites_
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
-## happy-nails ⚠️
-- ⚠️ button contrast below 4.5: Send an enquiry 1.0:1
+## happy-nails ✅
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
 - ✅ preview is noindex
@@ -174,6 +173,7 @@ _2026-11-28 11:36 UTC · 23 sites_
 - ✅ phone links valid (tel:0431864979, tel:0449059959)
 - ✅ images/iframes labelled
 - ✅ lang=en-AU
+- ✅ button text contrast ≥ 4.5:1
 - ✅ lead form validates + shows success
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
@@ -340,8 +340,7 @@ _2026-11-28 11:36 UTC · 23 sites_
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
-## sarenity-hair ⚠️
-- ⚠️ button contrast below 4.5: Send an enquiry 1.1:1
+## sarenity-hair ✅
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
 - ✅ preview is noindex
@@ -353,6 +352,7 @@ _2026-11-28 11:36 UTC · 23 sites_
 - ✅ phone links valid (tel:0431864979, tel:0400819010)
 - ✅ images/iframes labelled
 - ✅ lang=en-AU
+- ✅ button text contrast ≥ 4.5:1
 - ✅ lead form validates + shows success
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
@@ -400,8 +400,7 @@ _2026-11-28 11:36 UTC · 23 sites_
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
-## v-nails-and-beauty ⚠️
-- ⚠️ button contrast below 4.5: Call 0402 328 345 1.1:1
+## v-nails-and-beauty ✅
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
 - ✅ preview is noindex
@@ -413,6 +412,7 @@ _2026-11-28 11:36 UTC · 23 sites_
 - ✅ phone links valid (tel:0431864979, tel:0402328345)
 - ✅ images/iframes labelled
 - ✅ lang=en-AU
+- ✅ button text contrast ≥ 4.5:1
 - ✅ lead form validates + shows success
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)

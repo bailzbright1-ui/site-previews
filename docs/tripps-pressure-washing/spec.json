@@ -62,5 +62,8 @@
  },
  "cta_label": "Call for a quote",
  "form_subject": "New quote request from your website",
- "contact_title": "Get a *quote*."
+ "contact_title": "Get a *quote*.",
+ "band": true,
+ "band_img": "img/g-4.webp",
+ "band_title": "Before and *after*."
 }

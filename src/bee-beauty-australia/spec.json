@@ -50,5 +50,15 @@
   "value": 5,
   "count": 93,
   "url": "https://maps.google.com/?cid=6456412803634318228&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
- }
+ },
+ "faq": [
+  [
+   "Can I book online?",
+   "Yes. Bookings are taken online through their booking page, any time."
+  ],
+  [
+   "Are you open late?",
+   "Thursdays until 8:30pm."
+  ]
+ ]
 }

@@ -51,5 +51,18 @@
   "count": 301,
   "url": "https://maps.google.com/?cid=16092729464314453354&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
  },
- "contact_title": "Just *walk in*."
+ "contact_title": "Just *walk in*.",
+ "band": true,
+ "band_img": "img/g-1.webp",
+ "band_title": "No appointment *needed*.",
+ "faq": [
+  [
+   "Do I need to book?",
+   "No. Cut & Go is a walk-in barber shop: their sign says no appointment needed."
+  ],
+  [
+   "When are you open?",
+   "Tuesday to Friday 7:30am to 5pm, Saturday 7am to 1pm. Closed Sunday and Monday."
+  ]
+ ]
 }

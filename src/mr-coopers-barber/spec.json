@@ -49,5 +49,8 @@
   "count": 97,
   "url": "https://maps.google.com/?cid=2746145581951296903&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
  },
- "cta_label": "Call to book"
+ "cta_label": "Call to book",
+ "band": true,
+ "band_img": "img/g-6.webp",
+ "band_title": "Drop in on *Landsborough Pde*."
 }

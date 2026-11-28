@@ -50,5 +50,8 @@
   "count": 94,
   "url": "https://maps.google.com/?cid=9224505568799174985&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
  },
- "cta_label": "Call to book"
+ "cta_label": "Call to book",
+ "band": true,
+ "band_img": "img/g-7.webp",
+ "band_title": "Book your dog's *pamper*."
 }

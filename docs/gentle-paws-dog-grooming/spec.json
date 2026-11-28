@@ -48,5 +48,8 @@
   "count": 37,
   "url": "https://maps.google.com/?cid=11607236487513341567&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
  },
- "cta_label": "Call to book"
+ "cta_label": "Call to book",
+ "band": true,
+ "band_img": "img/g-2.webp",
+ "band_title": "See the *difference*."
 }

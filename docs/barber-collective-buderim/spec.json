@@ -53,5 +53,18 @@
   "value": 5,
   "count": 241,
   "url": "https://maps.google.com/?cid=17580874132224157602&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
- }
+ },
+ "band": true,
+ "band_img": "img/g-8.webp",
+ "band_title": "Late cuts on *Thursdays*.",
+ "steps": [
+  [
+   "Book online",
+   "Pick your barber and time on the booking page."
+  ],
+  [
+   "Thursday nights",
+   "Open until 9pm on Thursdays."
+  ]
+ ]
 }

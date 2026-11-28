@@ -50,5 +50,15 @@
  },
  "notes": [
   "Open 7 days"
+ ],
+ "faq": [
+  [
+   "Are you open on weekends?",
+   "Yes: Saturday until 5:30pm and Sunday 7am to 5pm."
+  ],
+  [
+   "Can I book online?",
+   "Yes, through their online booking page."
+  ]
  ]
 }

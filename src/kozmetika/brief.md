@@ -15,6 +15,9 @@ Every fact on the site must appear here with a source. If it isn't here, it isn'
 | Phone | Not confirmed | - |
 | Socials | facebook.com/k0zmetika · instagram.com/kozmetika__ (linked from their Fresha page) | https://www.fresha.com/a/kozmetika-caloundra-31-osprey-street-lh7zvssu |
 
+| Own photos | `img/fresha-1..3.webp`, uploaded by Kozmetika to its Fresha profile (treatment room, retail shelf) | https://www.fresha.com/a/kozmetika-caloundra-31-osprey-street-lh7zvssu |
+| Phone | 0432 124 207 | Fresha structured data |
+
 ## Photos
 
 Stock photos from Pexels (free licence): objects and hands only, no faces, and never presented as this business's own work. Swap in the owner's own photos once they're on board.

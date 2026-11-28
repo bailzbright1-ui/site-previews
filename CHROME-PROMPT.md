@@ -2,32 +2,15 @@
 
 I'm setting up One Sight Studio's payments, domain and email. Help me through each part in my browser. **Ask me before any click that buys something, creates something, or saves a setting.** Don't send any emails. At the end, give me a short summary with every value marked ⟶ below, so I can paste it back to Claude Code.
 
-## 1. Stripe payment links
+## 1. Stripe (the Keep link is already done)
 
-In my Stripe dashboard, create two **new** products. Don't reuse the "Trim" products.
+Create one more payment link the same way as the existing Keep link: new product **Website – Grow plan**, A$59.00 recurring monthly, description "Everything in Keep, plus up to 3 changes a month, Google Business Profile tidy-up and a new section each quarter. Month to month." No free trial. Tick collect customer names, business names, and require phone number. After payment, redirect to `https://bailzbright1-ui.github.io/site-previews/keep/thanks/`. Show me before clicking Create.
 
-| | Link 1 | Link 2 |
-|---|---|---|
-| Product name | Website – Keep plan | Website – Grow plan |
-| Price | A$29.00, recurring, monthly | A$59.00, recurring, monthly |
-| Description | Your website live on your domain. Hosting, SSL, backups, 1 change a month. Month to month. | Everything in Keep, plus up to 3 changes a month, Google Business Profile tidy-up and a new section each quarter. Month to month. |
-
-For each payment link:
-- Free trial: **30 days**
-- Tick: Collect customer names, Collect business names, Require phone number
-- Leave Managed Payments and automatic tax **off**
-- After payment → Redirect to `https://bailzbright1-ui.github.io/site-previews/keep/thanks/`
-- Show me the summary before clicking Create link
-
-Then in Settings → Billing → Subscriptions and emails, turn on (ask me first):
-- the email that reminds customers before a free trial ends
-- the customer portal, so customers can cancel themselves
-
-⟶ Keep link URL · Grow link URL
+⟶ Grow link URL
 
 ## 2. Domain
 
-If I haven't bought it yet, help me register the studio domain (e.g. onesightstudio.com.au; .com.au needs my ABN 88 359 529 731). Then, in the domain's DNS settings, add these records so the website runs on it (ask before saving):
+If I haven't bought it yet, the studio domain is **onesightstudio.au**. Then, in the domain's DNS settings, add these records so the website runs on it (ask before saving):
 
 | Type | Name | Value |
 |---|---|---|
@@ -39,15 +22,13 @@ If I haven't bought it yet, help me register the studio domain (e.g. onesightstu
 
 Remove any existing "parking" A records on @ that point elsewhere.
 
-⟶ The exact domain · the registrar used · the price I paid for 1 year of the .com.au (we quote this to customers)
+⟶ Registrar used · the current price for 1 year of a **.com.au** at that registrar (we quote this to customers as their domain cost)
 
 ## 3. Email on the domain
 
-Set up a mailbox like `hello@<domain>` (Google Workspace, Zoho Mail free plan, or the registrar's own email, whichever I choose). Add the MX/TXT records it asks for.
+The mailbox hello@onesightstudio.au already exists. Create a free **Resend** account (resend.com), add the same domain under Domains, and add the DNS records Resend shows (they're separate from the mailbox records, usually on a `send` or `resend._domainkey` name). Wait until Resend shows the domain as **Verified**. Then create an API key with "Sending access" only. **Don't paste the key anywhere.** Just tell me it's been created.
 
-Then create a free **Resend** account (resend.com), add the same domain under Domains, and add the DNS records Resend shows (they're separate from the mailbox records, usually on a `send` or `resend._domainkey` name). Wait until Resend shows the domain as **Verified**. Then create an API key with "Sending access" only. **Don't paste the key anywhere.** Just tell me it's been created.
-
-⟶ Studio email address · Resend domain verified (yes/no) · Resend API key created (yes/no)
+⟶ Resend domain verified (yes/no) · Resend API key created (yes/no)
 
 ## 4. GitHub Pages custom domain (do this after DNS is saved)
 

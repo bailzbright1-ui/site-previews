@@ -10,7 +10,7 @@ and these preview-only markers, which the live build strips:
   <!--PREVIEW--> ... <!--/PREVIEW-->      (blocks, e.g. the preview banner)
   any line containing PREVIEW-ONLY         (e.g. the noindex meta tag)
 """
-import argparse, datetime, json, re, shutil, sys, zipfile
+import os, argparse, datetime, json, re, shutil, sys, zipfile
 sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parent))
 from pathlib import Path
 
@@ -19,7 +19,13 @@ SRC, DOCS, LIVE = ROOT / "src", ROOT / "docs", ROOT / "live"
 
 
 def load():
-    return json.loads((ROOT / "sites.json").read_text(encoding="utf-8"))
+    d = json.loads((ROOT / "sites.json").read_text(encoding="utf-8"))
+    have = {x["slug"] for x in d["sites"]}
+    for f in sorted((ROOT / "src").glob("*/site.json")):   # builder drafts not yet merged by tools/publish.py
+        x = json.loads(f.read_text())
+        if x["slug"] not in have:
+            d["sites"].append(x)
+    return d
 
 
 def phone_tokens(phone):
@@ -75,8 +81,9 @@ def build_previews(data):
     for s in data["sites"]:
         src = SRC / s["slug"] / "index.html"
         st = SRC / s["slug"] / "STATUS"
-        if st.exists() and st.read_text().strip() == "archived":
-            print(f"skip {s['slug']} (archived, preview taken down)")
+        stv = st.read_text().strip() if st.exists() else ""
+        if stv == "archived" or (stv in ("draft", "ready") and not os.environ.get("PREVIEW_DRAFTS")):
+            print(f"skip {s['slug']} ({stv})")
             continue
         if not src.exists():
             print(f"skip {s['slug']} (no source yet)")
@@ -93,7 +100,7 @@ def build_previews(data):
 def build_studio(data):
     """One Sight Studio's own pages (home + keep/claim flow) into docs/ root."""
     a = data["agency"]
-    sites = {s["slug"]: {"name": s["name"]} for s in data["sites"] if (SRC / s["slug"] / "index.html").exists() and not ((SRC / s["slug"] / "STATUS").exists() and (SRC / s["slug"] / "STATUS").read_text().strip() == "archived")}
+    sites = {s["slug"]: {"name": s["name"]} for s in data["sites"] if (SRC / s["slug"] / "index.html").exists() and not ((SRC / s["slug"] / "STATUS").exists() and (SRC / s["slug"] / "STATUS").read_text().strip() in ("archived", "draft", "ready"))}
     dl = ""
     for label, key, href in (("Name", "your_name", None), ("Email", "email", "mailto:"), ("Mobile", "mobile", "tel:")):
         if a.get(key):

@@ -1,0 +1,137 @@
+{
+  "id": "ChIJrxjIbkidk2sR4JXPzLfUBXQ",
+  "types": [
+    "nail_salon",
+    "beauty_salon",
+    "service",
+    "point_of_interest",
+    "establishment"
+  ],
+  "nationalPhoneNumber": "0474 780 555",
+  "internationalPhoneNumber": "+61 474 780 555",
+  "formattedAddress": "86 Burnett St, Buderim QLD 4556, Australia",
+  "addressComponents": [
+    {
+      "longText": "86",
+      "shortText": "86",
+      "types": [
+        "street_number"
+      ],
+      "languageCode": "en-US"
+    },
+    {
+      "longText": "Burnett Street",
+      "shortText": "Burnett St",
+      "types": [
+        "route"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Buderim",
+      "shortText": "Buderim",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Sunshine Coast Regional",
+      "shortText": "Sunshine Coast",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Queensland",
+      "shortText": "QLD",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Australia",
+      "shortText": "AU",
+      "types": [
+        "country",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "4556",
+      "shortText": "4556",
+      "types": [
+        "postal_code"
+      ],
+      "languageCode": "en-US"
+    }
+  ],
+  "location": {
+    "latitude": -26.6879264,
+    "longitude": 153.0481953
+  },
+  "rating": 4.8,
+  "googleMapsUri": "https://maps.google.com/?cid=8360322169163453920&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "websiteUri": "https://www.facebook.com/Queennailsspabeauty/",
+  "regularOpeningHours": {
+    "weekdayDescriptions": [
+      "Monday: 9:00 AM – 5:00 PM",
+      "Tuesday: 9:00 AM – 5:30 PM",
+      "Wednesday: 9:00 AM – 5:30 PM",
+      "Thursday: 9:00 AM – 5:30 PM",
+      "Friday: 9:00 AM – 5:30 PM",
+      "Saturday: 9:00 AM – 5:30 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "businessStatus": "OPERATIONAL",
+  "userRatingCount": 147,
+  "displayName": {
+    "text": "Queen nails spa & beauty",
+    "languageCode": "en"
+  },
+  "primaryTypeDisplayName": {
+    "text": "Nail Salon",
+    "languageCode": "en-US"
+  },
+  "own_photos": [
+    {
+      "file": "img/g-1.webp",
+      "size": [
+        1440,
+        1800
+      ],
+      "author": [
+        "Queen nails spa & beauty"
+      ]
+    },
+    {
+      "file": "img/g-2.webp",
+      "size": [
+        1600,
+        1200
+      ],
+      "author": [
+        "Queen nails spa & beauty"
+      ]
+    },
+    {
+      "file": "img/g-3.webp",
+      "size": [
+        1600,
+        2133
+      ],
+      "author": [
+        "Queen nails spa & beauty"
+      ]
+    }
+  ],
+  "fetched": "2026-11-28",
+  "source": "https://maps.google.com/?cid=8360322169163453920&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}

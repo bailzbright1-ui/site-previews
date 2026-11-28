@@ -1,0 +1,52 @@
+{
+ "name": "Queen nails spa & beauty",
+ "kicker": "Nail Salon · Buderim",
+ "headline": [
+  "Buderim's",
+  "*nail salon*."
+ ],
+ "sub": "Nail Salon in Buderim. Call or text to book.",
+ "layout": "split",
+ "palette": {
+  "bg": "#0E1116",
+  "surface": "#161B22",
+  "ink": "#F1F3F5",
+  "muted": "#9AA4AF",
+  "line": "#26303B",
+  "accent": "#F5C518",
+  "accent_ink": "#111111"
+ },
+ "fonts": {
+  "display": "DM Serif Display",
+  "body": "DM Sans",
+  "google": "family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;700",
+  "display_weight": 400,
+  "italic": true
+ },
+ "hero": "img/g-1.webp",
+ "gallery": [
+  "img/g-2.webp",
+  "img/g-3.webp"
+ ],
+ "gallery_title": "Recent *work*",
+ "hours": [
+  "Monday: 9:00 AM – 5:00 PM",
+  "Tuesday: 9:00 AM – 5:30 PM",
+  "Wednesday: 9:00 AM – 5:30 PM",
+  "Thursday: 9:00 AM – 5:30 PM",
+  "Friday: 9:00 AM – 5:30 PM",
+  "Saturday: 9:00 AM – 5:30 PM",
+  "Sunday: Closed"
+ ],
+ "address": "86 Burnett St, Buderim QLD 4556",
+ "area": "Buderim QLD",
+ "map_query": "86 Burnett St, Buderim QLD 4556, Australia",
+ "rating": {
+  "value": 4.8,
+  "count": 147,
+  "url": "https://maps.google.com/?cid=8360322169163453920&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+ },
+ "book_url": null,
+ "cta_label": "Call to book",
+ "_DRAFT": "rewrite headline/sub, check photos, check address isn't a home, then delete this key"
+}

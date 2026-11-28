@@ -12,7 +12,8 @@ import json, sys, urllib.request, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "leads.json"
+import os
+OUT = Path(os.environ["LEADS_FILE"]) if os.environ.get("LEADS_FILE") else ROOT / "leads.json"
 FIELDS = ("places.id,places.displayName,places.formattedAddress,places.nationalPhoneNumber,places.websiteUri,"
           "places.rating,places.userRatingCount,places.googleMapsUri,places.businessStatus,places.primaryTypeDisplayName,"
           "places.regularOpeningHours.weekdayDescriptions")

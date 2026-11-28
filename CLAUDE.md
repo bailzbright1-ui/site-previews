@@ -21,7 +21,7 @@ One Sight Studio builds a website for a local business before they ask, sends th
 ## Hard rules (from the kit, plus what we've learned)
 
 - **Never invent facts.** If it isn't in `brief.md` with a source, it isn't on the site. No made-up reviews, review quotes, ratings, years, licences, staff, prices, guarantees, suburbs lists or services. Ratings only as "Rated X on <platform>" with a link.
-- **Photos:** no stock photos of people (no faces, no full bodies). The owner's own published photos are best. Otherwise use people-free stock (objects, materials, hands at most), never presented as the business's own work or premises. Look at every photo before using it.
+- **Photos:** no stock photos of people (no faces, no full bodies). The owner's own published photos are best. Otherwise use people-free stock (objects, materials, hands at most), never presented as the business's own work or premises. Look at every photo before using it. **Owner photos must be sharp and high-res:** at least 2× the size they're displayed at, and never blurry video stills. If they aren't, use good-quality stock of the same subject instead, and ask the owner for originals later.
 - **Their brand, not ours:** One Sight appears only in the preview bar (`tools/snippet_previewbar.html`, injected via `{{PREVIEW_BAR}}`) and, once live, the footer credit (added automatically by the live build).
 - **Prices:** only those in `studio-kit/brand/PRICING.md` (Keep $29/mo, Grow $59/mo, Custom quoted). No fake discounts or urgency.
 - **Each new site gets a fresh design direction** from the `web-design-inspiration` skill (history in `tools/design-history.json`).

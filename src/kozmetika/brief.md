@@ -21,3 +21,5 @@ Every fact on the site must appear here with a source. If it isn't here, it isn'
 ## Photos
 
 Stock photos from Pexels (free licence): objects and hands only, no faces, and never presented as this business's own work. Swap in the owner's own photos once they're on board.
+
+**Photo quality check (28 Nov):** the owner's photos found online were too low-resolution or blurry (video stills / 300px) to use at full size, so good-quality stock is used instead. Ask the owner for originals once they're on board.

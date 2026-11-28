@@ -1,6 +1,6 @@
 # QA report
 
-_2026-11-28 05:48 UTC · 10 sites_
+_2026-11-28 06:12 UTC · 10 sites_
 
 ## beauty-in-a-box-co ✅
 - ✅ title + meta description

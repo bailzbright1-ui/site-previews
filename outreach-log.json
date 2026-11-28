@@ -1,0 +1,47 @@
+{
+  "mount-coolum-plumbing": {
+    "to": "pete@mtcplumbing.com.au",
+    "source": "https://mtcplumbing.com.au/ (footer, business contact details)",
+    "first_sent": "2026-11-28",
+    "first_id": "01a220fe-fe10-7ddc-8687-8c8c5038ff7d",
+    "followup_due": "2026-12-04",
+    "preview_until": "2026-12-12",
+    "status": "sent"
+  },
+  "kozmetika": {
+    "to": "kozmetika_@outlook.com",
+    "source": "https://www.facebook.com/K0zmetika (About > Contact info, checked 28 Nov 2026)",
+    "first_sent": "2026-11-28",
+    "first_id": "01a220fe-fe58-7e48-b82d-4cc76a1219d2",
+    "followup_due": "2026-12-04",
+    "preview_until": "2026-12-12",
+    "status": "sent"
+  },
+  "wink-worthy": {
+    "to": "info@winkworthylashes.com",
+    "source": "https://www.facebook.com/winkworthylashesandbrows (About > Contact info, checked 28 Nov 2026)",
+    "first_sent": "2026-11-28",
+    "first_id": "01a220fe-fe9e-7582-94ba-7ef68054416b",
+    "followup_due": "2026-12-04",
+    "preview_until": "2026-12-12",
+    "status": "sent"
+  },
+  "wow-wow-nails": {
+    "to": "wowwownailscoolum@gmail.com",
+    "source": "https://www.facebook.com/wowwownailscoolum (About > Contact info, checked 28 Nov 2026)",
+    "first_sent": "2026-11-28",
+    "first_id": "01a220fe-fee5-7268-b726-d6945c88eda3",
+    "followup_due": "2026-12-04",
+    "preview_until": "2026-12-12",
+    "status": "sent"
+  },
+  "montys-plumbing": {
+    "to": "craigmontysplumbing@gmail.com",
+    "source": "Localsearch listing contact details: https://www.localsearch.com.au/profile/monty-s-plumbing/peregian-beach-qld/D9rX",
+    "first_sent": "2026-11-28",
+    "first_id": "01a220fe-ff2d-7842-be50-915917963713",
+    "followup_due": "2026-12-04",
+    "preview_until": "2026-12-12",
+    "status": "sent"
+  }
+}

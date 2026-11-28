@@ -84,7 +84,7 @@ header .btn{{min-height:44px;padding:0 18px;font-size:15px}}
 .L-fullbleed .hero .bg{{position:absolute;inset:0}}.L-fullbleed .hero .bg img{{height:112%}}
 .L-fullbleed .hero .bg::after{{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.78),rgba(0,0,0,.25) 55%,rgba(0,0,0,.35))}}
 .L-fullbleed .hero .wrap{{position:relative;padding-top:130px;padding-bottom:clamp(40px,7vw,90px);width:100%}}.L-fullbleed .hero .sub,.L-fullbleed .rate small{{color:rgba(255,255,255,.85)}}
-.L-fullbleed header{{position:absolute;left:0;right:0;z-index:5;color:#fff}}
+.L-fullbleed header{{position:absolute;left:0;right:0;z-index:5;color:#fff}}.L-fullbleed .hero h1 em{{color:inherit;text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:6px;text-underline-offset:8px}}.L-fullbleed .hero .k{{color:rgba(255,255,255,.85)}}
 .L-editorial .hero .wrap{{padding-top:clamp(36px,6vw,80px)}}.L-editorial .hero h1{{font-size:clamp(2.5rem,10vw,10rem);max-width:12ch;overflow-wrap:anywhere}}
 .L-editorial .hero .row{{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}}
 .L-editorial .hp{{aspect-ratio:21/9;margin-top:clamp(28px,4vw,48px);border-radius:18px}}
@@ -120,6 +120,26 @@ section.s{{padding:clamp(72px,10vw,140px) 0;border-top:1px solid var(--line)}}
 .form .btn{{width:100%;margin-top:20px}}.form .done{{display:none}}.form.sent .done{{display:block}}.form.sent .f{{display:none}}
 @media(max-width:860px){{.contact{{grid-template-columns:1fr}}}}
 footer{{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);font-size:14px}}footer .wrap{{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}}
+.trust{{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}}
+.trust div{{padding:22px clamp(14px,2vw,28px);border-right:1px solid var(--line)}}.trust div:last-child{{border-right:0}}
+.trust b{{display:block;font-family:var(--d);font-size:clamp(22px,2.4vw,32px);line-height:1.05;text-transform:{case}}}.trust span{{color:var(--muted);font-size:14px}}
+@media(max-width:760px){{.trust{{grid-template-columns:1fr 1fr}}.trust div:nth-child(2){{border-right:0}}.trust div:nth-child(-n+2){{border-bottom:1px solid var(--line)}}}}
+.about{{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,80px)}}.about p{{color:var(--muted);font-size:18px;margin-bottom:16px;max-width:62ch}}
+@media(max-width:860px){{.about{{grid-template-columns:1fr}}}}
+.steps{{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}}
+.steps li{{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:28px;min-height:200px;display:flex;flex-direction:column;gap:10px}}
+.steps li:first-child{{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}}.steps li:first-child p{{color:inherit;opacity:.85}}
+.steps .n{{font-family:var(--d);font-size:40px;line-height:1;opacity:.5}}.steps b{{font-family:var(--d);font-size:24px;text-transform:{case}}}.steps p{{color:var(--muted);font-size:15px}}
+@media(max-width:760px){{.steps{{grid-template-columns:1fr}}.steps li{{min-height:0}}}}
+.band{{position:relative;border-radius:28px;overflow:hidden;margin:0 clamp(8px,1.4vw,18px);min-height:420px;display:flex;align-items:flex-end;color:#fff}}
+.band img{{position:absolute;inset:0;height:100%}}.band h2 em{{color:inherit;text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:6px;text-decoration-color:var(--accent)}}.band::after{{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.75),rgba(0,0,0,.15))}}
+.band .wrap{{position:relative;z-index:1;padding-bottom:clamp(32px,5vw,64px);width:100%}}.band h2{{font-size:clamp(2.4rem,5.6vw,5rem);max-width:14ch}}
+.band .btn.sec{{color:#fff}}
+.faq details{{border-bottom:1px solid var(--line);padding:18px 0}}.faq summary{{cursor:pointer;font-weight:600;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:16px}}
+.faq summary::after{{content:"+";color:var(--accent);font-weight:700}}.faq details[open] summary::after{{content:"–"}}.faq p{{color:var(--muted);margin-top:10px;max-width:70ch}}
+.fcols{{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:28px;padding:48px 0 28px}}.fcols b{{display:block;color:var(--ink);font-family:var(--d);font-size:20px;margin-bottom:10px;text-transform:{case}}}
+.fcols a{{display:block;text-decoration:none;padding:3px 0}}.fcols a:hover{{text-decoration:underline}}.fhrs div{{display:flex;justify-content:space-between;gap:12px;font-size:13.5px;padding:2px 0}}
+@media(max-width:760px){{.fcols{{grid-template-columns:1fr}}}}
 .dock{{display:none}}@media(max-width:760px){{.dock{{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:40}}.dock .btn{{box-shadow:0 10px 24px -10px rgba(0,0,0,.45)}}.dock .sec{{background:var(--bg);color:var(--ink)}}footer{{padding-bottom:96px}}}}
 """
     hero_img = f'<img src="{S["hero"]}" alt="{e(S["name"])}" fetchpriority="high" data-px="0.05">'
@@ -151,6 +171,30 @@ footer{{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);
         right = f'<div class="map" data-r><iframe title="Map of {e(S["area"])}" loading="lazy" src="https://www.google.com/maps?q={e(mapq)}&output=embed"></iframe></div>' if mapq else ""
         sec_info = f'<section class="s" id="visit"><div class="wrap info">{left}{right}</div></section>'
     addr_line = e(S.get("address") or S["area"])
+    # --- richer sections, built only from facts in the spec ---
+    def open_days(hs):
+        if not hs: return None
+        days = [h.split(":", 1)[0][:3] for h in hs if "Closed" not in h]
+        return f"Open {len(days)} days" if len(days) >= 5 else "Open " + ", ".join(days)
+    trust = []
+    if r: trust.append((f'{r["value"]}★', f'{r["count"]} Google reviews'))
+    if S.get("hours"): trust.append((open_days(S["hours"]).replace("Open ", ""), "open each week" if "days" in open_days(S["hours"]) else "open"))
+    trust.append((S["area"].replace(" QLD", ""), "local to you"))
+    trust.append(("Online" if book else "Call", "to book" if book else "or text to book"))
+    trust_html = "".join(f'<div data-r data-d="{i*80}"><b>{e(a)}</b><span>{e(b)}</span></div>' for i, (a, b) in enumerate(trust))
+    steps = ([("Pick a time", "Choose your service and a time that suits on the online booking page."), ("Get confirmed", "Your booking is locked in straight away."), ("Come in", f"Head to {S.get('address') or S['area']}.")] if book else
+             [("Get in touch", "Call, text or send an enquiry with what you need."), ("Lock in a time", "We'll sort a time that suits you."), ("All sorted", "We take it from there.")])
+    steps_html = "".join(f'<li data-r data-d="{i*100}"><span class="n">0{i+1}</span><b>{e(a)}</b><p>{e(b)}</p></li>' for i, (a, b) in enumerate(steps))
+    faq = []
+    if S.get("hours"): faq.append(("When are you open?", "; ".join(S["hours"]) + "."))
+    faq.append(("Where are you?", (S.get("address") or S["area"]) + ("." if S.get("address") else ". Call for directions.")))
+    faq.append(("How do I book?", "Book online any time with the Book button, or call us." if book else "Call or text, or send an enquiry with the form below and we'll get back to you."))
+    for q, a in S.get("faq", []): faq.append((q, a))
+    if r: faq.append(("What do customers say?", f'We\'re rated {r["value"]} from {r["count"]} reviews on Google. Read them on our Google listing.'))
+    faq_html = "".join(f'<details data-r><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in faq)
+    about = "".join(f"<p data-r>{e(x)}</p>" for x in S.get("about", []))
+    band_img = S.get("band_img") or S["hero"]
+
     page = f"""<!DOCTYPE html>
 <html lang="en-AU">
 <head>
@@ -169,9 +213,14 @@ footer{{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);
 <header><div class="wrap"><a class="logo" href="#top">{e(S['name'])}</a>{nav}<a class="btn pri" href="{'{{BOOK_URL}}' if book else '{{PHONE_HREF}}'}"{' target="_blank" rel="noopener"' if book else ''}>{'Book' if book else '{{PHONE_DISPLAY}}'}</a></div></header>
 <main id="top">
 {hero}
+<div class="wrap"><div class="trust">{trust_html}</div></div>
+{f'<section class="s" id="about"><div class="wrap about"><div><p class="k">About</p><h2 style="font-size:clamp(2.2rem,4.6vw,4rem);margin-top:12px" data-r>{rich(S.get("about_title","Who we *are*"))}</h2></div><div>{about}</div></div></section>' if about else ''}
 {sec_services}
 {sec_gal}
+<section class="s" id="how"><div class="wrap"><div class="sh"><h2 data-r>{rich("How it *works*")}</h2><p data-r>Simple from start to finish.</p></div><ol class="steps">{steps_html}</ol></div></section>
+<section class="band" aria-label="Book"><img src="{band_img}" alt="" loading="lazy"><div class="wrap"><h2 data-r>{rich(S.get("band_title","Ready when *you* are."))}</h2><div class="ctas" style="margin-top:24px" data-r data-d="150">{primary}{secondary}</div></div></section>
 {sec_info}
+<section class="s" id="faq"><div class="wrap info"><div><p class="k">Questions</p><h2 style="font-size:clamp(2.2rem,4.6vw,4rem);margin-top:12px" data-r>{rich("Good to *know*")}</h2></div><div class="faq">{faq_html}</div></div></section>
 <section class="s" id="contact"><div class="wrap contact">
   <div><p class="k">Get in touch</p><h2 style="margin-top:12px" data-r>{rich(S.get('contact_title','Let\'s *talk*.'))}</h2><p style="color:var(--muted);margin-top:16px;max-width:40ch">{addr_line}</p><div class="ctas" style="margin-top:24px">{primary}</div></div>
   <form class="form" id="quote" data-lead novalidate aria-label="Enquiry">
@@ -181,7 +230,7 @@ footer{{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);
   </form>
 </div></section>
 </main>
-<footer><div class="wrap"><span>© {{{{YEAR}}}} {e(S['name'])} · {e(S['area'])}</span><a href="{{{{PHONE_HREF}}}}">{{{{PHONE_DISPLAY}}}}</a></div></footer>
+<footer><div class="wrap" style="display:block"><div class="fcols"><div><b>{e(S['name'])}</b><span>{addr_line}</span><a href="{{{{PHONE_HREF}}}}" style="margin-top:8px">{{{{PHONE_DISPLAY}}}}</a>{f'<a href="{{{{BOOK_URL}}}}" target="_blank" rel="noopener">Book online ↗</a>' if book else ''}{f'<a href="{e(r["url"])}" target="_blank" rel="noopener">Google reviews ↗</a>' if r else ''}</div><div><b>Hours</b><div class="fhrs">{''.join(f'<div><span>{e(h.split(":",1)[0][:3])}</span><span>{e(h.split(":",1)[1].strip())}</span></div>' for h in (S.get("hours") or [])) or '<span>Call for times</span>'}</div></div><div><b>Explore</b>{'<a href="#services">Services</a>' if services else ''}{'<a href="#work">Our work</a>' if gal else ''}<a href="#how">How it works</a><a href="#faq">Questions</a><a href="#contact">Contact</a></div></div><div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:18px"><span>© {{{{YEAR}}}} {e(S['name'])} · {e(S['area'])}</span></div></div></footer>
 <div class="dock">{('<a class="btn pri" href="{{BOOK_URL}}" target="_blank" rel="noopener">Book online</a><a class="btn sec" href="{{PHONE_HREF}}">Call</a>' if book else '<a class="btn pri" href="{{PHONE_HREF}}">Call now</a><a class="btn sec" href="#contact">Enquire</a>')}</div>
 <script>
 document.querySelectorAll('form[data-lead]').forEach(function(f){{f.addEventListener('submit',function(e){{e.preventDefault();if(!f.checkValidity()){{f.reportValidity();return}}var ep='{{{{FORM_ENDPOINT}}}}',b=f.querySelector('[type=submit]');if(!ep){{f.classList.add('sent');return}}b.disabled=true;b.textContent='Sending\\u2026';fetch(ep,{{method:'POST',headers:{{Accept:'application/json'}},body:new FormData(f)}}).then(function(r){{if(!r.ok)throw 0;f.classList.add('sent')}}).catch(function(){{b.disabled=false;b.textContent='Try again';alert('Sorry, that did not send. Please call us instead.')}})}})}});

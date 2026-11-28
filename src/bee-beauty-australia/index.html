@@ -45,14 +45,14 @@ header .btn{min-height:44px;padding:0 18px;font-size:15px}
 .L-fullbleed .hero .bg{position:absolute;inset:0}.L-fullbleed .hero .bg img{height:112%}
 .L-fullbleed .hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.78),rgba(0,0,0,.25) 55%,rgba(0,0,0,.35))}
 .L-fullbleed .hero .wrap{position:relative;padding-top:130px;padding-bottom:clamp(40px,7vw,90px);width:100%}.L-fullbleed .hero .sub,.L-fullbleed .rate small{color:rgba(255,255,255,.85)}
-.L-fullbleed header{position:absolute;left:0;right:0;z-index:5;color:#fff}
+.L-fullbleed header{position:absolute;left:0;right:0;z-index:5;color:#fff}.L-fullbleed .hero h1 em{color:inherit;text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:6px;text-underline-offset:8px}.L-fullbleed .hero .k{color:rgba(255,255,255,.85)}
 .L-editorial .hero .wrap{padding-top:clamp(36px,6vw,80px)}.L-editorial .hero h1{font-size:clamp(2.5rem,10vw,10rem);max-width:12ch;overflow-wrap:anywhere}
 .L-editorial .hero .row{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
 .L-editorial .hp{aspect-ratio:21/9;margin-top:clamp(28px,4vw,48px);border-radius:18px}
 .L-poster{--bg:#231F1A;--ink:#FBF7EF;--surface:rgba(255,255,255,.06);--line:rgba(255,255,255,.14);--muted:rgba(255,255,255,.7)}
 .L-poster .hero .wrap{padding-top:clamp(30px,5vw,70px);text-align:center}.L-poster .hero h1{font-size:clamp(3.4rem,12vw,12rem);line-height:.86}
 .L-poster .hero .sub{margin-left:auto;margin-right:auto}.L-poster .ctas,.L-poster .notes{justify-content:center}
-.L-poster .strip{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:clamp(30px,5vw,60px)}.L-poster .strip div{aspect-ratio:3/4;border-radius:16px;overflow:hidden}
+.L-poster .strip{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:clamp(30px,5vw,60px)}.L-poster .strip div{aspect-ratio:auto;height:clamp(260px,38vw,520px);border-radius:16px;overflow:hidden}
 .L-collage .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,60px);align-items:center;padding-top:clamp(28px,5vw,64px);padding-bottom:clamp(56px,8vw,110px)}
 .L-collage .stack{position:relative;aspect-ratio:1}.L-collage .stack div{position:absolute;border-radius:22px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.4)}
 .L-collage .stack div:nth-child(1){inset:0 18% 18% 0}.L-collage .stack div:nth-child(2){inset:45% 0 0 42%;border:6px solid var(--bg)}
@@ -81,6 +81,26 @@ section.s{padding:clamp(72px,10vw,140px) 0;border-top:1px solid var(--line)}
 .form .btn{width:100%;margin-top:20px}.form .done{display:none}.form.sent .done{display:block}.form.sent .f{display:none}
 @media(max-width:860px){.contact{grid-template-columns:1fr}}
 footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);font-size:14px}footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.trust div{padding:22px clamp(14px,2vw,28px);border-right:1px solid var(--line)}.trust div:last-child{border-right:0}
+.trust b{display:block;font-family:var(--d);font-size:clamp(22px,2.4vw,32px);line-height:1.05;text-transform:none}.trust span{color:var(--muted);font-size:14px}
+@media(max-width:760px){.trust{grid-template-columns:1fr 1fr}.trust div:nth-child(2){border-right:0}.trust div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,80px)}.about p{color:var(--muted);font-size:18px;margin-bottom:16px;max-width:62ch}
+@media(max-width:860px){.about{grid-template-columns:1fr}}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.steps li{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:28px;min-height:200px;display:flex;flex-direction:column;gap:10px}
+.steps li:first-child{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}.steps li:first-child p{color:inherit;opacity:.85}
+.steps .n{font-family:var(--d);font-size:40px;line-height:1;opacity:.5}.steps b{font-family:var(--d);font-size:24px;text-transform:none}.steps p{color:var(--muted);font-size:15px}
+@media(max-width:760px){.steps{grid-template-columns:1fr}.steps li{min-height:0}}
+.band{position:relative;border-radius:28px;overflow:hidden;margin:0 clamp(8px,1.4vw,18px);min-height:420px;display:flex;align-items:flex-end;color:#fff}
+.band img{position:absolute;inset:0;height:100%}.band h2 em{color:inherit;text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:6px;text-decoration-color:var(--accent)}.band::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.75),rgba(0,0,0,.15))}
+.band .wrap{position:relative;z-index:1;padding-bottom:clamp(32px,5vw,64px);width:100%}.band h2{font-size:clamp(2.4rem,5.6vw,5rem);max-width:14ch}
+.band .btn.sec{color:#fff}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}.faq summary{cursor:pointer;font-weight:600;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::after{content:"+";color:var(--accent);font-weight:700}.faq details[open] summary::after{content:"–"}.faq p{color:var(--muted);margin-top:10px;max-width:70ch}
+.fcols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:28px;padding:48px 0 28px}.fcols b{display:block;color:var(--ink);font-family:var(--d);font-size:20px;margin-bottom:10px;text-transform:none}
+.fcols a{display:block;text-decoration:none;padding:3px 0}.fcols a:hover{text-decoration:underline}.fhrs div{display:flex;justify-content:space-between;gap:12px;font-size:13.5px;padding:2px 0}
+@media(max-width:760px){.fcols{grid-template-columns:1fr}}
 .dock{display:none}@media(max-width:760px){.dock{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:40}.dock .btn{box-shadow:0 10px 24px -10px rgba(0,0,0,.45)}.dock .sec{background:var(--bg);color:var(--ink)}footer{padding-bottom:96px}}
 </style>
 </head>
@@ -94,9 +114,14 @@ footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);f
       <div class="ctas" data-r data-d="350"><a class="btn pri" href="{{BOOK_URL}}" target="_blank" rel="noopener">Book online ↗</a><a class="btn sec" href="{{PHONE_HREF}}">{{CALL_LABEL}}</a></div>
       <a class="rate" href="https://maps.google.com/?cid=6456412803634318228&amp;g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA" target="_blank" rel="noopener"><b>5</b><span>★★★★★</span><small>93 Google reviews ↗</small></a>
       </div><div class="hp" data-r="clip"><img src="img/g-2.webp" alt="Bee Beauty" fetchpriority="high" data-px="0.05"></div></div></section>
+<div class="wrap"><div class="trust"><div data-r data-d="0"><b>5★</b><span>93 Google reviews</span></div><div data-r data-d="80"><b>5 days</b><span>open each week</span></div><div data-r data-d="160"><b>Buderim</b><span>local to you</span></div><div data-r data-d="240"><b>Online</b><span>to book</span></div></div></div>
+
 
 <section class="s" id="work"><div class="wrap"><div class="sh"><h2 data-r>Recent <em>work</em></h2><p data-r>Photos from Bee Beauty.</p></div><div class="gal"><figure class="g0" data-r="clip" data-d="0"><img src="img/g-3.webp" alt="Bee Beauty: photo 1" loading="lazy"></figure><figure class="g1" data-r="clip" data-d="90"><img src="img/g-4.webp" alt="Bee Beauty: photo 2" loading="lazy"></figure><figure class="g2" data-r="clip" data-d="180"><img src="img/g-6.webp" alt="Bee Beauty: photo 3" loading="lazy"></figure><figure class="g3" data-r="clip" data-d="270"><img src="img/g-1.webp" alt="Bee Beauty: photo 4" loading="lazy"></figure><figure class="g4" data-r="clip" data-d="0"><img src="img/g-5.webp" alt="Bee Beauty: photo 5" loading="lazy"></figure></div></div></section>
+<section class="s" id="how"><div class="wrap"><div class="sh"><h2 data-r>How it <em>works</em></h2><p data-r>Simple from start to finish.</p></div><ol class="steps"><li data-r data-d="0"><span class="n">01</span><b>Pick a time</b><p>Choose your service and a time that suits on the online booking page.</p></li><li data-r data-d="100"><span class="n">02</span><b>Get confirmed</b><p>Your booking is locked in straight away.</p></li><li data-r data-d="200"><span class="n">03</span><b>Come in</b><p>Head to Shop 1/49 Burnett St, Buderim QLD 4556.</p></li></ol></div></section>
+<section class="band" aria-label="Book"><img src="img/g-2.webp" alt="" loading="lazy"><div class="wrap"><h2 data-r>Ready when <em>you</em> are.</h2><div class="ctas" style="margin-top:24px" data-r data-d="150"><a class="btn pri" href="{{BOOK_URL}}" target="_blank" rel="noopener">Book online ↗</a><a class="btn sec" href="{{PHONE_HREF}}">{{CALL_LABEL}}</a></div></div></section>
 <section class="s" id="visit"><div class="wrap info"><div><p class="k">Hours</p><h2 style="font-size:clamp(2rem,4vw,3.4rem);margin:12px 0 22px" data-r>When we're open</h2><div class="hours" data-r><div><span>Monday</span><span>Closed</span></div><div><span>Tuesday</span><span>9:00 AM – 6:00 PM</span></div><div><span>Wednesday</span><span>9:00 AM – 6:00 PM</span></div><div><span>Thursday</span><span>9:00 AM – 8:30 PM</span></div><div><span>Friday</span><span>9:00 AM – 6:00 PM</span></div><div><span>Saturday</span><span>9:00 AM – 5:00 PM</span></div><div><span>Sunday</span><span>Closed</span></div></div></div><div class="map" data-r><iframe title="Map of Buderim QLD" loading="lazy" src="https://www.google.com/maps?q=Shop 1/49 Burnett St, Buderim QLD 4556&output=embed"></iframe></div></div></section>
+<section class="s" id="faq"><div class="wrap info"><div><p class="k">Questions</p><h2 style="font-size:clamp(2.2rem,4.6vw,4rem);margin-top:12px" data-r>Good to <em>know</em></h2></div><div class="faq"><details data-r><summary>When are you open?</summary><p>Monday: Closed; Tuesday: 9:00 AM – 6:00 PM; Wednesday: 9:00 AM – 6:00 PM; Thursday: 9:00 AM – 8:30 PM; Friday: 9:00 AM – 6:00 PM; Saturday: 9:00 AM – 5:00 PM; Sunday: Closed.</p></details><details data-r><summary>Where are you?</summary><p>Shop 1/49 Burnett St, Buderim QLD 4556.</p></details><details data-r><summary>How do I book?</summary><p>Book online any time with the Book button, or call us.</p></details><details data-r><summary>What do customers say?</summary><p>We&#x27;re rated 5 from 93 reviews on Google. Read them on our Google listing.</p></details></div></div></section>
 <section class="s" id="contact"><div class="wrap contact">
   <div><p class="k">Get in touch</p><h2 style="margin-top:12px" data-r>Let&#x27;s <em>talk</em>.</h2><p style="color:var(--muted);margin-top:16px;max-width:40ch">Shop 1/49 Burnett St, Buderim QLD 4556</p><div class="ctas" style="margin-top:24px"><a class="btn pri" href="{{BOOK_URL}}" target="_blank" rel="noopener">Book online ↗</a></div></div>
   <form class="form" id="quote" data-lead novalidate aria-label="Enquiry">
@@ -106,7 +131,7 @@ footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);f
   </form>
 </div></section>
 </main>
-<footer><div class="wrap"><span>© {{YEAR}} Bee Beauty · Buderim QLD</span><a href="{{PHONE_HREF}}">{{PHONE_DISPLAY}}</a></div></footer>
+<footer><div class="wrap" style="display:block"><div class="fcols"><div><b>Bee Beauty</b><span>Shop 1/49 Burnett St, Buderim QLD 4556</span><a href="{{PHONE_HREF}}" style="margin-top:8px">{{PHONE_DISPLAY}}</a><a href="{{BOOK_URL}}" target="_blank" rel="noopener">Book online ↗</a><a href="https://maps.google.com/?cid=6456412803634318228&amp;g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA" target="_blank" rel="noopener">Google reviews ↗</a></div><div><b>Hours</b><div class="fhrs"><div><span>Mon</span><span>Closed</span></div><div><span>Tue</span><span>9:00 AM – 6:00 PM</span></div><div><span>Wed</span><span>9:00 AM – 6:00 PM</span></div><div><span>Thu</span><span>9:00 AM – 8:30 PM</span></div><div><span>Fri</span><span>9:00 AM – 6:00 PM</span></div><div><span>Sat</span><span>9:00 AM – 5:00 PM</span></div><div><span>Sun</span><span>Closed</span></div></div></div><div><b>Explore</b><a href="#work">Our work</a><a href="#how">How it works</a><a href="#faq">Questions</a><a href="#contact">Contact</a></div></div><div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:18px"><span>© {{YEAR}} Bee Beauty · Buderim QLD</span></div></div></footer>
 <div class="dock"><a class="btn pri" href="{{BOOK_URL}}" target="_blank" rel="noopener">Book online</a><a class="btn sec" href="{{PHONE_HREF}}">Call</a></div>
 <script>
 document.querySelectorAll('form[data-lead]').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();if(!f.checkValidity()){f.reportValidity();return}var ep='{{FORM_ENDPOINT}}',b=f.querySelector('[type=submit]');if(!ep){f.classList.add('sent');return}b.disabled=true;b.textContent='Sending\u2026';fetch(ep,{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)}).then(function(r){if(!r.ok)throw 0;f.classList.add('sent')}).catch(function(){b.disabled=false;b.textContent='Try again';alert('Sorry, that did not send. Please call us instead.')})})});

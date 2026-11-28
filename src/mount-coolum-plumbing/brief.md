@@ -34,3 +34,11 @@ Every fact on the site must appear here with a source. If it isn't here, it isn'
 Stock photos from Pexels (free licence): objects and hands only, no faces, and never presented as this business's own work. Swap in the owner's own photos once they're on board.
 
 **Photo quality check (28 Nov):** the owner's photos found online were too low-resolution or blurry (video stills / 300px) to use at full size, so good-quality stock is used instead. Ask the owner for originals once they're on board.
+
+### Added 29 Nov from their own site (https://mtcplumbing.com.au/: services, fixed-price-service, after-hours-service, hotwater, blockeddrains, taps, toilets pages)
+- Free, no-obligation site visit; three pricing options (time + materials, fixed price with online booking, quotes); text near-verbatim from fixed-price-service.html
+- 24/7 emergency service for listed suburbs; emergency examples; upfront after-hours prices: Tier 1 min $330 inc GST incl 1 hr, then $165/hr in $41.25 15-min blocks (after-hours-service.html)
+- Blocked drains: clearing + CCTV camera inspection of sewer and stormwater (blockeddrains.html)
+- Taps: service existing or install own range or customer's Watermark-approved tapware (taps.html); toilets: cistern repairs, new suites (toilets.html)
+- Pete's story (Brisbane business 12+ yrs, started 2023, family in Coolum since 1930s, surf club, grandparents) and 1955 photo with caption (index.html; photo credit Windolf Collection, shown small at under 2x native size)
+- Licences: QBCC company 1282239, individual 1217684, Plumbing PD27978, Gas L31133, Restricted electrical 128614; MPAQ member (footer)

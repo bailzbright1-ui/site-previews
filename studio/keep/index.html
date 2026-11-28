@@ -172,6 +172,15 @@ main{padding:var(--space-7) 0 var(--space-9)}
   // Back button from Stripe: the browser restores this page as it was, so un-stick the button
   window.addEventListener('pageshow',function(e){if(e.persisted)resetBtn()});
 
+  // Online sign-up on but no Grow payment link yet: offer Keep only
+  if(CFG.email&&CFG.stripe_keep&&!CFG.stripe_grow){
+    var g=f.querySelector('input[name=plan][value^="Grow"]');
+    if(g){var gl=g.closest('label');if(gl)gl.parentNode.removeChild(gl)}
+    var k=f.querySelector('input[name=plan][value^="Keep"]');if(k)k.checked=true;
+    var st=f.querySelector('.stepnum');if(st)st.textContent='1 · Your plan';
+    plan='keep';
+  }
+
   // ?plan=keep or ?plan=grow picks that plan; make sure one is always ticked
   var pick=plan==='keep'?'Keep':plan==='grow'?'Grow':'';
   var want=pick&&f.querySelector('input[name=plan][value^="'+pick+'"]');

@@ -99,8 +99,8 @@ main{padding:var(--space-7) 0 var(--space-9)}
       <p class="err" id="err" role="alert"></p>
 
       <div class="go">
-        <button class="os-btn os-btn--primary" type="submit" id="goBtn">Start my free month</button>
-        <p class="fine">Your first month is free. You enter your card on a secure Stripe page, and you are not charged until day 31. We remind you before then, and you can cancel before then at no cost. Month to month, cancel any time. We'll have your site live within the week once your domain is connected.</p>
+        <button class="os-btn os-btn--primary" type="submit" id="goBtn">Continue to secure payment</button>
+        <p class="fine">You'll pay by card on a secure Stripe page. Month to month, cancel any time. We'll have your site live within the week once your domain is connected.</p>
       </div>
     </form>
 
@@ -119,15 +119,15 @@ main{padding:var(--space-7) 0 var(--space-9)}
     </div>
     <div class="summary">
       <div><span>Plan</span><span id="sPlan">Grow</span></div>
-      <div><span>Setup fee</span><span>$0</span></div><div><span>Due today</span><span>$0</span></div>
-      <div class="tot"><span>Monthly, after 30 days free</span><span id="sTot">$59/month</span></div>
+      <div><span>Setup fee</span><span>$0</span></div>
+      <div class="tot"><span>Monthly</span><span id="sTot">$59/month</span></div>
     </div>
   </aside>
 </div></main>
 
 <script>
 (function(){
-  var SITES={"beauty-in-a-box-co": {"name": "Beauty In A Box Co"}, "kozmetika": {"name": "Kozmetika"}, "wink-worthy": {"name": "Wink Worthy Lashes & Brows"}, "luminous-nails": {"name": "Luminous Nails Sunshine Coast"}, "wow-wow-nails": {"name": "Wow Wow Nails"}, "two-sisters-nails": {"name": "Two Sisters Nails & Spa"}, "montys-plumbing": {"name": "Monty's Plumbing"}, "mount-coolum-plumbing": {"name": "Mount Coolum Plumbing"}, "hutcheson-roofing": {"name": "Hutcheson Plumbing & Roofing Maintenance"}, "homestyle-roof-painters": {"name": "Homestyle Roof Painters"}}, CFG={"email": "", "stripe_keep": "", "stripe_grow": "", "mobile": "0431 864 979", "first": "Bailey"};
+  var SITES={"beauty-in-a-box-co": {"name": "Beauty In A Box Co"}, "kozmetika": {"name": "Kozmetika"}, "wink-worthy": {"name": "Wink Worthy Lashes & Brows"}, "luminous-nails": {"name": "Luminous Nails Sunshine Coast"}, "wow-wow-nails": {"name": "Wow Wow Nails"}, "two-sisters-nails": {"name": "Two Sisters Nails & Spa"}, "montys-plumbing": {"name": "Monty's Plumbing"}, "mount-coolum-plumbing": {"name": "Mount Coolum Plumbing"}, "hutcheson-roofing": {"name": "Hutcheson Plumbing & Roofing Maintenance"}, "homestyle-roof-painters": {"name": "Homestyle Roof Painters"}}, CFG={"email": "hello@onesightstudio.au", "stripe_keep": "https://buy.stripe.com/aFa00j9Qv2Ql2kV6Sr8ww00", "stripe_grow": "", "mobile": "0431 864 979", "first": "Bailey"};
   var q=new URLSearchParams(location.search), slug=q.get('site')||'', plan=(q.get('plan')||'').toLowerCase();
   var s=Object.prototype.hasOwnProperty.call(SITES,slug)?SITES[slug]:null;
   var f=document.getElementById('keep'), b=document.getElementById('goBtn'), err=document.getElementById('err'), sending=false;
@@ -135,7 +135,7 @@ main{padding:var(--space-7) 0 var(--space-9)}
   var sorry='Sorry, that didn’t send. Please try again'+(tel?', or call or text '+who+' on '+CFG.mobile+'.':' in a minute.');
 
   function showErr(msg){err.textContent=msg;err.style.display='block'}
-  function resetBtn(){sending=false;b.disabled=false;b.textContent='Start my free month'}
+  function resetBtn(){sending=false;b.disabled=false;b.textContent='Continue to secure payment'}
 
   // Attached first, so nothing below can stop the form working
   f.addEventListener('submit',function(e){
@@ -171,6 +171,15 @@ main{padding:var(--space-7) 0 var(--space-9)}
 
   // Back button from Stripe: the browser restores this page as it was, so un-stick the button
   window.addEventListener('pageshow',function(e){if(e.persisted)resetBtn()});
+
+  // Online sign-up on but no Grow payment link yet: offer Keep only
+  if(CFG.email&&CFG.stripe_keep&&!CFG.stripe_grow){
+    var g=f.querySelector('input[name=plan][value^="Grow"]');
+    if(g){var gl=g.closest('label');if(gl)gl.parentNode.removeChild(gl)}
+    var k=f.querySelector('input[name=plan][value^="Keep"]');if(k)k.checked=true;
+    var st=f.querySelector('.stepnum');if(st)st.textContent='1 · Your plan';
+    plan='keep';
+  }
 
   // ?plan=keep or ?plan=grow picks that plan; make sure one is always ticked
   var pick=plan==='keep'?'Keep':plan==='grow'?'Grow':'';

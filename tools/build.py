@@ -112,6 +112,15 @@ def build_studio(data):
             "MONTHLY_LABEL": f"Monthly, after {t} days free" if t else "Monthly",
             "GO_LABEL": "Start my free month" if t else "Continue to secure payment",
         })(a.get("trial_days"), a.get("price_keep", "$29")),
+        # Online sign-up on but no Grow payment link yet: show Keep only
+        **(lambda grow: {
+            "GROW_HIDDEN": "" if grow else ' hidden style="display:none"',
+            "TOP_PLAN": "Grow" if grow else "Keep",
+            "PLANS_MONTHLY": "Keep and Grow are" if grow else "Keep is",
+            "CHANGES_LINE": "Keep includes 1 change a month, Grow up to 3." if grow else "Keep includes 1 change a month.",
+        })(bool(a.get("stripe_grow_link")) or not a.get("stripe_keep_link")),
+        "PORTAL_LINE": (f'\n  <p style="color:var(--ink-muted)">Need to update your card or cancel? <a href="{a["stripe_portal_link"]}">Manage your plan</a>.</p>'
+                        if a.get("stripe_portal_link") else ""),
         "KEEP_CFG": json.dumps({"email": a.get("email", ""), "stripe_keep": a.get("stripe_keep_link", ""), "stripe_grow": a.get("stripe_grow_link", ""),
                                 "mobile": a.get("mobile", ""), "first": (a.get("your_name") or "").split()[0] if a.get("your_name") else ""}),
     }

@@ -9,6 +9,7 @@
     "studio_site": "",
     "stripe_keep_link": "https://buy.stripe.com/aFa00j9Qv2Ql2kV6Sr8ww00",
     "stripe_grow_link": "",
+    "stripe_portal_link": "https://billing.stripe.com/p/login/aFa00j9Qv2Ql2kV6Sr8ww00",
     "price_keep": "$29",
     "price_grow": "$59",
     "trial_days": 0,

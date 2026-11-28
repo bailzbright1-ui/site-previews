@@ -63,10 +63,15 @@ def render(html, site, agency, live=False, endpoint=""):
 
 
 def build_previews(data):
+    # docs/CNAME tells GitHub Pages to serve on the custom domain (onesightstudio.au).
+    # Keep it across rebuilds, or the custom domain gets switched off.
+    cname = (DOCS / "CNAME").read_text() if (DOCS / "CNAME").exists() else ""
     if DOCS.exists():
         shutil.rmtree(DOCS)
     DOCS.mkdir()
     (DOCS / ".nojekyll").write_text("")
+    if cname:
+        (DOCS / "CNAME").write_text(cname)
     for s in data["sites"]:
         src = SRC / s["slug"] / "index.html"
         if not src.exists():

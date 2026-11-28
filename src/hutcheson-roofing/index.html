@@ -100,7 +100,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 </style>
 </head>
 <body>
-<!--PREVIEW--><div style="position:relative;z-index:100;background:#111;color:#eee;font:500 13px/1.45 system-ui,sans-serif;text-align:center;padding:9px 16px">Website concept for {{NAME}}, made by {{AGENCY}}. Preview only &middot; not the official site yet.</div><!--/PREVIEW-->
+<!--PREVIEW-->{{PREVIEW_BAR}}<!--/PREVIEW-->
 
 <main id="top">
   <section class="hero" style="padding-bottom:0" aria-labelledby="h1"><div class="wrap" style="display:flex;flex-direction:column;flex:1;width:100%">
@@ -110,7 +110,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       <a class="btn k r" href="{{PHONE_HREF}}">{{CALL_LABEL}}</a>
     </div>
     <div class="mid">
-      <div class="hphoto" data-r="clip" data-d="300"><img src="img/roofer.webp" width="1200" height="1800" alt="Roofer repairing a tiled roof" fetchpriority="high" data-px="0.06"></div>
+      <div class="hphoto" data-r="clip" data-d="300"><img src="img/install.webp" width="1200" height="1800" alt="Terracotta roof tiles being laid" fetchpriority="high" data-px="0.06"></div>
       <div class="intro" data-r data-d="200">
         <span class="br">Roof leak specialists</span>
         <p>Water coming through the ceiling? Bill finds where it's getting in and fixes it properly. He's a licensed plumber with 12 years fixing Sunshine Coast roofs.</p>
@@ -125,7 +125,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <div class="c" data-r>
       <h2 id="ab-h">A small family business, focused on one thing: keeping the water out.</h2>
       <p>Hutcheson Plumbing &amp; Roofing Maintenance specialises in roof leak repairs and maintenance. Because Bill is also a licensed plumber, he can take care of your plumbing maintenance while he's there.</p>
-      <p>Excellent customer service, clear explanations and repairs that last. That's the whole business.</p>
+      <p>A small family business that focuses on excellent customer service.</p>
     </div>
     <div class="spec" data-r="scale" data-d="150">
       <span>[Licensed]</span>
@@ -144,7 +144,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       <li data-r data-d="80"><span>02</span><b>Roof maintenance</b><span>Keep small problems from becoming big ones.</span></li>
       <li data-r data-d="160"><span>03</span><b>Gutter repairs</b><span>Keep rainwater flowing where it should.</span></li>
       <li data-r data-d="240"><span>04</span><b>Plumbing maintenance</b><span>Licensed plumbing while we're on site.</span></li>
-      <li data-r data-d="320"><span>05</span><b>High-pressure cleaning</b><span>Roofs, paths and driveways refreshed.</span></li>
+      <li data-r data-d="320"><span>05</span><b>High-pressure cleaning</b><span>Ask about high-pressure cleaning while we're there.</span></li>
     </ol>
   </div></section>
 
@@ -167,7 +167,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         <label for="qm">Where's the leak / what's the job?</label><textarea id="qm" name="details"></textarea>
         <button class="btn k" type="submit">Send →</button>
       </div>
-      <div class="done" role="status"><h2>Thanks. Bill will call you back.</h2><!--PREVIEW--><p style="font-size:13px;opacity:.7;margin-top:10px">Preview: once live, this goes straight to {{NAME}}'s inbox.</p><!--/PREVIEW--></div>
+      <div class="done" role="status"><h2>Thanks. Bill will call you back.</h2><!--PREVIEW--><p style="font-size:13px;opacity:.7;margin-top:10px">This is a preview. Once your site is live, enquiries go straight to your inbox.</p><!--/PREVIEW--></div>
     </form>
     <div class="map" data-r data-d="150"><iframe title="Map of Coolum Beach" loading="lazy" src="https://www.google.com/maps?q=Coolum+Beach+QLD+4573&output=embed"></iframe></div>
   </div></section>

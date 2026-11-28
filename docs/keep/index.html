@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-AU" data-no-motion>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Keep your site · One Sight Studio</title>
+<link rel="icon" href="../assets/one-sight-studio-favicon.png">
+<link rel="stylesheet" href="../assets/one-sight.css">
+<style>
+.wrap{max-width:1120px;margin:0 auto;padding:0 var(--space-4)}
+@media(min-width:768px){.wrap{padding:0 var(--space-6)}}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:72px}
+a{color:var(--teal-text)}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+main{padding:var(--space-7) 0 var(--space-9)}
+.grid{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--space-7);align-items:start}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.h1{margin:12px 0 0}
+@media(max-width:600px){.h1{font-size:34px;line-height:38px}}
+.sub{color:var(--ink-muted);margin:12px 0 0}
+.stepnum{color:var(--teal-text);text-transform:uppercase;margin:var(--space-7) 0 var(--space-3);display:block}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4)}
+@media(max-width:560px){.plans{grid-template-columns:1fr}}
+.plan{position:relative;display:block;border:1.5px solid var(--line);border-radius:var(--radius-lg);padding:var(--space-5);cursor:pointer;background:var(--paper)}
+.plan input{position:absolute;opacity:0;pointer-events:none}
+.plan:has(input:checked){border:2px solid var(--teal);box-shadow:var(--shadow-card)}
+.plan:has(input:focus-visible){outline:2px solid var(--focus);outline-offset:2px}
+.plan .flag{position:absolute;top:-12px;left:var(--space-5)}
+.plan .nm{font-weight:700;font-size:20px}
+.plan .pr{display:flex;align-items:baseline;gap:4px;margin:6px 0}
+.plan .amt{font-size:40px;line-height:44px;font-weight:800;letter-spacing:-.04em}
+.plan .per{color:var(--teal-text);font-weight:500;font-size:14px}
+.plan ul{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:6px;color:var(--ink-muted);font-size:15px;line-height:22px}
+.plan li{position:relative;padding-left:18px}
+.plan li::before{content:"";position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:50%;background:var(--teal)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4)}
+@media(max-width:560px){.fields{grid-template-columns:1fr}}
+.field label{display:block;font-weight:600;font-size:14px;margin-bottom:6px}
+.field input,.field select{width:100%;height:48px;border:1.5px solid var(--line);border-radius:12px;padding:0 14px;font:400 16px var(--font-sans);color:var(--ink);background:var(--paper);box-sizing:border-box}
+.field input:focus,.field select:focus{outline:2px solid var(--focus);outline-offset:1px;border-color:transparent}
+.field.full{grid-column:1/-1}
+.radios{display:grid;gap:8px}
+.radios input{width:20px;height:20px;margin:0;flex:none;accent-color:var(--teal-text)}
+.radios label{display:flex;gap:10px;align-items:center;font-weight:500;font-size:16px;min-height:44px;padding:0 14px;border:1.5px solid var(--line);border-radius:12px;cursor:pointer}
+.radios label:has(input:checked){border-color:var(--teal);background:var(--teal-soft)}
+.err{color:var(--danger);font-weight:500;margin-top:10px;display:none}
+.go{margin-top:var(--space-6);display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.go .os-btn{height:52px;font-size:17px}
+.fine{color:var(--ink-muted);font-size:14px;line-height:20px;margin:0}
+.side{position:sticky;top:24px}
+.os-frame__body{aspect-ratio:16/10;background:var(--paper-sunk)}
+.os-frame__body img{width:100%;height:100%;object-fit:cover;object-position:top}
+.summary{margin-top:var(--space-5);border:1px solid var(--line);border-radius:var(--radius-lg);padding:var(--space-5)}
+.summary div{display:flex;justify-content:space-between;padding:6px 0}
+.summary .tot{border-top:1px solid var(--line);margin-top:6px;padding-top:12px;font-weight:700}
+.done{display:none;border:2px solid var(--teal);border-radius:var(--radius-lg);padding:var(--space-6);margin-top:var(--space-6)}
+.sent .done{display:block}.sent form{display:none}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a href="../"><img src="../assets/one-sight-studio-logo.png" alt="One Sight Studio" height="44" style="display:block;height:44px;width:auto"></a>
+  <a class="small" href="../#faq">Questions?</a>
+</div></header>
+
+<main><div class="wrap grid" id="app">
+  <div>
+    <span class="label" style="color:var(--teal-text);text-transform:uppercase">Keep your site</span>
+    <h1 class="h1" id="title">Keep your website</h1>
+    <p class="sub">No setup fee. No lock-in. Your domain stays yours.</p>
+
+    <form id="keep" novalidate>
+      <input type="hidden" name="_subject" id="subj" value="New site to make live">
+      <input type="hidden" name="site" id="siteField">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+      <span class="label stepnum">1 · Choose a plan</span>
+      <div class="plans" role="radiogroup" aria-label="Plan">
+        <label class="plan"><input type="radio" name="plan" value="Keep $29/month"><span class="nm">Keep</span><div class="pr"><span class="amt">$29</span><span class="per">/month</span></div><ul><li>Your site, live on your domain</li><li>Hosting, SSL, backups</li><li>1 change a month</li></ul></label>
+        <label class="plan"><span class="os-plan__flag flag">Recommended</span><input type="radio" name="plan" value="Grow $59/month" checked><span class="nm">Grow</span><div class="pr"><span class="amt">$59</span><span class="per">/month</span></div><ul><li>Everything in Keep</li><li>Up to 3 changes a month</li><li>Google Business Profile tidy-up</li></ul></label>
+      </div>
+
+      <span class="label stepnum">2 · Your details</span>
+      <div class="fields">
+        <div class="field"><label for="biz">Business name</label><input id="biz" name="business" required autocomplete="organization"></div>
+        <div class="field"><label for="nm">Your name</label><input id="nm" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="em">Email</label><input id="em" name="email" type="email" required autocomplete="email"></div>
+        <div class="field"><label for="ph">Mobile</label><input id="ph" name="mobile" type="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9 +\(\)]{8,}"></div>
+        <div class="field full"><span style="display:block;font-weight:600;font-size:14px;margin-bottom:6px">Your domain</span>
+          <div class="radios">
+            <label><input type="radio" name="domain_choice" value="I have one" checked> I already have a domain</label>
+            <label><input type="radio" name="domain_choice" value="Register one for me"> Please register one in my name</label>
+          </div>
+        </div>
+        <div class="field full" id="domWrap"><label for="dom">Your domain (if you know it)</label><input id="dom" name="domain" placeholder="e.g. yourbusiness.com.au" autocomplete="url"></div>
+      </div>
+      <p class="err" id="err" role="alert"></p>
+
+      <div class="go">
+        <button class="os-btn os-btn--primary" type="submit" id="goBtn">Continue to secure payment</button>
+        <p class="fine">You'll pay by card on a secure Stripe page. Month to month, cancel any time. We'll have your site live within the week once your domain is connected.</p>
+      </div>
+    </form>
+
+    <div class="done" role="status">
+      <h2 class="h2" style="margin:0">Thanks, you're all set.</h2>
+      <p class="sub" id="doneMsg">We'll email you a secure payment link today, then connect your domain and send a test enquiry to your inbox.</p>
+    </div>
+
+    <p class="fine" style="margin-top:var(--space-7)">Not for you? No worries. The preview comes down in 14 days and you'll never hear from us again. <a id="declineLink" href="#">Tell us to take it down now</a>.</p>
+  </div>
+
+  <aside class="side">
+    <div class="os-frame">
+      <div class="os-frame__bar"><span class="os-frame__dot"></span><span class="os-frame__url" id="frameUrl">your preview</span></div>
+      <a class="os-frame__body" id="frameLink" href="../" style="display:block"><img id="shot" alt="" src="../assets/one-sight-studio-favicon.png" style="object-fit:contain;padding:20%"></a>
+    </div>
+    <div class="summary">
+      <div><span>Plan</span><span id="sPlan">Grow</span></div>
+      <div><span>Setup fee</span><span>$0</span></div>
+      <div class="tot"><span>Monthly</span><span id="sTot">$59/month</span></div>
+    </div>
+  </aside>
+</div></main>
+
+<script>
+(function(){
+  var SITES={"beauty-in-a-box-co": {"name": "Beauty In A Box Co"}, "kozmetika": {"name": "Kozmetika"}, "wink-worthy": {"name": "Wink Worthy Lashes & Brows"}, "luminous-nails": {"name": "Luminous Nails Sunshine Coast"}, "wow-wow-nails": {"name": "Wow Wow Nails"}, "two-sisters-nails": {"name": "Two Sisters Nails & Spa"}, "montys-plumbing": {"name": "Monty's Plumbing"}, "mount-coolum-plumbing": {"name": "Mount Coolum Plumbing"}, "hutcheson-roofing": {"name": "Hutcheson Plumbing & Roofing Maintenance"}, "homestyle-roof-painters": {"name": "Homestyle Roof Painters"}}, CFG={"email": "", "stripe_keep": "", "stripe_grow": ""};
+  var q=new URLSearchParams(location.search), slug=q.get('site'), plan=q.get('plan'), s=SITES[slug];
+  var f=document.getElementById('keep');
+  if(plan==='keep'){f.querySelector('input[value^="Keep"]').checked=true}
+  if(s){
+    document.getElementById('title').textContent='Keep '+s.name+"'s website";
+    document.title='Keep '+s.name+"'s website · One Sight Studio";
+    document.getElementById('biz').value=s.name;
+    document.getElementById('siteField').value=slug;
+    document.getElementById('subj').value='Keep my site: '+s.name;
+    document.getElementById('frameUrl').textContent=s.name;
+    document.getElementById('frameLink').href='../'+slug+'/';
+    var img=document.getElementById('shot');img.src='shots/'+slug+'.webp';img.alt='Preview of the website built for '+s.name;img.style.cssText='';
+  }
+  function sync(){var v=f.querySelector('input[name=plan]:checked').value;document.getElementById('sPlan').textContent=v.split(' ')[0];document.getElementById('sTot').textContent=v.split(' ')[1]}
+  f.querySelectorAll('input[name=plan]').forEach(function(r){r.addEventListener('change',sync)});sync();
+  function dom(){document.getElementById('domWrap').style.display=f.querySelector('input[name=domain_choice]:checked').value==='I have one'?'':'none'}
+  f.querySelectorAll('input[name=domain_choice]').forEach(function(r){r.addEventListener('change',dom)});dom();
+  var dl=document.getElementById('declineLink');
+  if(CFG.email){dl.href='mailto:'+CFG.email+'?subject='+encodeURIComponent('Please take down my preview'+(s?': '+s.name:''))}else{dl.removeAttribute('href')}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();var err=document.getElementById('err');err.style.display='none';
+    if(!f.checkValidity()){f.reportValidity();return}
+    if(!CFG.email){err.textContent='This form isn’t connected yet. Please contact us directly.';err.style.display='block';return}
+    var b=document.getElementById('goBtn');b.disabled=true;b.textContent='One moment…';
+    var isGrow=f.querySelector('input[name=plan]:checked').value.indexOf('Grow')===0, link=isGrow?CFG.stripe_grow:CFG.stripe_keep;
+    fetch('https://formsubmit.co/ajax/'+CFG.email,{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)}).then(function(r){if(!r.ok)throw 0}).then(function(){
+      if(link){var u=new URL(link);u.searchParams.set('prefilled_email',document.getElementById('em').value);u.searchParams.set('client_reference_id',slug||'site');location.href=u.toString();return}
+      document.getElementById('app').classList.add('sent');window.scrollTo(0,0);
+    }).catch(function(){b.disabled=false;b.textContent='Continue to secure payment';err.textContent='Sorry, that didn’t send. Please try again or contact us directly.';err.style.display='block'});
+  });
+})();
+</script>
+</body>
+</html>

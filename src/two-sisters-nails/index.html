@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/hero.webp">
+<link rel="preload" as="image" href="img/ohero.webp">
 <style>
 :root{
   --bg:#FBF7F1; --sand:#F1E7D8; --ink:#1E1B17; --muted:#6E655A; --line:#E6DACA;
@@ -90,7 +90,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 </style>
 </head>
 <body>
-<!--PREVIEW--><div style="position:relative;z-index:100;background:#111;color:#eee;font:500 13px/1.45 system-ui,sans-serif;text-align:center;padding:9px 16px">Website concept for {{NAME}}, made by {{AGENCY}}. Preview only &middot; not the official site yet.</div><!--/PREVIEW-->
+<!--PREVIEW-->{{PREVIEW_BAR}}<!--/PREVIEW-->
 
 <header><div class="wrap">
   <nav class="micro" aria-label="Main"><a class="u" href="#services">Services</a><a class="u" href="#visit">Visit</a></nav>
@@ -105,7 +105,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <p class="sub" data-r data-d="200">Gel, acrylic and hybrid nails, extensions, manicures and relaxing pedicures, just off David Low Way.</p>
     <div class="ctas" data-r data-d="300"><a class="btn primary" href="{{PHONE_HREF}}">{{CALL_LABEL}}</a><a class="btn ghost" href="#services">View services</a></div>
     <div class="stage">
-      <div class="photo" data-r="clip" data-d="200"><img src="img/hero.webp" width="2000" height="1333" alt="Bright nail and pedicure salon with teal chairs" fetchpriority="high" data-px="0.05"></div>
+      <div class="photo" data-r="clip" data-d="200"><img src="img/ohero.webp" width="2000" height="1333" alt="Nail polish bottle and a pink nail file" fetchpriority="high" data-px="0.05"></div>
       <div class="card c1" data-r="left" data-d="700" data-o="14"><span class="micro">Hands</span><b>Gel · Acrylic · Hybrid</b></div>
       <div class="card c2" data-r data-d="850" data-o="-12"><span class="micro">Feet</span><b>Relaxing pedicures</b></div>
       <div class="card teal c3" data-r data-d="1000" data-o="10"><span class="micro">Call to book</span><b>{{PHONE_DISPLAY}}</b></div>
@@ -113,11 +113,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   </section>
 
   <section class="sec" id="services" aria-labelledby="s-h"><div class="wrap">
-    <div class="sec-head"><h2 id="s-h" class="serif" data-r>Beautiful nails, <i>without</i> the fuss.</h2><p data-r data-d="100">Everything you need for hands and feet, done neatly in a calm, friendly salon.</p></div>
+    <div class="sec-head"><h2 id="s-h" class="serif" data-r>Beautiful nails, <i>without</i> the fuss.</h2><p data-r data-d="100">Nails, extensions, manicures and pedicures on David Low Way.</p></div>
     <div class="trio">
       <article class="svc" data-r><div class="im zoom"><img src="img/hands.webp" width="1200" height="1502" alt="Freshly manicured nails" loading="lazy"></div><h3>Nails</h3><ul><li>Gel nails<span>→</span></li><li>Acrylic nails<span>→</span></li><li>Hybrid nails<span>→</span></li></ul></article>
       <article class="svc" data-r data-d="120"><div class="im zoom"><img src="img/mani.webp" width="1200" height="800" alt="Elegant manicured hand" loading="lazy"></div><h3>Extensions &amp; manicures</h3><p>Extra length, a perfect shape, or a classic tidy manicure and polish.</p></article>
-      <article class="svc" data-r data-d="240"><div class="im zoom"><img src="img/pedi.webp" width="1200" height="1800" alt="Pedicure in progress" loading="lazy"></div><h3>Pedicures</h3><p>Soak, shape, buff and polish. Ask us about the fish pedicure.</p></article>
+      <article class="svc" data-r data-d="240"><div class="im zoom"><img src="img/pedi.webp" width="1200" height="1800" alt="Pedicure in progress" loading="lazy"></div><h3>Pedicures</h3><p>Soak, shape, buff and polish.</p></article>
     </div>
   </div></section>
 

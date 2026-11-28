@@ -107,7 +107,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 </style>
 </head>
 <body>
-<!--PREVIEW--><div style="position:relative;z-index:100;background:#111;color:#eee;font:500 13px/1.45 system-ui,sans-serif;text-align:center;padding:9px 16px">Website concept for {{NAME}}, made by {{AGENCY}}. Preview only &middot; not the official site yet.</div><!--/PREVIEW-->
+<!--PREVIEW-->{{PREVIEW_BAR}}<!--/PREVIEW-->
 
 <div style="position:relative">
 <header><div class="wrap">
@@ -141,8 +141,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <p class="tag" style="color:var(--muted)">What we do</p>
     <h2 id="w-h" style="margin-top:16px" data-r>Every roof, every finish.</h2>
     <div class="tiles">
-      <div class="tile"><div class="tex zoom" data-r="clip"><img src="img/terracotta.webp" width="1200" height="800" alt="Terracotta roof tiles" loading="lazy"></div><p class="label"><b>Roof restoration</b><span>Tile &amp; metal · Repairs, re-bedding, re-coating</span></p></div>
-      <div class="tile"><div class="tex zoom" data-r="clip" data-d="100"><img src="img/metal.webp" width="1200" height="800" alt="Freshly coated metal roof tiles" loading="lazy"></div><p class="label"><b>Roof painting</b><span>Fresh colour · Long-lasting protection</span></p></div>
+      <div class="tile"><div class="tex zoom" data-r="clip"><img src="img/terracotta.webp" width="1200" height="800" alt="Terracotta roof tiles" loading="lazy"></div><p class="label"><b>Roof restoration</b><span>Bringing tired roofs back to life</span></p></div>
+      <div class="tile"><div class="tex zoom" data-r="clip" data-d="100"><img src="img/metal.webp" width="1200" height="800" alt="Freshly coated metal roof tiles" loading="lazy"></div><p class="label"><b>Roof painting</b><span>A fresh colour for your roof</span></p></div>
       <div class="tile"><div class="tex zoom" data-r="clip" data-d="200"><img src="img/old.webp" width="1200" height="800" alt="Weathered roof tiles before cleaning" loading="lazy"></div><p class="label"><b>Roof cleaning</b><span>Moss, mould &amp; grime removed</span></p></div>
       <div class="tile"><div class="tex zoom" data-r="clip" data-d="300"><img src="img/tiles.webp" width="1200" height="800" alt="Close-up of red roof tiles" loading="lazy"></div><p class="label"><b>Roof maintenance</b><span>Small fixes before they're big ones</span></p></div>
     </div>
@@ -155,7 +155,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
       <ol>
         <li>Send your details and a quick description.</li>
         <li>We arrange a time to inspect and talk options.</li>
-        <li>You get a clear, written quote, with no pressure.</li>
+        <li>You get a quote for the job.</li>
       </ol>
       <div style="margin-top:28px;height:260px;border-radius:20px;overflow:hidden" data-r="clip"><img src="img/install.webp" width="1200" height="1800" alt="Roof tiles being laid" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
     </div>
@@ -170,7 +170,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
         <label for="qm">What do you need?</label><textarea id="qm" name="details" placeholder="e.g. Faded tile roof, want it restored and painted"></textarea>
         <button class="btn g" type="submit">Request my free quote</button>
       </div>
-      <div class="done" role="status"><h3 style="font-size:28px">Thanks! We'll call you to arrange a time.</h3><!--PREVIEW--><p style="font-size:13px;opacity:.7;margin-top:10px">Preview: once live, this goes straight to {{NAME}}'s inbox.</p><!--/PREVIEW--></div>
+      <div class="done" role="status"><h3 style="font-size:28px">Thanks! We'll call you to arrange a time.</h3><!--PREVIEW--><p style="font-size:13px;opacity:.7;margin-top:10px">This is a preview. Once your site is live, enquiries go straight to your inbox.</p><!--/PREVIEW--></div>
     </form>
   </div></section>
 </main>

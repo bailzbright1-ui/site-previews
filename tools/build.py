@@ -32,10 +32,18 @@ def phone_tokens(phone):
 
 def render(html, site, agency, live=False, endpoint=""):
     toks = {
+        "PREVIEW_BAR": (ROOT / "tools/snippet_previewbar.html").read_text(encoding="utf-8"),
+        "CLAIM_LINK": f"../keep/?site={site['slug']}",
+        "STUDIO_SITE": agency.get("studio_site") or "../",
         "NAME": site["name"], "AGENCY": agency["name"], "BOOK_URL": site.get("book_url") or "#contact",
         "FORM_ENDPOINT": endpoint, "YEAR": str(datetime.date.today().year),
         **phone_tokens(site.get("phone", "")),
     }
+    for k in ("PREVIEW_BAR",):  # snippets first, they contain tokens
+        html = html.replace("{{" + k + "}}", toks.pop(k))
+    if live:
+        credit = (ROOT / "tools/snippet_builtby.html").read_text(encoding="utf-8")
+        html = html.replace("</footer>", '<div style="padding:8px 0">' + credit + "</div></footer>", 1)
     for k, v in toks.items():
         html = html.replace("{{" + k + "}}", v)
     if live:
@@ -55,12 +63,6 @@ def build_previews(data):
         shutil.rmtree(DOCS)
     DOCS.mkdir()
     (DOCS / ".nojekyll").write_text("")
-    (DOCS / "robots.txt").write_text("User-agent: *\nDisallow: /\n")
-    (DOCS / "index.html").write_text(
-        '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow">'
-        '<meta name="viewport" content="width=device-width,initial-scale=1"><title>Website previews</title></head>'
-        '<body style="font:16px system-ui;display:grid;place-items:center;min-height:100vh;margin:0;color:#555">'
-        '<p>Private website previews. Use the link you were sent.</p></body></html>')
     for s in data["sites"]:
         src = SRC / s["slug"] / "index.html"
         if not src.exists():
@@ -70,9 +72,46 @@ def build_previews(data):
         out.mkdir(parents=True)
         out.joinpath("index.html").write_text(render(src.read_text(encoding="utf-8"), s, data["agency"]), encoding="utf-8")
         for extra in (SRC / s["slug"]).iterdir():  # copy any images/assets
-            if extra.name not in ("index.html", "design.md", "src-img"):
+            if extra.name not in ("index.html", "design.md", "src-img", "brief.md", "STATUS", "outreach.md"):
                 (shutil.copytree if extra.is_dir() else shutil.copy2)(extra, out / extra.name)
         print(f"built docs/{s['slug']}/")
+
+
+def build_studio(data):
+    """One Sight Studio's own pages (home + keep/claim flow) into docs/ root."""
+    a = data["agency"]
+    sites = {s["slug"]: {"name": s["name"]} for s in data["sites"] if (SRC / s["slug"] / "index.html").exists()}
+    dl = ""
+    for label, key, href in (("Name", "your_name", None), ("Email", "email", "mailto:"), ("Mobile", "mobile", "tel:")):
+        if a.get(key):
+            v = a[key]
+            val = f'<a href="{href}{re.sub(r"[^0-9+@a-zA-Z._-]", "", v)}">{v}</a>' if href else v
+            dl += f"<div><dt class=\"small\">{label}</dt><dd>{val}</dd></div>"
+    if not dl:
+        dl = '<div><dd class="small" style="color:var(--ink-muted)">Contact details coming soon.</dd></div>'
+    toks = {
+        "PRICE_KEEP": a.get("price_keep", "$29"), "PRICE_GROW": a.get("price_grow", "$59"),
+        "YEAR": str(datetime.date.today().year), "CONTACT_DL": dl,
+        "ABN_LINE": f" · ABN {a['abn']}" if a.get("abn") else "",
+        "STUDIO_ROBOTS": "" if a.get("email") and a.get("abn") else '<meta name="robots" content="noindex, nofollow">',
+        "SITES_JSON": json.dumps(sites),
+        "KEEP_CFG": json.dumps({"email": a.get("email", ""), "stripe_keep": a.get("stripe_keep_link", ""), "stripe_grow": a.get("stripe_grow_link", "")}),
+    }
+    studio = ROOT / "studio"
+    for page in studio.rglob("index.html"):
+        html = page.read_text(encoding="utf-8")
+        for k, v in toks.items():
+            html = html.replace("{{" + k + "}}", v)
+        left = re.findall(r"\{\{[A-Z_]+\}\}", html)
+        if left:
+            sys.exit(f"studio {page}: unresolved tokens {sorted(set(left))}")
+        out = DOCS / page.relative_to(studio)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(html, encoding="utf-8")
+    shutil.copytree(studio / "assets", DOCS / "assets", dirs_exist_ok=True)
+    if (studio / "keep" / "shots").exists():
+        shutil.copytree(studio / "keep" / "shots", DOCS / "keep" / "shots", dirs_exist_ok=True)
+    print("built studio pages (docs/index.html, docs/keep/)")
 
 
 def build_live(data, slug, email, domain, phone):
@@ -89,7 +128,7 @@ def build_live(data, slug, email, domain, phone):
     html = render((SRC / slug / "index.html").read_text(encoding="utf-8"), site, data["agency"], live=True, endpoint=endpoint)
     out.joinpath("index.html").write_text(html, encoding="utf-8")
     for extra in (SRC / slug).iterdir():
-        if extra.name not in ("index.html", "design.md", "src-img"):
+        if extra.name not in ("index.html", "design.md", "src-img", "brief.md", "STATUS", "outreach.md"):
             (shutil.copytree if extra.is_dir() else shutil.copy2)(extra, out / extra.name)
     if domain:
         out.joinpath("CNAME").write_text(domain + "\n")
@@ -119,3 +158,4 @@ if __name__ == "__main__":
         build_live(d, a.live, a.email, a.domain, a.phone)
     else:
         build_previews(d)
+        build_studio(d)

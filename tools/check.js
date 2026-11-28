@@ -5,7 +5,7 @@ const { chromium } = require('playwright');
 const fs = require('fs'), path = require('path');
 const ROOT = path.resolve(__dirname, '..'), DOCS = path.join(ROOT, 'docs'), QA = path.join(ROOT, 'qa');
 fs.mkdirSync(QA, { recursive: true });
-const slugs = fs.readdirSync(DOCS).filter(d => fs.existsSync(path.join(DOCS, d, 'index.html')));
+const slugs = fs.readdirSync(DOCS).filter(d => d !== 'keep' && fs.existsSync(path.join(DOCS, d, 'index.html')));
 
 function lum([r, g, b]) { const f = c => { c /= 255; return c <= .03928 ? c / 12.92 : Math.pow((c + .055) / 1.055, 2.4) }; return .2126 * f(r) + .7152 * f(g) + .0722 * f(b) }
 function ratio(a, b) { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p); return (x + .05) / (y + .05) }
@@ -41,7 +41,7 @@ const rgb = s => (s.match(/[\d.]+/g) || []).slice(0, 4).map(Number);
         return {
           title: document.title, desc: !!document.querySelector('meta[name=description]'),
           h1: q('h1').length, noindex: /noindex/.test(document.querySelector('meta[name=robots]')?.content || ''),
-          banner: document.body.innerText.includes('Preview only'), badAnchors, blankNoRel, deadLinks, tel,
+          banner: document.body.innerText.includes('Not live yet'), badAnchors, blankNoRel, deadLinks, tel,
           leftover: /\{\{|\[PHONE\]|tel:0000/.test(document.documentElement.outerHTML),
           sw: document.documentElement.scrollWidth, vw: innerWidth, btns,
           forms: q('form[data-lead]').length, lang: document.documentElement.lang,

@@ -1,18 +1,97 @@
 {
   "agency": {
-    "name": "a local Sunshine Coast web designer",
-    "contact_email": ""
+    "name": "One Sight Studio",
+    "your_name": "",
+    "email": "",
+    "mobile": "",
+    "abn": "",
+    "suburb": "",
+    "studio_site": "",
+    "stripe_keep_link": "",
+    "stripe_grow_link": "",
+    "price_keep": "$29",
+    "price_grow": "$59"
   },
   "sites": [
-    {"slug": "beauty-in-a-box-co", "name": "Beauty In A Box Co", "phone": "", "book_url": "https://www.fresha.com/a/beauty-in-a-box-co-caloundra-moffat-beach-15-fairlie-crescent-ldip2s5a", "owner_email": "", "domain": ""},
-    {"slug": "kozmetika", "name": "Kozmetika", "phone": "", "book_url": "https://www.fresha.com/a/kozmetika-caloundra-31-osprey-street-lh7zvssu", "owner_email": "", "domain": ""},
-    {"slug": "wink-worthy", "name": "Wink Worthy Lashes & Brows", "phone": "0400 781 552", "book_url": "https://www.fresha.com/lvp/wink-worthy-lashes-brows-eton-lane-maroochydore-QvNo9X", "owner_email": "", "domain": ""},
-    {"slug": "luminous-nails", "name": "Luminous Nails Sunshine Coast", "phone": "0439 929 210", "book_url": "https://www.fresha.com/lvp/luminous-nails-sunshine-coast-palmview-forest-drive-palmview-ZDMq4M", "owner_email": "", "domain": ""},
-    {"slug": "wow-wow-nails", "name": "Wow Wow Nails", "phone": "(07) 5324 0059", "book_url": "", "owner_email": "", "domain": ""},
-    {"slug": "two-sisters-nails", "name": "Two Sisters Nails & Spa", "phone": "(07) 5326 1262", "book_url": "", "owner_email": "", "domain": ""},
-    {"slug": "montys-plumbing", "name": "Monty's Plumbing", "phone": "", "book_url": "", "owner_email": "", "domain": ""},
-    {"slug": "mount-coolum-plumbing", "name": "Mount Coolum Plumbing", "phone": "0493 027 027", "book_url": "", "owner_email": "", "domain": ""},
-    {"slug": "hutcheson-roofing", "name": "Hutcheson Plumbing & Roofing Maintenance", "phone": "", "book_url": "", "owner_email": "", "domain": ""},
-    {"slug": "homestyle-roof-painters", "name": "Homestyle Roof Painters", "phone": "", "book_url": "", "owner_email": "", "domain": ""}
+    {
+      "slug": "beauty-in-a-box-co",
+      "name": "Beauty In A Box Co",
+      "phone": "",
+      "book_url": "https://www.fresha.com/a/beauty-in-a-box-co-caloundra-moffat-beach-15-fairlie-crescent-ldip2s5a",
+      "owner_email": "",
+      "domain": ""
+    },
+    {
+      "slug": "kozmetika",
+      "name": "Kozmetika",
+      "phone": "",
+      "book_url": "https://www.fresha.com/a/kozmetika-caloundra-31-osprey-street-lh7zvssu",
+      "owner_email": "",
+      "domain": ""
+    },
+    {
+      "slug": "wink-worthy",
+      "name": "Wink Worthy Lashes & Brows",
+      "phone": "0400 781 552",
+      "book_url": "https://www.fresha.com/lvp/wink-worthy-lashes-brows-eton-lane-maroochydore-QvNo9X",
+      "owner_email": "",
+      "domain": ""
+    },
+    {
+      "slug": "luminous-nails",
+      "name": "Luminous Nails Sunshine Coast",
+      "phone": "0439 929 210",
+      "book_url": "https://www.fresha.com/lvp/luminous-nails-sunshine-coast-palmview-forest-drive-palmview-ZDMq4M",
+      "owner_email": "",
+      "domain": ""
+    },
+    {
+      "slug": "wow-wow-nails",
+      "name": "Wow Wow Nails",
+      "phone": "(07) 5324 0059",
+      "book_url": "",
+      "owner_email": "",
+      "domain": ""
+    },
+    {
+      "slug": "two-sisters-nails",
+      "name": "Two Sisters Nails & Spa",
+      "phone": "(07) 5326 1262",
+      "book_url": "",
+      "owner_email": "",
+      "domain": ""
+    },
+    {
+      "slug": "montys-plumbing",
+      "name": "Monty's Plumbing",
+      "phone": "",
+      "book_url": "",
+      "owner_email": "",
+      "domain": ""
+    },
+    {
+      "slug": "mount-coolum-plumbing",
+      "name": "Mount Coolum Plumbing",
+      "phone": "0493 027 027",
+      "book_url": "",
+      "owner_email": "",
+      "domain": ""
+    },
+    {
+      "slug": "hutcheson-roofing",
+      "name": "Hutcheson Plumbing & Roofing Maintenance",
+      "phone": "",
+      "book_url": "",
+      "owner_email": "",
+      "domain": ""
+    },
+    {
+      "slug": "homestyle-roof-painters",
+      "name": "Homestyle Roof Painters",
+      "phone": "",
+      "book_url": "",
+      "owner_email": "",
+      "domain": ""
+    }
   ]
 }

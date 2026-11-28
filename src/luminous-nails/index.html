@@ -116,7 +116,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
 </style>
 </head>
 <body>
-<!--PREVIEW--><div style="position:relative;z-index:100;background:#111;color:#eee;font:500 13px/1.45 system-ui,sans-serif;text-align:center;padding:9px 16px">Website concept for {{NAME}}, made by {{AGENCY}}. Preview only &middot; not the official site yet.</div><!--/PREVIEW-->
+<!--PREVIEW-->{{PREVIEW_BAR}}<!--/PREVIEW-->
 
 <header><div class="wrap">
   <nav class="mono" aria-label="Main"><a href="#services">Services //</a><a href="#process">Process //</a><a href="#visit">Visit //</a></nav>
@@ -173,8 +173,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
       <div class="wrap head"><div><p class="mono" style="color:#BDB5B8">Process //</p><h2 id="p-h" class="wide" style="margin-top:12px">How your set is made</h2></div><span class="mono" style="color:#BDB5B8">Scroll →</span></div>
       <div class="track" id="track">
         <article class="panel"><div class="im"><img src="img/salon.webp" width="1200" height="800" alt="Nail technician preparing a client's nails" loading="lazy"></div><div><div class="t"><span class="mono">01</span><b>Prep</b></div><p>Cuticles cleaned up and nails prepped, so everything that follows lasts longer.</p></div></article>
-        <article class="panel"><div class="im"><img src="img/hands.webp" width="1200" height="1502" alt="Hands showing shaped nails" loading="lazy" style="object-position:center 30%"></div><div><div class="t"><span class="mono">02</span><b>Shape</b></div><p>Length and shape built to suit your hands: almond, square, coffin or natural.</p></div></article>
-        <article class="panel"><div class="im"><img src="img/swatch.webp" width="1200" height="1800" alt="Choosing a polish colour from swatches" loading="lazy"></div><div><div class="t"><span class="mono">03</span><b>Colour</b></div><p>Pick from the swatches or bring a photo. We'll match it.</p></div></article>
+        <article class="panel"><div class="im"><img src="img/hands.webp" width="1200" height="1502" alt="Hands showing shaped nails" loading="lazy" style="object-position:center 30%"></div><div><div class="t"><span class="mono">02</span><b>Shape</b></div><p>Length and shape to suit your hands.</p></div></article>
+        <article class="panel"><div class="im"><img src="img/swatch.webp" width="1200" height="1800" alt="Choosing a polish colour from swatches" loading="lazy"></div><div><div class="t"><span class="mono">03</span><b>Colour</b></div><p>Choose your colour, or bring a photo for inspiration.</p></div></article>
         <article class="panel"><div class="im"><img src="img/gold.webp" width="1200" height="1800" alt="Finished nail art with gold details" loading="lazy" style="object-position:center 60%"></div><div><div class="t"><span class="mono">04</span><b>Finish</b></div><p>Art, sealing and a final polish. Then try not to stare at them all day.</p></div></article>
       </div>
       <div class="bar"><i id="bar"></i></div>
@@ -202,7 +202,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
         <label for="rd">Preferred day &amp; time</label><input id="rd" name="preferred_time" placeholder="e.g. Tuesday, early">
         <button class="btn mag" type="submit">Send request</button>
       </div>
-      <div class="done" role="status"><p class="wide" style="font-size:34px">Thanks, we'll text you to confirm.</p><!--PREVIEW--><p style="font-size:13px;opacity:.7;margin-top:10px">Preview: once live, this goes straight to {{NAME}}'s inbox.</p><!--/PREVIEW--></div>
+      <div class="done" role="status"><p class="wide" style="font-size:34px">Thanks, we'll text you to confirm.</p><!--PREVIEW--><p style="font-size:13px;opacity:.7;margin-top:10px">This is a preview. Once your site is live, enquiries go straight to your inbox.</p><!--/PREVIEW--></div>
     </form>
     <div class="map" data-r><iframe title="Map of Palmview" loading="lazy" src="https://www.google.com/maps?q=Palmview+QLD+4553&output=embed"></iframe></div>
   </section>

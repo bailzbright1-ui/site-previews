@@ -1,0 +1,126 @@
+/* One Sight Studio — brand stylesheet for One Sight's own pages (NOT client sites). Generated from tokens.json. */
+@font-face { font-family: "Schibsted Grotesk"; src: url("fonts/SchibstedGrotesk-Variable-latin.woff2") format("woff2"); font-weight: 400 900; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url("fonts/JetBrainsMono-Regular-latin.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url("fonts/JetBrainsMono-Medium-latin.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+:root, [data-theme="light"] {
+  --teal: #26c1c3;
+  --on-teal: #1d2023;
+  --teal-text: #0b7a7c;
+  --teal-soft: #dff6f6;
+  --ink: #1d2023;
+  --ink-muted: #5a6169;
+  --paper: #ffffff;
+  --paper-sunk: #f4f7f8;
+  --line: #e2e7ea;
+  --spot: #ffc94d;
+  --on-spot: #1d2023;
+  --chrome: #1d2023;
+  --on-chrome: #ffffff;
+  --chrome-muted: #b8c0c7;
+  --danger: #b9400f;
+  --focus: var(--teal-text);
+  --shadow-card: 0 1px 2px rgba(29,32,35,0.06), 0 8px 24px rgba(29,32,35,0.08);
+}
+[data-theme="dark"] {
+  --teal: #26c1c3;
+  --on-teal: #111315;
+  --teal-text: #5bd9db;
+  --teal-soft: #113a3b;
+  --ink: #f2f4f5;
+  --ink-muted: #a2aab2;
+  --paper: #111315;
+  --paper-sunk: #1a1d20;
+  --line: #2b3035;
+  --spot: #ffc94d;
+  --on-spot: #111315;
+  --chrome: #1d2023;
+  --on-chrome: #ffffff;
+  --chrome-muted: #b8c0c7;
+  --danger: #ff8a5c;
+  --focus: var(--teal-text);
+  --shadow-card: 0 1px 2px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.35);
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --font-sans: "Schibsted Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+.display { font-family: var(--font-sans); font-size: 64px; line-height: 64px; font-weight: 800; letter-spacing: -0.035em; }
+.h1 { font-family: var(--font-sans); font-size: 44px; line-height: 48px; font-weight: 800; letter-spacing: -0.03em; }
+.h2 { font-family: var(--font-sans); font-size: 32px; line-height: 38px; font-weight: 700; letter-spacing: -0.02em; }
+.h3 { font-family: var(--font-sans); font-size: 22px; line-height: 28px; font-weight: 700; letter-spacing: -0.01em; }
+.price { font-family: var(--font-sans); font-size: 56px; line-height: 56px; font-weight: 800; letter-spacing: -0.04em; }
+.body-lg { font-family: var(--font-sans); font-size: 19px; line-height: 30px; font-weight: 400; }
+.body { font-family: var(--font-sans); font-size: 16px; line-height: 26px; font-weight: 400; }
+.small { font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 500; }
+.label { font-family: var(--font-mono); font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: 0.08em; }
+.url { font-family: var(--font-mono); font-size: 13px; line-height: 20px; font-weight: 400; }
+
+/* One Sight Studio — component styles. Class prefix: os-. Needs tokens.css loaded first. */
+
+body { margin: 0; font-family: var(--font-sans); font-size: 16px; line-height: 26px; background: var(--paper); color: var(--ink); -webkit-font-smoothing: antialiased; }
+.os-stage { padding: var(--space-5); display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
+
+/* Button ---------------------------------------------------------------- */
+.os-btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); height: 44px; padding: 0 var(--space-5); border-radius: var(--radius-pill); border: 1.5px solid transparent; font-family: var(--font-sans); font-size: 16px; line-height: 1; font-weight: 600; text-decoration: none; white-space: nowrap; cursor: pointer; transition: box-shadow 150ms ease, background-color 150ms ease; }
+.os-btn:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.os-btn--primary { background: var(--teal); color: var(--on-teal); }
+.os-btn--primary:hover { box-shadow: inset 0 0 0 999px rgba(0, 0, 0, 0.08); }
+.os-btn--dark { background: var(--ink); color: var(--paper); }
+.os-btn--dark:hover { box-shadow: inset 0 0 0 999px rgba(127, 127, 127, 0.18); }
+.os-btn--ghost { background: transparent; color: var(--ink); border-color: var(--ink-muted); }
+.os-btn--ghost:hover { background: var(--teal-soft); }
+.os-btn--sm { height: 36px; padding: 0 var(--space-4); font-size: 14px; }
+
+/* PreviewBar ------------------------------------------------------------ */
+.os-preview-bar { position: sticky; top: 0; z-index: 2147483000; display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-3); padding: 10px var(--space-4); background: var(--chrome); color: var(--chrome-muted); font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 500; text-align: left; }
+.os-preview-bar__mark { width: auto; height: 22px; display: block; flex: none; }
+.os-preview-bar__tag { flex: none; padding: 2px 10px; border-radius: var(--radius-pill); background: var(--spot); color: var(--on-spot); font-family: var(--font-mono); font-size: 12px; line-height: 16px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; }
+.os-preview-bar__msg { flex: 1 1 220px; margin: 0; }
+.os-preview-bar__msg strong { color: var(--on-chrome); font-weight: 600; }
+.os-preview-bar .os-btn { flex: none; }
+.os-preview-bar .os-btn:focus-visible { outline-color: var(--teal); }
+
+/* PlanCard -------------------------------------------------------------- */
+.os-plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-5); align-items: stretch; padding-top: 14px; }
+.os-plan { position: relative; display: flex; flex-direction: column; gap: var(--space-4); padding: var(--space-6); border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--paper); }
+.os-plan--featured { border: 2px solid var(--teal); box-shadow: var(--shadow-card); }
+.os-plan__flag { position: absolute; top: -13px; left: var(--space-6); padding: 2px 10px; border-radius: var(--radius-pill); background: var(--teal); color: var(--on-teal); font-family: var(--font-mono); font-size: 12px; line-height: 20px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; }
+.os-plan__name { margin: 0; font-size: 22px; line-height: 28px; font-weight: 700; letter-spacing: -0.01em; }
+.os-plan__for { margin: 0; color: var(--ink-muted); }
+.os-plan__price { display: flex; align-items: baseline; gap: var(--space-1); margin: 0; }
+.os-plan__amount { font-size: 56px; line-height: 56px; font-weight: 800; letter-spacing: -0.04em; }
+.os-plan__per { font-size: 14px; line-height: 20px; font-weight: 500; color: var(--teal-text); }
+.os-plan__note { margin: 0; font-size: 14px; line-height: 20px; font-weight: 500; color: var(--ink-muted); }
+.os-plan__list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+.os-plan__list li { position: relative; padding-left: 20px; }
+.os-plan__list li::before { content: ""; position: absolute; left: 0; top: 9px; width: 8px; height: 8px; border-radius: 50%; background: var(--teal); }
+.os-plan .os-btn { align-self: stretch; margin-top: auto; }
+.os-plan__amount--word { font-size: 40px; line-height: 56px; letter-spacing: -0.03em; }
+
+/* BuiltBy --------------------------------------------------------------- */
+.os-builtby { display: inline-flex; align-items: center; gap: var(--space-2); font-family: inherit; font-size: 13px; line-height: 20px; font-weight: 500; color: inherit; opacity: 0.8; text-decoration: none; }
+.os-builtby:hover { opacity: 1; text-decoration: underline; text-underline-offset: 3px; }
+.os-builtby:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; border-radius: 4px; }
+.os-builtby img { width: auto; height: 18px; display: block; }
+
+/* BrowserFrame ---------------------------------------------------------- */
+.os-frame { overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--paper); box-shadow: var(--shadow-card); }
+.os-frame__bar { display: flex; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-3); border-bottom: 1px solid var(--line); background: var(--paper-sunk); }
+.os-frame__url { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 2px var(--space-3); border-radius: var(--radius-pill); background: var(--paper); color: var(--ink-muted); font-family: var(--font-mono); font-size: 13px; line-height: 20px; }
+.os-frame__dot { flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--spot); }
+.os-frame__dot--live { background: var(--teal); }
+.os-frame__body { display: block; width: 100%; }
+.os-frame__body img { display: block; width: 100%; height: auto; }

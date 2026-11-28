@@ -71,7 +71,7 @@ header .btn{min-height:44px;padding:0 18px;font-size:15px;border-radius:12px}
 
 .prow{display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:12px;margin-top:28px}.prow div{height:clamp(160px,20vw,260px);border-radius:20px;overflow:hidden}.prow img{width:100%;height:100%;object-fit:cover}
 /* stat circles (donor idea) */
-.circles{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,2vw,20px);margin-top:44px}
+.circles{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(10px,2vw,20px);margin-top:44px}
 .circle{aspect-ratio:1;border-radius:50%;border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12px;background:rgba(255,255,255,.02)}
 .circle b{font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,5vw,4.4rem);letter-spacing:-.04em;line-height:1}
 .circle span{font-size:14px;color:var(--muted);margin-top:8px;max-width:14ch}
@@ -93,7 +93,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 </style>
 </head>
 <body>
-<!--PREVIEW--><div style="position:relative;z-index:100;background:#111;color:#eee;font:500 13px/1.45 system-ui,sans-serif;text-align:center;padding:9px 16px">Website concept for {{NAME}}, made by {{AGENCY}}. Preview only &middot; not the official site yet.</div><!--/PREVIEW-->
+<!--PREVIEW-->{{PREVIEW_BAR}}<!--/PREVIEW-->
 
 <header><div class="wrap">
   <a class="logo" href="#top">Wow Wow<span>.</span></a>
@@ -132,11 +132,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
   <section class="card" aria-labelledby="s-h">
     <div class="wrap" style="width:100%">
       <p class="kicker">Why Wow Wow</p>
-      <h2 id="s-h" style="font-size:clamp(2.6rem,6vw,5rem);margin-top:14px;max-width:14ch">Small Salon. Big Results.</h2>
+      <h2 id="s-h" style="font-size:clamp(2.6rem,6vw,5rem);margin-top:14px;max-width:14ch">Nails, Done Properly.</h2>
       <div class="circles" data-r>
         <div class="circle hot"><b>5.0</b><span>Star rating on Fresha</span></div>
-        <div class="circle"><b>7</b><span>Treatments on the menu</span></div>
-        <div class="circle"><b>Him</b><span>Men's manicures too</span></div>
+                <div class="circle"><b>Him</b><span>Men's manicures too</span></div>
         <div class="circle"><b>2a</b><span>Shop 2a, David Low Way</span></div>
       </div>
       <div class="prow"><div data-r="clip"><img src="img/rows.webp" alt="Rows of nail polish colours" loading="lazy" width="1200" height="2133"></div><div data-r="clip" data-d="120"><img src="img/pop.webp" alt="Bright multicolour nail art" loading="lazy" width="1200" height="800"></div><div data-r="clip" data-d="240"><img src="img/leaf.webp" alt="Green nails with leaf art" loading="lazy" width="1200" height="1800"></div></div>

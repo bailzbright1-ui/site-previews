@@ -1,1 +1,185 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Website previews</title></head><body style="font:16px system-ui;display:grid;place-items:center;min-height:100vh;margin:0;color:#555"><p>Private website previews. Use the link you were sent.</p></body></html>
+<!DOCTYPE html>
+<html lang="en-AU" data-no-motion>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>One Sight Studio · We build it first. You decide.</title>
+<meta name="description" content="We build a website for your business before you ask. Have a look first. If you like it, it goes live for $29 a month. No setup fee. No lock-in. Your domain stays yours.">
+<link rel="icon" href="assets/one-sight-studio-favicon.png">
+<link rel="stylesheet" href="assets/one-sight.css">
+<style>
+.wrap{max-width:1120px;margin:0 auto;padding:0 var(--space-4)}
+@media(min-width:768px){.wrap{padding:0 var(--space-6)}}
+section{padding:var(--space-8) 0}
+@media(min-width:768px){section{padding:var(--space-9) 0}}
+.sunk{background:var(--paper-sunk)}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:72px;gap:16px}
+header nav{display:flex;gap:28px}
+header nav a{color:var(--ink);text-decoration:none;font-weight:500}
+header nav a:hover{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:820px){header nav{display:none}}
+a{color:var(--teal-text)}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.eyebrow{color:var(--teal-text);text-transform:uppercase}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:var(--space-7);align-items:center}
+@media(max-width:900px){.hero{grid-template-columns:1fr}}
+.display{margin:16px 0 0}
+@media(max-width:600px){.display{font-size:44px;line-height:46px}}
+.lede{max-width:540px;margin:20px 0 0;color:var(--ink)}
+.sub{color:var(--ink-muted);margin:12px 0 0}
+.ctas{display:flex;gap:var(--space-3);flex-wrap:wrap;margin-top:var(--space-6)}
+/* sample frame (illustration, not client work) */
+.mock{padding:var(--space-5);display:grid;gap:12px;background:var(--paper)}
+.mock .bar{height:12px;border-radius:999px;background:var(--paper-sunk)}
+.mock .big{height:34px;border-radius:10px;background:var(--ink);width:78%}
+.mock .big.two{width:56%}
+.mock .row{display:flex;gap:10px;margin-top:6px}
+.mock .pill{height:34px;width:140px;border-radius:999px;background:var(--teal)}
+.mock .pill.ghost{background:transparent;border:1.5px solid var(--line)}
+.mock .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+.mock .tiles div{aspect-ratio:4/3;border-radius:10px;background:var(--paper-sunk)}
+.mock-cap{margin-top:10px;color:var(--ink-muted)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-5);margin-top:var(--space-7)}
+@media(max-width:820px){.steps{grid-template-columns:1fr}}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-lg);padding:var(--space-6)}
+.card .num{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--teal-soft);color:var(--teal-text);font-family:var(--font-mono);font-weight:500}
+.card h3{margin:16px 0 8px}
+.card p{margin:0;color:var(--ink-muted)}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-5);margin-top:var(--space-7)}
+@media(max-width:720px){.compare{grid-template-columns:1fr}}
+.compare .card .price{margin-top:8px;color:var(--ink)!important}
+.dots{list-style:none;margin:var(--space-6) 0 0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-3) var(--space-6)}
+@media(max-width:720px){.dots{grid-template-columns:1fr}}
+.dots li{position:relative;padding-left:20px}
+.dots li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:50%;background:var(--teal)}
+.os-plans{margin-top:var(--space-7)}
+.faq{max-width:760px;margin-top:var(--space-7)}
+.faq details{border-bottom:1px solid var(--line);padding:var(--space-4) 0}
+.faq summary{cursor:pointer;font-weight:600;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::after{content:"+";color:var(--teal-text);font-weight:700}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin:10px 0 0;color:var(--ink-muted)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-7);align-items:start}
+@media(max-width:820px){.contact{grid-template-columns:1fr}}
+.contact dl{margin:0;display:grid;gap:var(--space-4)}
+.contact dt{color:var(--ink-muted)}
+.contact dd{margin:2px 0 0;font-size:19px}
+footer{border-top:1px solid var(--line);padding:var(--space-6) 0;color:var(--ink-muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+h2.h2{margin:12px 0 0;max-width:640px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a href="./" aria-label="One Sight Studio home"><img src="assets/one-sight-studio-logo.png" alt="One Sight Studio" width="96" height="48" style="display:block;height:48px;width:auto"></a>
+  <nav aria-label="Main"><a href="#how">How it works</a><a href="#plans">Pricing</a><a href="#faq">Questions</a><a href="#contact">Contact</a></nav>
+  <a class="os-btn os-btn--dark os-btn--sm" href="#plans">See plans</a>
+</div></header>
+
+<main>
+  <section><div class="wrap hero">
+    <div>
+      <span class="label eyebrow">We build it first. You decide.</span>
+      <h1 class="display">We built your website.</h1>
+      <p class="body-lg lede">Have a look first. If you like it, it goes live for $29 a month.</p>
+      <p class="sub">No setup fee. No lock-in. Your domain stays yours.</p>
+      <div class="ctas"><a class="os-btn os-btn--primary" href="#plans">Keep this site</a><a class="os-btn os-btn--ghost" href="#how">See how it works</a></div>
+    </div>
+    <div>
+      <div class="os-frame" aria-hidden="true">
+        <div class="os-frame__bar"><span class="os-frame__dot"></span><span class="os-frame__url">yourbusiness.com.au</span></div>
+        <div class="mock"><div class="bar" style="width:30%"></div><div class="big"></div><div class="big two"></div><div class="bar" style="width:62%"></div><div class="row"><div class="pill"></div><div class="pill ghost"></div></div><div class="tiles"><div></div><div></div><div></div></div></div>
+      </div>
+      <p class="small mock-cap">Illustration. Your preview is built around your own business.</p>
+    </div>
+  </div></section>
+
+  <section class="sunk" id="how"><div class="wrap">
+    <span class="label eyebrow">How it works</span>
+    <h2 class="h2">Three steps, and you're the one who decides.</h2>
+    <div class="steps">
+      <div class="card"><span class="num">1</span><h3 class="h3">We build it first</h3><p>We build a website for your business from what you've already published: your services, your area, your contact details.</p></div>
+      <div class="card"><span class="num">2</span><h3 class="h3">You have a look</h3><p>We send you a private preview link. Click around, show whoever you like. Want changes? Just tell us.</p></div>
+      <div class="card"><span class="num">3</span><h3 class="h3">Keep it in 3 clicks</h3><p>Tap "Keep this site", pick a plan, pay securely. We connect your domain and send a test enquiry to your inbox.</p></div>
+    </div>
+    <p style="margin-top:var(--space-6);color:var(--ink-muted)">Not for you? No worries. The preview comes down in 14 days and you'll never hear from us again.</p>
+  </div></section>
+
+  <section><div class="wrap">
+    <span class="label eyebrow">What it costs</span>
+    <h2 class="h2">The site is already built. You just keep it.</h2>
+    <div class="compare">
+      <div class="card"><p class="small">Most Australian small businesses</p><p class="h2 price" style="margin:8px 0 0">$2,000–$6,000</p><p>upfront for a new website.</p></div>
+      <div class="card" style="border:2px solid var(--teal)"><p class="small">With One Sight Studio</p><p class="h2 price" style="margin:8px 0 0">$0 upfront</p><p>then $29 a month. No setup fee, no lock-in.</p></div>
+    </div>
+    <ul class="dots">
+      <li>The site we built, live on your own domain</li>
+      <li>Hosting, SSL and backups</li>
+      <li>Mobile-ready and fast</li>
+      <li>Contact form that goes straight to your inbox</li>
+      <li>Content changes every month</li>
+      <li>Support from a real person</li>
+    </ul>
+  </div></section>
+
+  <section class="sunk" id="plans"><div class="wrap">
+    <span class="label eyebrow">Pricing</span>
+    <h2 class="h2">Pick a plan. Change or cancel any time.</h2>
+    <p class="sub">All prices in AUD. No setup fee on any plan.</p>
+    <div class="os-plans">
+      <article class="os-plan">
+        <h3 class="os-plan__name">Keep</h3>
+        <p class="os-plan__for">For owners who just want the site we built, live.</p>
+        <p class="os-plan__price"><span class="os-plan__amount">$29</span><span class="os-plan__per">/month</span></p>
+        <ul class="os-plan__list"><li>The site we built, live on your domain</li><li>Hosting, SSL and backups</li><li>Mobile-ready, fast, contact form to your inbox</li><li>1 content change a month</li><li>Month to month</li></ul>
+        <a class="os-btn os-btn--dark" href="keep/?plan=keep">Choose Keep</a>
+      </article>
+      <article class="os-plan os-plan--featured">
+        <span class="os-plan__flag">Recommended</span>
+        <h3 class="os-plan__name">Grow</h3>
+        <p class="os-plan__for">For owners who want it kept fresh and found.</p>
+        <p class="os-plan__price"><span class="os-plan__amount">$59</span><span class="os-plan__per">/month</span></p>
+        <ul class="os-plan__list"><li>Everything in Keep</li><li>Up to 3 content changes a month</li><li>Google Business Profile tidy-up</li><li>A new page or section each quarter</li><li>Monthly enquiries summary</li></ul>
+        <a class="os-btn os-btn--primary" href="keep/?plan=grow">Choose Grow</a>
+      </article>
+      <article class="os-plan">
+        <h3 class="os-plan__name">Custom</h3>
+        <p class="os-plan__for">Bigger builds: bookings, shops, many pages.</p>
+        <p class="os-plan__price"><span class="os-plan__amount os-plan__amount--word">Quoted</span></p>
+        <ul class="os-plan__list"><li>Everything in Grow</li><li>Changes and pages as agreed</li><li>Terms agreed with you</li></ul>
+        <a class="os-btn os-btn--ghost" href="#contact">Ask for a quote</a>
+      </article>
+    </div>
+  </div></section>
+
+  <section id="faq"><div class="wrap">
+    <span class="label eyebrow">Questions</span>
+    <h2 class="h2">The fine print, in plain English.</h2>
+    <div class="faq">
+      <details><summary>Who owns my domain?</summary><p>You do. We register it in your name. If you ever cancel, you keep the domain and we give you a copy of the site files.</p></details>
+      <details><summary>Is there a contract?</summary><p>No. Keep and Grow are month to month. Cancel any time and the next month just doesn't happen.</p></details>
+      <details><summary>Can I change things on the site?</summary><p>Yes. Send us what you'd like changed (wording, photos, prices, hours) and we'll do it. Keep includes 1 change a month, Grow up to 3.</p></details>
+      <details><summary>Can I use my own photos?</summary><p>Please do. Send us photos of your work and we'll swap them in before your site goes live.</p></details>
+      <details><summary>What if I don't want it?</summary><p>No worries. The preview comes down within 14 days and you won't hear from us again.</p></details>
+      <details><summary>How fast can it go live?</summary><p>Usually within the week, once your domain is connected. We send a test enquiry to your inbox so you know the form works.</p></details>
+    </div>
+  </div></section>
+
+  <section class="sunk" id="contact"><div class="wrap contact">
+    <div>
+      <span class="label eyebrow">Contact</span>
+      <h2 class="h2">Talk to a real person.</h2>
+      <p class="sub" style="max-width:420px">Questions about your preview, a change you'd like, or a bigger build? Get in touch.</p>
+    </div>
+    <dl><div><dd class="small" style="color:var(--ink-muted)">Contact details coming soon.</dd></div></dl>
+  </div></section>
+</main>
+
+<footer><div class="wrap">
+  <img src="assets/one-sight-studio-logo.png" alt="One Sight Studio" width="80" height="40" style="height:40px;width:auto">
+  <span class="small">© 2026 One Sight Studio</span>
+</div></footer>
+</body>
+</html>

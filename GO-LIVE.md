@@ -1,5 +1,7 @@
 # Making a client's site live
 
+The owner taps **Keep this site** on their preview, picks a plan and enters their details on the keep page. You get an email with their details (and, once Stripe links are set in `sites.json`, they pay straight away).
+
 When a business says yes:
 
 ## 1. Get 3 things from them
@@ -16,6 +18,7 @@ This creates `live/montys-plumbing/` and `live/montys-plumbing.zip` with:
 - Google indexing switched on (noindex removed, robots.txt + sitemap added)
 - the contact form wired to their email via FormSubmit (no account needed). **The first enquiry triggers a one-time "Activate form" email to the owner; ask them to click it.** Send a test enquiry yourself right after going live.
 - call buttons pointing at the real phone number
+- the "Site by One Sight Studio" credit in the footer
 
 ## 3. Host it (pick one, all free for a single page)
 **Netlify (easiest):** sign in at app.netlify.com → *Add new site → Deploy manually* → drag the `live/<slug>` folder in → *Domain settings → Add custom domain* → follow the DNS steps (point the domain's DNS at Netlify). HTTPS is automatic.

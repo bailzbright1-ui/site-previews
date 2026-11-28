@@ -1,0 +1,177 @@
+{
+  "id": "ChIJZ4AdXSufk2sRkB3QcRyM-bs",
+  "types": [
+    "barber_shop",
+    "hair_care",
+    "health",
+    "service",
+    "point_of_interest",
+    "establishment"
+  ],
+  "nationalPhoneNumber": "0468 869 969",
+  "internationalPhoneNumber": "+61 468 869 969",
+  "formattedAddress": "33 Bulcock St, Caloundra QLD 4551, Australia",
+  "addressComponents": [
+    {
+      "longText": "33",
+      "shortText": "33",
+      "types": [
+        "street_number"
+      ],
+      "languageCode": "en-US"
+    },
+    {
+      "longText": "Bulcock Street",
+      "shortText": "Bulcock St",
+      "types": [
+        "route"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Caloundra",
+      "shortText": "Caloundra",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Sunshine Coast Regional",
+      "shortText": "Sunshine Coast",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Queensland",
+      "shortText": "QLD",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Australia",
+      "shortText": "AU",
+      "types": [
+        "country",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "4551",
+      "shortText": "4551",
+      "types": [
+        "postal_code"
+      ],
+      "languageCode": "en-US"
+    }
+  ],
+  "location": {
+    "latitude": -26.8045704,
+    "longitude": 153.1334528
+  },
+  "rating": 4.8,
+  "googleMapsUri": "https://maps.google.com/?cid=13545011408089914768&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "regularOpeningHours": {
+    "weekdayDescriptions": [
+      "Monday: 8:00 AM – 5:30 PM",
+      "Tuesday: 8:00 AM – 5:30 PM",
+      "Wednesday: 8:00 AM – 5:30 PM",
+      "Thursday: 8:00 AM – 5:30 PM",
+      "Friday: 8:00 AM – 5:30 PM",
+      "Saturday: 8:00 AM – 2:00 PM",
+      "Sunday: 8:00 AM – 2:00 PM"
+    ]
+  },
+  "businessStatus": "OPERATIONAL",
+  "userRatingCount": 114,
+  "displayName": {
+    "text": "BARBER CALOUNDRA",
+    "languageCode": "en"
+  },
+  "primaryTypeDisplayName": {
+    "text": "Barber shop",
+    "languageCode": "en-US"
+  },
+  "own_photos": [
+    {
+      "file": "img/g-1.webp",
+      "size": [
+        1600,
+        1200
+      ],
+      "author": [
+        "BARBER CALOUNDRA"
+      ]
+    },
+    {
+      "file": "img/g-2.webp",
+      "size": [
+        1600,
+        900
+      ],
+      "author": [
+        "BARBER CALOUNDRA"
+      ]
+    },
+    {
+      "file": "img/g-3.webp",
+      "size": [
+        1600,
+        1067
+      ],
+      "author": [
+        "BARBER CALOUNDRA"
+      ]
+    },
+    {
+      "file": "img/g-4.webp",
+      "size": [
+        1600,
+        1067
+      ],
+      "author": [
+        "BARBER CALOUNDRA"
+      ]
+    },
+    {
+      "file": "img/g-5.webp",
+      "size": [
+        1600,
+        895
+      ],
+      "author": [
+        "BARBER CALOUNDRA"
+      ]
+    },
+    {
+      "file": "img/g-6.webp",
+      "size": [
+        1600,
+        1067
+      ],
+      "author": [
+        "BARBER CALOUNDRA"
+      ]
+    },
+    {
+      "file": "img/g-7.webp",
+      "size": [
+        1600,
+        897
+      ],
+      "author": [
+        "BARBER CALOUNDRA"
+      ]
+    }
+  ],
+  "fetched": "2026-11-28",
+  "source": "https://maps.google.com/?cid=13545011408089914768&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}

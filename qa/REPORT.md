@@ -1,6 +1,46 @@
 # QA report
 
-_2026-11-28 10:37 UTC · 18 sites_
+_2026-11-28 11:10 UTC · 23 sites_
+
+## bad-hair-day-barber ⚠️
+- ⚠️ button contrast below 4.5: 0492 867 509 3.7:1; Call 0492 867 509 3.7:1; Call 0492 867 509 3.7:1; Send 3.7:1
+- ✅ title + meta description
+- ✅ exactly one h1 (found 1)
+- ✅ preview is noindex
+- ✅ preview banner visible
+- ✅ no leftover placeholders
+- ✅ in-page links resolve
+- ✅ external links use rel=noopener
+- ✅ no empty links
+- ✅ phone links valid (tel:0431864979, tel:0492867509)
+- ✅ images/iframes labelled
+- ✅ lang=en-AU
+- ✅ lead form validates + shows success
+- ✅ no JS errors (desktop)
+- ✅ no horizontal scroll at 390px (390px)
+- ✅ mobile text has side margins
+- ✅ tap targets ≥ 44px
+- ✅ no JS errors (mobile)
+
+## barber-caloundra ✅
+- ✅ title + meta description
+- ✅ exactly one h1 (found 1)
+- ✅ preview is noindex
+- ✅ preview banner visible
+- ✅ no leftover placeholders
+- ✅ in-page links resolve
+- ✅ external links use rel=noopener
+- ✅ no empty links
+- ✅ phone links valid (tel:0431864979, tel:0468869969)
+- ✅ images/iframes labelled
+- ✅ lang=en-AU
+- ✅ button text contrast ≥ 4.5:1
+- ✅ lead form validates + shows success
+- ✅ no JS errors (desktop)
+- ✅ no horizontal scroll at 390px (390px)
+- ✅ mobile text has side margins
+- ✅ tap targets ≥ 44px
+- ✅ no JS errors (mobile)
 
 ## barber-collective-buderim ✅
 - ✅ title + meta description
@@ -260,6 +300,26 @@ _2026-11-28 10:37 UTC · 18 sites_
 - ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
+## mr-coopers-barber ✅
+- ✅ title + meta description
+- ✅ exactly one h1 (found 1)
+- ✅ preview is noindex
+- ✅ preview banner visible
+- ✅ no leftover placeholders
+- ✅ in-page links resolve
+- ✅ external links use rel=noopener
+- ✅ no empty links
+- ✅ phone links valid (tel:0431864979, tel:0479133873)
+- ✅ images/iframes labelled
+- ✅ lang=en-AU
+- ✅ button text contrast ≥ 4.5:1
+- ✅ lead form validates + shows success
+- ✅ no JS errors (desktop)
+- ✅ no horizontal scroll at 390px (390px)
+- ✅ mobile text has side margins
+- ✅ tap targets ≥ 44px
+- ✅ no JS errors (mobile)
+
 ## reeves-barber-co ✅
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
@@ -270,6 +330,26 @@ _2026-11-28 10:37 UTC · 18 sites_
 - ✅ external links use rel=noopener
 - ✅ no empty links
 - ✅ phone links valid (tel:0431864979, tel:0448816203)
+- ✅ images/iframes labelled
+- ✅ lang=en-AU
+- ✅ button text contrast ≥ 4.5:1
+- ✅ lead form validates + shows success
+- ✅ no JS errors (desktop)
+- ✅ no horizontal scroll at 390px (390px)
+- ✅ mobile text has side margins
+- ✅ tap targets ≥ 44px
+- ✅ no JS errors (mobile)
+
+## sarenity-hair ✅
+- ✅ title + meta description
+- ✅ exactly one h1 (found 1)
+- ✅ preview is noindex
+- ✅ preview banner visible
+- ✅ no leftover placeholders
+- ✅ in-page links resolve
+- ✅ external links use rel=noopener
+- ✅ no empty links
+- ✅ phone links valid (tel:0431864979, tel:0400819010)
 - ✅ images/iframes labelled
 - ✅ lang=en-AU
 - ✅ button text contrast ≥ 4.5:1
@@ -313,6 +393,26 @@ _2026-11-28 10:37 UTC · 18 sites_
 - ✅ phone links valid (tel:0431864979, tel:0499322337)
 - ✅ images/iframes labelled
 - ✅ lang=en-AU
+- ✅ lead form validates + shows success
+- ✅ no JS errors (desktop)
+- ✅ no horizontal scroll at 390px (390px)
+- ✅ mobile text has side margins
+- ✅ tap targets ≥ 44px
+- ✅ no JS errors (mobile)
+
+## v-nails-and-beauty ✅
+- ✅ title + meta description
+- ✅ exactly one h1 (found 1)
+- ✅ preview is noindex
+- ✅ preview banner visible
+- ✅ no leftover placeholders
+- ✅ in-page links resolve
+- ✅ external links use rel=noopener
+- ✅ no empty links
+- ✅ phone links valid (tel:0431864979, tel:0402328345)
+- ✅ images/iframes labelled
+- ✅ lang=en-AU
+- ✅ button text contrast ≥ 4.5:1
 - ✅ lead form validates + shows success
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)

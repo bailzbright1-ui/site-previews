@@ -1,0 +1,148 @@
+{
+  "id": "ChIJa3kAyXV5k2sR1Ih1g7myPUU",
+  "types": [
+    "hair_salon",
+    "hair_care",
+    "beauty_salon",
+    "spa",
+    "service",
+    "point_of_interest",
+    "establishment"
+  ],
+  "nationalPhoneNumber": "0400 819 010",
+  "internationalPhoneNumber": "+61 400 819 010",
+  "formattedAddress": "18 Bury St, Nambour QLD 4560, Australia",
+  "addressComponents": [
+    {
+      "longText": "18",
+      "shortText": "18",
+      "types": [
+        "street_number"
+      ],
+      "languageCode": "en-US"
+    },
+    {
+      "longText": "Bury Street",
+      "shortText": "Bury St",
+      "types": [
+        "route"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Nambour",
+      "shortText": "Nambour",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Sunshine Coast Regional",
+      "shortText": "Sunshine Coast",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Queensland",
+      "shortText": "QLD",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Australia",
+      "shortText": "AU",
+      "types": [
+        "country",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "4560",
+      "shortText": "4560",
+      "types": [
+        "postal_code"
+      ],
+      "languageCode": "en-US"
+    }
+  ],
+  "location": {
+    "latitude": -26.6274286,
+    "longitude": 152.95779779999998
+  },
+  "rating": 5,
+  "googleMapsUri": "https://maps.google.com/?cid=4989340472040589524&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "regularOpeningHours": {
+    "weekdayDescriptions": [
+      "Monday: Closed",
+      "Tuesday: 8:30 AM – 5:00 PM",
+      "Wednesday: 9:30 AM – 8:30 PM",
+      "Thursday: 8:30 AM – 5:00 PM",
+      "Friday: 8:30 AM – 5:00 PM",
+      "Saturday: 7:00 AM – 12:00 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "businessStatus": "OPERATIONAL",
+  "userRatingCount": 352,
+  "displayName": {
+    "text": "Sarenity Hair & Extensions",
+    "languageCode": "en"
+  },
+  "primaryTypeDisplayName": {
+    "text": "Hair Salon",
+    "languageCode": "en-US"
+  },
+  "own_photos": [
+    {
+      "file": "img/g-1.webp",
+      "size": [
+        1600,
+        1030
+      ],
+      "author": [
+        "Sarenity Hair & Extensions"
+      ]
+    },
+    {
+      "file": "img/g-2.webp",
+      "size": [
+        1600,
+        1130
+      ],
+      "author": [
+        "Sarenity Hair & Extensions"
+      ]
+    },
+    {
+      "file": "img/g-3.webp",
+      "size": [
+        1600,
+        1064
+      ],
+      "author": [
+        "Sarenity Hair & Extensions"
+      ]
+    },
+    {
+      "file": "img/g-4.webp",
+      "size": [
+        1206,
+        2103
+      ],
+      "author": [
+        "Sarenity Hair & Extensions"
+      ]
+    }
+  ],
+  "fetched": "2026-11-28",
+  "source": "https://maps.google.com/?cid=4989340472040589524&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}

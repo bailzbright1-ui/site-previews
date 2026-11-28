@@ -1,0 +1,107 @@
+{
+  "id": "ChIJ4a-F-TiZk2sRsKooXfcl-CM",
+  "types": [
+    "barber_shop",
+    "hair_salon",
+    "hair_care",
+    "health",
+    "service",
+    "point_of_interest",
+    "establishment"
+  ],
+  "nationalPhoneNumber": "0492 867 509",
+  "internationalPhoneNumber": "+61 492 867 509",
+  "formattedAddress": "2a Ormuz Ave, Caloundra QLD 4551, Australia",
+  "addressComponents": [
+    {
+      "longText": "2a",
+      "shortText": "2a",
+      "types": [
+        "street_number"
+      ],
+      "languageCode": "en-US"
+    },
+    {
+      "longText": "Ormuz Avenue",
+      "shortText": "Ormuz Ave",
+      "types": [
+        "route"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Caloundra",
+      "shortText": "Caloundra",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Sunshine Coast Regional",
+      "shortText": "Sunshine Coast",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Queensland",
+      "shortText": "QLD",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Australia",
+      "shortText": "AU",
+      "types": [
+        "country",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "4551",
+      "shortText": "4551",
+      "types": [
+        "postal_code"
+      ],
+      "languageCode": "en-US"
+    }
+  ],
+  "location": {
+    "latitude": -26.8041493,
+    "longitude": 153.13452479999998
+  },
+  "rating": 4.6,
+  "googleMapsUri": "https://maps.google.com/?cid=2591863329901816496&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "regularOpeningHours": {
+    "weekdayDescriptions": [
+      "Monday: 10:00 AM – 5:00 PM",
+      "Tuesday: 10:00 AM – 5:00 PM",
+      "Wednesday: 10:00 AM – 5:00 PM",
+      "Thursday: 10:00 AM – 5:00 PM",
+      "Friday: 10:00 AM – 5:00 PM",
+      "Saturday: 8:00 AM – 5:00 PM",
+      "Sunday: 8:00 AM – 5:00 PM"
+    ]
+  },
+  "businessStatus": "OPERATIONAL",
+  "userRatingCount": 461,
+  "displayName": {
+    "text": "Bad Hair Day Caloundra Barber",
+    "languageCode": "en"
+  },
+  "primaryTypeDisplayName": {
+    "text": "Barber shop",
+    "languageCode": "en-US"
+  },
+  "own_photos": [],
+  "fetched": "2026-11-28",
+  "source": "https://maps.google.com/?cid=2591863329901816496&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}

@@ -1,0 +1,54 @@
+{
+ "name": "V Nails and Beauty",
+ "kicker": "Nail salon · Warana",
+ "headline": [
+  "Nails in",
+  "full *bloom*."
+ ],
+ "sub": "A nail and beauty salon on Minkara Street, Warana, open seven days. Book online.",
+ "layout": "collage",
+ "palette": {
+  "bg": "#FFF5F6",
+  "surface": "#FFFFFF",
+  "ink": "#2C1A20",
+  "muted": "#7C6168",
+  "line": "#F2DADF",
+  "accent": "#B8325A",
+  "accent_ink": "#FFFFFF"
+ },
+ "fonts": {
+  "display": "Instrument Serif",
+  "body": "Inter",
+  "google": "family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600",
+  "display_weight": 400,
+  "italic": true
+ },
+ "hero": "img/g-2.webp",
+ "gallery": [
+  "img/g-1.webp",
+  "img/g-3.webp"
+ ],
+ "gallery_title": "Recent *sets*",
+ "book_url": "https://bookings.gettimely.com/vnailsandbeauty/bb/book",
+ "cta_label": "Book online",
+ "hours": [
+  "Monday: 6:00 AM – 6:00 PM",
+  "Tuesday: 6:00 AM – 6:00 PM",
+  "Wednesday: 6:00 AM – 6:00 PM",
+  "Thursday: 6:00 AM – 8:00 PM",
+  "Friday: 6:00 AM – 6:00 PM",
+  "Saturday: 6:00 AM – 5:30 PM",
+  "Sunday: 7:00 AM – 5:00 PM"
+ ],
+ "address": "29 Minkara St, Warana QLD 4575",
+ "area": "Warana QLD",
+ "map_query": "29 Minkara St, Warana QLD 4575",
+ "rating": {
+  "value": 4.9,
+  "count": 202,
+  "url": "https://maps.google.com/?cid=15236993752168285599&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+ },
+ "notes": [
+  "Open 7 days"
+ ]
+}

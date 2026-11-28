@@ -1,0 +1,53 @@
+{
+ "name": "Mr Cooper's Barber Shop",
+ "kicker": "Barber shop · Golden Beach",
+ "headline": [
+  "Old-school",
+  "barbering,",
+  "*Golden Beach*."
+ ],
+ "sub": "A barber shop on Landsborough Parade, Golden Beach, open Tuesday to Saturday.",
+ "layout": "split",
+ "palette": {
+  "bg": "#F1EDE3",
+  "surface": "#FBF8F1",
+  "ink": "#16302B",
+  "muted": "#5E6B66",
+  "line": "#DDD6C6",
+  "accent": "#1F5E4E",
+  "accent_ink": "#FFFFFF"
+ },
+ "fonts": {
+  "display": "Gloock",
+  "body": "Instrument Sans",
+  "google": "family=Gloock&family=Instrument+Sans:wght@400;500;600",
+  "display_weight": 400
+ },
+ "hero": "img/g-2.webp",
+ "gallery": [
+  "img/g-6.webp",
+  "img/g-4.webp",
+  "img/g-3.webp",
+  "img/g-5.webp",
+  "img/g-7.webp"
+ ],
+ "gallery_title": "Around the *shop*",
+ "hours": [
+  "Monday: Closed",
+  "Tuesday: 9:00 AM – 5:00 PM",
+  "Wednesday: 9:00 AM – 5:00 PM",
+  "Thursday: 10:00 AM – 4:00 PM",
+  "Friday: 9:00 AM – 5:00 PM",
+  "Saturday: 7:00 AM – 1:00 PM",
+  "Sunday: Closed"
+ ],
+ "address": "Shop 4/54 Landsborough Parade, Golden Beach QLD 4551",
+ "area": "Golden Beach QLD",
+ "map_query": "Shop 4/54 Landsborough Parade, Golden Beach QLD 4551",
+ "rating": {
+  "value": 5,
+  "count": 97,
+  "url": "https://maps.google.com/?cid=2746145581951296903&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+ },
+ "cta_label": "Call to book"
+}

@@ -1,0 +1,137 @@
+{
+  "id": "ChIJE3aupKKfk2sRn0XWqhatdNM",
+  "types": [
+    "nail_salon",
+    "beauty_salon",
+    "service",
+    "point_of_interest",
+    "establishment"
+  ],
+  "nationalPhoneNumber": "0402 328 345",
+  "internationalPhoneNumber": "+61 402 328 345",
+  "formattedAddress": "29 Minkara St, Warana QLD 4575, Australia",
+  "addressComponents": [
+    {
+      "longText": "29",
+      "shortText": "29",
+      "types": [
+        "street_number"
+      ],
+      "languageCode": "en-US"
+    },
+    {
+      "longText": "Minkara Street",
+      "shortText": "Minkara St",
+      "types": [
+        "route"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Warana",
+      "shortText": "Warana",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Sunshine Coast Regional",
+      "shortText": "Sunshine Coast",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Queensland",
+      "shortText": "QLD",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Australia",
+      "shortText": "AU",
+      "types": [
+        "country",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "4575",
+      "shortText": "4575",
+      "types": [
+        "postal_code"
+      ],
+      "languageCode": "en-US"
+    }
+  ],
+  "location": {
+    "latitude": -26.7245816,
+    "longitude": 153.12964839999998
+  },
+  "rating": 4.9,
+  "googleMapsUri": "https://maps.google.com/?cid=15236993752168285599&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "websiteUri": "https://bookings.gettimely.com/vnailsandbeauty/bb/book",
+  "regularOpeningHours": {
+    "weekdayDescriptions": [
+      "Monday: 6:00 AM – 6:00 PM",
+      "Tuesday: 6:00 AM – 6:00 PM",
+      "Wednesday: 6:00 AM – 6:00 PM",
+      "Thursday: 6:00 AM – 8:00 PM",
+      "Friday: 6:00 AM – 6:00 PM",
+      "Saturday: 6:00 AM – 5:30 PM",
+      "Sunday: 7:00 AM – 5:00 PM"
+    ]
+  },
+  "businessStatus": "OPERATIONAL",
+  "userRatingCount": 202,
+  "displayName": {
+    "text": "V Nails and Beauty",
+    "languageCode": "en"
+  },
+  "primaryTypeDisplayName": {
+    "text": "Nail Salon",
+    "languageCode": "en-US"
+  },
+  "own_photos": [
+    {
+      "file": "img/g-1.webp",
+      "size": [
+        1600,
+        2844
+      ],
+      "author": [
+        "V Nails and Beauty"
+      ]
+    },
+    {
+      "file": "img/g-2.webp",
+      "size": [
+        1600,
+        1084
+      ],
+      "author": [
+        "V Nails and Beauty"
+      ]
+    },
+    {
+      "file": "img/g-3.webp",
+      "size": [
+        1600,
+        2844
+      ],
+      "author": [
+        "V Nails and Beauty"
+      ]
+    }
+  ],
+  "fetched": "2026-11-28",
+  "source": "https://maps.google.com/?cid=15236993752168285599&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}

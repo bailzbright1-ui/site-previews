@@ -1,0 +1,48 @@
+{
+ "name": "Barber Caloundra",
+ "kicker": "Barber shop · Bulcock St, Caloundra",
+ "headline": [
+  "Caloundra's",
+  "*Bulcock St* barber."
+ ],
+ "sub": "A barber shop on Bulcock Street, open seven days.",
+ "layout": "split",
+ "palette": {
+  "bg": "#101317",
+  "surface": "#171C22",
+  "ink": "#EEF1F4",
+  "muted": "#9AA3AD",
+  "line": "#27303A",
+  "accent": "#3FA7F5",
+  "accent_ink": "#0A0A0A"
+ },
+ "fonts": {
+  "display": "Anton",
+  "body": "Inter",
+  "google": "family=Anton&family=Inter:wght@400;500;600",
+  "display_weight": 400,
+  "display_case": "uppercase"
+ },
+ "hero": "img/stock-hero.webp",
+ "gallery": [],
+ "hours": [
+  "Monday: 8:00 AM – 5:30 PM",
+  "Tuesday: 8:00 AM – 5:30 PM",
+  "Wednesday: 8:00 AM – 5:30 PM",
+  "Thursday: 8:00 AM – 5:30 PM",
+  "Friday: 8:00 AM – 5:30 PM",
+  "Saturday: 8:00 AM – 2:00 PM",
+  "Sunday: 8:00 AM – 2:00 PM"
+ ],
+ "address": "33 Bulcock St, Caloundra QLD 4551",
+ "area": "Caloundra QLD",
+ "map_query": "33 Bulcock St, Caloundra QLD 4551",
+ "rating": {
+  "value": 4.8,
+  "count": 114,
+  "url": "https://maps.google.com/?cid=13545011408089914768&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+ },
+ "notes": [
+  "Open 7 days"
+ ]
+}

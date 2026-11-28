@@ -1,0 +1,48 @@
+{
+ "name": "Bad Hair Day Barber",
+ "kicker": "Barber shop · Caloundra",
+ "headline": [
+  "Fix the",
+  "*bad hair day*."
+ ],
+ "sub": "A barber shop on Ormuz Avenue, Caloundra, open seven days.",
+ "layout": "poster",
+ "palette": {
+  "bg": "#F5F1E8",
+  "surface": "#FFFFFF",
+  "ink": "#141414",
+  "muted": "#6A665E",
+  "line": "#E3DED3",
+  "accent": "#E4572E",
+  "accent_ink": "#FFFFFF"
+ },
+ "fonts": {
+  "display": "Big Shoulders Display",
+  "body": "Onest",
+  "google": "family=Big+Shoulders+Display:wght@800&family=Onest:wght@400;500;600",
+  "display_weight": 800,
+  "display_case": "uppercase"
+ },
+ "hero": "img/stock-hero.webp",
+ "gallery": [],
+ "hours": [
+  "Monday: 10:00 AM – 5:00 PM",
+  "Tuesday: 10:00 AM – 5:00 PM",
+  "Wednesday: 10:00 AM – 5:00 PM",
+  "Thursday: 10:00 AM – 5:00 PM",
+  "Friday: 10:00 AM – 5:00 PM",
+  "Saturday: 8:00 AM – 5:00 PM",
+  "Sunday: 8:00 AM – 5:00 PM"
+ ],
+ "address": "2a Ormuz Ave, Caloundra QLD 4551",
+ "area": "Caloundra QLD",
+ "map_query": "2a Ormuz Ave, Caloundra QLD 4551",
+ "rating": {
+  "value": 4.6,
+  "count": 461,
+  "url": "https://maps.google.com/?cid=2591863329901816496&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+ },
+ "notes": [
+  "Open 7 days"
+ ]
+}

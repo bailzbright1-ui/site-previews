@@ -277,6 +277,71 @@
       "outreach_email": "",
       "outreach_source": "",
       "lead_status": "ready"
+    },
+    {
+      "slug": "sarenity-hair",
+      "name": "Sarenity Hair & Extensions",
+      "phone": "0400 819 010",
+      "book_url": "",
+      "owner_email": "",
+      "domain": "",
+      "found_on": "Google",
+      "existing_domain": "",
+      "outreach_email": "",
+      "outreach_source": "",
+      "lead_status": "ready"
+    },
+    {
+      "slug": "bad-hair-day-barber",
+      "name": "Bad Hair Day Barber",
+      "phone": "0492 867 509",
+      "book_url": "",
+      "owner_email": "",
+      "domain": "",
+      "found_on": "Google",
+      "existing_domain": "",
+      "outreach_email": "",
+      "outreach_source": "",
+      "lead_status": "ready"
+    },
+    {
+      "slug": "v-nails-and-beauty",
+      "name": "V Nails and Beauty",
+      "phone": "0402 328 345",
+      "book_url": "https://bookings.gettimely.com/vnailsandbeauty/bb/book",
+      "owner_email": "",
+      "domain": "",
+      "found_on": "Google",
+      "existing_domain": "",
+      "outreach_email": "",
+      "outreach_source": "",
+      "lead_status": "ready"
+    },
+    {
+      "slug": "barber-caloundra",
+      "name": "Barber Caloundra",
+      "phone": "0468 869 969",
+      "book_url": "",
+      "owner_email": "",
+      "domain": "",
+      "found_on": "Google",
+      "existing_domain": "",
+      "outreach_email": "",
+      "outreach_source": "",
+      "lead_status": "ready"
+    },
+    {
+      "slug": "mr-coopers-barber",
+      "name": "Mr Cooper's Barber Shop",
+      "phone": "0479 133 873",
+      "book_url": "",
+      "owner_email": "",
+      "domain": "",
+      "found_on": "Google",
+      "existing_domain": "",
+      "outreach_email": "",
+      "outreach_source": "",
+      "lead_status": "ready"
     }
   ]
 }

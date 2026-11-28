@@ -91,7 +91,7 @@ header .btn{{min-height:44px;padding:0 18px;font-size:15px}}
 .L-poster{{--bg:{p['ink']};--ink:{p['bg']};--surface:rgba(255,255,255,.06);--line:rgba(255,255,255,.14);--muted:rgba(255,255,255,.7)}}
 .L-poster .hero .wrap{{padding-top:clamp(30px,5vw,70px);text-align:center}}.L-poster .hero h1{{font-size:clamp(3.4rem,12vw,12rem);line-height:.86}}
 .L-poster .hero .sub{{margin-left:auto;margin-right:auto}}.L-poster .ctas,.L-poster .notes{{justify-content:center}}
-.L-poster .strip{{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:clamp(30px,5vw,60px)}}.L-poster .strip div{{aspect-ratio:3/4;border-radius:16px;overflow:hidden}}
+.L-poster .strip{{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:clamp(30px,5vw,60px)}}.L-poster .strip div{{aspect-ratio:auto;height:clamp(260px,38vw,520px);border-radius:16px;overflow:hidden}}
 .L-collage .hero .wrap{{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,60px);align-items:center;padding-top:clamp(28px,5vw,64px);padding-bottom:clamp(56px,8vw,110px)}}
 .L-collage .stack{{position:relative;aspect-ratio:1}}.L-collage .stack div{{position:absolute;border-radius:22px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.4)}}
 .L-collage .stack div:nth-child(1){{inset:0 18% 18% 0}}.L-collage .stack div:nth-child(2){{inset:45% 0 0 42%;border:6px solid var(--bg)}}
@@ -137,7 +137,7 @@ footer{{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);
         hero = f'<section class="hero"><div class="wrap"><p class="k">{e(S["kicker"])}</p><h1 id="h1" style="margin-top:18px">{h1}</h1><div class="row"><p class="sub" data-r data-d="250">{e(S["sub"])}</p><div><div class="ctas" data-r data-d="350">{primary}{secondary}</div>{rating}</div></div><div class="hp" data-r="clip">{hero_img}</div></div></section>'
     elif L == "poster":
         strip = "".join(f'<div data-r="clip" data-d="{i*120}"><img src="{g}" alt="" loading="lazy"></div>' for i, g in enumerate(([S["hero"]] + gal)[:3]))
-        hero = f'<section class="hero"><div class="wrap">{copy}<div class="strip">{strip}</div></div></section>'
+        hero = f'<section class="hero"><div class="wrap">{copy}<div class="strip" style="grid-template-columns:repeat({len(([S["hero"]] + gal)[:3])},1fr)">{strip}</div></div></section>'
     else:
         second = gal[0] if gal else S["hero"]
         hero = f'<section class="hero"><div class="wrap"><div>{copy}</div><div class="stack"><div data-r="clip">{hero_img}</div><div data-r="scale" data-d="300"><img src="{second}" alt="" loading="lazy"></div></div></div></section>'

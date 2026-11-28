@@ -1,0 +1,186 @@
+{
+  "id": "ChIJhy9wZY-Zk2sRhyW3adtEHCY",
+  "types": [
+    "barber_shop",
+    "hair_care",
+    "health",
+    "service",
+    "point_of_interest",
+    "establishment"
+  ],
+  "nationalPhoneNumber": "0479 133 873",
+  "internationalPhoneNumber": "+61 479 133 873",
+  "formattedAddress": "Shop 4/54 Landsborough Parade, Golden Beach QLD 4551, Australia",
+  "addressComponents": [
+    {
+      "longText": "Shop 4",
+      "shortText": "Shop 4",
+      "types": [
+        "subpremise"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "54",
+      "shortText": "54",
+      "types": [
+        "street_number"
+      ],
+      "languageCode": "en-US"
+    },
+    {
+      "longText": "Landsborough Parade",
+      "shortText": "Landsborough Parade",
+      "types": [
+        "route"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Golden Beach",
+      "shortText": "Golden Beach",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Sunshine Coast Regional",
+      "shortText": "Sunshine Coast",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Queensland",
+      "shortText": "QLD",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Australia",
+      "shortText": "AU",
+      "types": [
+        "country",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "4551",
+      "shortText": "4551",
+      "types": [
+        "postal_code"
+      ],
+      "languageCode": "en-US"
+    }
+  ],
+  "location": {
+    "latitude": -26.822146999999998,
+    "longitude": 153.11976719999998
+  },
+  "rating": 5,
+  "googleMapsUri": "https://maps.google.com/?cid=2746145581951296903&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "websiteUri": "https://www.facebook.com/mrcoopersbarber",
+  "regularOpeningHours": {
+    "weekdayDescriptions": [
+      "Monday: Closed",
+      "Tuesday: 9:00 AM – 5:00 PM",
+      "Wednesday: 9:00 AM – 5:00 PM",
+      "Thursday: 10:00 AM – 4:00 PM",
+      "Friday: 9:00 AM – 5:00 PM",
+      "Saturday: 7:00 AM – 1:00 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "businessStatus": "OPERATIONAL",
+  "userRatingCount": 97,
+  "displayName": {
+    "text": "Mr Cooper’s Barber shop",
+    "languageCode": "en"
+  },
+  "primaryTypeDisplayName": {
+    "text": "Barber shop",
+    "languageCode": "en-US"
+  },
+  "own_photos": [
+    {
+      "file": "img/g-1.webp",
+      "size": [
+        1600,
+        739
+      ],
+      "author": [
+        "Mr Cooper’s Barber shop"
+      ]
+    },
+    {
+      "file": "img/g-2.webp",
+      "size": [
+        1600,
+        1200
+      ],
+      "author": [
+        "Mr Cooper’s Barber shop"
+      ]
+    },
+    {
+      "file": "img/g-3.webp",
+      "size": [
+        1600,
+        2844
+      ],
+      "author": [
+        "Mr Cooper’s Barber shop"
+      ]
+    },
+    {
+      "file": "img/g-4.webp",
+      "size": [
+        1600,
+        2133
+      ],
+      "author": [
+        "Mr Cooper’s Barber shop"
+      ]
+    },
+    {
+      "file": "img/g-5.webp",
+      "size": [
+        1600,
+        2133
+      ],
+      "author": [
+        "Mr Cooper’s Barber shop"
+      ]
+    },
+    {
+      "file": "img/g-6.webp",
+      "size": [
+        1600,
+        2133
+      ],
+      "author": [
+        "Mr Cooper’s Barbers"
+      ]
+    },
+    {
+      "file": "img/g-7.webp",
+      "size": [
+        1600,
+        1200
+      ],
+      "author": [
+        "Mr Cooper’s Barber shop"
+      ]
+    }
+  ],
+  "fetched": "2026-11-28",
+  "source": "https://maps.google.com/?cid=2746145581951296903&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}

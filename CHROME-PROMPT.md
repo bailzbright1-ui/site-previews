@@ -1,37 +1,59 @@
 # Paste this into Claude in Chrome
 
-I'm setting up One Sight Studio's payments, domain and email. Help me through each part in my browser. **Ask me before any click that buys something, creates something, or saves a setting.** Don't send any emails. At the end, give me a short summary with every value marked ⟶ below, so I can paste it back to Claude Code.
+Help me finish setting up One Sight Studio. **Ask me before any click that creates, saves, buys or sends something.** Never paste an API key into a chat, a document or your summary: copy it straight from where it's created into where it's stored. At the end, give me a short summary of the ⟶ items.
 
-## 1. Stripe (the Keep link is already done)
+## 1. Resend API key → Claude Code environment
 
-Create one more payment link the same way as the existing Keep link: new product **Website – Grow plan**, A$59.00 recurring monthly, description "Everything in Keep, plus up to 3 changes a month, Google Business Profile tidy-up and a new section each quarter. Month to month." No free trial. Tick collect customer names, business names, and require phone number. After payment, redirect to `https://bailzbright1-ui.github.io/site-previews/keep/thanks/`. Show me before clicking Create.
+1. At resend.com → API Keys → Create API key. Name: `one-sight-claude-code`. Permission: **Sending access**. Domain: **onesightstudio.au**.
+2. Copy the key (it's only shown once).
+3. Open claude.ai/code. In the session titled with my One Sight work, open the **cloud environment menu in the session's title bar** (environment name **site-previews**) → **Edit** → **Network secrets** (may be called "API credentials") → Add:
+   - Host: `api.resend.com`
+   - Header: `Authorization`
+   - Value: `Bearer ` followed by the key
+   - Name: `Resend (One Sight)`
+4. Save (ask me first).
 
-⟶ Grow link URL
+⟶ Resend key stored in site-previews (yes/no)
 
-## 2. Domain
+## 2. Google Places API key → Claude Code environment
 
-If I haven't bought it yet, the studio domain is **onesightstudio.au**. Then, in the domain's DNS settings, add these records so the website runs on it (ask before saving):
+1. At console.cloud.google.com, create a project called `one-sight-studio` (or use an existing one if I have it).
+2. APIs & Services → Library → enable **Places API (New)**. Billing must be on. Google gives a free monthly allowance, which our usage should stay within. Tell me if it asks for a card.
+3. APIs & Services → Credentials → Create credentials → API key. Then **Edit API key** → API restrictions → Restrict key → only **Places API (New)**. Save.
+4. Add it to the same **site-previews** environment → Network secrets:
+   - Host: `places.googleapis.com`
+   - Header: `X-Goog-Api-Key`
+   - Value: the key (no "Bearer")
+   - Name: `Google Places (One Sight)`
 
-| Type | Name | Value |
-|---|---|---|
-| A | @ | 185.199.108.153 |
-| A | @ | 185.199.109.153 |
-| A | @ | 185.199.110.153 |
-| A | @ | 185.199.111.153 |
-| CNAME | www | bailzbright1-ui.github.io |
+⟶ Places key stored (yes/no) · Did Google ask for billing? (yes/no)
 
-Remove any existing "parking" A records on @ that point elsewhere.
+## 3. Send as hello@onesightstudio.au from Gmail (so replies look right)
 
-⟶ Registrar used · the current price for 1 year of a **.com.au** at that registrar (we quote this to customers as their domain cost)
+1. Create a **second** Resend API key: name `gmail-smtp`, Sending access, domain onesightstudio.au. Copy it.
+2. Gmail (bailzbright1@gmail.com) → Settings → See all settings → Accounts and Import → **Send mail as** → Add another email address:
+   - Name: `Bailey Bright | One Sight Studio`, email: `hello@onesightstudio.au`, untick "Treat as an alias"
+   - SMTP server `smtp.resend.com`, port `465`, username `resend`, password: the gmail-smtp key, SSL
+3. Gmail sends a confirmation code to hello@, which forwards back to this Gmail. Enter it.
+4. Set "When replying to a message": reply from the same address it was sent to.
 
-## 3. Email on the domain
+⟶ Gmail can send as hello@ (yes/no)
 
-The mailbox hello@onesightstudio.au already exists. Create a free **Resend** account (resend.com), add the same domain under Domains, and add the DNS records Resend shows (they're separate from the mailbox records, usually on a `send` or `resend._domainkey` name). Wait until Resend shows the domain as **Verified**. Then create an API key with "Sending access" only. **Don't paste the key anywhere.** Just tell me it's been created.
+## 4. Find each business's published contact email
 
-⟶ Resend domain verified (yes/no) · Resend API key created (yes/no)
+For each business below, find an email address **the business itself publishes for customers**: their website contact page, their Facebook page's About/Intro section, their Instagram bio, their Google Business Profile or their Fresha page. Only addresses they publish publicly. Note the exact URL where you saw it, and note it if the listing says "no marketing" or similar.
 
-## 4. GitHub Pages custom domain (do this after DNS is saved)
+Also answer the question in brackets.
 
-Open https://github.com/bailzbright1-ui/site-previews/settings/pages. Under **Custom domain**, enter the domain, click Save, wait for the DNS check to pass, then tick **Enforce HTTPS** (it can take up to an hour to become available).
+1. Beauty In A Box Co, Moffat Beach (their site beautyinaboxcocaloundra.com shows carla@beautyinaboxco.com.au. Confirm that's still current.)
+2. Kozmetika, 31 Osprey St, Caloundra (facebook.com/k0zmetika, instagram.com/kozmetika__)
+3. Wink Worthy Lashes & Brows, Maroochydore, 0400 781 552 (Are they still trading? Their Fresha page is gone.)
+4. Luminous Nails Sunshine Coast, Palmview, 0439 929 210 (Their website luminous-nails.com.au doesn't load. Are they still trading?)
+5. Wow Wow Nails, Shop 2a, 1794 David Low Way, Coolum Beach, (07) 5324 0059
+6. Two Sisters Nails & Spa, Shop 4/708 David Low Way, Pacific Paradise, (07) 5326 1262 (Is this shop now called "ÚT Nails and Spa"?)
+7. Monty's Plumbing, Peregian Beach, QBCC 1065201 (Also find their phone number.)
+8. Mount Coolum Plumbing: already have pete@mtcplumbing.com.au, so skip
+9. Hutcheson Plumbing & Roofing Maintenance, Coolum Beach, owner Bill (Also find their phone number.)
+10. Homestyle Roof Painters, Bellmere, Geoff O'Hara, QBCC 1179124 (Also find their phone number.)
 
-⟶ Custom domain check passed (yes/no) · Enforce HTTPS ticked (yes/no)
+⟶ One line per business: email — URL where found — any "no marketing" note — answer to the bracketed question

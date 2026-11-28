@@ -15,6 +15,8 @@ https://bailzbright1-ui.github.io/site-previews/montys-plumbing/
 
 If you like it, it can be live on your own domain this week, free for the first month, then $29 a month. No setup fee, no lock-in, and changes are included. Want something changed first? There's a "Request changes" button at the top of the preview.
 
+If you don't have a domain yet, we can register one in your name. The registration fee is [DOMAIN PRICE] a year, paid by you and separate from the monthly fee.
+
 If it's not for you, no worries. The preview comes down in 14 days.
 
 Bailey Bright

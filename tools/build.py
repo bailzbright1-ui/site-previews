@@ -101,6 +101,7 @@ def build_studio(data):
         "ABN_LINE": f" · ABN {a['abn']}" if a.get("abn") else "",
         "STUDIO_ROBOTS": "" if a.get("email") and a.get("abn") else '<meta name="robots" content="noindex, nofollow">',
         "SITES_JSON": json.dumps(sites),
+        "DOMAIN_FEE": f"{a['domain_price']} for a .com.au" if a.get("domain_price") else "the registrar's fee, at cost",
         **(lambda t, pk: {
             "OFFER_LINE": f"your first month is free, then it's {pk} a month." if t else f"it goes live for {pk} a month.",
             "COMPARE_LINE": f"First month free, then {pk} a month." if t else f"then {pk} a month.",

@@ -11,7 +11,8 @@
     "stripe_grow_link": "",
     "price_keep": "$29",
     "price_grow": "$59",
-    "trial_days": 30
+    "trial_days": 30,
+    "domain_price": ""
   },
   "sites": [
     {

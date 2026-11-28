@@ -1,9 +1,8 @@
 # QA report
 
-_2026-11-28 01:13 UTC · 10 sites_
+_2026-11-28 01:15 UTC · 10 sites_
 
-## beauty-in-a-box-co ⚠️
-- ⚠️ tap targets under 44px: Request changesChanges 36px
+## beauty-in-a-box-co ✅
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
 - ✅ preview is noindex
@@ -19,30 +18,10 @@ _2026-11-28 01:13 UTC · 10 sites_
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
 - ✅ mobile text has side margins
+- ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
-## homestyle-roof-painters ⚠️
-- ⚠️ tap targets under 44px: Request changesChanges 36px
-- ✅ title + meta description
-- ✅ exactly one h1 (found 1)
-- ✅ preview is noindex
-- ✅ preview banner visible
-- ✅ no leftover placeholders
-- ✅ in-page links resolve
-- ✅ external links use rel=noopener
-- ✅ no empty links
-- ✅ phone links valid (tel:0431864979)
-- ✅ images/iframes labelled
-- ✅ lang=en-AU
-- ✅ button text contrast ≥ 4.5:1
-- ✅ lead form validates + shows success
-- ✅ no JS errors (desktop)
-- ✅ no horizontal scroll at 390px (390px)
-- ✅ mobile text has side margins
-- ✅ no JS errors (mobile)
-
-## hutcheson-roofing ⚠️
-- ⚠️ tap targets under 44px: Request changesChanges 36px
+## homestyle-roof-painters ✅
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
 - ✅ preview is noindex
@@ -59,10 +38,30 @@ _2026-11-28 01:13 UTC · 10 sites_
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
 - ✅ mobile text has side margins
+- ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
-## kozmetika ⚠️
-- ⚠️ tap targets under 44px: Request changesChanges 36px
+## hutcheson-roofing ✅
+- ✅ title + meta description
+- ✅ exactly one h1 (found 1)
+- ✅ preview is noindex
+- ✅ preview banner visible
+- ✅ no leftover placeholders
+- ✅ in-page links resolve
+- ✅ external links use rel=noopener
+- ✅ no empty links
+- ✅ phone links valid (tel:0431864979)
+- ✅ images/iframes labelled
+- ✅ lang=en-AU
+- ✅ button text contrast ≥ 4.5:1
+- ✅ lead form validates + shows success
+- ✅ no JS errors (desktop)
+- ✅ no horizontal scroll at 390px (390px)
+- ✅ mobile text has side margins
+- ✅ tap targets ≥ 44px
+- ✅ no JS errors (mobile)
+
+## kozmetika ✅
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
 - ✅ preview is noindex
@@ -78,10 +77,10 @@ _2026-11-28 01:13 UTC · 10 sites_
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
 - ✅ mobile text has side margins
+- ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
-## luminous-nails ⚠️
-- ⚠️ tap targets under 44px: Request changesChanges 36px
+## luminous-nails ✅
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
 - ✅ preview is noindex
@@ -98,12 +97,10 @@ _2026-11-28 01:13 UTC · 10 sites_
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
 - ✅ mobile text has side margins
+- ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
-## montys-plumbing ❌
-- ❌ no JS errors (desktop): missing ) after argument list
-- ❌ no JS errors (mobile): missing ) after argument list
-- ⚠️ tap targets under 44px: Request changesChanges 36px
+## montys-plumbing ✅
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
 - ✅ preview is noindex
@@ -117,11 +114,13 @@ _2026-11-28 01:13 UTC · 10 sites_
 - ✅ lang=en-AU
 - ✅ button text contrast ≥ 4.5:1
 - ✅ lead form validates + shows success
+- ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
 - ✅ mobile text has side margins
+- ✅ tap targets ≥ 44px
+- ✅ no JS errors (mobile)
 
-## mount-coolum-plumbing ⚠️
-- ⚠️ tap targets under 44px: Request changesChanges 36px
+## mount-coolum-plumbing ✅
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
 - ✅ preview is noindex
@@ -138,10 +137,10 @@ _2026-11-28 01:13 UTC · 10 sites_
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
 - ✅ mobile text has side margins
+- ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
-## two-sisters-nails ⚠️
-- ⚠️ tap targets under 44px: Request changesChanges 36px
+## two-sisters-nails ✅
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
 - ✅ preview is noindex
@@ -157,10 +156,10 @@ _2026-11-28 01:13 UTC · 10 sites_
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
 - ✅ mobile text has side margins
+- ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
-## wink-worthy ⚠️
-- ⚠️ tap targets under 44px: Request changesChanges 36px
+## wink-worthy ✅
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
 - ✅ preview is noindex
@@ -176,10 +175,10 @@ _2026-11-28 01:13 UTC · 10 sites_
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
 - ✅ mobile text has side margins
+- ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 
-## wow-wow-nails ⚠️
-- ⚠️ tap targets under 44px: Request changesChanges 36px
+## wow-wow-nails ✅
 - ✅ title + meta description
 - ✅ exactly one h1 (found 1)
 - ✅ preview is noindex
@@ -195,5 +194,6 @@ _2026-11-28 01:13 UTC · 10 sites_
 - ✅ no JS errors (desktop)
 - ✅ no horizontal scroll at 390px (390px)
 - ✅ mobile text has side margins
+- ✅ tap targets ≥ 44px
 - ✅ no JS errors (mobile)
 

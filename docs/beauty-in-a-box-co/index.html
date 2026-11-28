@@ -192,7 +192,7 @@ html.js [data-r=clip].in>*{clip-path:inset(0 0 0 0)}
     .osb a:focus-visible,.osb button:focus-visible{outline:2px solid #26c1c3;outline-offset:2px}
     .osd{margin:auto!important;position:fixed;inset:0;max-height:calc(100vh - 24px);overflow:auto;width:min(520px,calc(100vw - 24px));border:0;border-radius:20px;padding:0;color:#1d2023;background:#fff;font:400 16px/26px "Schibsted Grotesk",ui-sans-serif,system-ui,sans-serif;box-shadow:0 20px 60px rgba(0,0,0,.35)}
     .osb .s{display:none}
-    @media(max-width:600px){.osb{padding:8px 12px;gap:6px 10px}.osb p{flex:1 1 60%;font-size:13px;line-height:18px}.osb .osb-btns{width:100%;flex-wrap:nowrap}.osb .osb-btns>*{flex:1 1 0;justify-content:center;padding:0 10px;font-size:13px}.osb .l{display:none}.osb .s{display:inline}}
+    @media(max-width:600px){.osb{padding:8px 12px;gap:6px 10px}.osb p{flex:1 1 60%;font-size:13px;line-height:18px}.osb .osb-btns{width:100%;flex-wrap:nowrap}.osb .osb-btns>*{flex:1 1 0;justify-content:center;padding:0 10px;font-size:13px;height:44px}.osb .l{display:none}.osb .s{display:inline}}
     .osd::backdrop{background:rgba(29,32,35,.6)}
     .osd form{padding:28px;margin:0}
     .osd h2{margin:0;font:800 26px/30px "Schibsted Grotesk",ui-sans-serif,system-ui,sans-serif;letter-spacing:-.02em;color:#1d2023}
@@ -240,7 +240,7 @@ html.js [data-r=clip].in>*{clip-path:inset(0 0 0 0)}
   (function(){var d=document.getElementById('osd'),f=document.getElementById('osd-f'),em='';
   document.getElementById('osd-page').value=location.href;
   f.addEventListener('submit',function(e){e.preventDefault();if(!f.checkValidity()){f.reportValidity();return}
-    if(!em){var t=encodeURIComponent('Changes for Beauty In A Box Co: '+document.getElementById('osd-c').value);if(/Mobi|Android|iPhone/i.test(navigator.userAgent)){location.href='sms:0431864979?&body='+t}else{alert('Please text or call Bailey on 0431 864 979 with your changes. Thanks!')}return}
+    if(!em){var t=encodeURIComponent('Changes for '+f.business.value+': '+document.getElementById('osd-c').value);if(/Mobi|Android|iPhone/i.test(navigator.userAgent)){location.href='sms:0431864979?&body='+t}else{alert('Please text or call Bailey on 0431 864 979 with your changes. Thanks!')}return}
     var b=document.getElementById('osd-go');b.disabled=true;b.textContent='Sending\u2026';
     fetch('https://formsubmit.co/ajax/'+em,{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)}).then(function(r){if(!r.ok)throw 0;d.classList.add('sent')}).catch(function(){b.disabled=false;b.textContent='Send changes';alert('Sorry, that didn\u2019t send. Please call or text 0431 864 979.')})});
   })();

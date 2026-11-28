@@ -17,6 +17,7 @@ One Sight Studio builds a website for a local business before they ask, sends th
 | `tools/build.py` | `python3 tools/build.py` builds everything into docs/. `--live <slug> --email … --domain …` makes a go-live package in live/ |
 | `tools/check.js` | `node tools/check.js`: QA every preview (report in qa/REPORT.md) |
 | `tools/motion.py` | Shared scroll animations injected into client sites (not studio pages) |
+| `CHROME-REPORT.md` | **Read first.** What Claude in Chrome set up (domain, email, Resend, Places, Stripe, Gmail send-as), lead contact research, and the repo to-do list it left |
 
 ## Hard rules (from the kit, plus what we've learned)
 

@@ -1,5 +1,7 @@
 # Paste this into Claude in Chrome
 
+> **Done (28 Nov 2026).** Every step below is finished. See `CHROME-REPORT.md` for the results and current state.
+
 Help me finish setting up One Sight Studio. **Ask me before any click that creates, saves, buys or sends something.** Never paste an API key into a chat, a document or your summary: copy it straight from where it's created into where it's stored. At the end, give me a short summary of the ⟶ items.
 
 ## 1. Resend API key → Claude Code environment

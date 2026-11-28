@@ -127,37 +127,89 @@ main{padding:var(--space-7) 0 var(--space-9)}
 
 <script>
 (function(){
-  var SITES={"beauty-in-a-box-co": {"name": "Beauty In A Box Co"}, "kozmetika": {"name": "Kozmetika"}, "wink-worthy": {"name": "Wink Worthy Lashes & Brows"}, "luminous-nails": {"name": "Luminous Nails Sunshine Coast"}, "wow-wow-nails": {"name": "Wow Wow Nails"}, "two-sisters-nails": {"name": "Two Sisters Nails & Spa"}, "montys-plumbing": {"name": "Monty's Plumbing"}, "mount-coolum-plumbing": {"name": "Mount Coolum Plumbing"}, "hutcheson-roofing": {"name": "Hutcheson Plumbing & Roofing Maintenance"}, "homestyle-roof-painters": {"name": "Homestyle Roof Painters"}}, CFG={"email": "", "stripe_keep": "", "stripe_grow": ""};
-  var q=new URLSearchParams(location.search), slug=q.get('site'), plan=q.get('plan'), s=SITES[slug];
-  var f=document.getElementById('keep');
-  if(plan==='keep'){f.querySelector('input[value^="Keep"]').checked=true}
+  var SITES={"beauty-in-a-box-co": {"name": "Beauty In A Box Co"}, "kozmetika": {"name": "Kozmetika"}, "wink-worthy": {"name": "Wink Worthy Lashes & Brows"}, "luminous-nails": {"name": "Luminous Nails Sunshine Coast"}, "wow-wow-nails": {"name": "Wow Wow Nails"}, "two-sisters-nails": {"name": "Two Sisters Nails & Spa"}, "montys-plumbing": {"name": "Monty's Plumbing"}, "mount-coolum-plumbing": {"name": "Mount Coolum Plumbing"}, "hutcheson-roofing": {"name": "Hutcheson Plumbing & Roofing Maintenance"}, "homestyle-roof-painters": {"name": "Homestyle Roof Painters"}}, CFG={"email": "", "stripe_keep": "", "stripe_grow": "", "mobile": "0431 864 979", "first": "Bailey"};
+  var q=new URLSearchParams(location.search), slug=q.get('site')||'', plan=(q.get('plan')||'').toLowerCase();
+  var s=Object.prototype.hasOwnProperty.call(SITES,slug)?SITES[slug]:null;
+  var f=document.getElementById('keep'), b=document.getElementById('goBtn'), err=document.getElementById('err'), sending=false;
+  var tel=(CFG.mobile||'').replace(/[^0-9+]/g,''), who=CFG.first||'us';
+  var sorry='Sorry, that didn’t send. Please try again'+(tel?', or call or text '+who+' on '+CFG.mobile+'.':' in a minute.');
+
+  function showErr(msg){err.textContent=msg;err.style.display='block'}
+  function resetBtn(){sending=false;b.disabled=false;b.textContent='Start my free month'}
+
+  // Attached first, so nothing below can stop the form working
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(sending)return;
+    err.style.display='none';
+    if(!f.checkValidity()){f.reportValidity();return}
+    if(!CFG.email){showErr(tel?'Online sign-up isn’t switched on yet. Call or text '+who+' on '+CFG.mobile+' and we’ll get your site live.':'Online sign-up isn’t switched on yet. Please contact us directly.');return}
+    sending=true;b.disabled=true;b.textContent='One moment…';
+    var chosen=f.querySelector('input[name=plan]:checked'),
+        isGrow=!!chosen&&chosen.value.indexOf('Grow')===0,
+        link=isGrow?CFG.stripe_grow:CFG.stripe_keep;
+    fetch('https://formsubmit.co/ajax/'+CFG.email,{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)})
+      .then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json()})
+      .then(function(d){
+        // FormSubmit can reply OK without delivering (e.g. before the form is activated)
+        if(!d||String(d.success)!=='true')throw new Error((d&&d.message)||'not delivered');
+        if(link){
+          var u=new URL(link);
+          u.searchParams.set('prefilled_email',document.getElementById('em').value.trim());
+          u.searchParams.set('client_reference_id',s?slug:'site');
+          location.href=u.toString();
+          return;
+        }
+        sending=false;
+        document.getElementById('app').classList.add('sent');window.scrollTo(0,0);
+      })
+      .catch(function(x){
+        if(window.console)console.error('Keep form:',x);
+        resetBtn();showErr(sorry);
+      });
+  });
+
+  // Back button from Stripe: the browser restores this page as it was, so un-stick the button
+  window.addEventListener('pageshow',function(e){if(e.persisted)resetBtn()});
+
+  // ?plan=keep or ?plan=grow picks that plan; make sure one is always ticked
+  var pick=plan==='keep'?'Keep':plan==='grow'?'Grow':'';
+  var want=pick&&f.querySelector('input[name=plan][value^="'+pick+'"]');
+  if(want)want.checked=true;
+  if(!f.querySelector('input[name=plan]:checked')){var p0=f.querySelector('input[name=plan]');if(p0)p0.checked=true}
+
   if(s){
-    document.getElementById('title').textContent='Keep '+s.name+"'s website";
-    document.title='Keep '+s.name+"'s website · One Sight Studio";
+    document.getElementById('title').textContent='Keep your '+s.name+' website';
+    document.title='Keep your '+s.name+' website · One Sight Studio';
     document.getElementById('biz').value=s.name;
     document.getElementById('siteField').value=slug;
     document.getElementById('subj').value='Keep my site: '+s.name;
     document.getElementById('frameUrl').textContent=s.name;
     document.getElementById('frameLink').href='../'+slug+'/';
-    var img=document.getElementById('shot');img.src='shots/'+slug+'.webp';img.alt='Preview of the website built for '+s.name;img.style.cssText='';
+    var img=document.getElementById('shot'), fallback=img.getAttribute('src'), fallbackCss=img.style.cssText;
+    img.onerror=function(){img.onerror=null;img.src=fallback;img.style.cssText=fallbackCss;img.alt=''};
+    img.style.cssText='';img.alt='Preview of the website built for '+s.name;img.src='shots/'+slug+'.webp';
   }
-  function sync(){var v=f.querySelector('input[name=plan]:checked').value;document.getElementById('sPlan').textContent=v.split(' ')[0];document.getElementById('sTot').textContent=v.split(' ')[1]}
+
+  function sync(){
+    var r=f.querySelector('input[name=plan]:checked');if(!r)return;
+    var v=r.value.split(' ');
+    document.getElementById('sPlan').textContent=v[0];document.getElementById('sTot').textContent=v[1]||'';
+  }
   f.querySelectorAll('input[name=plan]').forEach(function(r){r.addEventListener('change',sync)});sync();
-  function dom(){document.getElementById('domWrap').style.display=f.querySelector('input[name=domain_choice]:checked').value==='I have one'?'':'none'}
+
+  function dom(){
+    var r=f.querySelector('input[name=domain_choice]:checked'), show=!r||r.value==='I have one', w=document.getElementById('domWrap');
+    w.style.display=show?'':'none';
+    w.querySelectorAll('input').forEach(function(i){i.disabled=!show});
+  }
   f.querySelectorAll('input[name=domain_choice]').forEach(function(r){r.addEventListener('change',dom)});dom();
-  var dl=document.getElementById('declineLink');
-  if(CFG.email){dl.href='mailto:'+CFG.email+'?subject='+encodeURIComponent('Please take down my preview'+(s?': '+s.name:''))}else{dl.removeAttribute('href')}
-  f.addEventListener('submit',function(e){
-    e.preventDefault();var err=document.getElementById('err');err.style.display='none';
-    if(!f.checkValidity()){f.reportValidity();return}
-    if(!CFG.email){err.textContent='This form isn’t connected yet. Please contact us directly.';err.style.display='block';return}
-    var b=document.getElementById('goBtn');b.disabled=true;b.textContent='One moment…';
-    var isGrow=f.querySelector('input[name=plan]:checked').value.indexOf('Grow')===0, link=isGrow?CFG.stripe_grow:CFG.stripe_keep;
-    fetch('https://formsubmit.co/ajax/'+CFG.email,{method:'POST',headers:{Accept:'application/json'},body:new FormData(f)}).then(function(r){if(!r.ok)throw 0}).then(function(){
-      if(link){var u=new URL(link);u.searchParams.set('prefilled_email',document.getElementById('em').value);u.searchParams.set('client_reference_id',slug||'site');location.href=u.toString();return}
-      document.getElementById('app').classList.add('sent');window.scrollTo(0,0);
-    }).catch(function(){b.disabled=false;b.textContent='Start my free month';err.textContent='Sorry, that didn’t send. Please try again or contact us directly.';err.style.display='block'});
-  });
+
+  // "Tell us to take it down now" always works: email if set, otherwise a text message
+  var dl=document.getElementById('declineLink'), why='Please take down my preview'+(s?': '+s.name:'');
+  if(CFG.email){dl.href='mailto:'+CFG.email+'?subject='+encodeURIComponent(why)}
+  else if(tel){dl.href='sms:'+tel+'?&body='+encodeURIComponent(why)}
+  else{dl.removeAttribute('href')}
 })();
 </script>
 </body>

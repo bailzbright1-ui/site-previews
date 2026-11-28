@@ -112,7 +112,8 @@ def build_studio(data):
             "MONTHLY_LABEL": f"Monthly, after {t} days free" if t else "Monthly",
             "GO_LABEL": "Start my free month" if t else "Continue to secure payment",
         })(a.get("trial_days"), a.get("price_keep", "$29")),
-        "KEEP_CFG": json.dumps({"email": a.get("email", ""), "stripe_keep": a.get("stripe_keep_link", ""), "stripe_grow": a.get("stripe_grow_link", "")}),
+        "KEEP_CFG": json.dumps({"email": a.get("email", ""), "stripe_keep": a.get("stripe_keep_link", ""), "stripe_grow": a.get("stripe_grow_link", ""),
+                                "mobile": a.get("mobile", ""), "first": (a.get("your_name") or "").split()[0] if a.get("your_name") else ""}),
     }
     studio = ROOT / "studio"
     for page in studio.rglob("index.html"):

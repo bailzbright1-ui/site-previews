@@ -1,7 +1,8 @@
 # Outreach: Luminous Nails Sunshine Coast
 
 **Preview:** https://bailzbright1-ui.github.io/site-previews/luminous-nails/
-**Send to:** an email or mobile Luminous Nails Sunshine Coast publishes for customers (not found yet, so record where you found it in the brief's contact log).
+**Send to:** (not found yet: only use an email or mobile they publish for customers)
+**Found at:** (record where you found it)
 
 ---
 
@@ -29,7 +30,7 @@ Don't want emails from us? Reply "unsubscribe" and you won't hear from us again.
 **Follow-up (once, 5–7 days later, only if no reply)**
 **Subject:** Re: I built a website for Luminous Nails Sunshine Coast
 
-Hi there, just checking the link came through: https://bailzbright1-ui.github.io/site-previews/luminous-nails/. Happy to change anything: photos, wording, colours. The preview is up until [DATE].
+Hi there, just checking the link came through: https://bailzbright1-ui.github.io/site-previews/luminous-nails/. Happy to change anything: photos, wording, colours. The preview is up until [DATE: 14 days after first email].
 
 Bailey · One Sight Studio
 Reply "unsubscribe" to stop these emails.
@@ -38,4 +39,4 @@ Reply "unsubscribe" to stop these emails.
 
 **SMS** (this mobile is published for customers: 0439 929 210)
 
-Hi, Bailey from One Sight Studio here. I built a website for Luminous Nails Sunshine Coast, have a look: https://bailzbright1-ui.github.io/site-previews/luminous-nails/. First month free, then $29/mo if you keep it. No setup fee. Reply STOP to opt out.
+Hi, Bailey from One Sight Studio here. I built a website for Luminous Nails Sunshine Coast, have a look: https://bailzbright1-ui.github.io/site-previews/luminous-nails/. First month free, then $29/mo if you keep it, no setup fee. Reply STOP to opt out.

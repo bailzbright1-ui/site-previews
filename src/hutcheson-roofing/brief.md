@@ -12,6 +12,7 @@ Every fact on the site must appear here with a source. If it isn't here, it isn'
 | Licences | Plumbing occupational licence 30417; contractors licence 1236948 | same |
 | Gutters | Customer review mentions guttering work | same |
 | Phone | Not found (site uses a call-back request) | - |
+| Reviews | 4.6 from 9 on Localsearch (positive; link only, no quotes until the owner agrees) | Localsearch profile |
 
 ## Photos
 

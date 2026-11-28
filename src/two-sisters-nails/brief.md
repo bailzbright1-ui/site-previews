@@ -10,6 +10,7 @@ Every fact on the site must appear here with a source. If it isn't here, it isn'
 | Phone | (07) 5326 1262 | same |
 | Services | Acrylic nails, hybrid nails, gel nails, manicure, nail extensions, nail polish, pedicure (fish pedicure listed ambiguously, so it's not on the site) | Fresha listings |
 | Hours / prices | Not found | - |
+| ⚠ Possible rename | A Fresha listing at the same address is named "ÚT Nails and Spa". **Confirm the current trading name before any outreach.** | Fresha search results |
 
 ## Photos
 

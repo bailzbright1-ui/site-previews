@@ -15,6 +15,7 @@ Every fact on the site must appear here with a source. If it isn't here, it isn'
 | Rating | 5.0 on Fresha (review count varies by page, roughly 600–1,000+) | Fresha |
 | Services count | 60 services listed on Fresha | Fresha |
 | Phone / email | Not found | - |
+| ⚠ Address check | Other Fresha listings show Shop 16/51 Bulcock St, Caloundra and 47 Bowman Rd, Caloundra. Confirm Fairlie Cres is current. | Fresha search results |
 
 ## Photos
 

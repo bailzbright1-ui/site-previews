@@ -12,7 +12,8 @@
     "price_keep": "$29",
     "price_grow": "$59",
     "trial_days": 30,
-    "domain_price": ""
+    "domain_price": "",
+    "preview_base": "https://bailzbright1-ui.github.io/site-previews"
   },
   "sites": [
     {
@@ -21,7 +22,11 @@
       "phone": "",
       "book_url": "https://www.fresha.com/a/beauty-in-a-box-co-caloundra-moffat-beach-15-fairlie-crescent-ldip2s5a",
       "owner_email": "",
-      "domain": ""
+      "domain": "",
+      "found_on": "Fresha",
+      "existing_domain": "",
+      "outreach_email": "",
+      "outreach_source": ""
     },
     {
       "slug": "kozmetika",
@@ -29,7 +34,11 @@
       "phone": "",
       "book_url": "https://www.fresha.com/a/kozmetika-caloundra-31-osprey-street-lh7zvssu",
       "owner_email": "",
-      "domain": ""
+      "domain": "",
+      "found_on": "Fresha",
+      "existing_domain": "",
+      "outreach_email": "",
+      "outreach_source": ""
     },
     {
       "slug": "wink-worthy",
@@ -37,7 +46,11 @@
       "phone": "0400 781 552",
       "book_url": "https://www.fresha.com/lvp/wink-worthy-lashes-brows-eton-lane-maroochydore-QvNo9X",
       "owner_email": "",
-      "domain": ""
+      "domain": "",
+      "found_on": "Fresha",
+      "existing_domain": "",
+      "outreach_email": "",
+      "outreach_source": ""
     },
     {
       "slug": "luminous-nails",
@@ -45,7 +58,11 @@
       "phone": "0439 929 210",
       "book_url": "https://www.fresha.com/lvp/luminous-nails-sunshine-coast-palmview-forest-drive-palmview-ZDMq4M",
       "owner_email": "",
-      "domain": ""
+      "domain": "",
+      "found_on": "Fresha",
+      "existing_domain": "",
+      "outreach_email": "",
+      "outreach_source": ""
     },
     {
       "slug": "wow-wow-nails",
@@ -53,7 +70,11 @@
       "phone": "(07) 5324 0059",
       "book_url": "",
       "owner_email": "",
-      "domain": ""
+      "domain": "",
+      "found_on": "Fresha",
+      "existing_domain": "",
+      "outreach_email": "",
+      "outreach_source": ""
     },
     {
       "slug": "two-sisters-nails",
@@ -61,7 +82,11 @@
       "phone": "(07) 5326 1262",
       "book_url": "",
       "owner_email": "",
-      "domain": ""
+      "domain": "",
+      "found_on": "Fresha",
+      "existing_domain": "",
+      "outreach_email": "",
+      "outreach_source": ""
     },
     {
       "slug": "montys-plumbing",
@@ -69,7 +94,11 @@
       "phone": "",
       "book_url": "",
       "owner_email": "",
-      "domain": ""
+      "domain": "",
+      "found_on": "Localsearch",
+      "existing_domain": "",
+      "outreach_email": "",
+      "outreach_source": ""
     },
     {
       "slug": "mount-coolum-plumbing",
@@ -77,7 +106,11 @@
       "phone": "0493 027 027",
       "book_url": "",
       "owner_email": "",
-      "domain": ""
+      "domain": "",
+      "found_on": "Yellow Pages",
+      "existing_domain": "mtcplumbing.com.au",
+      "outreach_email": "",
+      "outreach_source": ""
     },
     {
       "slug": "hutcheson-roofing",
@@ -85,7 +118,11 @@
       "phone": "",
       "book_url": "",
       "owner_email": "",
-      "domain": ""
+      "domain": "",
+      "found_on": "Localsearch",
+      "existing_domain": "",
+      "outreach_email": "",
+      "outreach_source": ""
     },
     {
       "slug": "homestyle-roof-painters",
@@ -93,7 +130,11 @@
       "phone": "",
       "book_url": "",
       "owner_email": "",
-      "domain": ""
+      "domain": "",
+      "found_on": "Localsearch",
+      "existing_domain": "",
+      "outreach_email": "",
+      "outreach_source": ""
     }
   ]
 }

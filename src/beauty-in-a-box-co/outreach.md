@@ -1,7 +1,8 @@
 # Outreach: Beauty In A Box Co
 
 **Preview:** https://bailzbright1-ui.github.io/site-previews/beauty-in-a-box-co/
-**Send to:** an email or mobile Beauty In A Box Co publishes for customers (not found yet, so record where you found it in the brief's contact log).
+**Send to:** (not found yet: only use an email or mobile they publish for customers)
+**Found at:** (record where you found it)
 
 ---
 
@@ -29,7 +30,7 @@ Don't want emails from us? Reply "unsubscribe" and you won't hear from us again.
 **Follow-up (once, 5–7 days later, only if no reply)**
 **Subject:** Re: I built a website for Beauty In A Box Co
 
-Hi there, just checking the link came through: https://bailzbright1-ui.github.io/site-previews/beauty-in-a-box-co/. Happy to change anything: photos, wording, colours. The preview is up until [DATE].
+Hi there, just checking the link came through: https://bailzbright1-ui.github.io/site-previews/beauty-in-a-box-co/. Happy to change anything: photos, wording, colours. The preview is up until [DATE: 14 days after first email].
 
 Bailey · One Sight Studio
 Reply "unsubscribe" to stop these emails.

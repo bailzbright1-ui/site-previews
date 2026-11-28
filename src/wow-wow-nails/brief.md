@@ -11,6 +11,7 @@ Every fact on the site must appear here with a source. If it isn't here, it isn'
 | Services | Gel nails, gel nail extensions, dip powder nails, acrylic nails, nail art, pedicure, men's manicure, nail polish | Fresha listings |
 | Rating | 5 stars from 18 reviews on Fresha (listed as 'New') | Fresha |
 | Hours / prices | Not found | - |
+| ⚠ Address check | One Fresha listing shows 14/21 Birtwill St with (07) 5446 4742, but that matches Miss Saigon Nail Spa, so it's probably a directory error | Fresha |
 
 ## Photos
 

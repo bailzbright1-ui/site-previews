@@ -13,6 +13,7 @@ Every fact on the site must appear here with a source. If it isn't here, it isn'
 | Services count | 64 services | same |
 | Owner | Nina (named in reviews and as owner) | same |
 | Phone | Not confirmed | - |
+| Socials | facebook.com/k0zmetika · instagram.com/kozmetika__ (linked from their Fresha page) | https://www.fresha.com/a/kozmetika-caloundra-31-osprey-street-lh7zvssu |
 
 ## Photos
 

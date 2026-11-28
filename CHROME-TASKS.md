@@ -1,6 +1,6 @@
 # Tasks for Claude in Chrome
 
-Paste everything below the line into Claude in Chrome. When it's finished, upload the file it produces (`chrome-results.md`) back into this Claude Code session.
+Paste everything below the line into Claude in Chrome. When it's finished, upload `chrome-results.md` **and** `photos.zip` back into this Claude Code session. I'll import the photos with `python3 tools/import_photos.py photos.zip`.
 
 ---
 
@@ -41,21 +41,27 @@ For each business, find their **own published** information: Google Business Pro
 - **Missing:** useful facts they publish that the preview doesn't have, like hours or extra services.
 - **Their website:** do they already have one? Give the URL and a one-line honest opinion: none, outdated, decent or good.
 - **Outreach contact:** the email address and/or mobile number they publish **for customers**, and exactly where you found it (URL). Only include contacts they publish publicly. Note it if a listing says "no marketing" or similar.
-- **Their own photos:** links to 3–6 photos of their own work or premises from their Google, Facebook or Instagram that we could use (with their permission later). Just the links; don't download anything.
+- **Their own photos (this makes the sites feel personal):** find 4–8 photos the **business itself** posted of its own work or premises (Facebook or Instagram posts, their Fresha gallery, photos the owner added to their Google profile). For example: finished nail sets, lash work, a repaired roof, a renovated bathroom, the shopfront. For each photo:
+  - note the post link and a one-line description ("almond nails with gold foil, posted 3 Oct")
+  - copy the direct image address (right-click the image → Copy image address) into the results
+  - help me save it into a folder on my computer named exactly with the business's code below (e.g. `kozmetika/`). At the end I'll zip all the folders into `photos.zip`.
+  - **Skip** photos customers posted in reviews, photos where a customer's face is the subject, and anything that isn't clearly their own work.
+- **Personal details for the email:** anything specific and recent they've posted that shows we actually looked, like a new service, a recent job or a quote from their own description. Quote it and give the link.
+- **Reviews (for later, not for the site yet):** 2–3 short review quotes with the reviewer's first name and the link. We only put these on the site after the owner says yes.
 - **Logo:** a link to their logo if they have one, and their brand colours if obvious.
 - **Google reviews link:** the URL of their Google reviews.
 
-The businesses:
-1. Beauty In A Box Co, 15 Fairlie Crescent, Moffat Beach (Fresha: "Beauty In A Box Co Caloundra")
-2. Kozmetika, 31 Osprey Street, Caloundra
-3. Wink Worthy Lashes & Brows, Maroochydore (phone 0400 781 552; which street address is current?)
-4. Luminous Nails Sunshine Coast, Palmview (phone 0439 929 210; which street address is current? Friday–Sunday hours?)
-5. Wow Wow Nails, Shop 2a, 1794 David Low Way, Coolum Beach (hours?)
-6. Two Sisters Nails & Spa, Shop 4/708 David Low Way, Pacific Paradise (hours? Do they really do fish pedicures?)
-7. Monty's Plumbing, Peregian Beach (QBCC 1065201; **we have no phone number**)
-8. Mount Coolum Plumbing (0493 027 027; they have mtcplumbing.com.au, so how good is it?)
-9. Hutcheson Plumbing & Roofing Maintenance, Coolum Beach (owner Bill; **we have no phone number**)
-10. Homestyle Roof Painters (Geoff O'Hara, QBCC 1179124; **we have no phone number**; is it "41 years" or more?)
+The businesses (the code in brackets is the folder name to use for their photos):
+1. Beauty In A Box Co `beauty-in-a-box-co`, 15 Fairlie Crescent, Moffat Beach (Fresha: "Beauty In A Box Co Caloundra"). **Other listings show Shop 16/51 Bulcock St and 47 Bowman Rd, Caloundra. Which address is current?**
+2. Kozmetika `kozmetika`, 31 Osprey Street, Caloundra. Facebook: facebook.com/k0zmetika · Instagram: instagram.com/kozmetika__
+3. Wink Worthy Lashes & Brows `wink-worthy`, Maroochydore (phone 0400 781 552; which street address is current?)
+4. Luminous Nails Sunshine Coast `luminous-nails`, Palmview (phone 0439 929 210; which street address is current? Friday–Sunday hours?)
+5. Wow Wow Nails `wow-wow-nails`, Shop 2a, 1794 David Low Way, Coolum Beach (hours? One listing says 14/21 Birtwill St, which is probably a mix-up with another salon. Confirm.)
+6. Two Sisters Nails & Spa `two-sisters-nails`, Shop 4/708 David Low Way, Pacific Paradise. **Important: a listing at the same address is called "ÚT Nails and Spa". Is Two Sisters still trading under that name?** Hours? Do they really do fish pedicures?
+7. Monty's Plumbing `montys-plumbing`, Peregian Beach (QBCC 1065201; **we have no phone number**)
+8. Mount Coolum Plumbing `mount-coolum-plumbing` (0493 027 027, also (07) 2110 8776; they have mtcplumbing.com.au, so how good is it?)
+9. Hutcheson Plumbing & Roofing Maintenance `hutcheson-roofing`, Coolum Beach (owner Bill; **we have no phone number**)
+10. Homestyle Roof Painters `homestyle-roof-painters` (Geoff O'Hara, QBCC 1179124; **we have no phone number**; is it "41 years" or more?)
 
 ## Task 3: Domain prices
 
@@ -100,7 +106,9 @@ Studio homepage: …
 - Missing from preview: …
 - Their existing website: <url or "none"> — <none / outdated / decent / good>
 - Outreach contact: <email / mobile> — found at <url> — marketing restrictions: <none / quote>
-- Own photos: <links>
+- Own photos: <post link> — <image address> — <description>   (one line each)
+- Personal detail for the email: "<quote>" — <link>
+- Reviews for later: "<quote>" — <first name> — <link>
 - Logo: <link> — colours: …
 - Google reviews: <link>
 (repeat for all 10)

@@ -1,0 +1,48 @@
+{
+ "name": "Flamingo Nails",
+ "kicker": "Nail salon · Bulcock St, Caloundra",
+ "headline": [
+  "Nails worth",
+  "*showing off*."
+ ],
+ "sub": "A nail salon on Bulcock Street in Caloundra, open six days a week.",
+ "layout": "split",
+ "palette": {
+  "bg": "#FFF6F3",
+  "surface": "#FFFFFF",
+  "ink": "#2B1A1E",
+  "muted": "#7A6166",
+  "line": "#F1DDD8",
+  "accent": "#C42D63",
+  "accent_ink": "#FFFFFF"
+ },
+ "fonts": {
+  "display": "DM Serif Display",
+  "body": "DM Sans",
+  "google": "family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;700",
+  "display_weight": 400,
+  "italic": true
+ },
+ "hero": "img/stock-hero.webp",
+ "gallery": [],
+ "hours": [
+  "Monday: 9:00 AM – 5:00 PM",
+  "Tuesday: 9:00 AM – 5:00 PM",
+  "Wednesday: 9:00 AM – 5:00 PM",
+  "Thursday: 9:00 AM – 5:00 PM",
+  "Friday: 9:00 AM – 5:00 PM",
+  "Saturday: 9:00 AM – 5:00 PM",
+  "Sunday: Closed"
+ ],
+ "address": "Shop 5/120 Bulcock St, Caloundra QLD 4551",
+ "area": "Caloundra QLD",
+ "map_query": "Shop 5/120 Bulcock St, Caloundra QLD 4551",
+ "rating": {
+  "value": 4.7,
+  "count": 178,
+  "url": "https://maps.google.com/?cid=9699281083627680058&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+ },
+ "notes": [
+  "Open Monday to Saturday"
+ ]
+}

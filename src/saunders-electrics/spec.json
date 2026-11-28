@@ -1,0 +1,66 @@
+{
+ "name": "Saunders Electrics",
+ "kicker": "Electrician · Woombye",
+ "headline": [
+  "Your local",
+  "*electrician*."
+ ],
+ "sub": "An electrician based in Woombye, open Monday to Saturday. Call for a quote.",
+ "layout": "split",
+ "palette": {
+  "bg": "#0E1116",
+  "surface": "#161B22",
+  "ink": "#F1F3F5",
+  "muted": "#9AA4AF",
+  "line": "#26303B",
+  "accent": "#F5C518",
+  "accent_ink": "#111111"
+ },
+ "fonts": {
+  "display": "Space Grotesk",
+  "body": "Space Grotesk",
+  "google": "family=Space+Grotesk:wght@400;500;700",
+  "display_weight": 700
+ },
+ "hero": "img/g-3.webp",
+ "gallery": [
+  "img/g-1.webp",
+  "img/g-2.webp",
+  "img/g-3.webp"
+ ],
+ "gallery_title": "Recent *work*",
+ "services_title": "Recent *jobs*",
+ "services": [
+  [
+   "Switchboards",
+   "Switchboard work, like the board shown below."
+  ],
+  [
+   "Meter boxes",
+   "Meter box work, from one of their recent jobs."
+  ],
+  [
+   "Lighting",
+   "Lighting jobs, including LED strip lighting."
+  ]
+ ],
+ "hours": [
+  "Monday: 8:00 AM – 5:00 PM",
+  "Tuesday: 8:00 AM – 5:00 PM",
+  "Wednesday: 8:00 AM – 5:00 PM",
+  "Thursday: 8:00 AM – 5:00 PM",
+  "Friday: 8:00 AM – 5:00 PM",
+  "Saturday: 8:00 AM – 5:00 PM",
+  "Sunday: Closed"
+ ],
+ "address": null,
+ "area": "Woombye QLD",
+ "map_query": "Woombye QLD 4559",
+ "rating": {
+  "value": 5,
+  "count": 24,
+  "url": "https://maps.google.com/?cid=17600504449145173318&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+ },
+ "cta_label": "Call for a quote",
+ "form_subject": "New quote request from your website"
+}

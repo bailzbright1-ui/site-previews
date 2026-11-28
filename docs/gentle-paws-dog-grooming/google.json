@@ -1,0 +1,166 @@
+{
+  "id": "ChIJK66qH7udk2sRf34vbhYwFaE",
+  "types": [
+    "pet_care",
+    "point_of_interest",
+    "service",
+    "establishment"
+  ],
+  "nationalPhoneNumber": "0478 438 463",
+  "internationalPhoneNumber": "+61 478 438 463",
+  "formattedAddress": "12 Joy Pl, Meridan Plains QLD 4551, Australia",
+  "addressComponents": [
+    {
+      "longText": "12",
+      "shortText": "12",
+      "types": [
+        "street_number"
+      ],
+      "languageCode": "en-US"
+    },
+    {
+      "longText": "Joy Place",
+      "shortText": "Joy Pl",
+      "types": [
+        "route"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Meridan Plains",
+      "shortText": "Meridan Plains",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Sunshine Coast Regional",
+      "shortText": "Sunshine Coast",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Queensland",
+      "shortText": "QLD",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Australia",
+      "shortText": "AU",
+      "types": [
+        "country",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "4551",
+      "shortText": "4551",
+      "types": [
+        "postal_code"
+      ],
+      "languageCode": "en-US"
+    }
+  ],
+  "location": {
+    "latitude": -26.7719217,
+    "longitude": 153.0951108
+  },
+  "rating": 5,
+  "googleMapsUri": "https://maps.google.com/?cid=11607236487513341567&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "websiteUri": "https://www.facebook.com/share/18252L5bGZ/",
+  "regularOpeningHours": {
+    "weekdayDescriptions": [
+      "Monday: 8:00 AM – 5:00 PM",
+      "Tuesday: 8:00 AM – 5:00 PM",
+      "Wednesday: 8:00 AM – 5:00 PM",
+      "Thursday: 8:00 AM – 5:00 PM",
+      "Friday: 8:00 AM – 5:00 PM",
+      "Saturday: Closed",
+      "Sunday: 8:00 AM – 5:00 PM"
+    ]
+  },
+  "businessStatus": "OPERATIONAL",
+  "userRatingCount": 37,
+  "displayName": {
+    "text": "Gentle Paws Dog Grooming",
+    "languageCode": "en"
+  },
+  "primaryTypeDisplayName": {
+    "text": "Pet Care",
+    "languageCode": "en-US"
+  },
+  "own_photos": [
+    {
+      "file": "img/g-1.webp",
+      "size": [
+        1313,
+        1050
+      ],
+      "author": [
+        "Gentle Paws Dog Grooming"
+      ]
+    },
+    {
+      "file": "img/g-2.webp",
+      "size": [
+        1600,
+        1600
+      ],
+      "author": [
+        "Gentle Paws Dog Grooming"
+      ]
+    },
+    {
+      "file": "img/g-3.webp",
+      "size": [
+        1600,
+        1445
+      ],
+      "author": [
+        "Gentle Paws Dog Grooming"
+      ]
+    },
+    {
+      "file": "img/g-4.webp",
+      "size": [
+        1600,
+        1181
+      ],
+      "author": [
+        "Gentle Paws Dog Grooming"
+      ]
+    },
+    {
+      "file": "img/g-5.webp",
+      "size": [
+        1600,
+        2318
+      ],
+      "author": [
+        "Gentle Paws Dog Grooming"
+      ]
+    },
+    {
+      "file": "img/g-6.webp",
+      "size": [
+        1600,
+        1199
+      ],
+      "author": [
+        "Gentle Paws Dog Grooming"
+      ]
+    }
+  ],
+  "fetched": "2026-11-28",
+  "source": "https://maps.google.com/?cid=11607236487513341567&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}

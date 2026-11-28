@@ -1,0 +1,195 @@
+{
+  "id": "ChIJ8c8a-mF2k2sR3DOfNKTQgZM",
+  "types": [
+    "barber_shop",
+    "hair_care",
+    "health",
+    "point_of_interest",
+    "service",
+    "establishment"
+  ],
+  "nationalPhoneNumber": "0448 816 203",
+  "internationalPhoneNumber": "+61 448 816 203",
+  "formattedAddress": "5/9 Ocean St, Maroochydore QLD 4558, Australia",
+  "addressComponents": [
+    {
+      "longText": "5",
+      "shortText": "5",
+      "types": [
+        "subpremise"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "9",
+      "shortText": "9",
+      "types": [
+        "street_number"
+      ],
+      "languageCode": "en-US"
+    },
+    {
+      "longText": "Ocean Street",
+      "shortText": "Ocean St",
+      "types": [
+        "route"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Maroochydore",
+      "shortText": "Maroochydore",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Sunshine Coast Regional",
+      "shortText": "Sunshine Coast",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Queensland",
+      "shortText": "QLD",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Australia",
+      "shortText": "AU",
+      "types": [
+        "country",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "4558",
+      "shortText": "4558",
+      "types": [
+        "postal_code"
+      ],
+      "languageCode": "en-US"
+    }
+  ],
+  "location": {
+    "latitude": -26.6517366,
+    "longitude": 153.0909474
+  },
+  "rating": 4.9,
+  "googleMapsUri": "https://maps.google.com/?cid=10629005999247143900&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "regularOpeningHours": {
+    "weekdayDescriptions": [
+      "Monday: 3:00 – 6:00 PM",
+      "Tuesday: 8:30 AM – 4:30 PM",
+      "Wednesday: 8:30 AM – 4:30 PM",
+      "Thursday: 8:30 AM – 4:30 PM",
+      "Friday: 8:30 AM – 4:30 PM",
+      "Saturday: Closed",
+      "Sunday: Closed"
+    ]
+  },
+  "businessStatus": "OPERATIONAL",
+  "userRatingCount": 83,
+  "displayName": {
+    "text": "Reeves Barber Co.",
+    "languageCode": "en"
+  },
+  "primaryTypeDisplayName": {
+    "text": "Barber shop",
+    "languageCode": "en-US"
+  },
+  "own_photos": [
+    {
+      "file": "img/g-1.webp",
+      "size": [
+        1600,
+        2133
+      ],
+      "author": [
+        "Reeves Barber Co."
+      ]
+    },
+    {
+      "file": "img/g-2.webp",
+      "size": [
+        1600,
+        2133
+      ],
+      "author": [
+        "Reeves Barber Co."
+      ]
+    },
+    {
+      "file": "img/g-3.webp",
+      "size": [
+        1536,
+        2048
+      ],
+      "author": [
+        "Reeves Barber Co."
+      ]
+    },
+    {
+      "file": "img/g-4.webp",
+      "size": [
+        1206,
+        1637
+      ],
+      "author": [
+        "Reeves Barber Co."
+      ]
+    },
+    {
+      "file": "img/g-5.webp",
+      "size": [
+        1440,
+        1330
+      ],
+      "author": [
+        "Reeves Barber Co."
+      ]
+    },
+    {
+      "file": "img/g-6.webp",
+      "size": [
+        1440,
+        1702
+      ],
+      "author": [
+        "Reeves Barber Co."
+      ]
+    },
+    {
+      "file": "img/g-7.webp",
+      "size": [
+        1440,
+        1800
+      ],
+      "author": [
+        "Reeves Barber Co."
+      ]
+    },
+    {
+      "file": "img/g-8.webp",
+      "size": [
+        1600,
+        2133
+      ],
+      "author": [
+        "Reeves Barber Co."
+      ]
+    }
+  ],
+  "fetched": "2026-11-28",
+  "source": "https://maps.google.com/?cid=10629005999247143900&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}

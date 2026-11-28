@@ -1,0 +1,52 @@
+{
+ "name": "Gentle Paws",
+ "kicker": "Dog grooming · Meridan Plains",
+ "headline": [
+  "Gentle grooms,",
+  "*happy* dogs."
+ ],
+ "sub": "Dog grooming in Meridan Plains, near Caloundra. Call to book your dog in.",
+ "layout": "poster",
+ "palette": {
+  "bg": "#FFF8F0",
+  "surface": "#FFFFFF",
+  "ink": "#1E2B3A",
+  "muted": "#6B7684",
+  "line": "#EADFD2",
+  "accent": "#F28C38",
+  "accent_ink": "#1E1E1E"
+ },
+ "fonts": {
+  "display": "Bricolage Grotesque",
+  "body": "DM Sans",
+  "google": "family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700",
+  "display_weight": 800
+ },
+ "hero": "img/g-1.webp",
+ "gallery": [
+  "img/g-2.webp",
+  "img/g-4.webp",
+  "img/g-3.webp",
+  "img/g-5.webp",
+  "img/g-6.webp"
+ ],
+ "gallery_title": "Before & *after*",
+ "hours": [
+  "Monday: 8:00 AM – 5:00 PM",
+  "Tuesday: 8:00 AM – 5:00 PM",
+  "Wednesday: 8:00 AM – 5:00 PM",
+  "Thursday: 8:00 AM – 5:00 PM",
+  "Friday: 8:00 AM – 5:00 PM",
+  "Saturday: Closed",
+  "Sunday: 8:00 AM – 5:00 PM"
+ ],
+ "address": null,
+ "area": "Meridan Plains QLD",
+ "map_query": "Meridan Plains QLD 4551",
+ "rating": {
+  "value": 5,
+  "count": 37,
+  "url": "https://maps.google.com/?cid=11607236487513341567&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+ },
+ "cta_label": "Call to book"
+}

@@ -1,0 +1,54 @@
+{
+ "name": "Limelight Pet Salon",
+ "kicker": "Dog grooming · Coolum Beach",
+ "headline": [
+  "Fresh, fluffy",
+  "and *photo-ready*."
+ ],
+ "sub": "A pet salon on David Low Way in Coolum Beach, open Tuesday to Saturday from 7am.",
+ "layout": "collage",
+ "palette": {
+  "bg": "#F3F8F2",
+  "surface": "#FFFFFF",
+  "ink": "#17301F",
+  "muted": "#5C6F61",
+  "line": "#DCE8DB",
+  "accent": "#22783F",
+  "accent_ink": "#FFFFFF"
+ },
+ "fonts": {
+  "display": "Bricolage Grotesque",
+  "body": "DM Sans",
+  "google": "family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=DM+Sans:wght@400;500;700",
+  "display_weight": 800
+ },
+ "hero": "img/g-1.webp",
+ "gallery": [
+  "img/g-7.webp",
+  "img/g-2.webp",
+  "img/g-3.webp",
+  "img/g-5.webp",
+  "img/g-6.webp",
+  "img/g-8.webp",
+  "img/g-4.webp"
+ ],
+ "gallery_title": "Recent *guests*",
+ "hours": [
+  "Monday: Closed",
+  "Tuesday: 7:00 AM – 3:00 PM",
+  "Wednesday: 7:00 AM – 3:00 PM",
+  "Thursday: 7:00 AM – 3:00 PM",
+  "Friday: 7:00 AM – 3:00 PM",
+  "Saturday: 7:00 AM – 3:00 PM",
+  "Sunday: Closed"
+ ],
+ "address": "1818 David Low Way, Coolum Beach QLD 4573",
+ "area": "Coolum Beach QLD",
+ "map_query": "1818 David Low Way, Coolum Beach QLD 4573",
+ "rating": {
+  "value": 4.7,
+  "count": 94,
+  "url": "https://maps.google.com/?cid=9224505568799174985&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+ },
+ "cta_label": "Call to book"
+}

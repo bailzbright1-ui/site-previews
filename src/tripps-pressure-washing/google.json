@@ -1,0 +1,164 @@
+{
+  "id": "ChIJS1PGeE2WVygR6G8Pxj-x2jc",
+  "types": [
+    "point_of_interest",
+    "service",
+    "establishment"
+  ],
+  "nationalPhoneNumber": "0499 322 337",
+  "internationalPhoneNumber": "+61 499 322 337",
+  "formattedAddress": "5 Forest Park St, Meridan Plains QLD 4551, Australia",
+  "addressComponents": [
+    {
+      "longText": "5",
+      "shortText": "5",
+      "types": [
+        "subpremise"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Forest Park Street",
+      "shortText": "Forest Park St",
+      "types": [
+        "route"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Meridan Plains",
+      "shortText": "Meridan Plains",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Sunshine Coast Regional",
+      "shortText": "Sunshine Coast",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Queensland",
+      "shortText": "QLD",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Australia",
+      "shortText": "AU",
+      "types": [
+        "country",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "4551",
+      "shortText": "4551",
+      "types": [
+        "postal_code"
+      ],
+      "languageCode": "en-US"
+    }
+  ],
+  "location": {
+    "latitude": -26.754633,
+    "longitude": 153.1036859
+  },
+  "rating": 5,
+  "googleMapsUri": "https://maps.google.com/?cid=4024724104472915944&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "regularOpeningHours": {
+    "weekdayDescriptions": [
+      "Monday: 6:30 AM – 5:30 AM",
+      "Tuesday: 6:30 AM – 5:30 AM",
+      "Wednesday: 6:30 AM – 5:30 AM",
+      "Thursday: 6:30 AM – 5:30 AM",
+      "Friday: 6:30 AM – 5:30 AM",
+      "Saturday: 6:30 AM – 5:30 AM",
+      "Sunday: 6:30 AM – 5:30 AM"
+    ]
+  },
+  "businessStatus": "OPERATIONAL",
+  "userRatingCount": 31,
+  "displayName": {
+    "text": "Tripps Pressure Washing",
+    "languageCode": "en"
+  },
+  "primaryTypeDisplayName": {
+    "text": "Services",
+    "languageCode": "en-US"
+  },
+  "own_photos": [
+    {
+      "file": "img/g-1.webp",
+      "size": [
+        1284,
+        1258
+      ],
+      "author": [
+        "Tripps Pressure Washing"
+      ]
+    },
+    {
+      "file": "img/g-2.webp",
+      "size": [
+        1284,
+        1275
+      ],
+      "author": [
+        "Tripps Pressure Washing"
+      ]
+    },
+    {
+      "file": "img/g-3.webp",
+      "size": [
+        1284,
+        1269
+      ],
+      "author": [
+        "Tripps Pressure Washing"
+      ]
+    },
+    {
+      "file": "img/g-4.webp",
+      "size": [
+        1536,
+        1024
+      ],
+      "author": [
+        "Tripps Pressure Washing"
+      ]
+    },
+    {
+      "file": "img/g-5.webp",
+      "size": [
+        1600,
+        2133
+      ],
+      "author": [
+        "Tripps Pressure Washing"
+      ]
+    },
+    {
+      "file": "img/g-6.webp",
+      "size": [
+        1600,
+        2133
+      ],
+      "author": [
+        "Tripps Pressure Washing"
+      ]
+    }
+  ],
+  "fetched": "2026-11-28",
+  "source": "https://maps.google.com/?cid=4024724104472915944&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}

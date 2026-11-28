@@ -1,0 +1,186 @@
+{
+  "id": "ChIJD0Fc4mtxk2sRSTHj-PAGBIA",
+  "types": [
+    "pet_care",
+    "service",
+    "point_of_interest",
+    "establishment"
+  ],
+  "nationalPhoneNumber": "0430 399 884",
+  "internationalPhoneNumber": "+61 430 399 884",
+  "formattedAddress": "1818 David Low Way, Coolum Beach QLD 4573, Australia",
+  "addressComponents": [
+    {
+      "longText": "1818",
+      "shortText": "1818",
+      "types": [
+        "street_number"
+      ],
+      "languageCode": "en-US"
+    },
+    {
+      "longText": "David Low Way",
+      "shortText": "David Low Way",
+      "types": [
+        "route"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Coolum Beach",
+      "shortText": "Coolum Beach",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Sunshine Coast Regional",
+      "shortText": "Sunshine Coast",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Queensland",
+      "shortText": "QLD",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Australia",
+      "shortText": "AU",
+      "types": [
+        "country",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "4573",
+      "shortText": "4573",
+      "types": [
+        "postal_code"
+      ],
+      "languageCode": "en-US"
+    }
+  ],
+  "location": {
+    "latitude": -26.527922999999998,
+    "longitude": 153.09040149999998
+  },
+  "rating": 4.7,
+  "googleMapsUri": "https://maps.google.com/?cid=9224505568799174985&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "websiteUri": "https://www.facebook.com/LimelightPetSalon/",
+  "regularOpeningHours": {
+    "weekdayDescriptions": [
+      "Monday: Closed",
+      "Tuesday: 7:00 AM – 3:00 PM",
+      "Wednesday: 7:00 AM – 3:00 PM",
+      "Thursday: 7:00 AM – 3:00 PM",
+      "Friday: 7:00 AM – 3:00 PM",
+      "Saturday: 7:00 AM – 3:00 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "businessStatus": "OPERATIONAL",
+  "userRatingCount": 94,
+  "displayName": {
+    "text": "Limelight Pet Salon Coolum Beach",
+    "languageCode": "en"
+  },
+  "primaryTypeDisplayName": {
+    "text": "Pet Care",
+    "languageCode": "en-US"
+  },
+  "own_photos": [
+    {
+      "file": "img/g-1.webp",
+      "size": [
+        1600,
+        2133
+      ],
+      "author": [
+        "Limelight Pet Salon Coolum Beach"
+      ]
+    },
+    {
+      "file": "img/g-2.webp",
+      "size": [
+        1440,
+        1920
+      ],
+      "author": [
+        "Limelight Pet Salon Coolum Beach"
+      ]
+    },
+    {
+      "file": "img/g-3.webp",
+      "size": [
+        1600,
+        2133
+      ],
+      "author": [
+        "Limelight Pet Salon Coolum Beach"
+      ]
+    },
+    {
+      "file": "img/g-4.webp",
+      "size": [
+        1506,
+        2041
+      ],
+      "author": [
+        "Limelight Pet Salon Coolum Beach"
+      ]
+    },
+    {
+      "file": "img/g-5.webp",
+      "size": [
+        1536,
+        2048
+      ],
+      "author": [
+        "Limelight Pet Salon Coolum Beach"
+      ]
+    },
+    {
+      "file": "img/g-6.webp",
+      "size": [
+        1440,
+        1890
+      ],
+      "author": [
+        "Limelight Pet Salon Coolum Beach"
+      ]
+    },
+    {
+      "file": "img/g-7.webp",
+      "size": [
+        1600,
+        1067
+      ],
+      "author": [
+        "Limelight Pet Salon Coolum Beach"
+      ]
+    },
+    {
+      "file": "img/g-8.webp",
+      "size": [
+        1536,
+        2048
+      ],
+      "author": [
+        "Limelight Pet Salon Coolum Beach"
+      ]
+    }
+  ],
+  "fetched": "2026-11-28",
+  "source": "https://maps.google.com/?cid=9224505568799174985&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}

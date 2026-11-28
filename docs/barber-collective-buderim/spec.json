@@ -1,0 +1,57 @@
+{
+ "name": "Barber Collective",
+ "kicker": "Barber shop · Burnett St, Buderim",
+ "headline": [
+  "Buderim's",
+  "barber *collective*."
+ ],
+ "sub": "A barber shop on Burnett Street, Buderim, open late on Thursdays. Book your spot online.",
+ "layout": "editorial",
+ "palette": {
+  "bg": "#0F0F10",
+  "surface": "#19191B",
+  "ink": "#F3F1EC",
+  "muted": "#A7A39B",
+  "line": "#2A2A2D",
+  "accent": "#E8B04B",
+  "accent_ink": "#111111"
+ },
+ "fonts": {
+  "display": "Syne",
+  "body": "Work Sans",
+  "google": "family=Syne:wght@700;800&family=Work+Sans:wght@400;500;600",
+  "display_weight": 800
+ },
+ "hero": "img/g-6.webp",
+ "gallery": [
+  "img/g-2.webp",
+  "img/g-8.webp",
+  "img/g-3.webp",
+  "img/g-5.webp",
+  "img/g-7.webp",
+  "img/g-1.webp"
+ ],
+ "gallery_title": "Inside the *shop*",
+ "book_url": "https://barbercollectivemaroochydore.square.site/",
+ "cta_label": "Book online",
+ "notes": [
+  "Open till 9pm Thursdays"
+ ],
+ "hours": [
+  "Monday: 9:30 – 11:30 AM",
+  "Tuesday: 7:00 AM – 5:30 PM",
+  "Wednesday: 7:00 AM – 5:30 PM",
+  "Thursday: 7:00 AM – 9:00 PM",
+  "Friday: 7:00 AM – 5:30 PM",
+  "Saturday: 7:00 AM – 3:00 PM",
+  "Sunday: Closed"
+ ],
+ "address": "86 Burnett St, Buderim QLD 4556",
+ "area": "Buderim QLD",
+ "map_query": "86 Burnett St, Buderim QLD 4556",
+ "rating": {
+  "value": 5,
+  "count": 241,
+  "url": "https://maps.google.com/?cid=17580874132224157602&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+ }
+}

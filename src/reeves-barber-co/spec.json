@@ -1,0 +1,52 @@
+{
+ "name": "Reeves Barber Co.",
+ "kicker": "Barber · Ocean St, Maroochydore",
+ "headline": [
+  "Classic cuts",
+  "on *Ocean Street*."
+ ],
+ "sub": "A barber shop at 5/9 Ocean Street, Maroochydore. Call to book your cut.",
+ "layout": "editorial",
+ "palette": {
+  "bg": "#EFEAE2",
+  "surface": "#F8F5F0",
+  "ink": "#1F2A33",
+  "muted": "#5D6670",
+  "line": "#DAD3C8",
+  "accent": "#B4232A",
+  "accent_ink": "#FFFFFF"
+ },
+ "fonts": {
+  "display": "Young Serif",
+  "body": "Figtree",
+  "google": "family=Young+Serif&family=Figtree:wght@400;500;600",
+  "display_weight": 400
+ },
+ "hero": "img/g-3.webp",
+ "gallery": [
+  "img/g-6.webp",
+  "img/g-7.webp",
+  "img/g-1.webp",
+  "img/g-5.webp",
+  "img/g-2.webp"
+ ],
+ "gallery_title": "Fresh *fades*",
+ "hours": [
+  "Monday: 3:00 – 6:00 PM",
+  "Tuesday: 8:30 AM – 4:30 PM",
+  "Wednesday: 8:30 AM – 4:30 PM",
+  "Thursday: 8:30 AM – 4:30 PM",
+  "Friday: 8:30 AM – 4:30 PM",
+  "Saturday: Closed",
+  "Sunday: Closed"
+ ],
+ "address": "5/9 Ocean St, Maroochydore QLD 4558",
+ "area": "Maroochydore QLD",
+ "map_query": "5/9 Ocean St, Maroochydore QLD 4558",
+ "rating": {
+  "value": 4.9,
+  "count": 83,
+  "url": "https://maps.google.com/?cid=10629005999247143900&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+ },
+ "cta_label": "Call to book"
+}

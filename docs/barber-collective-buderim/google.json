@@ -1,0 +1,189 @@
+{
+  "id": "ChIJWzqD4b13k2sRoicTNODP-_M",
+  "types": [
+    "barber_shop",
+    "hair_salon",
+    "hair_care",
+    "health",
+    "service",
+    "point_of_interest",
+    "establishment"
+  ],
+  "nationalPhoneNumber": "0406 221 606",
+  "internationalPhoneNumber": "+61 406 221 606",
+  "formattedAddress": "86 Burnett St, Buderim QLD 4556, Australia",
+  "addressComponents": [
+    {
+      "longText": "86",
+      "shortText": "86",
+      "types": [
+        "street_number"
+      ],
+      "languageCode": "en-US"
+    },
+    {
+      "longText": "Burnett Street",
+      "shortText": "Burnett St",
+      "types": [
+        "route"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Buderim",
+      "shortText": "Buderim",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Sunshine Coast Regional",
+      "shortText": "Sunshine Coast",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Queensland",
+      "shortText": "QLD",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Australia",
+      "shortText": "AU",
+      "types": [
+        "country",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "4556",
+      "shortText": "4556",
+      "types": [
+        "postal_code"
+      ],
+      "languageCode": "en-US"
+    }
+  ],
+  "location": {
+    "latitude": -26.6876914,
+    "longitude": 153.0480469
+  },
+  "rating": 5,
+  "googleMapsUri": "https://maps.google.com/?cid=17580874132224157602&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "websiteUri": "https://barbercollectivemaroochydore.square.site/",
+  "regularOpeningHours": {
+    "weekdayDescriptions": [
+      "Monday: 9:30 – 11:30 AM",
+      "Tuesday: 7:00 AM – 5:30 PM",
+      "Wednesday: 7:00 AM – 5:30 PM",
+      "Thursday: 7:00 AM – 9:00 PM",
+      "Friday: 7:00 AM – 5:30 PM",
+      "Saturday: 7:00 AM – 3:00 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "businessStatus": "OPERATIONAL",
+  "userRatingCount": 241,
+  "displayName": {
+    "text": "Barber Collective Buderim",
+    "languageCode": "en"
+  },
+  "primaryTypeDisplayName": {
+    "text": "Barber shop",
+    "languageCode": "en-US"
+  },
+  "own_photos": [
+    {
+      "file": "img/g-1.webp",
+      "size": [
+        1207,
+        679
+      ],
+      "author": [
+        "Barber Collective Buderim"
+      ]
+    },
+    {
+      "file": "img/g-2.webp",
+      "size": [
+        1284,
+        959
+      ],
+      "author": [
+        "Barber Collective Buderim"
+      ]
+    },
+    {
+      "file": "img/g-3.webp",
+      "size": [
+        1440,
+        1440
+      ],
+      "author": [
+        "Barber Collective Buderim"
+      ]
+    },
+    {
+      "file": "img/g-4.webp",
+      "size": [
+        1600,
+        1200
+      ],
+      "author": [
+        "Barber Collective Buderim"
+      ]
+    },
+    {
+      "file": "img/g-5.webp",
+      "size": [
+        1440,
+        1800
+      ],
+      "author": [
+        "Barber Collective Buderim"
+      ]
+    },
+    {
+      "file": "img/g-6.webp",
+      "size": [
+        1600,
+        2133
+      ],
+      "author": [
+        "Barber Collective Buderim"
+      ]
+    },
+    {
+      "file": "img/g-7.webp",
+      "size": [
+        1440,
+        1695
+      ],
+      "author": [
+        "Barber Collective Buderim"
+      ]
+    },
+    {
+      "file": "img/g-8.webp",
+      "size": [
+        1600,
+        2047
+      ],
+      "author": [
+        "Barber Collective Buderim"
+      ]
+    }
+  ],
+  "fetched": "2026-11-28",
+  "source": "https://maps.google.com/?cid=17580874132224157602&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}

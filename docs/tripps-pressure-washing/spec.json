@@ -1,0 +1,66 @@
+{
+ "name": "Tripps Pressure Washing",
+ "kicker": "Pressure washing · Sunshine Coast",
+ "headline": [
+  "Driveways, paths",
+  "& roofs, *like new*."
+ ],
+ "sub": "Pressure washing from Meridan Plains: driveways, paths, patios and roofs. Call for a quote.",
+ "layout": "fullbleed",
+ "palette": {
+  "bg": "#F2F6F9",
+  "surface": "#FFFFFF",
+  "ink": "#0E2233",
+  "muted": "#5A6B7A",
+  "line": "#D9E3EA",
+  "accent": "#1463BF",
+  "accent_ink": "#FFFFFF"
+ },
+ "fonts": {
+  "display": "Archivo",
+  "body": "Inter",
+  "google": "family=Archivo:wght@500;800&family=Inter:wght@400;500;600",
+  "display_weight": 800,
+  "display_case": "uppercase"
+ },
+ "hero": "img/g-3.webp",
+ "gallery": [
+  "img/g-4.webp",
+  "img/g-1.webp",
+  "img/g-2.webp",
+  "img/g-5.webp",
+  "img/g-6.webp"
+ ],
+ "gallery_title": "Recent *jobs*",
+ "services_title": "What we *clean*",
+ "services": [
+  [
+   "Driveways",
+   "Concrete driveways back to their original colour."
+  ],
+  [
+   "Paths & stairs",
+   "Garden paths and steps cleaned up."
+  ],
+  [
+   "Patios & pergolas",
+   "Outdoor roofing and patios, before and after."
+  ],
+  [
+   "Roofs",
+   "Roof cleaning for homes."
+  ]
+ ],
+ "hours": null,
+ "address": null,
+ "area": "Meridan Plains QLD",
+ "map_query": null,
+ "rating": {
+  "value": 5,
+  "count": 31,
+  "url": "https://maps.google.com/?cid=4024724104472915944&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+ },
+ "cta_label": "Call for a quote",
+ "form_subject": "New quote request from your website",
+ "contact_title": "Get a *quote*."
+}

@@ -1,0 +1,55 @@
+{
+ "name": "Cut & Go Barbers",
+ "kicker": "Men's barber shop · Maroochydore",
+ "headline": [
+  "Walk in.",
+  "Walk out *sharp*."
+ ],
+ "sub": "A men's barber shop on Aerodrome Road, Maroochydore. No appointment needed: just come in.",
+ "layout": "fullbleed",
+ "palette": {
+  "bg": "#F4F1EC",
+  "surface": "#FFFFFF",
+  "ink": "#121417",
+  "muted": "#5E6166",
+  "line": "#E2DED7",
+  "accent": "#D7262E",
+  "accent_ink": "#FFFFFF"
+ },
+ "fonts": {
+  "display": "Oswald",
+  "body": "Inter",
+  "google": "family=Oswald:wght@500;700&family=Inter:wght@400;500;600",
+  "display_weight": 700,
+  "display_case": "uppercase"
+ },
+ "hero": "img/g-2.webp",
+ "gallery": [
+  "img/g-1.webp",
+  "img/g-2.webp"
+ ],
+ "gallery_title": "The *shop*",
+ "notes": [
+  "No appointment needed",
+  "Open from 7:30am Tue–Fri",
+  "Saturdays from 7am"
+ ],
+ "hours": [
+  "Monday: Closed",
+  "Tuesday: 7:30 AM – 5:00 PM",
+  "Wednesday: 7:30 AM – 5:00 PM",
+  "Thursday: 7:30 AM – 5:00 PM",
+  "Friday: 7:30 AM – 5:00 PM",
+  "Saturday: 7:00 AM – 1:00 PM",
+  "Sunday: Closed"
+ ],
+ "address": "2/54-56 Aerodrome Rd, Maroochydore QLD 4558",
+ "area": "Maroochydore QLD",
+ "map_query": "2/54-56 Aerodrome Rd, Maroochydore QLD 4558",
+ "rating": {
+  "value": 4.8,
+  "count": 301,
+  "url": "https://maps.google.com/?cid=16092729464314453354&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+ },
+ "contact_title": "Just *walk in*."
+}

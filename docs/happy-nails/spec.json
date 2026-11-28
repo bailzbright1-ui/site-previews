@@ -1,0 +1,38 @@
+{
+ "name": "Happy Nails",
+ "kicker": "Nails · Caloundra West",
+ "headline": [
+  "Happy hands,",
+  "happy *you*."
+ ],
+ "sub": "Nails in Caloundra West. Call or text to book a time.",
+ "layout": "split",
+ "palette": {
+  "bg": "#FFFBEA",
+  "surface": "#FFFFFF",
+  "ink": "#2A2419",
+  "muted": "#6E6552",
+  "line": "#F0E7C6",
+  "accent": "#F2B705",
+  "accent_ink": "#1E1A10"
+ },
+ "fonts": {
+  "display": "Plus Jakarta Sans",
+  "body": "Plus Jakarta Sans",
+  "google": "family=Plus+Jakarta+Sans:wght@400;500;700;800",
+  "display_weight": 800
+ },
+ "hero": "img/stock-hero.webp",
+ "gallery": [],
+ "hours": null,
+ "address": null,
+ "area": "Caloundra West QLD",
+ "map_query": null,
+ "rating": {
+  "value": 4.9,
+  "count": 79,
+  "url": "https://maps.google.com/?cid=16243830091808889762&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+ },
+ "cta_label": "Call to book",
+ "contact_title": "Book your *nails*."
+}

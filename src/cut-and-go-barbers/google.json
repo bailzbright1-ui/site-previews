@@ -1,0 +1,136 @@
+{
+  "id": "ChIJO-roBXt2k2sRat3sUi_cVN8",
+  "types": [
+    "barber_shop",
+    "hair_care",
+    "health",
+    "point_of_interest",
+    "service",
+    "establishment"
+  ],
+  "nationalPhoneNumber": "(07) 5479 2512",
+  "internationalPhoneNumber": "+61 7 5479 2512",
+  "formattedAddress": "2/54-56 Aerodrome Rd, Maroochydore QLD 4558, Australia",
+  "addressComponents": [
+    {
+      "longText": "2",
+      "shortText": "2",
+      "types": [
+        "subpremise"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "54-56",
+      "shortText": "54-56",
+      "types": [
+        "street_number"
+      ],
+      "languageCode": "en-US"
+    },
+    {
+      "longText": "Aerodrome Road",
+      "shortText": "Aerodrome Rd",
+      "types": [
+        "route"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Maroochydore",
+      "shortText": "Maroochydore",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Sunshine Coast Regional",
+      "shortText": "Sunshine Coast",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Queensland",
+      "shortText": "QLD",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Australia",
+      "shortText": "AU",
+      "types": [
+        "country",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "4558",
+      "shortText": "4558",
+      "types": [
+        "postal_code"
+      ],
+      "languageCode": "en-US"
+    }
+  ],
+  "location": {
+    "latitude": -26.660497700000004,
+    "longitude": 153.0999148
+  },
+  "rating": 4.8,
+  "googleMapsUri": "https://maps.google.com/?cid=16092729464314453354&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "websiteUri": "https://www.facebook.com/CutandGomaroochydore/",
+  "regularOpeningHours": {
+    "weekdayDescriptions": [
+      "Monday: Closed",
+      "Tuesday: 7:30 AM – 5:00 PM",
+      "Wednesday: 7:30 AM – 5:00 PM",
+      "Thursday: 7:30 AM – 5:00 PM",
+      "Friday: 7:30 AM – 5:00 PM",
+      "Saturday: 7:00 AM – 1:00 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "businessStatus": "OPERATIONAL",
+  "userRatingCount": 301,
+  "displayName": {
+    "text": "Cut & Go Barbers",
+    "languageCode": "en"
+  },
+  "primaryTypeDisplayName": {
+    "text": "Barber shop",
+    "languageCode": "en-US"
+  },
+  "own_photos": [
+    {
+      "file": "img/g-1.webp",
+      "size": [
+        1600,
+        1600
+      ],
+      "author": [
+        "Cut & Go Barbers"
+      ]
+    },
+    {
+      "file": "img/g-2.webp",
+      "size": [
+        1600,
+        1200
+      ],
+      "author": [
+        "Cut & Go Barbers"
+      ]
+    }
+  ],
+  "fetched": "2026-11-28",
+  "source": "https://maps.google.com/?cid=16092729464314453354&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}

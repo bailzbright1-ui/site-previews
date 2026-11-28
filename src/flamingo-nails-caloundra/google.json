@@ -1,0 +1,124 @@
+{
+  "id": "ChIJ76Mibg2Zk2sROjFLrsHEmoY",
+  "types": [
+    "nail_salon",
+    "beauty_salon",
+    "service",
+    "point_of_interest",
+    "establishment"
+  ],
+  "nationalPhoneNumber": "0404 542 831",
+  "internationalPhoneNumber": "+61 404 542 831",
+  "formattedAddress": "Shop 5/120 Bulcock St, Caloundra QLD 4551, Australia",
+  "addressComponents": [
+    {
+      "longText": "Shop 5",
+      "shortText": "Shop 5",
+      "types": [
+        "subpremise"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "120",
+      "shortText": "120",
+      "types": [
+        "street_number"
+      ],
+      "languageCode": "en-US"
+    },
+    {
+      "longText": "Bulcock Street",
+      "shortText": "Bulcock St",
+      "types": [
+        "route"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Caloundra",
+      "shortText": "Caloundra",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Sunshine Coast Regional",
+      "shortText": "Sunshine Coast",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Queensland",
+      "shortText": "QLD",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Australia",
+      "shortText": "AU",
+      "types": [
+        "country",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "4551",
+      "shortText": "4551",
+      "types": [
+        "postal_code"
+      ],
+      "languageCode": "en-US"
+    }
+  ],
+  "location": {
+    "latitude": -26.8048649,
+    "longitude": 153.1281657
+  },
+  "rating": 4.7,
+  "googleMapsUri": "https://maps.google.com/?cid=9699281083627680058&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "regularOpeningHours": {
+    "weekdayDescriptions": [
+      "Monday: 9:00 AM – 5:00 PM",
+      "Tuesday: 9:00 AM – 5:00 PM",
+      "Wednesday: 9:00 AM – 5:00 PM",
+      "Thursday: 9:00 AM – 5:00 PM",
+      "Friday: 9:00 AM – 5:00 PM",
+      "Saturday: 9:00 AM – 5:00 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "businessStatus": "OPERATIONAL",
+  "userRatingCount": 178,
+  "displayName": {
+    "text": "Flamingo Nails Caloundra",
+    "languageCode": "en"
+  },
+  "primaryTypeDisplayName": {
+    "text": "Nail Salon",
+    "languageCode": "en-US"
+  },
+  "own_photos": [
+    {
+      "file": "img/g-1.webp",
+      "size": [
+        1600,
+        2133
+      ],
+      "author": [
+        "Flamingo Nails"
+      ]
+    }
+  ],
+  "fetched": "2026-11-28",
+  "source": "https://maps.google.com/?cid=9699281083627680058&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}

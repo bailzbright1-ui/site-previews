@@ -1,0 +1,119 @@
+{
+  "id": "ChIJP6_XRs_hcYcRRvX6houNQfQ",
+  "types": [
+    "electrician",
+    "point_of_interest",
+    "service",
+    "establishment"
+  ],
+  "nationalPhoneNumber": "0428 743 728",
+  "internationalPhoneNumber": "+61 428 743 728",
+  "formattedAddress": "Woombye QLD 4559, Australia",
+  "addressComponents": [
+    {
+      "longText": "Woombye",
+      "shortText": "Woombye",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Sunshine Coast Regional",
+      "shortText": "Sunshine Coast",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Queensland",
+      "shortText": "QLD",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Australia",
+      "shortText": "AU",
+      "types": [
+        "country",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "4559",
+      "shortText": "4559",
+      "types": [
+        "postal_code"
+      ],
+      "languageCode": "en-US"
+    }
+  ],
+  "location": {
+    "latitude": -26.6605212,
+    "longitude": 152.9649067
+  },
+  "rating": 5,
+  "googleMapsUri": "https://maps.google.com/?cid=17600504449145173318&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "regularOpeningHours": {
+    "weekdayDescriptions": [
+      "Monday: 8:00 AM – 5:00 PM",
+      "Tuesday: 8:00 AM – 5:00 PM",
+      "Wednesday: 8:00 AM – 5:00 PM",
+      "Thursday: 8:00 AM – 5:00 PM",
+      "Friday: 8:00 AM – 5:00 PM",
+      "Saturday: 8:00 AM – 5:00 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "businessStatus": "OPERATIONAL",
+  "userRatingCount": 24,
+  "displayName": {
+    "text": "Saunders Electrics",
+    "languageCode": "en"
+  },
+  "primaryTypeDisplayName": {
+    "text": "Electrician",
+    "languageCode": "en-US"
+  },
+  "own_photos": [
+    {
+      "file": "img/g-1.webp",
+      "size": [
+        1600,
+        2133
+      ],
+      "author": [
+        "Saunders Electrics"
+      ]
+    },
+    {
+      "file": "img/g-2.webp",
+      "size": [
+        1600,
+        1200
+      ],
+      "author": [
+        "Saunders Electrics"
+      ]
+    },
+    {
+      "file": "img/g-3.webp",
+      "size": [
+        1280,
+        960
+      ],
+      "author": [
+        "Saunders Electrics"
+      ]
+    }
+  ],
+  "fetched": "2026-11-28",
+  "source": "https://maps.google.com/?cid=17600504449145173318&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
